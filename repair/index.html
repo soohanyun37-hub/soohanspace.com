@@ -3,531 +3,843 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="경기 평택 집수리 전문 수한공간집수리. 현관·베란다·주방 타일 시공, 소규모 당일 작업 가능. 사진 한 장으로 바로 상담.">
-<meta name="keywords" content="평택집수리, 집수리, 평택타일, 현관타일, 베란다타일, 주방타일, 소규모시공, 수한공간집수리">
-<meta property="og:title" content="수한공간집수리 · 평택 집수리 전문">
+<meta name="description" content="평택 집수리·부분 리모델링 전문 수한공간. 현관·베란다·주방 타일 시공, 소규모 당일 작업 가능. 필요한 범위만 정확히 수리합니다.">
+<meta name="keywords" content="평택집수리, 집수리, 평택타일, 현관타일, 베란다타일, 주방타일, 소규모시공, 부분리모델링, 수한공간">
+<meta property="og:title" content="집수리 · 부분 리모델링 · 수한공간">
 <meta property="og:description" content="현관·베란다·주방 등 생활 공간 전반. 소규모 당일 작업 가능. 사진 한 장으로 바로 상담.">
 <meta property="og:url" content="https://soohanspace.com/repair/">
-<title>수한공간집수리 · 평택 집수리 전문</title>
+<title>집수리 · 부분 리모델링 · 수한공간</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --bg: #F7F6F3;
-    --bg2: #EFEDE8;
-    --bg3: #E8E5DE;
-    --text: #1A1916;
-    --text2: #6B6860;
-    --text3: #9E9C97;
-    --border: rgba(26,25,22,0.1);
-    --border2: rgba(26,25,22,0.18);
-    --radius: 12px;
-    --radius-sm: 7px;
-  }
+:root {
+  --bg: #F7F6F3;
+  --bg2: #EFEDE8;
+  --bg3: #E8E5DE;
+  --text: #1A1916;
+  --text2: #6B6860;
+  --text3: #9E9C97;
+  --border: rgba(26,25,22,0.10);
+  --border2: rgba(26,25,22,0.18);
+  --accent: #1A1916;
+  --kakao: #FEE500;
+  --kakao-text: #191919;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --max: 980px;
+}
 
-  html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
-  body {
-    font-family: 'Noto Sans KR', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 15px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
 
-  a { text-decoration: none; color: inherit; }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+a { text-decoration: none; color: inherit; }
 
-  /* NAV */
-  nav {
-    position: sticky; top: 0; z-index: 100;
-    background: var(--bg); border-bottom: 1px solid var(--border);
-  }
-  .nav-inner {
-    max-width: 960px; margin: 0 auto; padding: 0 24px;
-    height: 60px; display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-left { display: flex; align-items: center; gap: 16px; }
-  .nav-back { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.06em; transition: color 0.15s; }
-  .nav-back:hover { color: var(--text2); }
-  .nav-sep { width: 1px; height: 14px; background: var(--border2); }
-  .logo { display: flex; flex-direction: column; gap: 1px; }
-  .logo-kr { font-size: 15px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
-  .logo-en { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text3); letter-spacing: 0.12em; line-height: 1; }
-  .nav-tel { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; }
-  .nav-tel-num { font-family: 'DM Mono', monospace; font-size: 14px; font-weight: 500; letter-spacing: 0.02em; }
-  .nav-tel-label { font-size: 10px; color: var(--text3); letter-spacing: 0.05em; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
-  /* HERO */
-  .hero { padding: 72px 0 80px; border-bottom: 1px solid var(--border); }
-  .hero-eyebrow {
-    display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
-    opacity: 0; animation: fadeUp 0.6s ease 0.1s forwards;
-  }
-  .eyebrow-line { width: 28px; height: 1px; background: var(--text3); }
-  .eyebrow-text { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.1em; }
-  .hero-grid { display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: start; }
-  .hero-left { opacity: 0; animation: fadeUp 0.6s ease 0.2s forwards; }
-  .hero h1 { font-size: 36px; font-weight: 400; line-height: 1.3; letter-spacing: -0.03em; margin-bottom: 18px; }
-  .hero h1 strong { font-weight: 500; }
-  .hero-desc { font-size: 14px; color: var(--text2); line-height: 1.85; margin-bottom: 32px; max-width: 400px; }
-  .hero-btns { display: flex; gap: 10px; align-items: center; }
-  .btn-primary {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--text); color: var(--bg);
-    font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 500;
-    padding: 12px 22px; border-radius: var(--radius-sm); border: none; cursor: pointer;
-    transition: opacity 0.15s; letter-spacing: -0.01em;
-  }
-  .btn-primary:hover { opacity: 0.82; }
-  .btn-secondary { font-size: 13px; color: var(--text2); background: none; border: none; cursor: pointer; padding: 12px 4px; transition: color 0.15s; }
-  .btn-secondary:hover { color: var(--text); }
-  .hero-right { opacity: 0; animation: fadeUp 0.6s ease 0.35s forwards; }
-  .stat-main { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 10px; }
-  .stat-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.1em; margin-bottom: 6px; }
-  .stat-value { font-size: 28px; font-weight: 400; letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
-  .stat-sub { font-size: 12px; color: var(--text3); }
-  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .stat-sm { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
-  .stat-sm .stat-value { font-size: 22px; margin-bottom: 2px; }
+/* ─── NOTICE BAR ─── */
+.notice-bar {
+  background: var(--text);
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+  text-align: center;
+  padding: 9px 16px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+.notice-bar strong { color: #fff; font-weight: 500; }
 
-  /* SECTION COMMON */
-  section { padding: 64px 0; border-bottom: 1px solid var(--border); }
-  .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; }
-  .sec-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.1em; margin-bottom: 6px; }
-  .sec-title { font-size: 20px; font-weight: 400; letter-spacing: -0.03em; }
-  .sec-right { font-size: 13px; color: var(--text3); }
+/* ─── NAV ─── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: var(--max); margin: 0 auto; padding: 0 24px;
+  height: 62px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+}
+.nav-left { display: flex; align-items: center; gap: 20px; }
+.nav-logo-link { display: flex; flex-direction: column; gap: 2px; }
+.nav-logo-kr { font-size: 15px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
+.nav-logo-en { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text3); letter-spacing: 0.12em; }
+.nav-sep { width: 1px; height: 16px; background: var(--border2); }
+.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-link {
+  font-size: 13px; color: var(--text2); padding: 6px 12px;
+  border-radius: 6px; transition: background 0.15s, color 0.15s;
+  letter-spacing: -0.01em;
+}
+.nav-link:hover { background: var(--bg2); color: var(--text); }
+.nav-link.active { color: var(--text); font-weight: 500; }
+.nav-right { display: flex; align-items: center; gap: 8px; }
+.nav-tel-num {
+  font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500;
+  color: var(--text2); letter-spacing: 0.02em;
+  padding: 6px 10px; border-radius: 6px;
+  transition: color 0.15s;
+}
+.nav-tel-num:hover { color: var(--text); }
+.nav-kakao {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--kakao); color: var(--kakao-text);
+  font-size: 12px; font-weight: 700;
+  padding: 7px 14px; border-radius: 6px;
+  transition: opacity 0.15s; letter-spacing: -0.01em;
+}
+.nav-kakao:hover { opacity: 0.88; }
 
-  /* PROCESS */
-  .steps {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
-  }
-  .step { padding: 24px 20px; border-right: 1px solid var(--border); background: var(--bg); transition: background 0.2s; }
-  .step:last-child { border-right: none; }
-  .step:hover { background: var(--bg2); }
-  .step-num { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 14px; }
-  .step-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
-  .step-desc { font-size: 12px; color: var(--text2); line-height: 1.7; }
+/* ─── HERO ─── */
+.hero {
+  padding: 72px 0 80px;
+  border-bottom: 1px solid var(--border);
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 22px;
+  opacity: 0; animation: fadeUp 0.55s ease 0.05s forwards;
+}
+.eyebrow-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--text3); }
+.eyebrow-text { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.10em; }
+.hero-grid { display: grid; grid-template-columns: 1fr 340px; gap: 56px; align-items: start; }
+.hero-left { opacity: 0; animation: fadeUp 0.55s ease 0.15s forwards; }
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border2); border-radius: 100px;
+  padding: 5px 12px 5px 10px; margin-bottom: 20px;
+}
+.hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: #4CAF50; }
+.hero-tag-text { font-size: 11px; color: var(--text2); letter-spacing: 0.03em; }
+.hero h1 {
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.035em;
+  margin-bottom: 18px;
+}
+.hero h1 strong { font-weight: 700; }
+.hero h1 em { font-style: normal; color: var(--text2); }
+.hero-desc {
+  font-size: 14px; color: var(--text2); line-height: 1.9;
+  margin-bottom: 32px; max-width: 420px;
+}
+.hero-btns { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.btn-kakao {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--kakao); color: var(--kakao-text);
+  font-size: 14px; font-weight: 700;
+  padding: 13px 22px; border-radius: var(--radius-sm);
+  transition: opacity 0.15s; letter-spacing: -0.01em;
+}
+.btn-kakao:hover { opacity: 0.88; }
+.btn-kakao-icon { font-size: 16px; }
+.btn-tel {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--bg2); color: var(--text);
+  border: 1px solid var(--border2);
+  font-size: 13px; font-weight: 500;
+  padding: 13px 20px; border-radius: var(--radius-sm);
+  transition: background 0.15s; letter-spacing: -0.01em;
+}
+.btn-tel:hover { background: var(--bg3); }
+.hero-note { font-size: 11px; color: var(--text3); margin-top: 14px; letter-spacing: 0.01em; }
 
-  /* SERVICES */
-  .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  .svc-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; }
-  .svc-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.1em; margin-bottom: 12px; }
-  .svc-title { font-size: 16px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 10px; }
-  .svc-desc { font-size: 13px; color: var(--text2); line-height: 1.7; margin-bottom: 16px; }
-  .svc-points { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-  .svc-points li { font-size: 12px; color: var(--text3); padding-left: 14px; position: relative; }
-  .svc-points li::before { content: '—'; position: absolute; left: 0; color: var(--text3); }
+.hero-right { opacity: 0; animation: fadeUp 0.55s ease 0.3s forwards; }
+.stat-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 24px;
+  margin-bottom: 10px;
+}
+.stat-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 8px; }
+.stat-value { font-size: 26px; font-weight: 400; letter-spacing: -0.04em; line-height: 1; margin-bottom: 5px; }
+.stat-sub { font-size: 12px; color: var(--text3); line-height: 1.6; }
+.stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.stat-sm { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 18px; }
+.stat-sm .stat-value { font-size: 22px; margin-bottom: 3px; }
 
-  /* SAME DAY BANNER */
-  .sameday {
-    padding: 48px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .sameday-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-  .sameday-item {
-    background: var(--bg2);
-    padding: 28px 24px;
-    border-right: 1px solid var(--border);
-  }
-  .sameday-item:last-child { border-right: none; }
-  .sameday-num { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 12px; }
-  .sameday-title { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 6px; }
-  .sameday-desc { font-size: 12px; color: var(--text2); line-height: 1.7; }
+/* ─── SECTION COMMON ─── */
+section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+.sec-head { margin-bottom: 36px; }
+.sec-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 8px; }
+.sec-title { font-size: 22px; font-weight: 400; letter-spacing: -0.03em; line-height: 1.35; }
+.sec-title em { font-style: normal; font-weight: 700; }
+.sec-head-row { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; }
+.sec-right-link { font-size: 13px; color: var(--text3); transition: color 0.15s; }
+.sec-right-link:hover { color: var(--text2); }
 
-  /* CASES */
-  .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-  .case-card {
-    background: var(--bg2); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 24px 20px;
-    display: flex; flex-direction: column; justify-content: space-between; gap: 20px; min-height: 140px;
-  }
-  .case-bar { width: 32px; height: 2px; background: var(--text3); margin-bottom: 8px; }
-  .case-tag { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text3); letter-spacing: 0.1em; }
-  .case-title { font-size: 14px; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 4px; }
-  .case-loc { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.06em; }
+/* ─── PAIN POINTS ─── */
+.pain-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+}
+.pain-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px 24px;
+  display: flex; gap: 16px; align-items: flex-start;
+  transition: border-color 0.2s, background 0.2s;
+}
+.pain-card:hover { border-color: var(--border2); background: var(--bg3); }
+.pain-check {
+  flex-shrink: 0; width: 22px; height: 22px;
+  border-radius: 50%; background: var(--text);
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 1px;
+}
+.pain-check svg { width: 11px; height: 11px; }
+.pain-text { flex: 1; }
+.pain-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 5px; }
+.pain-desc { font-size: 12px; color: var(--text2); line-height: 1.75; }
+.pain-footer {
+  margin-top: 20px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 26px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.pain-footer-text { font-size: 14px; color: var(--text2); line-height: 1.8; }
+.pain-footer-text strong { color: var(--text); font-weight: 500; }
+.pain-footer-btn {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--kakao); color: var(--kakao-text);
+  font-size: 13px; font-weight: 700;
+  padding: 11px 20px; border-radius: var(--radius-sm);
+  transition: opacity 0.15s; white-space: nowrap;
+}
+.pain-footer-btn:hover { opacity: 0.88; }
 
-  /* NAVER CTA */
-  .naver-cta { padding: 56px 0; border-bottom: 1px solid var(--border); }
-  .naver-cta-inner {
-    background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px;
-  }
-  .naver-cta-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.1em; margin-bottom: 8px; }
-  .naver-cta-title { font-size: 20px; font-weight: 400; letter-spacing: -0.03em; margin-bottom: 8px; }
-  .naver-cta-sub { font-size: 13px; color: var(--text2); line-height: 1.7; }
-  .btn-naver {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: #03C75A; color: #fff;
-    font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 500;
-    padding: 14px 28px; border-radius: var(--radius-sm);
-    white-space: nowrap; transition: opacity 0.15s; letter-spacing: -0.01em; flex-shrink: 0;
-  }
-  .btn-naver:hover { opacity: 0.88; }
-  .btn-naver-icon {
-    font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500;
-    background: rgba(255,255,255,0.25); border-radius: 3px; padding: 2px 5px;
-  }
+/* ─── PRINCIPLES ─── */
+.principles-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.principle-card {
+  padding: 30px 26px;
+  border-right: 1px solid var(--border);
+  background: var(--bg);
+  transition: background 0.2s;
+}
+.principle-card:last-child { border-right: none; }
+.principle-card:hover { background: var(--bg2); }
+.principle-num { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 16px; }
+.principle-icon { font-size: 20px; margin-bottom: 12px; }
+.principle-title { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 10px; }
+.principle-desc { font-size: 12px; color: var(--text2); line-height: 1.8; }
+.principle-accent { font-size: 11px; color: var(--text3); margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
 
-  /* CONTACT */
-  .contact-block { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
-  .contact-title { font-size: 18px; font-weight: 400; letter-spacing: -0.03em; margin-bottom: 8px; }
-  .contact-sub { font-size: 13px; color: var(--text2); line-height: 1.85; }
-  .contact-right { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-  .contact-tel { font-family: 'DM Mono', monospace; font-size: 22px; font-weight: 500; letter-spacing: 0.02em; }
-  .contact-hours { font-size: 12px; color: var(--text3); line-height: 1.7; text-align: right; }
-  .contact-btns { display: flex; gap: 8px; }
-  .cbtn {
-    display: inline-flex; align-items: center;
-    font-size: 13px; font-family: 'Noto Sans KR', sans-serif;
-    padding: 10px 18px; border-radius: var(--radius-sm);
-    border: 1px solid var(--border2); background: var(--bg2);
-    color: var(--text2); transition: background 0.15s, color 0.15s; white-space: nowrap;
-  }
-  .cbtn:hover { background: var(--bg3); color: var(--text); }
+/* ─── SERVICES ─── */
+.svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.svc-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 30px 26px;
+  transition: border-color 0.2s;
+}
+.svc-card:hover { border-color: var(--border2); }
+.svc-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.svc-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
+.svc-badge {
+  font-size: 10px; color: var(--text3);
+  border: 1px solid var(--border); border-radius: 100px;
+  padding: 3px 9px; letter-spacing: 0.03em;
+}
+.svc-title { font-size: 17px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 10px; }
+.svc-desc { font-size: 13px; color: var(--text2); line-height: 1.8; margin-bottom: 18px; }
+.svc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.svc-tag {
+  font-size: 11px; color: var(--text2);
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 100px; padding: 4px 11px;
+  letter-spacing: 0.01em;
+}
 
-  /* FOOTER */
-  footer { border-top: 1px solid var(--border); padding: 32px 0; }
-  .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
-  .footer-biz { font-size: 11px; color: var(--text3); line-height: 1.9; }
-  .footer-copy { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); margin-top: 8px; letter-spacing: 0.05em; }
-  .footer-links { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
-  .footer-links a { font-size: 12px; color: var(--text3); transition: color 0.15s; }
-  .footer-links a:hover { color: var(--text2); }
+/* ─── REASONS ─── */
+.reasons-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+}
+.reason-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px 24px;
+  transition: border-color 0.2s;
+}
+.reason-card:hover { border-color: var(--border2); }
+.reason-bar { width: 28px; height: 2px; background: var(--text); margin-bottom: 14px; }
+.reason-title { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
+.reason-desc { font-size: 13px; color: var(--text2); line-height: 1.8; }
 
-  /* ANIMATE */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
-  .reveal.visible { opacity: 1; transform: none; }
+/* ─── PROCESS ─── */
+.steps {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.step {
+  padding: 26px 22px;
+  border-right: 1px solid var(--border);
+  background: var(--bg); transition: background 0.2s;
+}
+.step:last-child { border-right: none; }
+.step:hover { background: var(--bg2); }
+.step-num { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 16px; }
+.step-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
+.step-desc { font-size: 12px; color: var(--text2); line-height: 1.75; }
 
-  /* MOBILE */
-  @media (max-width: 720px) {
-    .hero { padding: 48px 0 56px; }
-    .hero-grid { grid-template-columns: 1fr; gap: 32px; }
-    .hero h1 { font-size: 26px; }
-    .hero-right { order: -1; }
-    .steps { grid-template-columns: 1fr 1fr; }
-    .step { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .step:nth-child(2) { border-right: none; }
-    .step:nth-child(3), .step:nth-child(4) { border-bottom: none; }
-    .step:nth-child(4) { border-right: none; }
-    .svc-grid { grid-template-columns: 1fr; }
-    .sameday-inner { grid-template-columns: 1fr; }
-    .sameday-item { border-right: none; border-bottom: 1px solid var(--border); }
-    .sameday-item:last-child { border-bottom: none; }
-    .cases-grid { grid-template-columns: 1fr; }
-    .naver-cta-inner { flex-direction: column; padding: 28px 24px; gap: 24px; }
-    .btn-naver { width: 100%; justify-content: center; }
-    .contact-block { grid-template-columns: 1fr; gap: 24px; }
-    .contact-right { align-items: flex-start; }
-    .footer-inner { flex-direction: column; gap: 20px; }
-    .footer-links { align-items: flex-start; }
-  }
+/* ─── CTA MID ─── */
+.cta-mid {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--border);
+}
+.cta-mid-inner {
+  background: var(--text);
+  border-radius: var(--radius);
+  padding: 44px 48px;
+  display: flex; align-items: center; justify-content: space-between; gap: 40px;
+}
+.cta-mid-label { font-family: 'DM Mono', monospace; font-size: 10px; color: rgba(255,255,255,0.4); letter-spacing: 0.10em; margin-bottom: 10px; }
+.cta-mid-title { font-size: 22px; font-weight: 400; letter-spacing: -0.03em; color: #fff; margin-bottom: 8px; }
+.cta-mid-title strong { font-weight: 700; }
+.cta-mid-desc { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.8; }
+.cta-mid-btns { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+.btn-kakao-lg {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--kakao); color: var(--kakao-text);
+  font-size: 14px; font-weight: 700;
+  padding: 14px 26px; border-radius: var(--radius-sm);
+  transition: opacity 0.15s; white-space: nowrap; letter-spacing: -0.01em;
+}
+.btn-kakao-lg:hover { opacity: 0.88; }
+.btn-tel-lg {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.15);
+  font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500;
+  padding: 13px 22px; border-radius: var(--radius-sm);
+  transition: background 0.15s; white-space: nowrap; letter-spacing: 0.02em;
+}
+.btn-tel-lg:hover { background: rgba(255,255,255,0.16); }
+
+/* ─── CONTACT ─── */
+.contact-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  margin-bottom: 24px;
+}
+.contact-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px 24px;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+.contact-card:hover { border-color: var(--border2); }
+.contact-card-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
+.contact-card-main { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; }
+.contact-card-sub { font-size: 12px; color: var(--text2); line-height: 1.7; }
+.contact-card-arrow { font-size: 16px; color: var(--text3); margin-top: 8px; }
+.contact-card.kakao { background: var(--kakao); border-color: transparent; }
+.contact-card.kakao .contact-card-label { color: rgba(25,25,25,0.5); }
+.contact-card.kakao .contact-card-main { color: var(--kakao-text); }
+.contact-card.kakao .contact-card-sub { color: rgba(25,25,25,0.55); }
+.contact-card.kakao .contact-card-arrow { color: rgba(25,25,25,0.4); }
+.contact-card.kakao:hover { opacity: 0.92; }
+
+.contact-info-row {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 24px 28px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.contact-info-item {}
+.contact-info-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 6px; }
+.contact-info-val { font-size: 13px; color: var(--text); font-weight: 400; line-height: 1.7; }
+
+/* ─── FOOTER ─── */
+footer {
+  padding: 36px 0;
+  border-top: 1px solid var(--border);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+.footer-biz { font-size: 11px; color: var(--text3); line-height: 2; }
+.footer-copy { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); margin-top: 6px; letter-spacing: 0.04em; }
+.footer-links { display: flex; flex-direction: column; align-items: flex-end; gap: 7px; }
+.footer-links a { font-size: 12px; color: var(--text3); transition: color 0.15s; }
+.footer-links a:hover { color: var(--text2); }
+
+/* ─── MOBILE BOTTOM CTA ─── */
+.mobile-cta {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+.mobile-cta-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.mobile-cta-kakao {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  background: var(--kakao); color: var(--kakao-text);
+  font-size: 13px; font-weight: 700; padding: 13px 8px;
+  border-radius: var(--radius-sm); transition: opacity 0.15s;
+}
+.mobile-cta-kakao:hover { opacity: 0.88; }
+.mobile-cta-tel {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  background: var(--text); color: var(--bg);
+  font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500;
+  padding: 13px 8px; border-radius: var(--radius-sm);
+  transition: opacity 0.15s;
+}
+.mobile-cta-tel:hover { opacity: 0.82; }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0; transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ─── MOBILE ─── */
+@media (max-width: 760px) {
+  .notice-bar { font-size: 11px; padding: 8px 16px; }
+  .nav-links { display: none; }
+  .nav-sep { display: none; }
+  .nav-tel-num { display: none; }
+
+  .hero { padding: 44px 0 56px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .hero-right { order: -1; }
+  .hero h1 { font-size: 26px; }
+
+  .pain-grid { grid-template-columns: 1fr; }
+  .pain-footer { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .pain-footer-btn { width: 100%; justify-content: center; }
+
+  .principles-grid { grid-template-columns: 1fr; }
+  .principle-card { border-right: none; border-bottom: 1px solid var(--border); }
+  .principle-card:last-child { border-bottom: none; }
+
+  .svc-grid { grid-template-columns: 1fr; }
+  .reasons-grid { grid-template-columns: 1fr; }
+
+  .steps { grid-template-columns: 1fr 1fr; }
+  .step { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .step:nth-child(2) { border-right: none; }
+  .step:nth-child(3) { border-bottom: none; }
+  .step:nth-child(4) { border-right: none; border-bottom: none; }
+
+  .cta-mid-inner { flex-direction: column; padding: 32px 24px; gap: 28px; }
+  .cta-mid-btns { flex-direction: row; width: 100%; }
+  .btn-kakao-lg, .btn-tel-lg { flex: 1; justify-content: center; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-info-row { grid-template-columns: 1fr; gap: 16px; }
+
+  .footer-inner { flex-direction: column; gap: 20px; }
+  .footer-links { align-items: flex-start; }
+
+  .mobile-cta { display: block; }
+  body { padding-bottom: 80px; }
+}
 </style>
 </head>
 <body>
 
+<!-- NOTICE BAR -->
+<div class="notice-bar">
+  📍 평택·안성·오산 출장 시공 &nbsp;·&nbsp; <strong>사진 2~3장이면 1차 안내 가능</strong> &nbsp;·&nbsp; 010-4646-3145
+</div>
+
+<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <div class="nav-left">
-      <a href="../" class="nav-back">← 수한공간</a>
+      <a href="https://soohanspace.com/" class="nav-logo-link">
+        <span class="nav-logo-kr">수한공간</span>
+        <span class="nav-logo-en">SOOHAN SPACE</span>
+      </a>
       <div class="nav-sep"></div>
-      <div class="logo">
-        <span class="logo-kr">수한공간집수리</span>
-        <span class="logo-en">SOOHAN SPACE REPAIR</span>
+      <div class="nav-links">
+        <a href="https://soohanspace.com/tile/" class="nav-link">타일 보수 및 시공</a>
+        <a href="https://soohanspace.com/bathroom/" class="nav-link">욕실 리모델링</a>
+        <a href="https://soohanspace.com/repair/" class="nav-link active">집수리 · 부분 리모델링</a>
       </div>
     </div>
-    <div class="nav-tel">
+    <div class="nav-right">
       <a href="tel:010-4646-3145" class="nav-tel-num">010-4646-3145</a>
-      <span class="nav-tel-label">평일 08:00–21:00</span>
+      <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="nav-kakao">
+        💬 카카오톡
+      </a>
     </div>
   </div>
 </nav>
 
 <div class="wrap">
 
-  <!-- HERO -->
+  <!-- ─── HERO ─── -->
   <div class="hero">
     <div class="hero-eyebrow">
-      <span class="eyebrow-line"></span>
-      <span class="eyebrow-text">PYEONGTAEK · HOME REPAIR</span>
+      <span class="eyebrow-dot"></span>
+      <span class="eyebrow-text">PYEONGTAEK · HOME REPAIR &amp; REMODELING</span>
     </div>
     <div class="hero-grid">
       <div class="hero-left">
-        <h1>생활 공간 집수리<br><strong>소규모 당일 작업 가능</strong></h1>
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          <span class="hero-tag-text">소규모 당일 작업 가능</span>
+        </div>
+        <h1>작은 문제도<br><strong>필요한 범위만</strong><br><em>정확히 수리합니다</em></h1>
         <p class="hero-desc">
-          현관·베란다·주방 등 타일 관련 집수리.<br>
-          작은 공사도 꼼꼼하게 처리합니다.<br>
-          단일 공정부터 복합 공사까지<br>
-          사진 한 장으로 바로 상담 가능합니다.
+          현관·베란다·주방 등 생활 공간 집수리.<br>
+          단일 공정부터 복합 공사까지 가능합니다.<br>
+          전체 공사를 권하기 전에 현장 상태를 먼저 확인하고,<br>
+          꼭 필요한 범위만 안내드립니다.
         </p>
         <div class="hero-btns">
-          <a href="https://naver.me/REPAIR_PLACEHOLDER" target="_blank" rel="noopener" class="btn-primary">네이버에서 예약·문의</a>
-          <a href="#services" class="btn-secondary">서비스 보기 →</a>
+          <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="btn-kakao">
+            <span class="btn-kakao-icon">💬</span> 사진 보내고 상담하기
+          </a>
+          <a href="tel:010-4646-3145" class="btn-tel">📞 010-4646-3145</a>
         </div>
+        <p class="hero-note">연중무휴 08:00–21:00 · 작업 중에는 카카오톡 문의를 추천드립니다</p>
       </div>
       <div class="hero-right">
-        <div class="stat-main">
+        <div class="stat-card">
           <div class="stat-label">SAME-DAY WORK</div>
-          <div class="stat-value">당일 가능</div>
-          <div class="stat-sub">소규모 작업 기준</div>
+          <div class="stat-value">당일 완료</div>
+          <div class="stat-sub">소규모 작업 기준<br>현관·주방·부분 보수 등</div>
         </div>
         <div class="stat-row">
           <div class="stat-sm">
             <div class="stat-label">EXPERIENCE</div>
             <div class="stat-value">10년+</div>
-            <div class="stat-sub">시공 경력</div>
+            <div class="stat-sub">현장 경력</div>
           </div>
           <div class="stat-sm">
             <div class="stat-label">ESTIMATE</div>
-            <div class="stat-value">당일</div>
-            <div class="stat-sub">견적 안내</div>
+            <div class="stat-value">무료</div>
+            <div class="stat-sub">사진 1차 안내</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- PROCESS -->
+  <!-- ─── PAIN POINTS ─── -->
+  <section id="concern">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">CUSTOMER CONCERN</div>
+      <div class="sec-title">이런 걱정, 해본 적 있으신가요?</div>
+    </div>
+    <div class="pain-grid reveal">
+      <div class="pain-card">
+        <div class="pain-check">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#F7F6F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pain-text">
+          <div class="pain-title">작은 공사도 받아주실까?</div>
+          <div class="pain-desc">현관 타일 한 장, 베란다 줄눈 일부만 보수하고 싶은데 너무 작은 건지 걱정됩니다.</div>
+        </div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-check">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#F7F6F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pain-text">
+          <div class="pain-title">어디까지 수리해야 할지 모르겠어요</div>
+          <div class="pain-desc">일부만 고치면 되는지, 전체를 교체해야 하는지 기준을 모르니 판단이 어렵습니다.</div>
+        </div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-check">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#F7F6F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pain-text">
+          <div class="pain-title">비용과 공사 범위가 커질까 불안해요</div>
+          <div class="pain-desc">작은 수리 문의했다가 큰 공사로 이어지거나 예상보다 비용이 커질까 망설여집니다.</div>
+        </div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-check">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#F7F6F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pain-text">
+          <div class="pain-title">한 군데만 고치고 싶은데 전체 공사를 권할까 걱정돼요</div>
+          <div class="pain-desc">부분 수리만 원하는데 업체에서 불필요한 추가 공사를 권유할까 우려됩니다.</div>
+        </div>
+      </div>
+    </div>
+    <div class="pain-footer reveal">
+      <p class="pain-footer-text">
+        <strong>사진 2~3장을 보내주시면</strong> 시공 가능 여부와<br>필요한 범위를 먼저 안내드립니다. 무료입니다.
+      </p>
+      <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="pain-footer-btn">
+        💬 사진 보내기
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── PRINCIPLES ─── -->
+  <section id="principle">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">OUR PRINCIPLE</div>
+      <div class="sec-title">수한공간의 <em>시공 원칙</em></div>
+    </div>
+    <div class="principles-grid reveal">
+      <div class="principle-card">
+        <div class="principle-num">01 · 상태 확인</div>
+        <div class="principle-icon">🔍</div>
+        <div class="principle-title">원인부터 먼저 확인합니다</div>
+        <div class="principle-desc">들뜸·깨짐·줄눈 파손의 원인은 각각 다릅니다. 단순 충격인지, 방수 문제인지, 시공 불량인지를 먼저 파악합니다.</div>
+        <div class="principle-accent">→ 원인을 알아야 정확한 범위가 결정됩니다</div>
+      </div>
+      <div class="principle-card">
+        <div class="principle-num">02 · 부분 보수 우선</div>
+        <div class="principle-icon">🔧</div>
+        <div class="principle-title">전체 교체 없이 해결되는 경우가 많습니다</div>
+        <div class="principle-desc">현장 상태에 따라 문제 부분만 선별해 시공합니다. 철거가 꼭 필요한 경우가 아니라면 권하지 않습니다.</div>
+        <div class="principle-accent">→ 결국 비용과 공사 기간을 줄이는 방향</div>
+      </div>
+      <div class="principle-card">
+        <div class="principle-num">03 · 낭비 없음</div>
+        <div class="principle-icon">✓</div>
+        <div class="principle-title">필요 없는 공사는 권하지 않습니다</div>
+        <div class="principle-desc">안 해도 되는 공사는 안 한다고 말씀드립니다. 꼭 필요한 범위만 정확하게 처리하는 것이 수한공간의 기준입니다.</div>
+        <div class="principle-accent">→ 고객 입장에서 최소 범위로 최대 효과</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section id="services">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">SERVICES</div>
+      <div class="sec-title">집수리 <em>시공 분야</em></div>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc-card">
+        <div class="svc-header">
+          <div class="svc-num">01 · 현관</div>
+          <div class="svc-badge">당일 가능</div>
+        </div>
+        <div class="svc-title">현관 타일 시공</div>
+        <div class="svc-desc">현관 바닥 타일 신규 시공 또는 교체. 들뜸·깨짐 보수부터 줄눈 재시공까지 필요한 범위만 처리합니다.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">바닥 신규 타일</span>
+          <span class="svc-tag">기존 타일 교체</span>
+          <span class="svc-tag">들뜸·깨짐 보수</span>
+          <span class="svc-tag">줄눈 재시공</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header">
+          <div class="svc-num">02 · 베란다</div>
+          <div class="svc-badge">방수 포함 가능</div>
+        </div>
+        <div class="svc-title">베란다 바닥 공사</div>
+        <div class="svc-desc">베란다 바닥 타일 시공·교체. 방수 처리가 필요한 경우 함께 진행합니다. 줄눈 마감까지 한 번에 처리.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">바닥 타일</span>
+          <span class="svc-tag">철거 후 교체</span>
+          <span class="svc-tag">방수 처리</span>
+          <span class="svc-tag">줄눈 마감</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header">
+          <div class="svc-num">03 · 주방</div>
+          <div class="svc-badge">부분 보수 가능</div>
+        </div>
+        <div class="svc-title">주방 벽 타일</div>
+        <div class="svc-desc">주방 벽 타일 신규 시공·교체·부분 보수. 깨진 타일 한 장 교체부터 전체 재시공까지 범위를 조율합니다.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">벽 신규 타일</span>
+          <span class="svc-tag">기존 타일 교체</span>
+          <span class="svc-tag">부분 보수</span>
+          <span class="svc-tag">줄눈 재시공</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header">
+          <div class="svc-num">04 · 생활보수·소형공사</div>
+          <div class="svc-badge">복합 가능</div>
+        </div>
+        <div class="svc-title">기타 생활 공간 수리</div>
+        <div class="svc-desc">계단·창고·다용도실·외부 바닥 등 다양한 공간. 임대·매매 전 하자 보수도 최소 범위로 빠르게 처리합니다.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">계단 타일</span>
+          <span class="svc-tag">창고·다용도실</span>
+          <span class="svc-tag">외부 바닥</span>
+          <span class="svc-tag">임대·매매 보수</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── REASONS ─── -->
+  <section id="reason">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">WHY SOOHAN</div>
+      <div class="sec-title">수한공간을 <em>선택하는 이유</em></div>
+    </div>
+    <div class="reasons-grid reveal">
+      <div class="reason-card">
+        <div class="reason-bar"></div>
+        <div class="reason-title">작은 공사도 거절하지 않습니다</div>
+        <div class="reason-desc">타일 한 장, 줄눈 일부, 현관 부분 보수. 규모와 상관없이 문의 주시면 사진 확인 후 안내드립니다.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-bar"></div>
+        <div class="reason-title">현장 보고 판단합니다</div>
+        <div class="reason-desc">사진만으로 판단하지 않습니다. 직접 방문해 눈으로 보고 두드려 확인한 뒤 필요한 범위를 말씀드립니다.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-bar"></div>
+        <div class="reason-title">자재 직접 조달</div>
+        <div class="reason-desc">타일·줄눈·방수 자재를 직접 구매 후 시공합니다. 중간 마진 없이 합리적인 비용으로 처리됩니다.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-bar"></div>
+        <div class="reason-title">10년+ 평택 현장 경력</div>
+        <div class="reason-desc">평택·안성·오산 3,000건 이상 누적 시공. 반복 경험에서 나오는 정확한 판단과 빠른 처리.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ─── -->
   <section id="process">
     <div class="sec-head reveal">
-      <div>
-        <div class="sec-eyebrow">PROCESS</div>
-        <div class="sec-title">상담부터 완료까지</div>
-      </div>
-      <div class="sec-right">소규모 작업은 당일 완료 가능</div>
+      <div class="sec-eyebrow">PROCESS</div>
+      <div class="sec-title">상담부터 완료까지 <em>4단계</em></div>
     </div>
     <div class="steps reveal">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-title">사진 상담</div>
-        <div class="step-desc">현장 사진 전송.<br>즉시 1차 안내 드립니다.</div>
+        <div class="step-desc">카카오톡으로 현장 사진 전송. 확인 후 1차 안내 드립니다.</div>
       </div>
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-title">범위 확정</div>
-        <div class="step-desc">사진 또는 현장 방문으로 작업 범위·비용 결정.</div>
+        <div class="step-desc">사진 또는 현장 방문 후 작업 범위와 비용을 결정합니다.</div>
       </div>
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-title">당일 시공</div>
-        <div class="step-desc">소규모 작업은 방문 당일 완료. 자재 직접 조달.</div>
+        <div class="step-desc">소규모 작업은 방문 당일 완료. 자재 직접 조달 후 진행.</div>
       </div>
       <div class="step">
         <div class="step-num">04</div>
         <div class="step-title">완료 확인</div>
-        <div class="step-desc">완료 후 사진 공유.<br>AS 및 하자 대응합니다.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="sec-head reveal">
-      <div>
-        <div class="sec-eyebrow">SERVICES</div>
-        <div class="sec-title">집수리 시공 분야</div>
-      </div>
-    </div>
-    <div class="svc-grid reveal">
-      <div class="svc-card">
-        <div class="svc-num">01</div>
-        <div class="svc-title">현관 타일 시공</div>
-        <div class="svc-desc">현관 바닥 타일 신규 시공 또는 교체. 들뜸·깨짐 보수도 가능합니다.</div>
-        <ul class="svc-points">
-          <li>현관 바닥 신규 타일</li>
-          <li>기존 타일 교체</li>
-          <li>들뜸·깨짐 부분 보수</li>
-          <li>줄눈 재시공</li>
-        </ul>
-      </div>
-      <div class="svc-card">
-        <div class="svc-num">02</div>
-        <div class="svc-title">베란다 바닥 공사</div>
-        <div class="svc-desc">베란다 바닥 타일 시공·교체. 방수 처리 포함 가능.</div>
-        <ul class="svc-points">
-          <li>베란다 바닥 타일</li>
-          <li>기존 타일 철거 후 교체</li>
-          <li>방수 처리</li>
-          <li>줄눈 마감</li>
-        </ul>
-      </div>
-      <div class="svc-card">
-        <div class="svc-num">03</div>
-        <div class="svc-title">주방 벽 타일</div>
-        <div class="svc-desc">주방 벽 타일 신규 시공·교체·부분 보수. 기름때 자국 없는 깔끔한 마감.</div>
-        <ul class="svc-points">
-          <li>주방 벽 신규 타일</li>
-          <li>기존 타일 교체</li>
-          <li>부분 보수</li>
-          <li>줄눈 재시공</li>
-        </ul>
-      </div>
-      <div class="svc-card">
-        <div class="svc-num">04</div>
-        <div class="svc-title">기타 집수리 타일</div>
-        <div class="svc-desc">계단·창고·외부 바닥 등 다양한 공간. 복합 공사도 한 번에 처리합니다.</div>
-        <ul class="svc-points">
-          <li>계단 타일 시공</li>
-          <li>창고·다용도실 바닥</li>
-          <li>외부 바닥 타일</li>
-          <li>임대·매매 전 보수</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- SAME DAY BANNER -->
-  <div class="sameday reveal">
-    <div class="sameday-inner">
-      <div class="sameday-item">
-        <div class="sameday-num">POINT 01</div>
-        <div class="sameday-title">소규모 당일 완료</div>
-        <div class="sameday-desc">현관·주방 등 소규모 작업은 방문 당일 시공 완료. 긴 공사 기간 없이 바로 해결.</div>
-      </div>
-      <div class="sameday-item">
-        <div class="sameday-num">POINT 02</div>
-        <div class="sameday-title">자재 직접 조달</div>
-        <div class="sameday-desc">타일·줄눈·방수 자재를 직접 구매 후 시공. 중간 마진 없이 합리적인 비용.</div>
-      </div>
-      <div class="sameday-item">
-        <div class="sameday-num">POINT 03</div>
-        <div class="sameday-title">임대·매매 보수 전문</div>
-        <div class="sameday-desc">입주 전 하자 보수, 매매 전 집 상태 정리. 최소 범위로 빠르게 처리합니다.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CASES -->
-  <section id="cases">
-    <div class="sec-head reveal">
-      <div>
-        <div class="sec-eyebrow">CASES</div>
-        <div class="sec-title">시공 사례</div>
-      </div>
-      <div class="sec-right">
-        <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener">네이버 블로그에서 더 보기 →</a>
-      </div>
-    </div>
-    <div class="cases-grid reveal">
-      <div class="case-card">
-        <div>
-          <div class="case-bar"></div>
-          <div class="case-tag">ENTRANCE · 현관</div>
-        </div>
-        <div>
-          <div class="case-title">현관 바닥 타일 신규 시공</div>
-          <div class="case-loc">PYEONGTAEK · 2025</div>
-        </div>
-      </div>
-      <div class="case-card">
-        <div>
-          <div class="case-bar"></div>
-          <div class="case-tag">BALCONY · 베란다</div>
-        </div>
-        <div>
-          <div class="case-title">베란다 바닥 방수 후 타일</div>
-          <div class="case-loc">OSAN · 2025</div>
-        </div>
-      </div>
-      <div class="case-card">
-        <div>
-          <div class="case-bar"></div>
-          <div class="case-tag">KITCHEN · 주방</div>
-        </div>
-        <div>
-          <div class="case-title">주방 벽 타일 부분 교체</div>
-          <div class="case-loc">ANSEONG · 2025</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NAVER CTA -->
-  <div class="naver-cta reveal">
-    <div class="naver-cta-inner">
-      <div class="naver-cta-text">
-        <div class="naver-cta-eyebrow">NAVER SMART PLACE</div>
-        <div class="naver-cta-title">네이버에서 예약·후기 확인</div>
-        <div class="naver-cta-sub">
-          실제 집수리 시공 후기와 사진을 네이버에서 확인하세요.<br>
-          예약 문의도 네이버에서 바로 가능합니다.
-        </div>
-      </div>
-      <a href="https://naver.me/REPAIR_PLACEHOLDER" target="_blank" rel="noopener" class="btn-naver">
-        <span class="btn-naver-icon">N</span>
-        네이버 플레이스 바로가기
-      </a>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="sec-head reveal">
-      <div>
-        <div class="sec-eyebrow">CONTACT</div>
-        <div class="sec-title">문의 · 상담</div>
-      </div>
-    </div>
-    <div class="contact-block reveal">
-      <div>
-        <div class="contact-title">사진 보내주시면 바로 안내드립니다</div>
-        <div class="contact-sub">
-          작업 중 전화 연결이 어려울 수 있어<br>
-          문자 또는 카카오톡 문의를 추천드립니다.<br>
-          이메일 soohanyun37@naver.com
-        </div>
-      </div>
-      <div class="contact-right">
-        <div class="contact-tel">010-4646-3145</div>
-        <div class="contact-hours">
-          평일 08:00–21:00<br>
-          토요일 09:00–21:00<br>
-          일요일·공휴일 휴무
-        </div>
-        <div class="contact-btns">
-          <a href="https://open.kakao.com/me/soohanyun/" target="_blank" rel="noopener" class="cbtn">카카오톡</a>
-          <a href="sms:010-4646-3145" class="cbtn">문자 문의</a>
-        </div>
+        <div class="step-desc">완료 후 사진 공유. AS·하자 발생 시 확인 후 조치합니다.</div>
       </div>
     </div>
   </section>
 
 </div>
 
+<!-- ─── CTA MID ─── -->
+<div class="cta-mid reveal">
+  <div class="wrap">
+    <div class="cta-mid-inner">
+      <div>
+        <div class="cta-mid-label">FREE CONSULTATION</div>
+        <div class="cta-mid-title">사진 2~3장이면<br><strong>바로 안내드립니다</strong></div>
+        <div class="cta-mid-desc">
+          가능한 방법과 필요한 범위를 먼저 확인해드립니다.<br>
+          견적·설명 전화 요구 없습니다.
+        </div>
+      </div>
+      <div class="cta-mid-btns">
+        <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="btn-kakao-lg">
+          💬 카카오톡으로 사진 보내기
+        </a>
+        <a href="tel:010-4646-3145" class="btn-tel-lg">📞 010-4646-3145</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">CONTACT</div>
+      <div class="sec-title">문의 · 상담</div>
+    </div>
+    <div class="contact-grid reveal">
+      <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="contact-card kakao">
+        <div class="contact-card-label">KAKAO · 추천</div>
+        <div class="contact-card-main">💬 카카오톡 상담</div>
+        <div class="contact-card-sub">사진 전송 → 확인 후 안내<br>작업 중에도 확인합니다</div>
+        <div class="contact-card-arrow">→</div>
+      </a>
+      <a href="tel:010-4646-3145" class="contact-card">
+        <div class="contact-card-label">PHONE</div>
+        <div class="contact-card-main">📞 010-4646-3145</div>
+        <div class="contact-card-sub">전화·문자 모두 가능<br>작업 중엔 문자를 추천드립니다</div>
+        <div class="contact-card-arrow">→</div>
+      </a>
+    </div>
+    <div class="contact-info-row reveal">
+      <div class="contact-info-item">
+        <div class="contact-info-label">HOURS</div>
+        <div class="contact-info-val">연중무휴<br>08:00 – 21:00</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-label">AREA</div>
+        <div class="contact-info-val">평택·안성·오산·화성<br>천안·당진 일대</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-label">EMAIL</div>
+        <div class="contact-info-val">soohanyun37@naver.com</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ─── FOOTER ─── -->
 <footer>
   <div class="wrap">
     <div class="footer-inner">
       <div>
         <div class="footer-biz">
-          수한공간집수리 &nbsp;·&nbsp; 대표 윤수한 &nbsp;·&nbsp; 사업자등록번호 141-13-01386<br>
-          경기도 평택시 용죽6길 64 지웰테라스 509동 8호<br>
-          통신판매업 신고번호 제2025-경기평택-0244호
+          수한공간타일 &nbsp;·&nbsp; 대표 윤수한 &nbsp;·&nbsp; 사업자등록번호 141-13-01386<br>
+          경기도 평택시 용죽6길 64 지웰테라스 509동 8호 (1층)<br>
+          통신판매업 신고번호 제2025-경기평택-0244호 &nbsp;·&nbsp; soohanyun37@naver.com
         </div>
         <div class="footer-copy">© 2025 SOOHAN SPACE. ALL RIGHTS RESERVED.</div>
       </div>
       <div class="footer-links">
-        <a href="../">← 수한공간 메인</a>
+        <a href="https://soohanspace.com/">← 수한공간 메인</a>
+        <a href="https://soohanspace.com/tile/">타일 보수 및 시공</a>
+        <a href="https://soohanspace.com/bathroom/">욕실 리모델링</a>
         <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener">네이버 블로그</a>
-        <a href="https://open.kakao.com/me/soohanyun/" target="_blank" rel="noopener">카카오톡 채널</a>
+        <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener">카카오톡 채널</a>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- ─── MOBILE BOTTOM CTA ─── -->
+<div class="mobile-cta">
+  <div class="mobile-cta-btns">
+    <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="mobile-cta-kakao">
+      💬 카카오톡 상담
+    </a>
+    <a href="tel:010-4646-3145" class="mobile-cta-tel">
+      📞 010-4646-3145
+    </a>
+  </div>
+</div>
 
 <script>
   const reveals = document.querySelectorAll('.reveal');
@@ -535,7 +847,7 @@
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.06 });
   reveals.forEach(el => io.observe(el));
 </script>
 

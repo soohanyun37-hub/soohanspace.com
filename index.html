@@ -174,6 +174,61 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
   border-radius: 8px; overflow: hidden;
   box-shadow: 0 4px 24px rgba(31, 43, 58, 0.08);
 }
+  /* [수한공간 수정 시작] hero 바로 아래 중간 CTA */
+.quick-cta {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 22px 80px;
+}
+.quick-cta-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 22px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-gray);
+}
+.quick-cta-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.quick-cta-text span {
+  color: var(--accent);
+  font-weight: 800;
+}
+.quick-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  background: var(--kakao);
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.quick-cta-btn:hover {
+  background: var(--kakao-dark);
+}
+@media (max-width: 1100px) {
+  .quick-cta { padding: 20px 40px; }
+  .quick-cta-wrap { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 700px) {
+  .quick-cta { padding: 18px 20px; }
+  .quick-cta-text { font-size: 14px; }
+  .quick-cta-btn { width: 100%; }
+}
+/* [수한공간 수정 끝] hero 바로 아래 중간 CTA */
 .hcard-head { background: var(--brand); padding: 20px 26px; color: #fff; position: relative; }
 .hcard-head::after {
   content: ''; position: absolute; left: 0; right: 0; bottom: -1px;
@@ -439,7 +494,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 <body>
 
 <div class="notice-bar">
-  📍 평택·안성·오산 출장 시공<span class="dot">·</span>사진 2~3장이면 1차 안내 가능<span class="dot">·</span>
+  📍 평택·안성·오산 출장 시공<span class="dot">·</span>사진 2~3장이면 1차 안내 가능합니다
 </div>
 
 <header>
@@ -476,7 +531,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   <div class="hero-copy">
     <div class="hero-label"><span class="pulse"></span>평택·안성·오산 전문 시공</div>
     <h1 class="hero-title">무조건 철거가<br><span class="hl">답은 아닙니다</span></h1>
-    <p class="hero-sub">타일 상태에 따라 부분 보수로 해결되는 경우도 많습니다.<br>👉 사진으로 1차 확인 후, 현장 상태에 맞춰 부분 보수 / 전체 철거 범위를 안내드립니다.</p>
+    <p class="hero-sub">타일 들뜸·깨짐·줄눈 문제는 전체 철거 없이 부분 보수로 정리되는 경우도 많습니다.<br>👉 지금 상태 사진 2~3장만 보내주시면, 가능한 방법과 필요한 범위를 먼저 안내드립니다.</p>
     <div class="hero-badge">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
         <path d="M8 1.5l2 4 4.5.6-3.3 3.2.8 4.4L8 11.6l-4 2.1.8-4.4L1.5 6.1 6 5.5 8 1.5z" stroke="#b8472e" stroke-width="1.3" stroke-linejoin="round" fill="#fdf2ef"/>
@@ -526,12 +581,22 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   </aside>
 </section>
 
+  <section class="quick-cta">
+  <div class="quick-cta-wrap">
+    <div class="quick-cta-text">
+      타일이 들뜨거나 깨진 상태라면 <span>사진 2~3장만 먼저 보내주시면 됩니다.</span><br>
+      전체 철거가 필요한지, 부분 보수로 가능한지 먼저 보고 안내드립니다.
+    </div>
+    <a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 사진 보내고 확인받기</a>
+  </div>
+</section>
+  
 <section class="core-section">
   <div class="core-wrap">
     <div class="core-box reveal">
       <div class="core-box-label">수한공간의 원칙</div>
       <div class="core-box-title">무조건 철거가 아니라<br><span class="hl">상태에 따라 부분 보수로 해결할 수 있습니다</span></div>
-      <div class="core-box-desc">타일 문제는 원인부터 확인해야 합니다. 단순 들뜸인지, 방수 하자인지, 구조적 문제인지에 따라 처리 방법이 완전히 달라집니다. 현장을 먼저 보고 판단하는 것이 수한공간의 원칙입니다.</div>
+      <div class="core-box-desc">타일 문제는 원인부터 먼저 확인해야 합니다. 단순 들뜸인지, 방수 하자인지, 바탕 문제인지에 따라 처리 방법이 완전히 달라집니다. 현장에서 직접 보고 두드려 확인한 뒤, 전체 철거가 맞는지 부분 보수로 가능한지 판단하는 것이 수한공간의 기준입니다.</div>
     </div>
     <div class="core-points">
       <div class="cp reveal"><div class="cp-num">01 · 진단</div><div class="cp-title">원인부터 먼저 확인합니다</div><div class="cp-desc">들뜸·깨짐·줄눈 파손의 원인은 각각 다릅니다. 눈으로 직접 보고 두드려 확인하는 것이 먼저입니다.<br><br>→ 결국 비용과 공사 범위를 줄이는 방향으로 진행됩니다</div></div>
@@ -608,7 +673,8 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
         <h2 class="sec-title" style="font-size: clamp(22px, 2.2vw, 30px);">평택 중심 <em>경기 남부</em> 출장</h2>
       </div>
       <p class="area-desc">평택을 중심으로 안성·오산·화성·천안·당진 일대까지<br>직접 방문하여 시공합니다.</p>
-      <div class="area-tip"><strong>💡</strong><span>그 외 지역도 사진을 먼저 보내주시면<br>시공 가능 여부를 안내드립니다.</span></div>
+<p class="area-desc" style="font-size:13.5px; color:var(--text-muted); margin-bottom:16px;">평택 용이동·비전동 인근을 포함해 가까운 지역 현장을 우선적으로 보고 움직이고 있습니다.</p>
+<div class="area-tip"><strong>💡</strong><span>그 외 지역도 사진을 먼저 보내주시면<br>시공 가능 여부를 안내드립니다.</span></div>
     </div>
     <div class="area-right">
       <div class="area-title">주요 시공 지역</div>
@@ -642,7 +708,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   <div>
     <div class="sec-label">문의</div>
     <h2 class="sec-title">상담 · 문의</h2>
-    <p class="contact-desc">사진을 보내주시면 시공 가능 여부와<br>필요한 작업 범위를 먼저 안내드립니다.</p>
+    <p class="contact-desc">작업 원하시는 부분 사진과 전체가 보이게 2~3장 보내주시면<br>시공 가능 여부와 필요한 작업 범위를 먼저 안내드립니다.</p>
     <div class="contact-notice"><strong>작업 중에는 전화 연결이 어려울 수 있습니다.</strong><br>문자 또는 카카오톡으로 사진을 보내주시면 확인 후 순서대로 안내드립니다.</div>
     <div class="contact-methods">
       <a href="https://open.kakao.com/me/soohanyun" class="cm kakao-cm">

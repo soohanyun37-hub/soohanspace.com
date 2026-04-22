@@ -224,7 +224,7 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
   position: relative;
 }
 
-/* [수한공간 수정 시작] 자격증 강조 박스 */
+/* [수한공간 수정 시작] 자격증 강조 박스 (블루 톤 업그레이드) */
 .license-badges {
   display: flex;
   flex-wrap: wrap;
@@ -232,84 +232,92 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
   align-items: center;
   gap: 10px;
   width: 100%;
-  max-width: 620px;
-  margin: 0 auto 24px;
-  padding: 22px 20px 18px;
-  background: linear-gradient(180deg, #fffaf6 0%, #fff1ea 100%);
-  border: 1px solid #f1d5c8;
+  max-width: 640px;
+  margin: 0 auto 26px;
+  padding: 24px 20px 20px;
+
+  /* 핵심 색상 */
+  background: linear-gradient(180deg, #eef5ff 0%, #e3efff 100%);
+  border: 2px solid #1f3a5f;
+
   border-radius: 16px;
-  box-shadow: 0 14px 32px rgba(184, 71, 46, 0.12);
+  box-shadow: 0 12px 28px rgba(31, 58, 95, 0.15);
   position: relative;
   text-align: center;
 }
 
+/* 타이틀 */
 .license-badges::before {
-  content: '국가 자격 보유';
+  content: '국가 공인 자격증';
   position: absolute;
-  top: -13px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 6px 14px;
-  background: linear-gradient(135deg, var(--accent) 0%, #d45a3d 100%);
+  padding: 6px 16px;
+
+  background: #1f3a5f;
   color: #fff;
-  font-size: 11px;
-  font-weight: 800;
+
+  font-size: 12.5px;
+  font-weight: 900;
   border-radius: 999px;
-  letter-spacing: 0.03em;
-  box-shadow: 0 6px 16px rgba(184, 71, 46, 0.22);
+  letter-spacing: 0.04em;
+
+  box-shadow: 0 6px 16px rgba(31, 58, 95, 0.25);
 }
 
+/* 개별 자격 */
 .license-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
-  padding: 9px 14px;
+
+  min-height: 42px;
+  padding: 10px 16px;
+
   border-radius: 999px;
-  background: #fff;
-  border: 1px solid #efd2c5;
-  color: var(--brand);
-  font-size: 12.5px;
-  font-weight: 800;
+  background: #ffffff;
+  border: 1px solid #c9d9f5;
+
+  color: #1f3a5f;
+
+  font-size: 13.5px;
+  font-weight: 900;
   line-height: 1.3;
+
   white-space: nowrap;
   word-break: keep-all;
-  box-shadow: 0 4px 10px rgba(31, 43, 58, 0.05);
+
+  box-shadow: 0 4px 10px rgba(31, 58, 95, 0.08);
 }
 
+/* 체크 아이콘 */
 .license-badge::before {
-  content: '✓';
-  color: var(--accent);
+  content: '✔';
+  color: #2f6fe0;
   font-weight: 900;
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
-@media (max-width: 1100px) {
-  .license-badges {
-    max-width: 100%;
-    margin: 0 auto 22px;
-    padding: 20px 16px 16px;
-  }
-}
-
+/* 반응형 */
 @media (max-width: 700px) {
   .license-badges {
     gap: 8px;
-    margin-bottom: 18px;
-    padding: 18px 12px 14px;
+    margin-bottom: 20px;
+    padding: 20px 14px 16px;
     border-radius: 12px;
   }
 
   .license-badges::before {
     top: -12px;
-    font-size: 10.5px;
+    font-size: 11px;
     padding: 5px 12px;
   }
 
   .license-badge {
-    min-height: 34px;
-    font-size: 11.5px;
-    padding: 7px 10px;
+    min-height: 36px;
+    font-size: 12px;
+    padding: 8px 12px;
   }
 }
 /* [수한공간 수정 끝] 자격증 강조 박스 */

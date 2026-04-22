@@ -6,6 +6,22 @@
 <title>평택 타일·욕실·집수리 전문 · 수한공간</title>
 <meta name="description" content="무조건 철거가 아닙니다. 사진 보내주시면 시공 가능 여부와 필요한 범위를 먼저 안내드립니다. 평택·안성·오산 타일·욕실·집수리 전문 수한공간. 연중무휴 08:00–21:00.">
 <meta name="theme-color" content="#1f2b3a">
+
+<!-- ✅ 작업1: OG 메타 태그 추가 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="평택 타일·욕실·집수리 전문 · 수한공간">
+<meta property="og:description" content="무조건 철거가 아닙니다. 사진 보내주시면 시공 가능 여부와 필요한 범위를 먼저 안내드립니다. 평택·안성·오산 타일·욕실·집수리 전문. 연중무휴 08:00–21:00.">
+<meta property="og:url" content="https://soohanspace.com/">
+<meta property="og:image" content="https://soohanspace.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="수한공간">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="평택 타일·욕실·집수리 전문 · 수한공간">
+<meta name="twitter:description" content="무조건 철거가 아닙니다. 사진 보내주시면 시공 가능 여부와 필요한 범위를 먼저 안내드립니다.">
+<meta name="twitter:image" content="https://soohanspace.com/og.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -508,18 +524,13 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
 .cm.tel-cm { border-left: 4px solid var(--brand); }
 .cm.sms-cm { border-left: 4px solid var(--text-muted); }
 .cm.blog-cm { border-left: 4px solid #03c75a; }
-/* [수한공간 수정 시작] 스마트플레이스 링크 카드 */
 .cm.place-cm { border-left: 4px solid #03c75a; }
-/* [수한공간 수정 끝] 스마트플레이스 링크 카드 */
-
 .cm-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 3px; }
 .cm-icon.k { background: var(--kakao); }
 .cm-icon.t { background: var(--brand-light); }
 .cm-icon.s { background: var(--bg-gray); }
 .cm-icon.b { background: #e8f8ee; }
-/* [수한공간 수정 시작] 스마트플레이스 아이콘 배경 */
 .cm-icon.p { background: #e8f8ee; }
-/* [수한공간 수정 끝] 스마트플레이스 아이콘 배경 */
 .cm-info { flex: 1; }
 .cm-name { font-size: 14.5px; font-weight: 800; color: var(--text); margin-bottom: 2px; }
 .cm-name .recommend { color: var(--accent); font-size: 11.5px; font-weight: 700; margin-left: 6px; }
@@ -666,9 +677,57 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .contact-card { padding: 28px 24px; }
   .cc-num { font-size: 28px; }
 }
+
+/* ✅ 작업4: 시공 사례 CSS 추가 */
+.case-section { padding: 80px; background: #fff; border-bottom: 1px solid var(--border); }
+.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.case-item { height: 220px; background: var(--bg-gray); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-muted); border: 1px solid var(--border); }
+@media (max-width: 700px) { .case-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
+<!-- ✅ 작업2: Schema.org JSON-LD 추가 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "수한공간타일",
+  "alternateName": "수한공간",
+  "description": "평택·안성·오산 타일 보수 및 시공, 욕실 리모델링, 집수리 전문 수한공간타일. 무조건 철거가 아닌 현장 상태에 맞춘 직접 시공.",
+  "url": "https://soohanspace.com",
+  "telephone": "010-4646-3145",
+  "email": "soohanyun37@naver.com",
+  "founder": "윤수한",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "용죽6길 64 지웰테라스 509동 8호",
+    "addressLocality": "평택시",
+    "addressRegion": "경기도",
+    "postalCode": "17801",
+    "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.0,
+    "longitude": 127.0
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ],
+  "areaServed": ["평택시","안성시","오산시","화성시","천안시","당진시","용인시"],
+  "serviceType": ["타일 보수 및 시공","욕실 리모델링","집수리","부분 리모델링"],
+  "priceRange": "$$",
+  "sameAs": [
+    "https://blog.naver.com/jinhousetile",
+    "https://map.naver.com/p/entry/place/1115746921"
+  ]
+}
+</script>
 
 <div class="notice-bar">
   📍 평택·안성·오산 전문 시공<span class="dot">·</span>사진 보내주시면 1차 안내 가능합니다
@@ -688,7 +747,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <a href="/repair/">집수리 · 부분 리모델링</a>
   </nav>
   <div class="header-btns">
-    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>카카오톡</span></a>
+    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
     <a href="tel:010-4646-3145" class="hbtn-tel">📞 <span class="telnum">010-4646-3145</span></a>
     <button class="mobile-menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
   </div>
@@ -747,17 +806,14 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 
     <div class="pain-points">
       <div class="pain-title">이런 고민 있으신 경우</div>
-
       <div class="pain-item">
         <span class="pain-icon">✔</span>
         <span class="pain-text">전체 철거까지 해야 하나 걱정될 때</span>
       </div>
-
       <div class="pain-item">
         <span class="pain-icon">✔</span>
         <span class="pain-text">비용과 공사 범위가 어디까지 커질지 불안할 때</span>
       </div>
-
       <div class="pain-item">
         <span class="pain-icon">✔</span>
         <span class="pain-text">기존 타일과 색감 차이가 날까 고민될 때</span>
@@ -767,8 +823,8 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 
   <aside class="hero-card">
     <div class="hcard-head">
-      <span class="hcard-head-label">무료 상담</span>
-      <div class="hcard-head-title">사진 보내주시면<br>가능한 방법과 필요한 범위를 먼저 안내드립니다</div>
+      <div class="cta-eyebrow">무료 상담</div>
+<div class="cta-title">현장 상태를 보고 가능한 방법과 범위를 먼저 안내드립니다</div>
     </div>
     <div class="hcard-body">
       <div class="hcard-steps">
@@ -785,16 +841,16 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   </aside>
 </section>
 
-  <section class="quick-cta">
+<section class="quick-cta">
   <div class="quick-cta-wrap">
     <div class="quick-cta-text">
-      타일보수, 욕실, 집수리 문의 모두 <span>사진 먼저 보내주시면 됩니다.</span><br>
-      전체 교체가 필요한지, 부분 보수로 가능한지 먼저 보고 안내드립니다.
-    </div>
-    <a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 사진 보내고 안내받기</a>
+  타일보수, 욕실, 집수리 문의는 <span>사진과 함께 남겨주시면 됩니다.</span><br>
+  전체 교체가 필요한지, 부분 보수로 가능한지 먼저 확인해 안내드립니다.
+</div>
+<a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 카카오톡 문의</a>
   </div>
 </section>
-  
+
 <section class="core-section">
   <div class="core-wrap">
     <div class="core-box reveal">
@@ -842,6 +898,19 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <div class="sv-tags"><span class="sv-tag">현관 타일</span><span class="sv-tag">베란다</span><span class="sv-tag">주방</span><span class="sv-tag">당일 작업</span></div>
       <div class="sv-arrow">자세히 보기 →</div>
     </a>
+  </div>
+</section>
+
+<!-- ✅ 작업3: 시공 사례 섹션 추가 (services-section 아래, process-section 위) -->
+<section class="case-section">
+  <div class="sec-header">
+    <div class="sec-label">시공 사례</div>
+    <h2 class="sec-title">직접 시공한 <em>현장 사례</em></h2>
+  </div>
+  <div class="case-grid">
+    <div class="case-item">사진 준비 중</div>
+    <div class="case-item">사진 준비 중</div>
+    <div class="case-item">사진 준비 중</div>
   </div>
 </section>
 
@@ -900,8 +969,8 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 
 <div class="cta-band">
   <div class="cta-left">
-    <div class="cta-eyebrow">무료 상담 안내</div>
-    <div class="cta-title">사진 보내주시면<br>가능한 방법과 필요한 범위를 먼저 안내드립니다</div>
+    <div class="cta-eyebrow">무료 상담</div>
+<div class="cta-title">현장 상태를 보고 가능한 방법과 범위를 먼저 안내드립니다</div>
     <div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
   </div>
   <div class="cta-btns">
@@ -933,23 +1002,23 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
         <div class="cm-go">→</div>
       </a>
       <a href="https://blog.naver.com/jinhousetile" class="cm blog-cm">
-  <div class="cm-icon b"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#03c75a" stroke-width="1.3"/><path d="M6 10h8M6 7h5M6 13h6" stroke="#03c75a" stroke-width="1.1" stroke-linecap="round"/></svg></div>
-  <div class="cm-info"><div class="cm-name">네이버 블로그</div><div class="cm-desc">시공 사례 · 후기 확인</div></div>
-  <div class="cm-go">→</div>
-</a>
-<a href="https://map.naver.com/p/entry/place/1115746921" class="cm place-cm" target="_blank" rel="noopener">
-  <div class="cm-icon p">
-    <svg width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      <path d="M10 17s5-4.7 5-9a5 5 0 10-10 0c0 4.3 5 9 5 9z" stroke="#03c75a" stroke-width="1.3"/>
-      <circle cx="10" cy="8" r="1.9" stroke="#03c75a" stroke-width="1.2"/>
-    </svg>
-  </div>
-  <div class="cm-info">
-    <div class="cm-name">네이버 스마트플레이스</div>
-    <div class="cm-desc">리뷰 · 위치 · 업체 정보 확인</div>
-  </div>
-  <div class="cm-go">→</div>
-</a>
+        <div class="cm-icon b"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#03c75a" stroke-width="1.3"/><path d="M6 10h8M6 7h5M6 13h6" stroke="#03c75a" stroke-width="1.1" stroke-linecap="round"/></svg></div>
+        <div class="cm-info"><div class="cm-name">네이버 블로그</div><div class="cm-desc">시공 사례 · 후기 확인</div></div>
+        <div class="cm-go">→</div>
+      </a>
+      <a href="https://map.naver.com/p/entry/place/1115746921" class="cm place-cm" target="_blank" rel="noopener">
+        <div class="cm-icon p">
+          <svg width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M10 17s5-4.7 5-9a5 5 0 10-10 0c0 4.3 5 9 5 9z" stroke="#03c75a" stroke-width="1.3"/>
+            <circle cx="10" cy="8" r="1.9" stroke="#03c75a" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <div class="cm-info">
+          <div class="cm-name">네이버 스마트플레이스</div>
+          <div class="cm-desc">리뷰 · 위치 · 업체 정보 확인</div>
+        </div>
+        <div class="cm-go">→</div>
+      </a>
     </div>
   </div>
   <div class="contact-right">
@@ -994,13 +1063,13 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
       <path d="M8 1.5C4.69 1.5 2 3.9 2 6.9c0 1.87 1.05 3.52 2.67 4.52L4 13.5l2.56-1.34C7.02 12.38 7.5 12.5 8 12.5c3.31 0 6-2.4 6-5.1s-2.69-5.4-6-5.4-6 2.4-6 5.4z" fill="#111"/>
     </svg>
-    <span>사진 보내고 안내받기</span>
+    <span>카카오톡 문의</span>
   </a>
 </div>
 
 <!-- 모바일 하단 고정 버튼 -->
 <div class="mobile-cta">
-  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 사진 보내고 안내받기</a>
+  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 카카오톡 문의</a>
   <a href="tel:010-4646-3145" class="t">📞 전화 상담</a>
 </div>
 

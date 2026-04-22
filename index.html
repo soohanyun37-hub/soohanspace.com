@@ -683,11 +683,6 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .case-item { height: 220px; background: var(--bg-gray); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-muted); border: 1px solid var(--border); }
 @media (max-width: 700px) { .case-grid { grid-template-columns: 1fr; } }
-  /* 시공 사례 CSS */
-.case-section { padding: 80px; background: #fff; border-bottom: 1px solid var(--border); }
-.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.case-item { height: 220px; background: var(--bg-gray); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-muted); border: 1px solid var(--border); }
-@media (max-width: 700px) { .case-grid { grid-template-columns: 1fr; } }
 
 /* ===== 수한공간 추가 (AS 문구) ===== */
 .aftercare {
@@ -701,7 +696,10 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   font-weight: 600;
   color: #333;
 }
-
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
 </style>
 </head>
 <body>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="평택 집수리·부분 리모델링 전문 수한공간. 현관·베란다·주방 타일 집수리, 소규모 당일 작업 가능. 사진 2~3장이면 1차 안내 가능.">
-<meta name="keywords" content="평택집수리, 집수리, 부분리모델링, 평택타일, 현관타일, 베란다타일, 주방타일, 소규모시공, 수한공간">
+<meta name="keywords" content="평택집수리, 집수리, 부분리모델링, 평택타일, 현관타일, 베란다타일, 주방타일, 소규모시공, 수한공간집수리">
 <meta property="og:title" content="집수리 · 부분 리모델링 전문 · 수한공간">
 <meta property="og:description" content="현관·베란다·주방 등 생활 공간 집수리. 필요한 범위만 정확히 수리합니다. 사진 2~3장이면 1차 안내 가능.">
 <meta property="og:url" content="https://soohanspace.com/repair/">
@@ -13,10 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ─── RESET ─── */
+/* RESET */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ─── VARIABLES ─── */
+/* VARIABLES - 메인 페이지와 동일 */
 :root {
   --bg:      #F7F6F3;
   --bg2:     #EFEDE8;
@@ -26,467 +26,253 @@
   --text3:   #9E9C97;
   --border:  rgba(26,25,22,0.10);
   --border2: rgba(26,25,22,0.18);
-  --kakao:        #FEE500;
-  --kakao-text:   #191919;
+  --kakao:      #FEE500;
+  --kakao-text: #191919;
   --radius:    14px;
   --radius-sm:  8px;
   --max: 980px;
 }
 
 html { scroll-behavior: smooth; }
-
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 15px;
-  line-height: 1.6;
+  background: var(--bg); color: var(--text);
+  font-size: 15px; line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-
 a { text-decoration: none; color: inherit; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
-/* ─── NOTICE BAR ─── */
+/* NOTICE BAR */
 .notice-bar {
-  background: var(--text);
-  color: rgba(255,255,255,0.65);
-  font-size: 12px;
-  text-align: center;
-  padding: 9px 16px;
-  letter-spacing: 0.01em;
-  line-height: 1.5;
+  background: var(--text); color: rgba(255,255,255,0.65);
+  font-size: 12px; text-align: center;
+  padding: 9px 16px; letter-spacing: 0.01em; line-height: 1.5;
 }
 .notice-bar strong { color: #fff; font-weight: 500; }
 .notice-bar .dot { margin: 0 6px; opacity: 0.3; }
 
-/* ─── NAV ─── */
+/* NAV */
 nav {
   position: sticky; top: 0; z-index: 100;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  background: var(--bg); border-bottom: 1px solid var(--border);
 }
 .nav-inner {
   max-width: var(--max); margin: 0 auto; padding: 0 20px;
-  height: 62px;
-  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  height: 62px; display: flex; align-items: center; justify-content: space-between; gap: 20px;
 }
-.nav-logo {
-  display: flex; flex-direction: column; gap: 2px; flex-shrink: 0;
-}
+.nav-logo { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
 .nav-logo-kr { font-size: 15px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
 .nav-logo-en { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text3); letter-spacing: 0.12em; }
-
-.nav-links {
-  display: flex; align-items: center; gap: 2px; flex: 1; margin-left: 24px;
-}
+.nav-links { display: flex; align-items: center; gap: 2px; flex: 1; margin-left: 20px; }
 .nav-link {
-  font-size: 13px; color: var(--text2);
-  padding: 6px 11px; border-radius: 6px;
-  transition: background 0.15s, color 0.15s;
-  letter-spacing: -0.01em; white-space: nowrap;
+  font-size: 13px; color: var(--text2); padding: 6px 11px; border-radius: 6px;
+  transition: background 0.15s, color 0.15s; letter-spacing: -0.01em; white-space: nowrap;
 }
 .nav-link:hover { background: var(--bg2); color: var(--text); }
 .nav-link.active { color: var(--text); font-weight: 500; }
-
 .nav-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-.nav-tel {
-  font-family: 'DM Mono', monospace; font-size: 13px; color: var(--text2);
-  padding: 6px 10px; border-radius: 6px;
-  transition: color 0.15s;
-}
+.nav-tel { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--text2); padding: 6px 10px; border-radius: 6px; transition: color 0.15s; }
 .nav-tel:hover { color: var(--text); }
 .nav-kakao {
   display: inline-flex; align-items: center; gap: 5px;
   background: var(--kakao); color: var(--kakao-text);
-  font-size: 12px; font-weight: 700;
-  padding: 7px 13px; border-radius: 6px;
+  font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px;
   transition: opacity 0.15s;
 }
 .nav-kakao:hover { opacity: 0.88; }
 
-/* Mobile hamburger */
+/* 햄버거 */
 .nav-menu-btn {
-  display: none;
-  background: none; border: none;
-  width: 36px; height: 36px;
-  cursor: pointer; border-radius: 6px;
+  display: none; background: none; border: none;
+  width: 36px; height: 36px; cursor: pointer; border-radius: 6px;
   flex-direction: column; align-items: center; justify-content: center; gap: 5px;
   transition: background 0.15s;
 }
 .nav-menu-btn:hover { background: var(--bg2); }
-.nav-menu-btn span {
-  display: block; width: 18px; height: 1.5px;
-  background: var(--text); border-radius: 2px;
-  transition: transform 0.25s, opacity 0.25s;
-}
+.nav-menu-btn span { display: block; width: 18px; height: 1.5px; background: var(--text); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
 .nav-menu-btn.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .nav-menu-btn.open span:nth-child(2) { opacity: 0; }
 .nav-menu-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 .mobile-nav {
-  display: none;
-  position: absolute; top: 62px; left: 0; right: 0;
+  display: none; position: absolute; top: 62px; left: 0; right: 0;
   background: var(--bg); border-bottom: 1px solid var(--border);
-  padding: 12px 20px 16px; z-index: 99;
-  flex-direction: column; gap: 2px;
+  padding: 12px 20px 16px; z-index: 99; flex-direction: column; gap: 2px;
 }
 .mobile-nav.open { display: flex; }
-.mobile-nav a {
-  font-size: 14px; color: var(--text2);
-  padding: 10px 12px; border-radius: 8px;
-  transition: background 0.15s, color 0.15s;
-}
+.mobile-nav a { font-size: 14px; color: var(--text2); padding: 10px 12px; border-radius: 8px; transition: background 0.15s, color 0.15s; }
 .mobile-nav a:hover, .mobile-nav a.active { background: var(--bg2); color: var(--text); }
 .mobile-nav a.active { font-weight: 500; }
-.mobile-nav-divider { height: 1px; background: var(--border); margin: 6px 0; }
-.mobile-nav-btns { display: flex; gap: 8px; margin-top: 4px; }
-.mobile-nav-kakao {
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;
-  background: var(--kakao); color: var(--kakao-text);
-  font-size: 13px; font-weight: 700; padding: 11px;
-  border-radius: 8px;
-}
-.mobile-nav-tel {
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;
-  background: var(--text); color: var(--bg);
-  font-size: 13px; font-weight: 500; padding: 11px;
-  border-radius: 8px;
-}
+.mnav-sep { height: 1px; background: var(--border); margin: 6px 0; }
+.mnav-btns { display: flex; gap: 8px; margin-top: 4px; }
+.mnav-kakao { flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px; background: var(--kakao); color: var(--kakao-text); font-size: 13px; font-weight: 700; padding: 11px; border-radius: 8px; }
+.mnav-tel   { flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px; background: var(--text); color: var(--bg); font-size: 13px; font-weight: 500; padding: 11px; border-radius: 8px; }
 
-/* ─── BREADCRUMB ─── */
-.breadcrumb {
-  padding: 14px 0 0;
-  display: flex; align-items: center; gap: 6px;
-  font-size: 12px; color: var(--text3);
-}
-.breadcrumb a { transition: color 0.15s; }
+/* BREADCRUMB */
+.breadcrumb { padding: 14px 0 0; display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text3); }
 .breadcrumb a:hover { color: var(--text2); }
-.breadcrumb-sep { color: var(--text3); font-size: 11px; }
-.breadcrumb-current { color: var(--text2); }
 
-/* ─── HERO ─── */
-.hero {
-  padding: 44px 0 68px;
-  border-bottom: 1px solid var(--border);
-}
-.hero-eyebrow {
-  display: flex; align-items: center; gap: 8px; margin-bottom: 20px;
-  opacity: 0; animation: fadeUp 0.5s ease 0.05s forwards;
-}
-.eyebrow-pill {
-  font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3);
-  letter-spacing: 0.10em;
-  border: 1px solid var(--border); border-radius: 100px;
-  padding: 4px 10px;
-}
-.hero-main {
-  opacity: 0; animation: fadeUp 0.5s ease 0.12s forwards;
-  margin-bottom: 36px;
-}
-.hero h1 {
-  font-size: clamp(26px, 3.8vw, 40px);
-  font-weight: 400; letter-spacing: -0.035em; line-height: 1.28;
-  margin-bottom: 16px;
-}
+/* HERO */
+.hero { padding: 44px 0 68px; border-bottom: 1px solid var(--border); }
+.hero-eyebrow { margin-bottom: 20px; opacity: 0; animation: fadeUp 0.5s ease 0.05s forwards; }
+.eyebrow-pill { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; border: 1px solid var(--border); border-radius: 100px; padding: 4px 12px; display: inline-block; }
+
+.hero-main { opacity: 0; animation: fadeUp 0.5s ease 0.12s forwards; margin-bottom: 36px; }
+.hero h1 { font-size: clamp(26px, 3.8vw, 40px); font-weight: 400; letter-spacing: -0.035em; line-height: 1.28; margin-bottom: 14px; }
 .hero h1 strong { font-weight: 700; }
-.hero-sub {
-  font-size: 15px; color: var(--text2); line-height: 1.75; margin-bottom: 8px;
-}
-.hero-badge-row {
-  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; margin-top: 16px;
-}
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: 12px; color: var(--text2);
-  border: 1px solid var(--border); border-radius: 100px;
-  padding: 5px 12px;
-}
+.hero-sub { font-size: 15px; color: var(--text2); line-height: 1.8; margin-bottom: 6px; }
+.hero-badges { display: flex; flex-direction: column; gap: 6px; margin: 16px 0 28px; }
+.hero-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text2); border: 1px solid var(--border); border-radius: 100px; padding: 5px 13px; width: fit-content; }
 .hero-badge strong { color: var(--text); font-weight: 500; }
-.hero-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: #4CAF50; flex-shrink: 0; }
-
-.hero-btns { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
-.btn-kakao {
-  display: inline-flex; align-items: center; gap: 7px;
-  background: var(--kakao); color: var(--kakao-text);
-  font-size: 14px; font-weight: 700;
-  padding: 13px 22px; border-radius: var(--radius-sm);
-  transition: opacity 0.15s; letter-spacing: -0.01em;
-}
+.hero-btns { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.btn-kakao { display: inline-flex; align-items: center; gap: 7px; background: var(--kakao); color: var(--kakao-text); font-size: 14px; font-weight: 700; padding: 13px 22px; border-radius: var(--radius-sm); transition: opacity 0.15s; letter-spacing: -0.01em; }
 .btn-kakao:hover { opacity: 0.88; }
-.btn-tel {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: var(--bg2); color: var(--text);
-  border: 1px solid var(--border2);
-  font-size: 13px; font-weight: 500;
-  padding: 13px 18px; border-radius: var(--radius-sm);
-  font-family: inherit;
-  transition: background 0.15s; letter-spacing: -0.01em;
-}
+.btn-tel { display: inline-flex; align-items: center; gap: 6px; background: var(--bg2); color: var(--text); border: 1px solid var(--border2); font-size: 13px; font-weight: 500; padding: 13px 20px; border-radius: var(--radius-sm); transition: background 0.15s; }
 .btn-tel:hover { background: var(--bg3); }
 .hero-note { font-size: 11px; color: var(--text3); line-height: 1.7; }
 
-.hero-stats {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--border); border-radius: var(--radius);
-  overflow: hidden;
-  opacity: 0; animation: fadeUp 0.5s ease 0.22s forwards;
-}
-.stat-item {
-  padding: 22px 18px;
-  border-right: 1px solid var(--border);
-  background: var(--bg2);
-}
+/* HERO STATS */
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; opacity: 0; animation: fadeUp 0.5s ease 0.22s forwards; }
+.stat-item { padding: 22px 18px; border-right: 1px solid var(--border); background: var(--bg2); }
 .stat-item:last-child { border-right: none; }
 .stat-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 8px; }
 .stat-val { font-size: 26px; font-weight: 400; letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; }
 .stat-sub { font-size: 11px; color: var(--text3); line-height: 1.6; }
 
-/* Consult box */
-.hero-consult {
-  margin-top: 24px;
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px 26px;
-  opacity: 0; animation: fadeUp 0.5s ease 0.3s forwards;
-}
+/* HERO CONSULT BOX */
+.hero-consult { margin-top: 24px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 28px; opacity: 0; animation: fadeUp 0.5s ease 0.30s forwards; }
 .consult-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 12px; }
-.consult-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 14px; }
+.consult-title { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 16px; line-height: 1.5; }
 .consult-steps { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
 .consult-step { display: flex; gap: 12px; align-items: flex-start; }
-.step-num-circle {
-  flex-shrink: 0; width: 22px; height: 22px;
-  border-radius: 50%; background: var(--text);
-  color: var(--bg); font-size: 11px; font-weight: 500;
-  display: flex; align-items: center; justify-content: center;
-  margin-top: 1px;
-}
-.step-text { font-size: 13px; color: var(--text2); line-height: 1.6; }
-.step-text strong { color: var(--text); font-weight: 500; }
+.cstep-n { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--text); color: var(--bg); font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+.cstep-t { font-size: 13px; color: var(--text2); line-height: 1.6; }
+.cstep-t strong { color: var(--text); font-weight: 500; }
 .consult-btns { display: flex; gap: 8px; }
-.consult-kakao {
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
-  background: var(--kakao); color: var(--kakao-text);
-  font-size: 13px; font-weight: 700;
-  padding: 12px; border-radius: var(--radius-sm);
-  transition: opacity 0.15s;
-}
-.consult-kakao:hover { opacity: 0.88; }
-.consult-tel {
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
-  background: var(--bg3); color: var(--text);
-  border: 1px solid var(--border2);
-  font-size: 13px; font-weight: 500;
-  padding: 12px; border-radius: var(--radius-sm);
-  transition: background 0.15s;
-}
-.consult-tel:hover { background: var(--bg3); filter: brightness(0.97); }
-.consult-note { font-size: 11px; color: var(--text3); margin-top: 12px; }
+.cbtn-k { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--kakao); color: var(--kakao-text); font-size: 13px; font-weight: 700; padding: 12px; border-radius: var(--radius-sm); transition: opacity 0.15s; }
+.cbtn-k:hover { opacity: 0.88; }
+.cbtn-t { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--bg3); color: var(--text); border: 1px solid var(--border2); font-size: 13px; font-weight: 500; padding: 12px; border-radius: var(--radius-sm); transition: filter 0.15s; }
+.cbtn-t:hover { filter: brightness(0.97); }
+.consult-note { font-size: 11px; color: var(--text3); margin-top: 10px; }
 
-/* ─── SECTION COMMON ─── */
+/* SECTION 공통 */
 section { padding: 68px 0; border-bottom: 1px solid var(--border); }
-.sec-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 8px; }
-.sec-title { font-size: 22px; font-weight: 400; letter-spacing: -0.03em; line-height: 1.35; margin-bottom: 32px; }
-.sec-title em { font-style: normal; font-weight: 700; }
-.sec-head-row { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; }
-.sec-head-row .sec-title { margin-bottom: 0; }
-.sec-right-link { font-size: 13px; color: var(--text3); transition: color 0.15s; }
-.sec-right-link:hover { color: var(--text2); }
+.sec-ey { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; margin-bottom: 8px; }
+.sec-ti { font-size: 22px; font-weight: 400; letter-spacing: -0.03em; line-height: 1.35; margin-bottom: 32px; }
+.sec-ti em { font-style: normal; font-weight: 700; }
+.sec-hrow { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; }
+.sec-hrow .sec-ti { margin-bottom: 0; }
+.sec-lnk { font-size: 13px; color: var(--text3); transition: color 0.15s; }
+.sec-lnk:hover { color: var(--text2); }
 
-/* ─── CONCERN (고객 공감) ─── */
-.concern-grid { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
-.concern-item {
-  display: flex; gap: 20px; align-items: flex-start;
-  padding: 26px 28px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
-  transition: background 0.2s;
-}
+/* 고객 공감 */
+.concern-list { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.concern-item { display: flex; gap: 20px; align-items: flex-start; padding: 26px 28px; border-bottom: 1px solid var(--border); background: var(--bg); transition: background 0.2s; }
 .concern-item:last-child { border-bottom: none; }
 .concern-item:hover { background: var(--bg2); }
-.concern-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
-.concern-body { flex: 1; }
-.concern-q { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
-.concern-a { font-size: 13px; color: var(--text2); line-height: 1.8; }
+.ci-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+.ci-q { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 7px; }
+.ci-a { font-size: 13px; color: var(--text2); line-height: 1.8; }
 
-/* ─── PRINCIPLE ─── */
-.principle-intro {
-  font-size: 13px; color: var(--text2); line-height: 1.9;
-  margin-bottom: 28px; max-width: 560px;
-}
-.principle-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
-}
-.principle-card {
-  padding: 28px 24px;
-  border-right: 1px solid var(--border);
-  background: var(--bg);
-  transition: background 0.2s;
-}
+/* 시공 원칙 */
+.principle-intro { font-size: 13px; color: var(--text2); line-height: 1.9; margin-bottom: 28px; max-width: 560px; }
+.principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.principle-card { padding: 28px 24px; border-right: 1px solid var(--border); background: var(--bg); transition: background 0.2s; }
 .principle-card:last-child { border-right: none; }
 .principle-card:hover { background: var(--bg2); }
-.principle-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 16px; }
-.principle-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 10px; }
-.principle-desc { font-size: 12px; color: var(--text2); line-height: 1.8; }
-.principle-accent { font-size: 11px; color: var(--text3); margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.pc-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 14px; }
+.pc-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 10px; }
+.pc-desc { font-size: 12px; color: var(--text2); line-height: 1.8; }
+.pc-accent { font-size: 11px; color: var(--text3); margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
 
-/* ─── SERVICES ─── */
+/* 서비스 */
 .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-.svc-card {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 28px 24px;
-  transition: border-color 0.2s;
-}
+.svc-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; transition: border-color 0.2s; }
 .svc-card:hover { border-color: var(--border2); }
-.svc-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.svc-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
 .svc-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
-.svc-badge {
-  font-size: 10px; color: var(--text3);
-  border: 1px solid var(--border); border-radius: 100px;
-  padding: 3px 9px; letter-spacing: 0.02em;
-  background: var(--bg);
-}
-.svc-title { font-size: 16px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 10px; }
-.svc-sub-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
-.svc-sub-tag {
-  font-size: 10px; color: var(--text2);
-  border: 1px solid var(--border); background: var(--bg);
-  border-radius: 100px; padding: 3px 9px;
-}
-.svc-desc { font-size: 12px; color: var(--text2); line-height: 1.8; margin-bottom: 16px; }
+.svc-badge { font-size: 10px; color: var(--text3); border: 1px solid var(--border); border-radius: 100px; padding: 3px 9px; background: var(--bg); }
+.svc-title { font-size: 16px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
+.svc-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
+.svc-tag { font-size: 10px; color: var(--text2); border: 1px solid var(--border); background: var(--bg); border-radius: 100px; padding: 3px 9px; }
+.svc-desc { font-size: 13px; color: var(--text2); line-height: 1.8; margin-bottom: 16px; }
 .svc-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.svc-list li {
-  font-size: 12px; color: var(--text3);
-  padding-left: 14px; position: relative; line-height: 1.6;
-}
+.svc-list li { font-size: 12px; color: var(--text3); padding-left: 14px; position: relative; line-height: 1.6; }
 .svc-list li::before { content: '—'; position: absolute; left: 0; color: var(--text3); }
 
-/* ─── REASONS ─── */
+/* 선택 이유 */
 .reasons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-.reason-card {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 26px 22px;
-  transition: border-color 0.2s;
-}
+.reason-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 22px; transition: border-color 0.2s; }
 .reason-card:hover { border-color: var(--border2); }
 .reason-bar { width: 28px; height: 2px; background: var(--text); margin-bottom: 14px; }
 .reason-title { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
 .reason-desc { font-size: 13px; color: var(--text2); line-height: 1.8; }
 
-/* ─── STEPS ─── */
-.steps {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
-}
-.step-card {
-  padding: 26px 22px; border-right: 1px solid var(--border);
-  background: var(--bg); transition: background 0.2s;
-}
-.step-card:last-child { border-right: none; }
-.step-card:hover { background: var(--bg2); }
-.step-no { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 16px; }
+/* 진행 절차 */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.step { padding: 26px 22px; border-right: 1px solid var(--border); background: var(--bg); transition: background 0.2s; }
+.step:last-child { border-right: none; }
+.step:hover { background: var(--bg2); }
+.step-num { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 16px; }
 .step-title { font-size: 14px; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; }
 .step-desc { font-size: 12px; color: var(--text2); line-height: 1.75; }
 
-/* ─── CASES ─── */
+/* 시공 사례 */
 .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.case-card {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px 20px;
-  display: flex; flex-direction: column; justify-content: space-between;
-  min-height: 148px; gap: 18px;
-  transition: border-color 0.2s;
-}
+.case-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; display: flex; flex-direction: column; justify-content: space-between; min-height: 148px; gap: 18px; transition: border-color 0.2s; }
 .case-card:hover { border-color: var(--border2); }
 .case-bar { width: 28px; height: 2px; background: var(--text3); margin-bottom: 8px; }
 .case-tag { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text3); letter-spacing: 0.10em; }
 .case-title { font-size: 13px; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 4px; }
 .case-loc { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.06em; }
-.cases-more { margin-top: 16px; font-size: 13px; color: var(--text2); text-align: center; }
+.cases-more { margin-top: 14px; font-size: 13px; color: var(--text2); text-align: center; }
 .cases-more a { color: var(--text2); border-bottom: 1px solid var(--border2); padding-bottom: 1px; transition: color 0.15s; }
 .cases-more a:hover { color: var(--text); }
 
-/* ─── CTA BAND ─── */
+/* CTA 다크 배너 */
 .cta-band { padding: 56px 0; border-bottom: 1px solid var(--border); }
-.cta-band-inner {
-  background: var(--text); border-radius: var(--radius);
-  padding: 44px 48px;
-  display: flex; align-items: center; justify-content: space-between; gap: 40px;
-}
-.cta-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; color: rgba(255,255,255,0.35); letter-spacing: 0.10em; margin-bottom: 10px; }
-.cta-title { font-size: 22px; font-weight: 400; letter-spacing: -0.03em; color: #fff; margin-bottom: 6px; }
-.cta-title strong { font-weight: 700; }
-.cta-desc { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.8; }
+.cta-band-inner { background: var(--text); border-radius: var(--radius); padding: 44px 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.cta-ey { font-family: 'DM Mono', monospace; font-size: 10px; color: rgba(255,255,255,0.35); letter-spacing: 0.10em; margin-bottom: 10px; }
+.cta-ti { font-size: 22px; font-weight: 400; letter-spacing: -0.03em; color: #fff; margin-bottom: 6px; }
+.cta-ti strong { font-weight: 700; }
+.cta-de { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.8; }
 .cta-btns { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
-.cta-kakao {
-  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
-  background: var(--kakao); color: var(--kakao-text);
-  font-size: 14px; font-weight: 700;
-  padding: 14px 26px; border-radius: var(--radius-sm);
-  white-space: nowrap; transition: opacity 0.15s;
-}
+.cta-kakao { display: inline-flex; align-items: center; justify-content: center; gap: 7px; background: var(--kakao); color: var(--kakao-text); font-size: 14px; font-weight: 700; padding: 14px 26px; border-radius: var(--radius-sm); white-space: nowrap; transition: opacity 0.15s; }
 .cta-kakao:hover { opacity: 0.88; }
-.cta-tel {
-  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
-  color: rgba(255,255,255,0.75);
-  font-family: 'DM Mono', monospace; font-size: 13px;
-  padding: 13px 22px; border-radius: var(--radius-sm);
-  white-space: nowrap; transition: background 0.15s;
-}
+.cta-tel { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); color: rgba(255,255,255,0.75); font-family: 'DM Mono', monospace; font-size: 13px; padding: 13px 22px; border-radius: var(--radius-sm); white-space: nowrap; transition: background 0.15s; }
 .cta-tel:hover { background: rgba(255,255,255,0.14); }
 
-/* ─── CONTACT ─── */
-.contact-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 14px; }
-.contact-card {
-  display: flex; flex-direction: column; gap: 6px;
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px 22px;
-  transition: border-color 0.2s;
-}
+/* CONTACT */
+.contact-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 12px; }
+.contact-card { display: flex; flex-direction: column; gap: 5px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 22px; transition: border-color 0.2s; }
 .contact-card:hover { border-color: var(--border2); }
 .contact-card.kakao { background: var(--kakao); border-color: transparent; }
 .contact-card.kakao:hover { opacity: 0.93; }
-.cc-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
-.cc-main { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; }
-.cc-sub { font-size: 12px; color: var(--text2); line-height: 1.7; }
-.cc-arrow { font-size: 16px; color: var(--text3); margin-top: 6px; }
-.contact-card.kakao .cc-label { color: rgba(25,25,25,0.45); }
-.contact-card.kakao .cc-main { color: var(--kakao-text); }
-.contact-card.kakao .cc-sub { color: rgba(25,25,25,0.55); }
-.contact-card.kakao .cc-arrow { color: rgba(25,25,25,0.35); }
+.cc-lb { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
+.cc-mn { font-size: 15px; font-weight: 500; letter-spacing: -0.02em; }
+.cc-sb { font-size: 12px; color: var(--text2); line-height: 1.7; }
+.cc-ar { font-size: 16px; color: var(--text3); margin-top: 6px; }
+.contact-card.kakao .cc-lb { color: rgba(25,25,25,0.45); }
+.contact-card.kakao .cc-mn { color: var(--kakao-text); }
+.contact-card.kakao .cc-sb { color: rgba(25,25,25,0.55); }
+.contact-card.kakao .cc-ar { color: rgba(25,25,25,0.35); }
 
 .contact-extras { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
-.contact-extra {
-  display: flex; flex-direction: column; gap: 4px;
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 22px 22px;
-  transition: border-color 0.2s;
-}
+.contact-extra { display: flex; flex-direction: column; gap: 4px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; transition: border-color 0.2s; }
 .contact-extra:hover { border-color: var(--border2); }
-.ce-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
-.ce-main { font-size: 14px; font-weight: 500; letter-spacing: -0.01em; }
-.ce-sub { font-size: 12px; color: var(--text2); line-height: 1.7; }
-.ce-arrow { font-size: 15px; color: var(--text3); margin-top: 4px; }
+.ce-lb { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.10em; }
+.ce-mn { font-size: 14px; font-weight: 500; letter-spacing: -0.01em; }
+.ce-sb { font-size: 12px; color: var(--text2); line-height: 1.7; }
+.ce-ar { font-size: 14px; color: var(--text3); margin-top: 4px; }
 
-.contact-hours {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px 28px;
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
-}
-.ch-item {}
-.ch-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 6px; }
-.ch-val { font-size: 13px; color: var(--text); font-weight: 400; line-height: 1.6; }
-.ch-tag {
-  display: inline-block; margin-top: 4px;
-  font-size: 10px; color: var(--text3);
-  border: 1px solid var(--border); border-radius: 100px;
-  padding: 2px 8px;
-}
+.contact-hours { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.ch-lb { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: 0.08em; margin-bottom: 5px; }
+.ch-vl { font-size: 13px; color: var(--text); line-height: 1.6; }
+.ch-tag { display: inline-block; margin-top: 4px; font-size: 10px; color: var(--text3); border: 1px solid var(--border); border-radius: 100px; padding: 2px 8px; }
 
-/* ─── FOOTER ─── */
-footer { padding: 36px 0; }
+/* FOOTER */
+footer { padding: 36px 0; border-top: 1px solid var(--border); }
 .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
 .footer-biz { font-size: 11px; color: var(--text3); line-height: 1.95; }
 .footer-copy { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text3); margin-top: 6px; letter-spacing: 0.04em; }
@@ -494,78 +280,48 @@ footer { padding: 36px 0; }
 .footer-links a { font-size: 12px; color: var(--text3); transition: color 0.15s; }
 .footer-links a:hover { color: var(--text2); }
 
-/* ─── FLOATING BOTTOM CTA (mobile) ─── */
-.floating-cta {
-  display: none;
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
-  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-  background: var(--bg); border-top: 1px solid var(--border);
-}
-.floating-cta-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.fcta-kakao {
-  display: flex; align-items: center; justify-content: center; gap: 5px;
-  background: var(--kakao); color: var(--kakao-text);
-  font-size: 13px; font-weight: 700; padding: 13px 8px;
-  border-radius: var(--radius-sm);
-}
-.fcta-tel {
-  display: flex; align-items: center; justify-content: center; gap: 5px;
-  background: var(--text); color: var(--bg);
-  font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500;
-  padding: 13px 8px; border-radius: var(--radius-sm);
-}
+/* 모바일 하단 고정 CTA */
+.floating-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: var(--bg); border-top: 1px solid var(--border); }
+.fcta-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.fcta-kakao { display: flex; align-items: center; justify-content: center; gap: 5px; background: var(--kakao); color: var(--kakao-text); font-size: 13px; font-weight: 700; padding: 13px; border-radius: var(--radius-sm); }
+.fcta-tel { display: flex; align-items: center; justify-content: center; gap: 5px; background: var(--text); color: var(--bg); font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; padding: 13px; border-radius: var(--radius-sm); }
 
-/* ─── ANIMATION ─── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.reveal {
-  opacity: 0; transform: translateY(14px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
-}
+/* ANIMATION */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ─── MOBILE ─── */
+/* MOBILE */
 @media (max-width: 760px) {
   .notice-bar { font-size: 11px; padding: 8px 14px; }
   .nav-links { display: none; }
   .nav-tel { display: none; }
   .nav-menu-btn { display: flex; }
-
   .hero { padding: 32px 0 52px; }
   .hero h1 { font-size: 26px; }
-  .hero-stats { grid-template-columns: 1fr 1fr 1fr; }
-  .stat-item { padding: 16px 14px; }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); }
+  .stat-item { padding: 16px 12px; }
   .stat-val { font-size: 20px; }
-
   .concern-item { padding: 20px 18px; gap: 14px; }
-
   .principle-grid { grid-template-columns: 1fr; }
   .principle-card { border-right: none; border-bottom: 1px solid var(--border); }
   .principle-card:last-child { border-bottom: none; }
-
   .svc-grid { grid-template-columns: 1fr; }
   .reasons-grid { grid-template-columns: 1fr; }
   .cases-grid { grid-template-columns: 1fr; }
-
   .steps { grid-template-columns: 1fr 1fr; }
-  .step-card { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-  .step-card:nth-child(2) { border-right: none; }
-  .step-card:nth-child(3) { border-bottom: none; }
-  .step-card:nth-child(4) { border-right: none; border-bottom: none; }
-
+  .step { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .step:nth-child(2) { border-right: none; }
+  .step:nth-child(3) { border-bottom: none; }
+  .step:nth-child(4) { border-right: none; border-bottom: none; }
   .cta-band-inner { flex-direction: column; padding: 32px 22px; gap: 24px; }
   .cta-btns { flex-direction: row; width: 100%; }
   .cta-kakao, .cta-tel { flex: 1; }
-
   .contact-cards { grid-template-columns: 1fr; }
   .contact-extras { grid-template-columns: 1fr; }
-  .contact-hours { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-
+  .contact-hours { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .footer-inner { flex-direction: column; gap: 20px; }
   .footer-links { align-items: flex-start; }
-
   .floating-cta { display: block; }
   body { padding-bottom: 76px; }
 }
@@ -573,12 +329,12 @@ footer { padding: 36px 0; }
 </head>
 <body>
 
-<!-- ─── NOTICE BAR ─── -->
+<!-- NOTICE BAR -->
 <div class="notice-bar">
   📍 평택·안성·오산 출장 시공<span class="dot">·</span>사진 2~3장이면 1차 안내 가능<span class="dot">·</span><strong>010-4646-3145</strong>
 </div>
 
-<!-- ─── NAV ─── -->
+<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <a href="https://soohanspace.com/" class="nav-logo">
@@ -602,10 +358,10 @@ footer { padding: 36px 0; }
     <a href="https://soohanspace.com/tile/" class="nav-link">타일 보수 및 시공</a>
     <a href="https://soohanspace.com/bathroom/" class="nav-link">욕실 리모델링</a>
     <a href="https://soohanspace.com/repair/" class="nav-link active">집수리 · 부분 리모델링</a>
-    <div class="mobile-nav-divider"></div>
-    <div class="mobile-nav-btns">
-      <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="mobile-nav-kakao">💬 카카오톡 상담</a>
-      <a href="tel:010-4646-3145" class="mobile-nav-tel">📞 전화하기</a>
+    <div class="mnav-sep"></div>
+    <div class="mnav-btns">
+      <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="mnav-kakao">💬 카카오톡 상담</a>
+      <a href="tel:010-4646-3145" class="mnav-tel">📞 전화하기</a>
     </div>
   </div>
 </nav>
@@ -615,26 +371,27 @@ footer { padding: 36px 0; }
   <!-- BREADCRUMB -->
   <div class="breadcrumb">
     <a href="https://soohanspace.com/">수한공간 홈</a>
-    <span class="breadcrumb-sep">›</span>
-    <span class="breadcrumb-current">집수리 · 부분 리모델링</span>
+    <span>›</span>
+    <span>집수리 · 부분 리모델링</span>
   </div>
 
-  <!-- ─── HERO ─── -->
+  <!-- ===== HERO ===== -->
   <div class="hero">
+
     <div class="hero-eyebrow">
       <span class="eyebrow-pill">평택·안성·오산 집수리 전문</span>
     </div>
+
     <div class="hero-main">
       <h1>작은 문제도<br><strong>필요한 범위만 수리합니다</strong></h1>
       <p class="hero-sub">
         무조건 전체 공사가 답이 아닙니다.<br>
         👉 현장 상태를 먼저 확인하고 필요한 범위만 시공합니다. 소규모 당일 완료 가능.
       </p>
-      <div class="hero-badge-row">
+      <div class="hero-badges">
         <span class="hero-badge">타일 중심 시공 · <strong>타일·방수·온수온돌 기능사 보유</strong></span>
+        <span class="hero-badge">평택·안성·오산 <strong>누적 3,000건 이상 시공</strong> · 작업 후 이상이 있으면 확인 후 조치해드립니다</span>
       </div>
-      <span class="hero-badge">평택·안성·오산 <strong>누적 3,000건 이상 시공</strong> · 작업 후 이상이 있으면 확인 후 조치해드립니다</span>
-      <div style="margin-bottom:28px;"></div>
       <div class="hero-btns">
         <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="btn-kakao">💬 사진 보내고 상담하기</a>
         <a href="tel:010-4646-3145" class="btn-tel">📞 010-4646-3145</a>
@@ -665,109 +422,112 @@ footer { padding: 36px 0; }
       <div class="consult-title">사진 2~3장이면<br>필요한 범위를 먼저 안내드립니다</div>
       <div class="consult-steps">
         <div class="consult-step">
-          <div class="step-num-circle">1</div>
-          <div class="step-text"><strong>카카오톡으로 현장 사진</strong> 전송</div>
+          <div class="cstep-n">1</div>
+          <div class="cstep-t"><strong>카카오톡으로 현장 사진</strong> 전송</div>
         </div>
         <div class="consult-step">
-          <div class="step-num-circle">2</div>
-          <div class="step-text">사진 확인 후 <strong>시공 가능 여부 및 범위 1차 안내</strong></div>
+          <div class="cstep-n">2</div>
+          <div class="cstep-t">사진 확인 후 <strong>시공 가능 여부 및 범위 1차 안내</strong></div>
         </div>
         <div class="consult-step">
-          <div class="step-num-circle">3</div>
-          <div class="step-text">필요 시 <strong>현장 방문 후 견적 확정</strong></div>
+          <div class="cstep-n">3</div>
+          <div class="cstep-t">필요 시 <strong>현장 방문 후 견적 확정</strong></div>
         </div>
       </div>
       <div class="consult-btns">
-        <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="consult-kakao">💬 카카오톡으로 사진 보내기</a>
-        <a href="tel:010-4646-3145" class="consult-tel">📞 010-4646-3145</a>
+        <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="cbtn-k">💬 카카오톡으로 사진 보내기</a>
+        <a href="tel:010-4646-3145" class="cbtn-t">📞 010-4646-3145</a>
       </div>
-      <div class="consult-note">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자를 추천드립니다</div>
+      <p class="consult-note">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자를 추천드립니다</p>
     </div>
+
   </div>
 
-  <!-- ─── CONCERN ─── -->
+  <!-- ===== 고객 공감 ===== -->
   <section id="concern">
-    <div class="sec-eyebrow reveal">CUSTOMER CONCERN</div>
-    <div class="sec-title reveal">이런 상황이시죠?</div>
-    <div class="concern-grid reveal">
+    <div class="sec-ey reveal">CUSTOMER CONCERN</div>
+    <div class="sec-ti reveal">이런 상황이시죠?</div>
+    <div class="concern-list reveal">
       <div class="concern-item">
-        <div class="concern-icon">🤔</div>
-        <div class="concern-body">
-          <div class="concern-q">작은 공사도 받아주실까 걱정됩니다</div>
-          <div class="concern-a">타일 한 장, 줄눈 일부, 현관 부분 보수 모두 문의 가능합니다. 규모와 상관없이 사진을 먼저 확인하고 안내드립니다.</div>
+        <div class="ci-icon">🤔</div>
+        <div>
+          <div class="ci-q">작은 공사도 받아주실까 걱정됩니다</div>
+          <div class="ci-a">타일 한 장, 줄눈 일부, 현관 부분 보수 모두 문의 가능합니다. 규모와 상관없이 사진을 먼저 확인하고 안내드립니다.</div>
         </div>
       </div>
       <div class="concern-item">
-        <div class="concern-icon">📐</div>
-        <div class="concern-body">
-          <div class="concern-q">어디까지 수리해야 할지 모르겠어요</div>
-          <div class="concern-a">일부만 고치면 되는지, 전체를 교체해야 하는지 기준을 모를 때가 많습니다. 현장을 직접 보고 정확하게 판단해드립니다.</div>
+        <div class="ci-icon">📐</div>
+        <div>
+          <div class="ci-q">어디까지 수리해야 할지 모르겠어요</div>
+          <div class="ci-a">일부만 고치면 되는지, 전체를 교체해야 하는지 기준을 모를 때가 많습니다. 현장을 직접 보고 정확하게 판단해드립니다.</div>
         </div>
       </div>
       <div class="concern-item">
-        <div class="concern-icon">💰</div>
-        <div class="concern-body">
-          <div class="concern-q">비용과 공사 범위가 커질까 불안합니다</div>
-          <div class="concern-a">작은 수리 문의했다가 큰 공사로 이어질까 망설여지죠. 수한공간은 필요 없는 공사는 권하지 않습니다. 꼭 필요한 범위만 안내합니다.</div>
+        <div class="ci-icon">💰</div>
+        <div>
+          <div class="ci-q">비용과 공사 범위가 커질까 불안합니다</div>
+          <div class="ci-a">작은 수리 문의했다가 큰 공사로 이어질까 망설여지죠. 수한공간은 필요 없는 공사는 권하지 않습니다. 꼭 필요한 범위만 안내합니다.</div>
         </div>
       </div>
       <div class="concern-item">
-        <div class="concern-icon">🏠</div>
-        <div class="concern-body">
-          <div class="concern-q">한 군데만 고치고 싶은데 전체 공사를 권할까 걱정돼요</div>
-          <div class="concern-a">부분 수리만 원하는데 불필요한 추가 공사를 권유할까 우려되시죠. 상태 확인 후 최소 범위를 먼저 말씀드립니다.</div>
+        <div class="ci-icon">🏠</div>
+        <div>
+          <div class="ci-q">한 군데만 고치고 싶은데 전체 공사를 권할까 걱정돼요</div>
+          <div class="ci-a">부분 수리만 원하는데 불필요한 추가 공사를 권유할까 우려되시죠. 상태 확인 후 최소 범위를 먼저 말씀드립니다.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── PRINCIPLE ─── -->
+  <!-- ===== 시공 원칙 ===== -->
   <section id="principle">
-    <div class="sec-eyebrow reveal">OUR PRINCIPLE</div>
-    <div class="sec-title reveal">수한공간의 원칙</div>
+    <div class="sec-ey reveal">OUR PRINCIPLE</div>
+    <div class="sec-ti reveal">수한공간의 원칙</div>
     <p class="principle-intro reveal">
       전체 공사 전에 상태를 먼저 보고 최적의 방법을 결정합니다.<br>
       단순 들뜸인지, 방수 문제인지, 구조적 하자인지에 따라 처리 방법이 완전히 달라집니다. 현장을 직접 보고 판단하는 것이 수한공간의 원칙입니다.
     </p>
     <div class="principle-grid reveal">
       <div class="principle-card">
-        <div class="principle-num">01 · 상태 확인</div>
-        <div class="principle-title">원인부터 먼저 확인합니다</div>
-        <div class="principle-desc">들뜸·깨짐·줄눈 파손의 원인은 각각 다릅니다. 눈으로 직접 보고 두드려 확인하는 것이 먼저입니다.</div>
-        <div class="principle-accent">→ 원인을 알아야 정확한 범위가 결정됩니다</div>
+        <div class="pc-num">01 · 상태 확인</div>
+        <div class="pc-title">원인부터 먼저 확인합니다</div>
+        <div class="pc-desc">들뜸·깨짐·줄눈 파손의 원인은 각각 다릅니다. 눈으로 직접 보고 두드려 확인하는 것이 먼저입니다.</div>
+        <div class="pc-accent">→ 원인을 알아야 정확한 범위가 결정됩니다</div>
       </div>
       <div class="principle-card">
-        <div class="principle-num">02 · 부분 보수 우선</div>
-        <div class="principle-title">전체 교체 없이 해결되는 경우가 많습니다</div>
-        <div class="principle-desc">현장 상태에 따라 문제 부분만 선별해 시공합니다. 전체 철거가 꼭 필요한 경우가 아니라면 권하지 않습니다.</div>
-        <div class="principle-accent">→ 비용과 공사 기간 모두 최적화</div>
+        <div class="pc-num">02 · 부분 보수 우선</div>
+        <div class="pc-title">전체 교체 없이 해결되는 경우가 많습니다</div>
+        <div class="pc-desc">현장 상태에 따라 문제 부분만 선별해 시공합니다. 전체 철거가 꼭 필요한 경우가 아니라면 권하지 않습니다.</div>
+        <div class="pc-accent">→ 비용과 공사 기간 모두 최적화</div>
       </div>
       <div class="principle-card">
-        <div class="principle-num">03 · 낭비 없음</div>
-        <div class="principle-title">필요 없는 공사는 권하지 않습니다</div>
-        <div class="principle-desc">안 해도 되는 공사는 안 한다고 말씀드립니다. 꼭 필요한 범위만 정확하게 처리하는 것이 수한공간의 기준입니다.</div>
-        <div class="principle-accent">→ 고객 입장에서 최소 범위로 최대 효과</div>
+        <div class="pc-num">03 · 낭비 없음</div>
+        <div class="pc-title">필요 없는 공사는 권하지 않습니다</div>
+        <div class="pc-desc">안 해도 되는 공사는 안 한다고 말씀드립니다. 꼭 필요한 범위만 정확하게 처리하는 것이 수한공간의 기준입니다.</div>
+        <div class="pc-accent">→ 고객 입장에서 최소 범위로 최대 효과</div>
       </div>
     </div>
   </section>
 
-  <!-- ─── SERVICES ─── -->
+  <!-- ===== 서비스 범위 (기존 내용 유지) ===== -->
   <section id="services">
-    <div class="sec-eyebrow reveal">SERVICES</div>
-    <div class="sec-title reveal">집수리 · 부분 리모델링 <em>시공 범위</em></div>
+    <div class="sec-ey reveal">SERVICES</div>
+    <div class="sec-ti reveal">집수리 · 부분 리모델링 <em>시공 범위</em></div>
     <div class="svc-grid reveal">
+
       <div class="svc-card">
-        <div class="svc-header">
+        <div class="svc-head">
           <div class="svc-num">01 · 현관</div>
           <div class="svc-badge">당일 가능</div>
         </div>
         <div class="svc-title">현관 타일 시공</div>
-        <div class="svc-sub-tags">
-          <span class="svc-sub-tag">바닥 신규 타일</span>
-          <span class="svc-sub-tag">부분 교체</span>
-          <span class="svc-sub-tag">줄눈</span>
+        <div class="svc-tags">
+          <span class="svc-tag">바닥 신규 타일</span>
+          <span class="svc-tag">부분 교체</span>
+          <span class="svc-tag">들뜸·깨짐 보수</span>
+          <span class="svc-tag">줄눈</span>
         </div>
-        <div class="svc-desc">현관 바닥 타일 신규 시공 또는 교체. 들뜸·깨짐 보수부터 줄눈 재시공까지 필요한 범위만 처리합니다.</div>
+        <div class="svc-desc">현관 바닥 타일 신규 시공 또는 교체. 들뜸·깨짐 보수도 가능합니다.</div>
         <ul class="svc-list">
           <li>현관 바닥 신규 타일</li>
           <li>기존 타일 교체</li>
@@ -775,18 +535,20 @@ footer { padding: 36px 0; }
           <li>줄눈 재시공</li>
         </ul>
       </div>
+
       <div class="svc-card">
-        <div class="svc-header">
+        <div class="svc-head">
           <div class="svc-num">02 · 베란다</div>
           <div class="svc-badge">방수 포함 가능</div>
         </div>
         <div class="svc-title">베란다 바닥 공사</div>
-        <div class="svc-sub-tags">
-          <span class="svc-sub-tag">바닥 타일</span>
-          <span class="svc-sub-tag">방수 처리</span>
-          <span class="svc-sub-tag">줄눈 마감</span>
+        <div class="svc-tags">
+          <span class="svc-tag">바닥 타일</span>
+          <span class="svc-tag">철거 후 교체</span>
+          <span class="svc-tag">방수 처리</span>
+          <span class="svc-tag">줄눈 마감</span>
         </div>
-        <div class="svc-desc">베란다 바닥 타일 시공·교체. 방수 처리가 필요한 경우 함께 진행합니다. 줄눈 마감까지 한 번에 처리.</div>
+        <div class="svc-desc">베란다 바닥 타일 시공·교체. 방수 처리 포함 가능.</div>
         <ul class="svc-list">
           <li>베란다 바닥 타일</li>
           <li>기존 타일 철거 후 교체</li>
@@ -794,18 +556,20 @@ footer { padding: 36px 0; }
           <li>줄눈 마감</li>
         </ul>
       </div>
+
       <div class="svc-card">
-        <div class="svc-header">
+        <div class="svc-head">
           <div class="svc-num">03 · 주방</div>
           <div class="svc-badge">부분 보수 가능</div>
         </div>
         <div class="svc-title">주방 벽 타일</div>
-        <div class="svc-sub-tags">
-          <span class="svc-sub-tag">벽 신규 타일</span>
-          <span class="svc-sub-tag">부분 보수</span>
-          <span class="svc-sub-tag">줄눈 재시공</span>
+        <div class="svc-tags">
+          <span class="svc-tag">벽 신규 타일</span>
+          <span class="svc-tag">기존 교체</span>
+          <span class="svc-tag">부분 보수</span>
+          <span class="svc-tag">줄눈 재시공</span>
         </div>
-        <div class="svc-desc">주방 벽 타일 신규 시공·교체·부분 보수. 깨진 타일 한 장 교체부터 전체 재시공까지 범위를 먼저 확인합니다.</div>
+        <div class="svc-desc">주방 벽 타일 신규 시공·교체·부분 보수. 기름때 자국 없는 깔끔한 마감.</div>
         <ul class="svc-list">
           <li>주방 벽 신규 타일</li>
           <li>기존 타일 교체</li>
@@ -813,18 +577,20 @@ footer { padding: 36px 0; }
           <li>줄눈 재시공</li>
         </ul>
       </div>
+
       <div class="svc-card">
-        <div class="svc-header">
-          <div class="svc-num">04 · 생활보수</div>
-          <div class="svc-badge">복합 공사 가능</div>
+        <div class="svc-head">
+          <div class="svc-num">04 · 생활보수·소형공사</div>
+          <div class="svc-badge">복합 가능</div>
         </div>
-        <div class="svc-title">기타 생활 공간 집수리</div>
-        <div class="svc-sub-tags">
-          <span class="svc-sub-tag">계단 타일</span>
-          <span class="svc-sub-tag">창고·다용도실</span>
-          <span class="svc-sub-tag">임대·매매 보수</span>
+        <div class="svc-title">기타 집수리 타일</div>
+        <div class="svc-tags">
+          <span class="svc-tag">계단 타일</span>
+          <span class="svc-tag">창고·다용도실</span>
+          <span class="svc-tag">외부 바닥</span>
+          <span class="svc-tag">임대·매매 보수</span>
         </div>
-        <div class="svc-desc">계단·창고·다용도실·외부 바닥 등 다양한 공간. 임대·매매 전 하자 보수도 최소 범위로 빠르게 처리합니다.</div>
+        <div class="svc-desc">계단·창고·외부 바닥 등 다양한 공간. 복합 공사도 한 번에 처리합니다.</div>
         <ul class="svc-list">
           <li>계단 타일 시공</li>
           <li>창고·다용도실 바닥</li>
@@ -832,13 +598,14 @@ footer { padding: 36px 0; }
           <li>임대·매매 전 보수</li>
         </ul>
       </div>
+
     </div>
   </section>
 
-  <!-- ─── REASONS ─── -->
+  <!-- ===== 선택 이유 ===== -->
   <section id="reason">
-    <div class="sec-eyebrow reveal">WHY SOOHAN</div>
-    <div class="sec-title reveal">수한공간을 <em>선택하는 이유</em></div>
+    <div class="sec-ey reveal">WHY SOOHAN</div>
+    <div class="sec-ti reveal">수한공간을 <em>선택하는 이유</em></div>
     <div class="reasons-grid reveal">
       <div class="reason-card">
         <div class="reason-bar"></div>
@@ -847,7 +614,7 @@ footer { padding: 36px 0; }
       </div>
       <div class="reason-card">
         <div class="reason-bar"></div>
-        <div class="reason-title">현장 보고 판단합니다</div>
+        <div class="reason-title">현장 보고 직접 판단합니다</div>
         <div class="reason-desc">사진만으로 판단하지 않습니다. 직접 방문해 눈으로 보고 두드려 확인한 뒤 필요한 범위를 말씀드립니다.</div>
       </div>
       <div class="reason-card">
@@ -863,42 +630,42 @@ footer { padding: 36px 0; }
     </div>
   </section>
 
-  <!-- ─── PROCESS ─── -->
+  <!-- ===== 진행 절차 (기존 PROCESS 유지) ===== -->
   <section id="process">
-    <div class="sec-eyebrow reveal">PROCESS</div>
-    <div class="sec-title reveal">상담부터 완료까지 <em>4단계</em></div>
+    <div class="sec-ey reveal">PROCESS</div>
+    <div class="sec-ti reveal">상담부터 완료까지 <em>4단계</em></div>
     <div class="steps reveal">
-      <div class="step-card">
-        <div class="step-no">1</div>
+      <div class="step">
+        <div class="step-num">01</div>
         <div class="step-title">사진 상담</div>
         <div class="step-desc">카카오톡으로 현장 사진을 보내주시면 확인 후 1차 안내드립니다.</div>
       </div>
-      <div class="step-card">
-        <div class="step-no">2</div>
-        <div class="step-title">현장 방문</div>
-        <div class="step-desc">직접 확인 후 문제 원인과 상태를 정확히 파악합니다.</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">범위 확정</div>
+        <div class="step-desc">사진 또는 현장 방문 후 작업 범위와 비용을 결정합니다.</div>
       </div>
-      <div class="step-card">
-        <div class="step-no">3</div>
-        <div class="step-title">시공 범위 확정</div>
-        <div class="step-desc">필요한 범위만 정리하고 시공 방법과 일정을 확정합니다.</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">당일 시공</div>
+        <div class="step-desc">소규모 작업은 방문 당일 완료. 자재 직접 조달 후 진행.</div>
       </div>
-      <div class="step-card">
-        <div class="step-no">4</div>
-        <div class="step-title">시공 완료</div>
-        <div class="step-desc">완료 후 상태를 함께 확인하며, 이상이 있을 경우 조치해드립니다.</div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">완료 확인</div>
+        <div class="step-desc">완료 후 사진 공유. AS·하자 발생 시 확인 후 조치합니다.</div>
       </div>
     </div>
   </section>
 
-  <!-- ─── CASES ─── -->
+  <!-- ===== 시공 사례 (기존 CASES 유지) ===== -->
   <section id="cases">
-    <div class="sec-head-row reveal">
+    <div class="sec-hrow reveal">
       <div>
-        <div class="sec-eyebrow" style="margin-bottom:8px;">CASES</div>
-        <div class="sec-title" style="margin-bottom:0;">실제 <em>시공 사례</em></div>
+        <div class="sec-ey" style="margin-bottom:8px;">CASES</div>
+        <div class="sec-ti" style="margin-bottom:0;">실제 <em>시공 사례</em></div>
       </div>
-      <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener" class="sec-right-link">네이버 블로그에서 더 보기 →</a>
+      <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener" class="sec-lnk">네이버 블로그에서 더 보기 →</a>
     </div>
     <div class="cases-grid reveal">
       <div class="case-card">
@@ -908,7 +675,7 @@ footer { padding: 36px 0; }
         </div>
         <div>
           <div class="case-title">현관 바닥 타일 신규 시공</div>
-          <div class="case-loc">평택시 · 2025</div>
+          <div class="case-loc">PYEONGTAEK · 2025</div>
         </div>
       </div>
       <div class="case-card">
@@ -918,7 +685,7 @@ footer { padding: 36px 0; }
         </div>
         <div>
           <div class="case-title">베란다 바닥 방수 후 타일</div>
-          <div class="case-loc">오산시 · 2025</div>
+          <div class="case-loc">OSAN · 2025</div>
         </div>
       </div>
       <div class="case-card">
@@ -928,23 +695,23 @@ footer { padding: 36px 0; }
         </div>
         <div>
           <div class="case-title">주방 벽 타일 부분 교체</div>
-          <div class="case-loc">안성시 · 2025</div>
+          <div class="case-loc">ANSEONG · 2025</div>
         </div>
       </div>
     </div>
     <p class="cases-more">더 많은 시공 사례는 <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener">네이버 블로그</a>에서 확인하실 수 있습니다.</p>
   </section>
 
-</div><!-- /wrap -->
+</div>
 
-<!-- ─── CTA BAND ─── -->
+<!-- CTA 다크 배너 -->
 <div class="cta-band reveal">
   <div class="wrap">
     <div class="cta-band-inner">
       <div>
-        <div class="cta-eyebrow">FREE CONSULTATION</div>
-        <div class="cta-title">사진 2~3장 보내주시면<br><strong>범위를 먼저 안내드립니다</strong></div>
-        <div class="cta-desc">가능한 방법과 필요한 범위를 먼저 확인해드립니다.<br>연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
+        <div class="cta-ey">FREE CONSULTATION</div>
+        <div class="cta-ti">사진 2~3장 보내주시면<br><strong>범위를 먼저 안내드립니다</strong></div>
+        <div class="cta-de">가능한 방법과 필요한 범위를 먼저 확인해드립니다.<br>연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
       </div>
       <div class="cta-btns">
         <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="cta-kakao">💬 카카오톡 문의</a>
@@ -956,11 +723,11 @@ footer { padding: 36px 0; }
 
 <div class="wrap">
 
-  <!-- ─── CONTACT ─── -->
+  <!-- CONTACT -->
   <section id="contact">
-    <div class="sec-eyebrow reveal">CONTACT</div>
-    <div class="sec-title reveal">상담 · 문의</div>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:24px;" class="reveal">
+    <div class="sec-ey reveal">CONTACT</div>
+    <div class="sec-ti reveal">상담 · 문의</div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.85;margin-bottom:24px;" class="reveal">
       사진을 보내주시면 시공 가능 여부와<br>필요한 작업 범위를 먼저 안내드립니다.<br>
       <strong style="color:var(--text);font-weight:500;">작업 중에는 전화 연결이 어려울 수 있습니다.</strong><br>
       문자 또는 카카오톡으로 사진을 보내주시면 확인 후 순서대로 안내드립니다.
@@ -968,58 +735,58 @@ footer { padding: 36px 0; }
 
     <div class="contact-cards reveal">
       <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="contact-card kakao">
-        <div class="cc-label">KAKAO · 추천</div>
-        <div class="cc-main">💬 카카오톡 상담</div>
-        <div class="cc-sub">사진 전송 → 확인 후 안내</div>
-        <div class="cc-arrow">→</div>
+        <div class="cc-lb">KAKAO · 추천</div>
+        <div class="cc-mn">💬 카카오톡 상담</div>
+        <div class="cc-sb">사진 전송 → 확인 후 안내</div>
+        <div class="cc-ar">→</div>
       </a>
       <a href="tel:010-4646-3145" class="contact-card">
-        <div class="cc-label">PHONE</div>
-        <div class="cc-main">📞 010-4646-3145</div>
-        <div class="cc-sub">전화 · 문자 모두 가능합니다</div>
-        <div class="cc-arrow">→</div>
+        <div class="cc-lb">PHONE</div>
+        <div class="cc-mn">📞 010-4646-3145</div>
+        <div class="cc-sb">전화 · 문자 모두 가능합니다</div>
+        <div class="cc-ar">→</div>
       </a>
     </div>
 
     <div class="contact-extras reveal">
       <a href="sms:010-4646-3145" class="contact-extra">
-        <div class="ce-label">SMS</div>
-        <div class="ce-main">📱 문자 문의</div>
-        <div class="ce-sub">사진과 함께 보내주세요</div>
-        <div class="ce-arrow">→</div>
+        <div class="ce-lb">SMS</div>
+        <div class="ce-mn">📱 문자 문의</div>
+        <div class="ce-sb">사진과 함께 보내주세요</div>
+        <div class="ce-ar">→</div>
       </a>
       <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener" class="contact-extra">
-        <div class="ce-label">BLOG</div>
-        <div class="ce-main">📝 네이버 블로그</div>
-        <div class="ce-sub">시공 사례 · 후기 확인</div>
-        <div class="ce-arrow">→</div>
+        <div class="ce-lb">BLOG</div>
+        <div class="ce-mn">📝 네이버 블로그</div>
+        <div class="ce-sb">시공 사례 · 후기 확인</div>
+        <div class="ce-ar">→</div>
       </a>
     </div>
 
     <div class="contact-hours reveal">
-      <div class="ch-item">
-        <div class="ch-label">평일</div>
-        <div class="ch-val">08:00 – 21:00</div>
+      <div>
+        <div class="ch-lb">평일</div>
+        <div class="ch-vl">08:00 – 21:00</div>
       </div>
-      <div class="ch-item">
-        <div class="ch-label">토요일</div>
-        <div class="ch-val">08:00 – 21:00</div>
+      <div>
+        <div class="ch-lb">토요일</div>
+        <div class="ch-vl">08:00 – 21:00</div>
       </div>
-      <div class="ch-item">
-        <div class="ch-label">일요일 · 공휴일</div>
-        <div class="ch-val">08:00 – 21:00</div>
+      <div>
+        <div class="ch-lb">일요일 · 공휴일</div>
+        <div class="ch-vl">08:00 – 21:00</div>
       </div>
-      <div class="ch-item">
-        <div class="ch-label">연중무휴 운영</div>
-        <div class="ch-val">365일</div>
+      <div>
+        <div class="ch-lb">연중무휴 운영</div>
+        <div class="ch-vl">365일</div>
         <span class="ch-tag">연중무휴</span>
       </div>
     </div>
   </section>
 
-</div><!-- /wrap -->
+</div>
 
-<!-- ─── FOOTER ─── -->
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="footer-inner">
@@ -1043,21 +810,19 @@ footer { padding: 36px 0; }
   </div>
 </footer>
 
-<!-- ─── FLOATING BOTTOM CTA ─── -->
+<!-- 모바일 하단 고정 CTA -->
 <div class="floating-cta">
-  <div class="floating-cta-row">
+  <div class="fcta-row">
     <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener" class="fcta-kakao">💬 카카오톡 상담</a>
     <a href="tel:010-4646-3145" class="fcta-tel">📞 010-4646-3145</a>
   </div>
 </div>
 
 <script>
-  // Reveal on scroll
+  // Reveal
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
   }, { threshold: 0.06 });
   reveals.forEach(el => io.observe(el));
 
@@ -1069,7 +834,7 @@ footer { padding: 36px 0; }
     });
   });
 
-  // Mobile nav
+  // 모바일 nav
   const menuBtn = document.getElementById('menuBtn');
   const mobileNav = document.getElementById('mobileNav');
   if (menuBtn && mobileNav) {
@@ -1080,15 +845,11 @@ footer { padding: 36px 0; }
       menuBtn.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
     });
     mobileNav.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        menuBtn.classList.remove('open');
-      });
+      a.addEventListener('click', () => { mobileNav.classList.remove('open'); menuBtn.classList.remove('open'); });
     });
     document.addEventListener('click', (e) => {
       if (!menuBtn.contains(e.target) && !mobileNav.contains(e.target)) {
-        mobileNav.classList.remove('open');
-        menuBtn.classList.remove('open');
+        mobileNav.classList.remove('open'); menuBtn.classList.remove('open');
       }
     });
   }

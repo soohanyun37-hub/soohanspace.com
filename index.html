@@ -70,10 +70,10 @@ header {
   height: 64px; display: flex; align-items: center;
   justify-content: space-between; padding: 0 48px;
 }
-.logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-.logo-icon {
-  width: 36px; height: 36px; background: var(--brand);
-  display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 7px; border-radius: 3px;
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-img {
+  height: 28px;
+  width: auto;
 }
 .logo-icon span { background: rgba(255,255,255,0.9); border-radius: 1px; }
 .logo-icon span:last-child { background: rgba(255,255,255,0.4); }
@@ -752,12 +752,14 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 
 <header>
   <a href="/" class="logo">
-    <div class="logo-icon"><span></span><span></span><span></span><span></span></div>
-    <div class="logo-text">
-      <span class="logo-name">수한공간</span>
-      <span class="logo-sub">평택 타일·욕실·집수리</span>
-    </div>
-  </a>
+  <img src="https://raw.githubusercontent.com/soohanyun37-hub/soohanspace.com/main/images/soohan-logo.png" 
+       alt="수한공간 로고"
+       class="logo-img">
+  <div class="logo-text">
+    <span class="logo-name">수한공간</span>
+    <span class="logo-sub">평택 타일·욕실·집수리</span>
+  </div>
+</a>
   <nav>
     <a href="/tile/">타일 보수 및 시공</a>
     <a href="/bathroom/">욕실 리모델링</a>

@@ -521,11 +521,19 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
 
 .area-map-image {
   width: 100%;
-  max-width: 560px;
   height: auto;
   display: block;
   border-radius: 4px;
 }
+
+@media (min-width: 900px) {
+  .area-map-image {
+    width: auto;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+  
 /* [수한공간 수정 끝] 지도 */
 .cta-band { background: var(--brand); padding: 60px 80px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; border-top: 4px solid var(--accent); position: relative; overflow: hidden; }
 .cta-band::before { content: ''; position: absolute; top: -50%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(184,71,46,0.08) 0%, transparent 60%); pointer-events: none; }

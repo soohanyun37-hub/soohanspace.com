@@ -720,6 +720,64 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   max-width: 960px;
   margin: 0 auto;
 }
+
+/* [수한공간 수정 시작] 고객 후기 */
+.hero-reviews {
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+.hero-reviews-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: var(--accent-light);
+  border: 1px solid rgba(184,71,46,0.18);
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.hero-reviews-label::before {
+  content: '★★★★★';
+  font-size: 10px;
+}
+
+.hero-reviews-items {
+  display: grid;
+  gap: 10px;
+}
+
+.hero-review-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+
+.hero-review-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-mid);
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .hero-reviews-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-review-text {
+    font-size: 15px;
+  }
+}
+/* [수한공간 수정 끝] 고객 후기 */
 </style>
 </head>
 <body>
@@ -836,6 +894,20 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
       <a href="tel:010-4646-3145" class="btn-secondary">📞 010-4646-3145</a>
     </div>
+
+    <!-- [수한공간 수정 시작] 고객 후기 -->
+    <div class="hero-reviews" aria-label="고객 후기">
+      <div class="hero-reviews-label">고객 후기</div>
+      <div class="hero-reviews-items">
+        <div class="hero-review-item">
+          <p class="hero-review-text">"타일 들떠서 다 뜯어야 하나 했는데 부분 보수로 해결됐어요."</p>
+        </div>
+        <div class="hero-review-item">
+          <p class="hero-review-text">"전체 철거 안 해도 된다고 해서 부담이 많이 줄었습니다."</p>
+        </div>
+      </div>
+    </div>
+    <!-- [수한공간 수정 끝] 고객 후기 -->
 
     <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 작업 중에는 카카오톡 문의를 추천드립니다</p>
 

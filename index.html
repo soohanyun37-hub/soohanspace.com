@@ -512,15 +512,21 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
 .area-tip { display: flex; gap: 10px; padding: 14px 16px; background: #fff; border-left: 3px solid var(--accent); font-size: 13px; color: var(--text-mid); font-weight: 500; line-height: 1.7; word-break: keep-all; }
 .area-tip strong { color: var(--accent); font-weight: 800; }
 .area-right { background: #fff; border: 1px solid var(--border); padding: 28px; }
-.area-title { font-size: 13px; font-weight: 800; color: var(--brand); margin-bottom: 18px; letter-spacing: 0.02em; display: flex; align-items: center; gap: 8px; }
-.area-title::before { content: ''; width: 20px; height: 2px; background: var(--accent); }
-.area-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border: 1px solid var(--border); border-bottom: none; }
-.al-item { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); font-size: 13.5px; font-weight: 600; color: var(--text-mid); background: #fff; }
-.al-item:nth-child(2n) { border-right: none; }
-.al-item.primary { color: var(--brand); font-weight: 800; background: var(--brand-light); }
-.al-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
-.al-item.primary .al-dot { background: var(--accent); width: 6px; height: 6px; }
+/* [수한공간 수정 시작] 지도 */
+.area-map-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.area-map-image {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+/* [수한공간 수정 끝] 지도 */
 .cta-band { background: var(--brand); padding: 60px 80px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; border-top: 4px solid var(--accent); position: relative; overflow: hidden; }
 .cta-band::before { content: ''; position: absolute; top: -50%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(184,71,46,0.08) 0%, transparent 60%); pointer-events: none; }
 .cta-eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 0.06em; color: #ffb199; margin-bottom: 12px; }
@@ -684,25 +690,21 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .services-grid { grid-template-columns: 1fr; }
   .sv:nth-child(3n) { border-right: 1px solid var(--border); }
   .why-grid { grid-template-columns: 1fr 1fr; }
-.hero-stats { flex-direction: row; }
-.hstat { padding-right: 12px; margin-right: 12px; }
-.hstat-num { font-size: 24px; }
+  .hero-stats { flex-direction: row; }
+  .hstat { padding-right: 12px; margin-right: 12px; }
+  .hstat-num { font-size: 24px; }
+
+  /* [수한공간 수정 시작] 모바일 지도 박스 여백 */
+  .area-right { padding: 12px; }
+  /* [수한공간 수정 끝] 모바일 지도 박스 여백 */
 
   .cta-title { font-size: 22px; }
   .cta-btns { flex-direction: column; width: 100%; }
   .btn-cta-kakao, .btn-cta-tel { width: 100%; justify-content: center; padding: 16px; font-size: 15px; }
   footer { padding: 28px 20px; flex-direction: column; align-items: flex-start; }
-  .area-list { grid-template-columns: 1fr; }
-  .al-item:nth-child(2n) { border-right: 1px solid var(--border); }
   .contact-card { padding: 28px 24px; }
   .cc-num { font-size: 28px; }
 }
-
-/* ✅ 작업4: 시공 사례 CSS 추가 */
-.case-section { padding: 80px; background: #fff; border-bottom: 1px solid var(--border); }
-.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.case-item { height: 220px; background: var(--bg-gray); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-muted); border: 1px solid var(--border); }
-@media (max-width: 700px) { .case-grid { grid-template-columns: 1fr; } }
 
 /* ===== 수한공간 추가 (AS 문구) ===== */
 .aftercare {
@@ -1080,19 +1082,15 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 <p class="area-desc" style="font-size:13.5px; color:var(--text-muted); margin-bottom:16px;">평택 용이동·비전동·세교동 인근을 포함해 가까운 지역 현장을 우선적으로 보고 움직이고 있습니다.</p>
 <div class="area-tip"><strong>💡</strong><span>그 외 지역도 사진을 먼저 보내주시면<br>시공 가능 여부를 안내드립니다.</span></div>
     </div>
-    <div class="area-right">
-      <div class="area-title">주요 시공 지역</div>
-      <div class="area-list">
-        <div class="al-item primary"><span class="al-dot"></span>평택시</div>
-        <div class="al-item primary"><span class="al-dot"></span>안성시</div>
-        <div class="al-item primary"><span class="al-dot"></span>오산시</div>
-        <div class="al-item primary"><span class="al-dot"></span>화성시</div>
-        <div class="al-item"><span class="al-dot"></span>천안시</div>
-        <div class="al-item"><span class="al-dot"></span>당진시</div>
-        <div class="al-item"><span class="al-dot"></span>용인시</div>
-        <div class="al-item"><span class="al-dot"></span>그 외 상담</div>
-      </div>
-    </div>
+<!-- [수한공간 수정 시작] 시공지역 박스 → 지도 이미지 교체 -->
+<div class="area-right area-map-box">
+  <img
+    src="/images/service-area-map-mobile.jpg"
+    alt="직접 찾아가는 수한공간 시공 지역 안내"
+    class="area-map-image"
+  >
+</div>
+<!-- [수한공간 수정 끝] 시공지역 박스 → 지도 이미지 교체 -->
   </div>
 </section>
 <div class="cta-band">

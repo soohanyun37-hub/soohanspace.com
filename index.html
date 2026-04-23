@@ -743,10 +743,13 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 }
 
 .hero-reviews-label::before {
-  content: '★★★★★';
+  content: '★';
   font-size: 10px;
 }
-
+.hero-reviews-label::after {
+  content: '★';
+  font-size: 10px;
+}
 .hero-reviews-items {
   display: grid;
   gap: 10px;
@@ -767,7 +770,12 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   color: var(--text-mid);
   letter-spacing: -0.02em;
 }
-
+.review-stars {
+  color: #f5a623;
+  font-size: 12px;
+  margin-left: 4px;
+}
+  
 @media (min-width: 768px) {
   .hero-reviews-items {
     grid-template-columns: 1fr 1fr;
@@ -900,11 +908,11 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <div class="hero-reviews-label">고객 후기</div>
       <div class="hero-reviews-items">
         <div class="hero-review-item">
-          <p class="hero-review-text">"타일 들떠서 다 뜯어야 하나 했는데 부분 보수로 해결됐어요."</p>
+        <p class="hero-review-text">"타일 들떠서 다 뜯어야 하나 했는데 부분 보수로 해결됐어요." <span class="review-stars">★★★★★</span></p>
         </div>
         <div class="hero-review-item">
-          <p class="hero-review-text">"전체 철거 안 해도 된다고 해서 부담이 많이 줄었습니다."</p>
-        </div>
+          <p class="hero-review-text">"전체 철거 안 해도 된다고 해서 부담이 많이 줄었습니다." <span class="review-stars">★★★★★</span></p>
+            </div>
       </div>
     </div>
     <!-- [수한공간 수정 끝] 고객 후기 -->

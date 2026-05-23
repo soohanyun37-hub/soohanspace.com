@@ -1,14 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>평택 욕실 리모델링 전문 · 수한공간</title>
-<meta name="description" content="전체 철거부터 부분 교체까지. 욕실 상태를 먼저 확인하고 타일·방수·줄눈을 일괄 시공합니다. 사진 2~3장 보내주시면 시공 가능 여부와 범위를 먼저 안내드립니다.">
+<title>평택 욕실 리모델링 전문 · 수한공간욕실</title>
+<meta name="description" content="전체 철거부터 부분 교체까지. 욕실 상태를 먼저 확인하고 타일·방수·줄눈을 일괄 시공합니다. 사진 보내주시면 시공 가능 여부와 범위를 먼저 안내드립니다.">
 <meta name="keywords" content="평택욕실리모델링, 욕실리모델링, 평택욕실, 욕실공사, 욕실타일, 수한공간욕실">
-<meta property="og:title" content="평택 욕실 리모델링 전문 · 수한공간">
-<meta property="og:description" content="전체 철거부터 부분 교체까지. 타일·방수·줄눈 일괄 시공. 사진 2~3장으로 바로 상담.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="평택 욕실 리모델링 전문 · 수한공간욕실">
+<meta property="og:description" content="전체 철거부터 부분 교체까지. 타일·방수·줄눈 일괄 시공. 사진 보내주시면 가능한 방법과 필요한 범위를 먼저 안내드립니다.">
 <meta property="og:url" content="https://soohanspace.com/bath/">
+<meta property="og:site_name" content="수한공간">
+<meta property="og:locale" content="ko_KR">
 <meta name="theme-color" content="#1f2b3a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,12 +38,10 @@ body { background: var(--bg); color: var(--text); font-family: var(--font); -web
 .notice-bar strong { color: #fff; font-weight: 700; }
 .notice-bar .dot { color: rgba(255,255,255,0.4); margin: 0 6px; }
 
-/* HEADER */
-header { position: sticky; top: 0; z-index: 300; background: #fff; border-bottom: 1px solid var(--border); height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; }
-.logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-.logo-icon { width: 36px; height: 36px; background: var(--brand); display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 7px; border-radius: 3px; }
-.logo-icon span { background: rgba(255,255,255,0.9); border-radius: 1px; }
-.logo-icon span:last-child { background: rgba(255,255,255,0.4); }
+/* HEADER (메인 기준 72px, 이미지 로고) */
+header { position: sticky; top: 0; z-index: 300; background: #fff; border-bottom: 1px solid var(--border); height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; }
+.logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+.logo-img { height: 48px; width: auto; }
 .logo-text { display: flex; flex-direction: column; }
 .logo-name { font-size: 17px; font-weight: 800; color: var(--text); letter-spacing: -0.02em; line-height: 1.1; }
 .logo-sub { font-size: 11px; color: var(--text-muted); font-weight: 500; margin-top: 2px; }
@@ -53,6 +55,7 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .hbtn-kakao:hover { background: var(--kakao-dark); }
 .hbtn-tel { background: var(--brand); color: #fff; }
 .hbtn-tel:hover { background: var(--brand-dark); }
+.tel-icon { width: 16px; height: 16px; color: #fff; flex-shrink: 0; }
 
 /* MOBILE NAV */
 .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; margin-left: 6px; }
@@ -60,11 +63,11 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .mobile-menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .mobile-menu-btn.open span:nth-child(2) { opacity: 0; }
 .mobile-menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--brand); z-index: 290; padding: 8px 0; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.mobile-nav { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--brand); z-index: 290; padding: 8px 0; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
 .mobile-nav.open { display: block; }
 .mobile-nav a { display: block; padding: 14px 24px; font-size: 15px; font-weight: 700; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: background 0.1s; }
 .mobile-nav a:last-child { border-bottom: none; }
-.mobile-nav a:hover { background: var(--brand-light); color: var(--brand); }
+.mobile-nav a:hover, .mobile-nav a.active { background: var(--brand-light); color: var(--brand); }
 .mobile-nav-cta { padding: 12px 16px; display: flex; gap: 8px; background: var(--bg-gray); border-top: 1px solid var(--border); }
 .mobile-nav-cta a { flex: 1; text-align: center; padding: 12px 0; font-size: 13.5px; font-weight: 800; border-radius: 4px; text-decoration: none; border-bottom: none !important; }
 .mobile-nav-cta a:first-child { background: var(--kakao); color: #111; }
@@ -111,6 +114,14 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .hstat-num { font-size: 30px; font-weight: 900; color: var(--brand); line-height: 1; margin-bottom: 6px; letter-spacing: -0.02em; }
 .hstat-num .unit { font-size: 18px; font-weight: 700; }
 .hstat-label { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+
+/* 자격증 강조 박스 (메인 기준) */
+.license-badges { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; width: 100%; max-width: 660px; margin: 28px auto 8px; padding: 28px 22px 22px; background: linear-gradient(180deg, #f7fbff 0%, #eaf3ff 100%); border: 1.5px solid #27486f; border-radius: 18px; box-shadow: 0 14px 30px rgba(31,58,95,0.10), 0 3px 10px rgba(31,58,95,0.06), inset 0 1px 0 rgba(255,255,255,0.85); position: relative; text-align: center; }
+.license-badges::before { content: '국가 공인 자격증'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); padding: 8px 20px; background: linear-gradient(135deg, #183a63 0%, #2d5b93 100%); color: #fff; font-size: 15px; font-weight: 900; line-height: 1; border-radius: 999px; letter-spacing: 0.04em; box-shadow: 0 10px 22px rgba(24,58,99,0.28), inset 0 1px 0 rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.12); }
+.license-badge { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 10px 16px; border-radius: 999px; background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%); border: 1px solid #c7d8f0; color: #183a63; font-size: 13.5px; font-weight: 900; line-height: 1.3; white-space: nowrap; word-break: keep-all; box-shadow: 0 4px 10px rgba(31,58,95,0.07), inset 0 1px 0 rgba(255,255,255,0.9); transition: all 0.25s ease; }
+.license-badge:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(31,58,95,0.15); }
+.license-badge::before { content: '✔'; color: #2f6fe0; font-weight: 900; margin-right: 7px; }
+@media (max-width: 700px) { .license-badges { gap: 8px; margin: 22px auto 6px; padding: 24px 14px 16px; border-radius: 14px; } .license-badges::before { top: -16px; font-size: 12px; padding: 7px 14px; } .license-badge { min-height: 36px; font-size: 12px; padding: 8px 12px; } }
 
 /* HERO CARD */
 .hero-card { background: #fff; border: 2px solid var(--brand); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 24px rgba(31,43,58,0.08); }
@@ -178,23 +189,8 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .sv-points li { font-size: 12.5px; color: var(--text-muted); padding-left: 14px; position: relative; font-weight: 500; }
 .sv-points li::before { content: '—'; position: absolute; left: 0; color: var(--text-muted); }
 
-/* 비용 안내 */
-.price-section { background: var(--bg-gray); padding: 80px 80px; border-bottom: 1px solid var(--border); }
-.price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-bottom: none; margin-top: 40px; }
-.price-card { padding: 32px 28px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); background: #fff; }
-.price-card:nth-child(3n) { border-right: none; }
-.price-type { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 14px; }
-.price-title { font-size: 16px; font-weight: 800; color: var(--text); margin-bottom: 10px; word-break: keep-all; letter-spacing: -0.02em; }
-.price-range { font-size: 28px; font-weight: 900; color: var(--brand); letter-spacing: -0.03em; line-height: 1; margin-bottom: 4px; }
-.price-unit { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-bottom: 20px; }
-.price-divider { width: 100%; height: 1px; background: var(--border); margin-bottom: 16px; }
-.price-includes { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.price-includes li { font-size: 12.5px; color: var(--text-muted); padding-left: 14px; position: relative; font-weight: 500; }
-.price-includes li::before { content: '—'; position: absolute; left: 0; color: var(--text-muted); }
-.price-note { font-size: 12.5px; color: var(--text-muted); margin-top: 20px; line-height: 1.8; font-weight: 500; padding: 16px 20px; background: #fff; border-left: 3px solid var(--border-strong); }
-
 /* 선택 이유 */
-.why-section { background: #fff; padding: 80px 80px; border-bottom: 1px solid var(--border); }
+.why-section { background: var(--bg-gray); padding: 80px 80px; border-bottom: 1px solid var(--border); }
 .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 40px; border: 1px solid var(--border); border-bottom: none; }
 .wi { background: #fff; padding: 30px 24px 28px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); transition: background 0.12s; }
 .wi:last-child { border-right: none; }
@@ -292,17 +288,17 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 footer { background: #111; padding: 36px 80px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; border-top: 3px solid var(--brand); }
 .footer-info { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.85; font-weight: 500; }
 .footer-info strong { color: rgba(255,255,255,0.7); font-weight: 700; }
+.footer-copy-notice { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.55); font-size: 11.5px; line-height: 1.8; word-break: keep-all; }
+.footer-copy-notice strong { color: rgba(255,255,255,0.82); font-weight: 800; }
 .footer-links { display: flex; gap: 22px; }
 .footer-links a { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.15s; }
 .footer-links a:hover { color: #fff; }
 
 /* FLOATING / MOBILE CTA */
-.floating { position: fixed; bottom: 24px; right: 24px; z-index: 400; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+.floating { position: fixed; bottom: 24px; right: 24px; z-index: 400; display: flex; flex-direction: column; align-items: flex-end; }
 .fb { display: flex; align-items: center; gap: 9px; padding: 14px 20px; border-radius: 4px; font-size: 14px; font-weight: 800; text-decoration: none; border: none; cursor: pointer; transition: all 0.15s; white-space: nowrap; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
 .fb.k { background: var(--kakao); color: #111; }
 .fb.k:hover { background: var(--kakao-dark); transform: translateY(-1px); }
-.fb.t { background: var(--brand); color: #fff; }
-.fb.t:hover { background: var(--brand-dark); transform: translateY(-1px); }
 .mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 500; background: #fff; border-top: 1px solid var(--border); padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); gap: 8px; box-shadow: 0 -2px 16px rgba(0,0,0,0.08); }
 .mobile-cta a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 14px 0; font-size: 15px; font-weight: 800; border-radius: 4px; text-decoration: none; transition: all 0.15s; }
 .mobile-cta a.k { background: var(--kakao); color: #111; flex: 0.9; }
@@ -320,7 +316,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .breadcrumb { padding: 10px 24px; }
   .hero { grid-template-columns: 1fr; padding: 48px 40px 64px; gap: 40px; }
   .anxiety-section, .services-section, .cases-section, .contact-section { padding: 64px 40px; }
-  .core-section, .why-section, .process-section, .price-section { padding: 64px 40px; }
+  .core-section, .why-section, .process-section { padding: 64px 40px; }
   .contact-section { grid-template-columns: 1fr; gap: 40px; }
   .cta-band { flex-direction: column; align-items: flex-start; padding: 52px 40px; }
   .cta-btns { width: 100%; }
@@ -330,12 +326,10 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   footer { padding: 32px 40px; }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .ps:nth-child(2) { border-right: none; }
-  .price-grid { grid-template-columns: 1fr; }
-  .price-card:nth-child(3n) { border-right: 1px solid var(--border); }
 }
 @media (max-width: 700px) {
   header { padding: 0 16px; height: 60px; }
-  .logo-icon { width: 32px; height: 32px; padding: 6px; }
+  .logo-img { height: 38px; }
   .logo-name { font-size: 15px; }
   .logo-sub { font-size: 10.5px; }
   .hbtn-kakao, .hbtn-tel { padding: 8px 11px; font-size: 12.5px; }
@@ -347,7 +341,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .breadcrumb { padding: 10px 16px; font-size: 11px; }
   .hero { padding: 36px 20px 44px; }
   .anxiety-section, .services-section, .cases-section, .contact-section { padding: 52px 20px; }
-  .core-section, .why-section, .process-section, .price-section { padding: 52px 20px; }
+  .core-section, .why-section, .process-section { padding: 52px 20px; }
   .cta-band { padding: 44px 20px; }
   .hero-title { font-size: 32px; }
   .hero-btns { flex-direction: column; }
@@ -377,12 +371,12 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 <body>
 
 <div class="notice-bar">
-  📍 평택·안성·오산 출장 시공<span class="dot">·</span>사진 2~3장이면 1차 안내 가능<span class="dot">·</span><strong>010-4646-3145</strong>
+  📍 평택·안성·오산 출장 시공<span class="dot">·</span>사진 보내주시면 1차 안내 가능<span class="dot">·</span><strong>010-4646-3145</strong>
 </div>
 
 <header>
   <a href="/" class="logo">
-    <div class="logo-icon"><span></span><span></span><span></span><span></span></div>
+    <img src="https://raw.githubusercontent.com/soohanyun37-hub/soohanspace.com/main/images/soohan-logo.png" alt="수한공간 로고" class="logo-img">
     <div class="logo-text">
       <span class="logo-name">수한공간</span>
       <span class="logo-sub">평택 타일·욕실·집수리</span>
@@ -394,15 +388,18 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <a href="/repair/">집수리 · 부분 리모델링</a>
   </nav>
   <div class="header-btns">
-    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>카카오톡</span></a>
-    <a href="tel:010-4646-3145" class="hbtn-tel">📞 <span class="telnum">010-4646-3145</span></a>
+    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
+    <a href="tel:010-4646-3145" class="hbtn-tel">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="tel-icon"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg>
+      <span class="telnum">010-4646-3145</span>
+    </a>
     <button class="mobile-menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <div class="mobile-nav" id="mobileNav">
   <a href="/tile/">타일 보수 및 시공</a>
-  <a href="/bath/">욕실 리모델링</a>
+  <a href="/bath/" class="active">욕실 리모델링</a>
   <a href="/repair/">집수리 · 부분 리모델링</a>
   <div class="mobile-nav-cta">
     <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
@@ -421,7 +418,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   <div class="hero-copy">
     <div class="hero-label"><span class="pulse"></span>평택·안성·오산 욕실 전문</div>
     <h1 class="hero-title">욕실 리모델링<br><span class="hl">전체 vs 부분, 먼저 판단합니다</span></h1>
-    <p class="hero-sub">무조건 전체 철거가 답이 아닙니다.<br>👉 욕실 상태를 먼저 확인하고 필요한 범위만 시공합니다. 타일·방수·줄눈 일괄 처리.</p>
+    <p class="hero-sub">무조건 전체 철거가 답은 아닙니다.<br>👉 욕실 상태를 먼저 확인하고 필요한 범위만 시공합니다. 타일·방수·줄눈 일괄 처리.</p>
     <div class="hero-badge">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5l2 4 4.5.6-3.3 3.2.8 4.4L8 11.6l-4 2.1.8-4.4L1.5 6.1 6 5.5 8 1.5z" stroke="#b8472e" stroke-width="1.3" stroke-linejoin="round" fill="#fdf2ef"/></svg>
       <span class="hero-badge-text">타일 중심 시공 · <strong>타일·방수·온수온돌 기능사 보유</strong></span>
@@ -431,10 +428,15 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <span class="hero-badge-text">평택·안성·오산 <strong>누적 3,000건 이상 시공</strong> · 작업 후 이상이 있으면 확인 후 조치해드립니다</span>
     </div>
     <div class="hero-btns">
-      <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 상담하기</a>
+      <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
       <a href="tel:010-4646-3145" class="btn-secondary">📞 010-4646-3145</a>
     </div>
-    <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 📸 사진 2~3장 보내주시면 됩니다</p>
+    <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 📸 사진 보내주시면 가능한 방법과 필요한 범위를 먼저 안내드립니다</p>
+    <div class="license-badges">
+      <span class="license-badge">타일 시공 국가 공인 자격</span>
+      <span class="license-badge">방수 시공 국가 공인 자격</span>
+      <span class="license-badge">온수온돌 시공 국가 공인 자격</span>
+    </div>
     <div class="hero-stats">
       <div class="hstat"><div class="hstat-num">10<span class="unit">년+</span></div><div class="hstat-label">시공 경력</div></div>
       <div class="hstat"><div class="hstat-num">200<span class="unit">+</span></div><div class="hstat-label">욕실 시공</div></div>
@@ -444,7 +446,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   <aside class="hero-card">
     <div class="hcard-head">
       <span class="hcard-head-label">욕실 무료 상담</span>
-      <div class="hcard-head-title">사진 2~3장이면<br>전체·부분 여부 먼저 안내드립니다</div>
+      <div class="hcard-head-title">사진 보내주시면<br>전체·부분 여부 먼저 안내드립니다</div>
     </div>
     <div class="hcard-body">
       <div class="hcard-steps">
@@ -534,12 +536,12 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <ul class="sv-points"><li>기존 타일 위 신규 타일 시공</li><li>공사 기간 단축</li><li>폐기물·소음 최소화</li><li>적합 여부 현장 판단</li></ul>
     </div>
     <div class="sv reveal">
-      <div class="sv-num">04 · 방수·줄눈</div>
+      <div class="sv-num">04 · 방수·줄눈·도기</div>
       <div class="sv-icon"><svg width="24" height="24" viewBox="0 0 22 22" fill="none"><path d="M11 3v16M3 11h16" stroke="#1f2b3a" stroke-width="1.4" stroke-linecap="round"/><path d="M6 6l10 10M16 6L6 16" stroke="#1f2b3a" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="2 2"/></svg></div>
-      <div class="sv-name">방수·줄눈 단독 시공</div>
-      <div class="sv-desc">타일은 그대로 두고 방수 또는 줄눈만 교체합니다. 누수 방지 목적 단독 시공도 가능합니다.</div>
-      <div class="sv-tags"><span class="sv-tag">방수 단독</span><span class="sv-tag">줄눈 재시공</span><span class="sv-tag">곰팡이 방지</span></div>
-      <ul class="sv-points"><li>바닥 방수 단독 시공</li><li>전체 줄눈 재시공</li><li>곰팡이·변색 줄눈 교체</li><li>방수 줄눈 처리</li></ul>
+      <div class="sv-name">방수·줄눈·도기 교체</div>
+      <div class="sv-desc">타일은 그대로 두고 방수·줄눈만 교체하거나, 변기·세면대·수전 등 도기·수전을 교체합니다.</div>
+      <div class="sv-tags"><span class="sv-tag">방수 단독</span><span class="sv-tag">줄눈 재시공</span><span class="sv-tag">도기·수전 교체</span></div>
+      <ul class="sv-points"><li>바닥 방수 단독 시공</li><li>전체 줄눈 재시공</li><li>곰팡이·변색 줄눈 교체</li><li>변기·세면대·수전 교체</li></ul>
     </div>
   </div>
 </section>
@@ -572,41 +574,6 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   </div>
 </section>
 
-<!-- 비용 안내 -->
-<section class="price-section" id="price">
-  <div class="sec-header reveal">
-    <div class="sec-label">비용 안내</div>
-    <h2 class="sec-title">욕실 리모델링 <em>비용 기준</em></h2>
-  </div>
-  <div class="price-grid">
-    <div class="price-card reveal">
-      <div class="price-type">01 · 부분 보수</div>
-      <div class="price-title">줄눈·타일 부분 교체</div>
-      <div class="price-range">10만~</div>
-      <div class="price-unit">범위에 따라 변동</div>
-      <div class="price-divider"></div>
-      <ul class="price-includes"><li>줄눈 재시공</li><li>타일 단품 교체</li><li>당일 작업 가능</li></ul>
-    </div>
-    <div class="price-card reveal">
-      <div class="price-type">02 · 부분 리모델링</div>
-      <div class="price-title">바닥 또는 벽 교체</div>
-      <div class="price-range">50만~</div>
-      <div class="price-unit">면적·자재에 따라 변동</div>
-      <div class="price-divider"></div>
-      <ul class="price-includes"><li>부분 철거</li><li>방수 처리</li><li>타일·줄눈 시공</li></ul>
-    </div>
-    <div class="price-card reveal">
-      <div class="price-type">03 · 전체 리모델링</div>
-      <div class="price-title">전체 철거 후 재시공</div>
-      <div class="price-range">150만~</div>
-      <div class="price-unit">욕실 크기·자재에 따라 변동</div>
-      <div class="price-divider"></div>
-      <ul class="price-includes"><li>전체 철거·폐기</li><li>방수·타일·줄눈 일괄</li><li>2–3일 소요</li></ul>
-    </div>
-  </div>
-  <p class="price-note reveal">※ 위 금액은 참고용 안내이며 현장 상태·자재 선택·작업 범위에 따라 달라집니다. 정확한 견적은 현장 방문 후 안내드립니다.</p>
-</section>
-
 <!-- 시공 사례 -->
 <section class="cases-section" id="cases">
   <div class="sec-header reveal">
@@ -618,14 +585,14 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <div class="case-card reveal"><div><div class="case-bar"></div><div class="case-tag">PARTIAL REMODEL</div></div><div><div class="case-title">욕실 바닥 방수 후 타일 교체</div><div class="case-loc">오산시 · 2025</div></div></div>
     <div class="case-card reveal"><div><div class="case-bar"></div><div class="case-tag">OVERLAY · 덧방</div></div><div><div class="case-title">기존 타일 위 덧방 시공</div><div class="case-loc">안성시 · 2025</div></div></div>
   </div>
-  <p class="cases-note reveal">더 많은 시공 사례는 <a href="https://blog.naver.com/jinhousetile" target="_blank" rel="noopener">네이버 블로그</a>에서 확인하실 수 있습니다.</p>
+  <p class="cases-note reveal">더 많은 시공 사례는 <a href="https://blog.naver.com/soohanbath" target="_blank" rel="noopener">네이버 블로그</a>에서 확인하실 수 있습니다.</p>
 </section>
 
 <!-- CTA 밴드 -->
 <div class="cta-band">
   <div class="cta-left">
     <div class="cta-eyebrow">무료 상담 안내</div>
-    <div class="cta-title">사진 2~3장 보내주시면<br>전체·부분 여부와 범위를 먼저 안내드립니다</div>
+    <div class="cta-title">사진 보내주시면<br>전체·부분 여부와 범위를 먼저 안내드립니다</div>
     <div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
   </div>
   <div class="cta-btns">
@@ -657,7 +624,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
         <div class="cm-info"><div class="cm-name">문자 문의</div><div class="cm-desc">사진과 함께 보내주세요</div></div>
         <div class="cm-go">→</div>
       </a>
-      <a href="https://blog.naver.com/jinhousetile" class="cm blog-cm">
+      <a href="https://blog.naver.com/soohanbath" target="_blank" rel="noopener" class="cm blog-cm">
         <div class="cm-icon b"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#03c75a" stroke-width="1.3"/><path d="M6 10h8M6 7h5M6 13h6" stroke="#03c75a" stroke-width="1.1" stroke-linecap="round"/></svg></div>
         <div class="cm-info"><div class="cm-name">네이버 블로그</div><div class="cm-desc">시공 사례 · 후기 확인</div></div>
         <div class="cm-go">→</div>
@@ -683,7 +650,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <div class="contact-biz">
       <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386<br>
       경기도 평택시 용죽6길 64 지웰테라스 509동 8호 (1층)<br>
-      통신판매업 제2025-경기평택-0244호 · soohanyun37@naver.com
+      통신판매업 제2025-경기평택-0244호 · soohanyun38@naver.com
     </div>
   </div>
 </section>
@@ -691,11 +658,15 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 <footer>
   <div class="footer-info">
     <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386<br>
-    경기도 평택시 용죽6길 64 · © 2025 수한공간. All rights reserved.
+    경기도 평택시 용죽6길 64 · © 2025-2026 수한공간. All rights reserved.
+    <div class="footer-copy-notice">
+      <strong>무단 복제 및 재사용 금지</strong><br>
+      본 홈페이지의 문구, 구성, 이미지, 디자인, 시공 사례 콘텐츠의 무단 복제·수정·재배포를 금지합니다.
+    </div>
   </div>
   <div class="footer-links">
     <a href="/">← 메인으로</a>
-    <a href="https://blog.naver.com/jinhousetile">네이버 블로그</a>
+    <a href="https://blog.naver.com/soohanbath" target="_blank" rel="noopener">네이버 블로그</a>
     <a href="https://open.kakao.com/me/soohanyun">카카오톡</a>
     <a href="tel:010-4646-3145">전화</a>
   </div>
@@ -704,16 +675,12 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 <div class="floating">
   <a href="https://open.kakao.com/me/soohanyun" class="fb k">
     <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C4.69 1.5 2 3.9 2 6.9c0 1.87 1.05 3.52 2.67 4.52L4 13.5l2.56-1.34C7.02 12.38 7.5 12.5 8 12.5c3.31 0 6-2.4 6-5.1s-2.69-5.4-6-5.4-6 2.4-6 5.4z" fill="#111"/></svg>
-    <span>카카오톡 상담</span>
-  </a>
-  <a href="tel:010-4646-3145" class="fb t">
-    <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M4.8 2.4h2.4l1 2.8-1.44.88A6.8 6.8 0 0011.2 9.6l1.2-1.6L15 9.2V12a1.2 1.2 0 01-1.2 1.2A12 12 0 012.4 3.6 1.2 1.2 0 014.8 2.4z" stroke="white" stroke-width="1.1"/></svg>
-    <span>010-4646-3145</span>
+    <span>카카오톡 문의</span>
   </a>
 </div>
 
 <div class="mobile-cta">
-  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 카카오톡</a>
+  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 사진 보내기</a>
   <a href="tel:010-4646-3145" class="t">📞 전화 상담</a>
 </div>
 

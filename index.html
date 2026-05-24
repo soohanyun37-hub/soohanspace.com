@@ -165,16 +165,44 @@ nav a:hover { background: var(--brand-light); color: var(--brand); }
 .hero-badge-text { word-break: keep-all; }
 .hero-badge-text strong { color: var(--accent); font-weight: 800; }
 .hero-btns { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-outline {
   display: inline-flex; align-items: center; gap: 9px;
   font-size: 16px; font-weight: 700; border: none;
   padding: 18px 30px; border-radius: 4px; text-decoration: none;
   cursor: pointer; transition: all 0.15s; white-space: nowrap; letter-spacing: -0.01em;
 }
-.btn-primary { background: var(--kakao); color: #111; box-shadow: 0 1px 0 rgba(0,0,0,0.08); }
-.btn-primary:hover { background: var(--kakao-dark); transform: translateY(-1px); }
-.btn-secondary { background: var(--brand); color: #fff; }
-.btn-secondary:hover { background: var(--brand-dark); transform: translateY(-1px); }
+
+.btn-primary {
+  background: var(--kakao);
+  color: #111;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+
+.btn-primary:hover {
+  background: var(--kakao-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: var(--brand-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--brand);
+  border: 1.5px solid var(--brand);
+}
+
+.btn-outline:hover {
+  background: var(--brand-light);
+  transform: translateY(-1px);
+}
 .hero-note { font-size: 13px; color: var(--text-muted); font-weight: 500; margin-bottom: 40px; }
 .hero-note strong { color: var(--text-mid); font-weight: 700; }
 .hero-stats { display: flex; gap: 0; border-top: 2px solid var(--brand); padding-top: 28px; }
@@ -738,7 +766,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .cta-band { padding: 44px 20px; }
   .hero-title { font-size: 32px; }
   .hero-btns { flex-direction: column; }
-  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .btn-primary, .btn-secondary, .btn-outline { width: 100%; justify-content: center; }
   .core-box { padding: 28px 22px; }
   .core-points { grid-template-columns: 1fr; }
   .cp:nth-child(3n) { border-right: 1px solid var(--border); }
@@ -994,7 +1022,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 
     <div class="hero-btns">
       <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
-      <a href="/checklist/" class="btn-secondary">📋 사진 체크리스트 보기</a>
+      <a href="/checklist/" class="btn-outline">📋 사진 체크리스트 보기</a>
       <a href="tel:010-4646-3145" class="btn-secondary">📞 010-4646-3145</a>
     </div>
 

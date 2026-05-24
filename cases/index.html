@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>수한공간 시공 사례 | 타일·욕실 리모델링·집수리·부분 리모델링 현장 기록</title>
+
+<meta name="description" content="수한공간에서 진행한 타일 보수, 욕실 리모델링, 집수리, 부분 리모델링 시공 사례를 정리한 페이지입니다. 무조건 철거가 아닌 현장 상태에 맞는 시공 범위를 안내드립니다.">
+<meta name="theme-color" content="#1f2b3a">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="수한공간 시공 사례">
+<meta property="og:description" content="타일·욕실·집수리·부분공사 현장 사례를 정리한 수한공간 공식 시공 기록입니다.">
+<meta property="og:url" content="https://soohanspace.com/cases/">
+<meta property="og:image" content="https://soohanspace.com/images/soohan-og.jpg">
+<meta property="og:site_name" content="수한공간">
+<meta property="og:locale" content="ko_KR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand: #1f2b3a;
+  --brand-dark: #141e29;
+  --brand-light: #edf0f3;
+  --brand-lighter: #f5f7fa;
+  --accent: #b8472e;
+  --accent-dark: #9a3a24;
+  --accent-light: #fdf2ef;
+  --bg: #ffffff;
+  --bg-gray: #f5f6f7;
+  --text: #111111;
+  --text-mid: #444444;
+  --text-muted: #7a7a7a;
+  --border: #e0e0e0;
+  --kakao: #FEE500;
+  --kakao-dark: #e6ce00;
+  --font: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.notice-bar {
+  background: var(--brand);
+  color: rgba(255,255,255,0.92);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 16px;
+}
+
+.notice-bar strong {
+  color: #fff;
+  font-weight: 800;
+}
+
+.notice-bar .dot {
+  color: rgba(255,255,255,0.4);
+  margin: 0 6px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.logo-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-mid);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--brand-light);
+  color: var(--brand);
+}
+
+.header-btns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.hbtn-kakao,
+.hbtn-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.hbtn-kakao {
+  background: var(--kakao);
+  color: #111;
+}
+
+.hbtn-kakao:hover {
+  background: var(--kakao-dark);
+}
+
+.hbtn-tel {
+  background: var(--brand);
+  color: #fff;
+}
+
+.hbtn-tel:hover {
+  background: var(--brand-dark);
+}
+
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 6px;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.2s;
+}
+
+.mobile-menu-btn.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 2px solid var(--brand);
+  z-index: 290;
+  padding: 8px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.mobile-nav.open {
+  display: block;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.mobile-nav a:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav-cta {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  background: var(--bg-gray);
+  border-top: 1px solid var(--border);
+}
+
+.mobile-nav-cta a {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 13.5px;
+  font-weight: 800;
+  border-radius: 4px;
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.mobile-nav-cta a:first-child {
+  background: var(--kakao);
+  color: #111;
+}
+
+.mobile-nav-cta a:last-child {
+  background: var(--brand);
+  color: #fff;
+}
+
+.hero {
+  background: var(--bg-gray);
+  padding: 72px 80px 64px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 56px;
+  align-items: center;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.breadcrumb a {
+  color: var(--brand);
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--brand);
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+  padding: 7px 14px 7px 12px;
+  background: #fff;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 3px 3px 0;
+}
+
+.hero-title {
+  font-size: clamp(34px, 3.8vw, 54px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--text);
+  letter-spacing: -0.04em;
+  word-break: keep-all;
+  margin-bottom: 22px;
+}
+
+.hero-title .hl {
+  color: var(--brand);
+  display: inline-block;
+  position: relative;
+}
+
+.hero-title .hl::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 8px;
+  background: var(--accent);
+  opacity: 0.18;
+  z-index: -1;
+}
+
+.hero-desc {
+  max-width: 680px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-mid);
+  line-height: 1.8;
+  word-break: keep-all;
+  margin-bottom: 26px;
+}
+
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  padding: 16px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--kakao);
+  color: #111;
+}
+
+.btn-primary:hover {
+  background: var(--kakao-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: var(--brand-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--brand);
+  border: 1.5px solid var(--brand);
+}
+
+.btn-outline:hover {
+  background: var(--brand-light);
+  transform: translateY(-1px);
+}
+
+.hero-side {
+  background: #fff;
+  border: 2px solid var(--brand);
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 4px 24px rgba(31, 43, 58, 0.08);
+}
+
+.hero-side-label {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.hero-side-title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.35;
+  margin-bottom: 14px;
+  word-break: keep-all;
+}
+
+.hero-side-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-weight: 500;
+  word-break: keep-all;
+  margin-bottom: 18px;
+}
+
+.hero-side-list {
+  display: grid;
+  gap: 8px;
+}
+
+.hero-side-list span {
+  display: block;
+  background: var(--bg-gray);
+  border-left: 3px solid var(--accent);
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--text-mid);
+  font-weight: 700;
+}
+
+.section {
+  padding: 76px 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section.gray {
+  background: var(--bg-gray);
+}
+
+.section.white {
+  background: #fff;
+}
+
+.section-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.sec-header {
+  margin-bottom: 34px;
+}
+
+.sec-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.sec-label::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.sec-title {
+  font-size: clamp(26px, 2.6vw, 38px);
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+
+.sec-title em {
+  font-style: normal;
+  color: var(--brand);
+}
+
+.sec-desc {
+  max-width: 760px;
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-mid);
+  line-height: 1.85;
+  font-weight: 500;
+  word-break: keep-all;
+}
+
+.filter-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 22px;
+  margin-bottom: 28px;
+}
+
+.filter-title {
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--brand);
+  margin-bottom: 14px;
+}
+
+.filter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 13px;
+  border-radius: 4px;
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  color: var(--text-mid);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.filter-links a:hover,
+.filter-links a.active {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.case-card {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.18s;
+}
+
+.case-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(31,43,58,0.09);
+}
+
+.case-thumb {
+  min-height: 160px;
+  background:
+    linear-gradient(135deg, rgba(31,43,58,0.92), rgba(31,43,58,0.72)),
+    linear-gradient(135deg, #dfe4ea, #f5f6f7);
+  color: #fff;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.case-thumb-label {
+  display: inline-flex;
+  width: fit-content;
+  padding: 5px 9px;
+  background: rgba(255,255,255,0.16);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.case-thumb-title {
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.case-body {
+  padding: 20px;
+}
+
+.case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.case-meta span {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--brand);
+  background: var(--brand-light);
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.case-title {
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 10px;
+  word-break: keep-all;
+}
+
+.case-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-weight: 500;
+  word-break: keep-all;
+  margin-bottom: 16px;
+}
+
+.case-more {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--brand);
+}
+
+.empty-card {
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: 28px;
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--brand);
+  margin-bottom: 10px;
+}
+
+.empty-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  background: #fff;
+}
+
+.guide-item {
+  padding: 28px 24px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.guide-item:last-child {
+  border-right: none;
+}
+
+.guide-num {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.guide-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 10px;
+  word-break: keep-all;
+}
+
+.guide-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  word-break: keep-all;
+  font-weight: 500;
+}
+
+.cta-band {
+  background: var(--brand);
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  border-top: 4px solid var(--accent);
+}
+
+.cta-eyebrow {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #ffb199;
+  margin-bottom: 12px;
+}
+
+.cta-title {
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.35;
+  word-break: keep-all;
+  letter-spacing: -0.025em;
+}
+
+.cta-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 12px;
+  font-weight: 500;
+  word-break: keep-all;
+  line-height: 1.7;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.btn-cta-kakao,
+.btn-cta-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15.5px;
+  font-weight: 900;
+  padding: 17px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn-cta-kakao {
+  background: var(--kakao);
+  color: #111;
+}
+
+.btn-cta-kakao:hover {
+  background: var(--kakao-dark);
+  transform: translateY(-1px);
+}
+
+.btn-cta-tel {
+  background: #fff;
+  color: var(--brand);
+}
+
+.btn-cta-tel:hover {
+  background: var(--bg-gray);
+  transform: translateY(-1px);
+}
+
+footer {
+  background: #111;
+  padding: 36px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: 3px solid var(--brand);
+}
+
+.footer-info {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.85;
+  font-weight: 500;
+}
+
+.footer-info strong {
+  color: rgba(255,255,255,0.7);
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+}
+
+.footer-links a {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-copy-notice {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.55);
+  font-size: 11.5px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+.footer-copy-notice strong {
+  color: rgba(255,255,255,0.82);
+  font-weight: 800;
+}
+
+.floating {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.fb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.fb.k {
+  background: var(--kakao);
+  color: #111;
+}
+
+.fb.k:hover {
+  background: var(--kakao-dark);
+  transform: translateY(-1px);
+}
+
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background: #fff;
+  border-top: 1px solid var(--border);
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  gap: 8px;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.08);
+}
+
+.mobile-cta a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.mobile-cta a.k {
+  background: var(--kakao);
+  color: #111;
+}
+
+.mobile-cta a.t {
+  background: var(--brand);
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding: 0 24px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .hero {
+    padding: 56px 40px;
+  }
+
+  .hero-wrap {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .section {
+    padding: 64px 40px;
+  }
+
+  .case-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .guide-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .guide-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 52px 40px;
+  }
+
+  .cta-btns {
+    width: 100%;
+  }
+
+  .btn-cta-kakao,
+  .btn-cta-tel {
+    flex: 1;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 32px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .logo-name {
+    font-size: 15px;
+  }
+
+  .logo-sub {
+    font-size: 10.5px;
+  }
+
+  .hbtn-kakao,
+  .hbtn-tel {
+    padding: 8px 11px;
+    font-size: 12.5px;
+  }
+
+  .hbtn-kakao span,
+  .hbtn-tel span {
+    display: none;
+  }
+
+  .mobile-nav {
+    top: 60px;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+
+  .mobile-cta {
+    display: flex;
+  }
+
+  .floating {
+    display: none;
+  }
+
+  .notice-bar {
+    font-size: 12px;
+    padding: 9px 12px;
+  }
+
+  .hero {
+    padding: 42px 20px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-desc {
+    font-size: 15.5px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    width: 100%;
+  }
+
+  .hero-side {
+    padding: 24px 20px;
+  }
+
+  .section {
+    padding: 52px 20px;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-item {
+    border-right: none;
+  }
+
+  .cta-band {
+    padding: 44px 20px;
+  }
+
+  .cta-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-cta-kakao,
+  .btn-cta-tel {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 28px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+</head>
+
+<body>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "수한공간 시공 사례",
+  "description": "수한공간에서 진행한 타일 보수, 욕실 리모델링, 집수리, 부분공사 시공 사례 목록입니다.",
+  "url": "https://soohanspace.com/cases/",
+  "about": ["타일 보수", "욕실 리모델링", "집수리", "부분공사"],
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "수한공간타일",
+    "url": "https://soohanspace.com"
+  }
+}
+</script>
+
+<div class="notice-bar">
+  📍 수한공간 시공 사례<span class="dot">·</span><strong>사진으로 상태를 확인하고 필요한 범위부터 안내드립니다</strong>
+</div>
+
+<header>
+  <a href="/" class="logo">
+    <img src="https://raw.githubusercontent.com/soohanyun37-hub/soohanspace.com/main/images/soohan-logo.png"
+         alt="수한공간 로고"
+         class="logo-img">
+    <div class="logo-text">
+      <span class="logo-name">수한공간</span>
+      <span class="logo-sub">시공 사례 · 현장 기록</span>
+    </div>
+  </a>
+
+  <nav>
+    <a href="/">홈</a>
+    <a href="/tile/">타일 시공</a>
+    <a href="/bath/">욕실 리모델링</a>
+    <a href="/repair/">집수리</a>
+    <a href="/checklist/">사진 체크리스트</a>
+    <a href="/cases/" class="active">시공 사례</a>
+  </nav>
+
+  <div class="header-btns">
+    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
+    <a href="tel:010-4646-3145" class="hbtn-tel">📞 <span>전화</span></a>
+    <button class="mobile-menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="/">수한공간 홈</a>
+  <a href="/tile/">타일 시공</a>
+  <a href="/bath/">욕실 리모델링</a>
+  <a href="/repair/">집수리</a>
+  <a href="/checklist/">사진 상담 체크리스트</a>
+  <a href="/cases/">시공 사례</a>
+  <div class="mobile-nav-cta">
+    <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
+    <a href="tel:010-4646-3145">📞 전화하기</a>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="hero-wrap">
+      <div>
+        <div class="breadcrumb">
+          <a href="/">수한공간 홈</a>
+          <span>›</span>
+          <span>시공 사례</span>
+        </div>
+
+        <div class="hero-label">수한공간 공식 현장 기록</div>
+
+        <h1 class="hero-title">
+          타일·욕실·집수리<br>
+          <span class="hl">시공 사례</span>
+        </h1>
+
+        <p class="hero-desc">
+          수한공간에서 진행한 타일 보수, 욕실 리모델링, 집수리, 부분공사 사례를 정리하는 공간입니다.
+          무조건 큰 공사를 권하기보다 현장 상태를 보고 전체 철거, 부분 보수, 부분 교체, 덧방, 재시공 중
+          어떤 방향이 맞는지 차분히 안내드립니다.
+        </p>
+
+        <div class="hero-btns">
+          <a href="/checklist/" class="btn-outline">📋 문의 전 사진 체크리스트</a>
+          <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 상담하기</a>
+          <a href="tel:010-4646-3145" class="btn-secondary">📞 전화 상담</a>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="hero-side-label">상담 전 확인 기준</div>
+        <div class="hero-side-title">사진 3장만 있어도<br>1차 판단이 쉬워집니다</div>
+        <p class="hero-side-desc">
+          전체 공간, 문제 부위 가까운 사진, 옆에서 본 상태 사진을 보내주시면
+          부분 보수 가능 여부부터 먼저 확인해드립니다.
+        </p>
+        <div class="hero-side-list">
+          <span>1. 전체 공간 사진</span>
+          <span>2. 문제 부위 가까운 사진</span>
+          <span>3. 옆에서 본 상태 사진</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section gray">
+    <div class="section-wrap">
+      <div class="sec-header">
+        <div class="sec-label">사례 분류</div>
+        <h2 class="sec-title">필요한 사례를 <em>분야별로 확인</em>하세요</h2>
+        <p class="sec-desc">
+          지금은 사례 페이지 기본 구조를 먼저 만들어두는 단계입니다.
+          실제 현장 사진과 글이 정리되면 아래 목록에 하나씩 추가하면 됩니다.
+        </p>
+      </div>
+
+      <div class="filter-box">
+        <div class="filter-title">시공 사례 바로가기</div>
+        <div class="filter-links">
+          <a href="/cases/" class="active">전체 사례</a>
+          <a href="/tile/">타일 보수</a>
+          <a href="/bath/">욕실 리모델링</a>
+          <a href="/repair/">집수리</a>
+          <a href="/checklist/">사진 체크리스트</a>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <a href="#" class="case-card" aria-label="준비 중인 타일 보수 사례">
+          <div class="case-thumb">
+            <span class="case-thumb-label">타일 보수</span>
+            <div class="case-thumb-title">평택 욕실 타일 들뜸 부분 보수 사례</div>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <span>평택</span>
+              <span>욕실 타일</span>
+              <span>부분 보수</span>
+            </div>
+            <div class="case-title">전체 철거 전, 들뜸 범위부터 확인한 현장</div>
+            <p class="case-desc">
+              타일 들뜸이 전체 철거로 이어지는지, 부분 보수로 가능한지 확인하는 사례로 정리 예정입니다.
+            </p>
+            <div class="case-more">사례 준비 중 →</div>
+          </div>
+        </a>
+
+        <a href="#" class="case-card" aria-label="준비 중인 욕실 리모델링 사례">
+          <div class="case-thumb">
+            <span class="case-thumb-label">욕실</span>
+            <div class="case-thumb-title">욕실 리모델링 전 덧방 가능 여부 확인 사례</div>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <span>욕실</span>
+              <span>방수 확인</span>
+              <span>덧방 검토</span>
+            </div>
+            <div class="case-title">덧방과 올철거를 나눠 판단한 현장</div>
+            <p class="case-desc">
+              욕실 상태, 배수, 방수, 타일 상태를 보고 공사 범위를 나누는 사례로 정리 예정입니다.
+            </p>
+            <div class="case-more">사례 준비 중 →</div>
+          </div>
+        </a>
+
+        <a href="#" class="case-card" aria-label="준비 중인 집수리 사례">
+          <div class="case-thumb">
+            <span class="case-thumb-label">집수리</span>
+            <div class="case-thumb-title">세면대 주변 실리콘·마감 보수 사례</div>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <span>집수리</span>
+              <span>욕실 주변</span>
+              <span>실리콘</span>
+            </div>
+            <div class="case-title">작은 불편을 사진 상담으로 먼저 확인한 현장</div>
+            <p class="case-desc">
+              작은 집수리도 사진을 보고 가능한 범위부터 안내하는 사례로 정리 예정입니다.
+            </p>
+            <div class="case-more">사례 준비 중 →</div>
+          </div>
+        </a>
+
+        <a href="#" class="case-card" aria-label="준비 중인 부분공사 사례">
+          <div class="case-thumb">
+            <span class="case-thumb-label">부분공사</span>
+            <div class="case-thumb-title">공간보수·부분 리모델링 사례</div>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <span>부분공사</span>
+              <span>공간보수</span>
+              <span>범위 확인</span>
+            </div>
+            <div class="case-title">전체 공사 전 필요한 범위부터 나눈 현장</div>
+            <p class="case-desc">
+              전체 리모델링이 아니라 필요한 범위만 나눠 보는 사례로 정리 예정입니다.
+            </p>
+            <div class="case-more">사례 준비 중 →</div>
+          </div>
+        </a>
+
+        <div class="empty-card">
+          <div class="empty-title">실제 현장 사진을 준비 중입니다</div>
+          <p class="empty-desc">
+            시공 전, 작업 중, 시공 후 사진이 정리되는 대로
+            실제 사례 페이지를 하나씩 추가할 예정입니다.
+          </p>
+        </div>
+
+        <div class="empty-card">
+          <div class="empty-title">사례 링크는 상담에도 활용됩니다</div>
+          <p class="empty-desc">
+            비슷한 현장을 문의하신 고객에게 관련 사례 링크를 보내
+            작업 범위 이해를 돕는 용도로 사용합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="section-wrap">
+      <div class="sec-header">
+        <div class="sec-label">사례 작성 기준</div>
+        <h2 class="sec-title">수한공간 시공 사례는 <em>이렇게 정리합니다</em></h2>
+        <p class="sec-desc">
+          단순히 예쁜 완성 사진만 올리는 것이 아니라, 고객이 자신의 현장 상태를 이해할 수 있도록
+          문제 상태, 판단 기준, 작업 범위, 주의점을 함께 정리합니다.
+        </p>
+      </div>
+
+      <div class="guide-grid">
+        <div class="guide-item">
+          <div class="guide-num">01</div>
+          <div class="guide-title">시공 전 상태</div>
+          <div class="guide-desc">
+            타일 들뜸, 깨짐, 실리콘 벌어짐, 방수 의심 등 처음 문제가 보인 상태를 정리합니다.
+          </div>
+        </div>
+
+        <div class="guide-item">
+          <div class="guide-num">02</div>
+          <div class="guide-title">판단 기준</div>
+          <div class="guide-desc">
+            전체 철거가 필요한지, 부분 보수로 가능한지, 방문 확인이 필요한지 기준을 설명합니다.
+          </div>
+        </div>
+
+        <div class="guide-item">
+          <div class="guide-num">03</div>
+          <div class="guide-title">작업 범위</div>
+          <div class="guide-desc">
+            실제 진행한 보수, 교체, 방수 확인, 마감 보수 범위를 고객이 이해하기 쉽게 정리합니다.
+          </div>
+        </div>
+
+        <div class="guide-item">
+          <div class="guide-num">04</div>
+          <div class="guide-title">문의 안내</div>
+          <div class="guide-desc">
+            비슷한 문제가 있는 고객이 어떤 사진을 보내면 좋은지 함께 안내해 문의로 연결합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="cta-left">
+      <div class="cta-eyebrow">무료 사진 상담</div>
+      <div class="cta-title">비슷한 현장이 있다면 사진을 먼저 보내주세요</div>
+      <div class="cta-desc">
+        바로 공사를 결정하지 않으셔도 됩니다. 전체 철거가 필요한지, 부분 보수로 가능한지 먼저 확인해드립니다.
+      </div>
+    </div>
+    <div class="cta-btns">
+      <a href="/checklist/" class="btn-cta-tel">📋 사진 체크리스트</a>
+      <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 문의</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-info">
+    <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386<br>
+    경기도 평택시 용죽6길 64 · © 2025-2026 수한공간. All rights reserved.
+    <div class="footer-copy-notice">
+      <strong>무단 복제 및 재사용 금지</strong><br>
+      본 홈페이지의 문구, 구성, 이미지, 디자인, 시공 사례 콘텐츠의 무단 복제·수정·재배포를 금지합니다.
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <a href="/">수한공간 홈</a>
+    <a href="/tile/">타일 시공</a>
+    <a href="/bath/">욕실 리모델링</a>
+    <a href="/repair/">집수리</a>
+    <a href="/checklist/">사진 체크리스트</a>
+    <a href="/cases/">시공 사례</a>
+    <a href="https://blog.naver.com/soohantile" target="_blank" rel="noopener">네이버 블로그</a>
+    <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener">카카오톡</a>
+    <a href="tel:010-4646-3145">전화</a>
+  </div>
+</footer>
+
+<div class="floating">
+  <a href="https://open.kakao.com/me/soohanyun" class="fb k">💬 <span>카카오톡 문의</span></a>
+</div>
+
+<div class="mobile-cta">
+  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 사진 보내기</a>
+  <a href="tel:010-4646-3145" class="t">📞 전화 상담</a>
+</div>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileNav = document.getElementById('mobileNav');
+
+if (menuBtn && mobileNav) {
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = mobileNav.classList.toggle('open');
+    menuBtn.classList.toggle('open', isOpen);
+    menuBtn.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+  });
+
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      menuBtn.classList.remove('open');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menuBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+      mobileNav.classList.remove('open');
+      menuBtn.classList.remove('open');
+    }
+  });
+}
+</script>
+</body>
+</html>

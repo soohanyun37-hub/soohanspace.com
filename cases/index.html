@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<title>수한공간 시공 사례 | 타일·욕실 리모델링·집수리·부분 리모델링 현장 기록</title>
+<title>수한공간 시공 사례 | 타일·욕실·집수리 현장 판단 자료</title>
 
-<meta name="description" content="수한공간에서 진행한 타일 보수, 욕실 리모델링, 집수리, 부분 리모델링 시공 사례를 정리한 페이지입니다. 무조건 철거가 아닌 현장 상태에 맞는 시공 범위를 안내드립니다.">
+<meta name="description" content="수한공간의 타일 보수, 욕실공사, 집수리 현장 판단 기준을 정리한 시공 사례 페이지입니다. 비슷한 현장이 있다면 사진을 보내주시면 가능한 범위부터 안내드립니다.">
 <meta name="theme-color" content="#1f2b3a">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="수한공간 시공 사례">
-<meta property="og:description" content="타일·욕실·집수리·부분공사 현장 사례를 정리한 수한공간 공식 시공 기록입니다.">
+<meta property="og:description" content="타일·욕실·집수리 현장 상태와 작업 범위 판단 기준을 정리한 수한공간 공식 시공 기록입니다.">
 <meta property="og:url" content="https://soohanspace.com/cases/">
 <meta property="og:image" content="https://soohanspace.com/images/soohan-og.jpg">
 <meta property="og:site_name" content="수한공간">
@@ -808,6 +808,48 @@ nav a.active {
   transform: translateY(-1px);
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+}
+.contact-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 20px;
+  border-radius: 6px;
+}
+.contact-item-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--brand);
+  margin-bottom: 6px;
+}
+.contact-item-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.contact-item a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  border-radius: 4px;
+}
+@media (max-width: 700px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
 footer {
   background: #111;
   padding: 36px 80px;
@@ -1120,12 +1162,12 @@ footer {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "수한공간 시공 사례",
-  "description": "수한공간에서 진행한 타일 보수, 욕실 리모델링, 집수리, 부분공사 시공 사례 목록입니다.",
+  "description": "수한공간에서 진행한 타일 보수, 욕실공사, 집수리 시공 사례 목록입니다.",
   "url": "https://soohanspace.com/cases/",
   "about": ["타일 보수", "욕실 리모델링", "집수리", "부분공사"],
   "publisher": {
-    "@type": "LocalBusiness",
-    "name": "수한공간타일",
+    "@type": "Organization",
+    "name": "수한공간",
     "url": "https://soohanspace.com"
   }
 }
@@ -1148,7 +1190,7 @@ footer {
 
   <nav>
     <a href="/">홈</a>
-    <a href="/tile/">타일 시공</a>
+    <a href="/tile/">타일</a>
     <a href="/bath/">욕실 리모델링</a>
     <a href="/repair/">집수리</a>
     <a href="/checklist/">사진 체크리스트</a>
@@ -1164,7 +1206,7 @@ footer {
 
 <div class="mobile-nav" id="mobileNav">
   <a href="/">수한공간 홈</a>
-  <a href="/tile/">타일 시공</a>
+  <a href="/tile/">타일</a>
   <a href="/bath/">욕실 리모델링</a>
   <a href="/repair/">집수리</a>
   <a href="/checklist/">사진 상담 체크리스트</a>
@@ -1189,11 +1231,11 @@ footer {
 
         <h1 class="hero-title">
           타일·욕실·집수리<br>
-          <span class="hl">시공 사례</span>
+          <span class="hl">현장 판단 사례</span>
         </h1>
 
         <p class="hero-desc">
-          수한공간에서 진행한 타일 보수, 욕실 리모델링, 집수리, 부분공사 사례를 정리하는 공간입니다.
+          수한공간에서 진행하거나 상담하는 타일 보수, 욕실공사, 집수리, 부분공사 유형을 정리하는 공간입니다.
           무조건 큰 공사를 권하기보다 현장 상태를 보고 전체 철거, 부분 보수, 부분 교체, 덧방, 재시공 중
           어떤 방향이 맞는지 차분히 안내드립니다.
         </p>
@@ -1227,8 +1269,7 @@ footer {
         <div class="sec-label">사례 분류</div>
         <h2 class="sec-title">필요한 사례를 <em>분야별로 확인</em>하세요</h2>
         <p class="sec-desc">
-          지금은 사례 페이지 기본 구조를 먼저 만들어두는 단계입니다.
-          실제 현장 사진과 글이 정리되면 아래 목록에 하나씩 추가하면 됩니다.
+          실제 현장 사진이 계속 쌓이면 상세 사례로 확장하고, 지금은 고객이 자기 현장과 비교할 수 있는 대표 문의 유형부터 정리합니다.
         </p>
       </div>
 
@@ -1238,13 +1279,13 @@ footer {
           <a href="/cases/" class="active">전체 사례</a>
           <a href="/tile/">타일 보수 및 시공</a>
           <a href="/bath/">욕실 리모델링</a>
-          <a href="/repair/">집수리 · 부분 리모델링</a>
+          <a href="/repair/">집수리 · 부분공사</a>
           <a href="/checklist/">사진 체크리스트</a>
         </div>
       </div>
 
       <div class="case-grid">
-        <a href="#" class="case-card" aria-label="준비 중인 타일 보수 사례">
+        <a href="/checklist/" class="case-card" aria-label="상담 가능한 타일 보수 사례">
           <div class="case-thumb">
             <span class="case-thumb-label">타일 보수</span>
             <div class="case-thumb-title">평택 욕실 타일 들뜸 부분 보수 사례</div>
@@ -1257,13 +1298,13 @@ footer {
             </div>
             <div class="case-title">전체 철거 전, 들뜸 범위부터 확인한 현장</div>
             <p class="case-desc">
-              타일 들뜸이 전체 철거로 이어지는지, 부분 보수로 가능한지 확인하는 사례로 정리 예정입니다.
+              타일 들뜸이 전체 철거로 이어지는지, 부분 보수로 가능한지 확인하는 사례로 정리해 안내드립니다.
             </p>
-            <div class="case-more">사례 준비 중 →</div>
+            <div class="case-more">비슷한 현장 사진 보내기 →</div>
           </div>
         </a>
 
-        <a href="#" class="case-card" aria-label="준비 중인 욕실 리모델링 사례">
+        <a href="/checklist/" class="case-card" aria-label="상담 가능한 욕실 리모델링 사례">
           <div class="case-thumb">
             <span class="case-thumb-label">욕실</span>
             <div class="case-thumb-title">욕실 리모델링 전 덧방 가능 여부 확인 사례</div>
@@ -1276,13 +1317,13 @@ footer {
             </div>
             <div class="case-title">덧방과 올철거를 나눠 판단한 현장</div>
             <p class="case-desc">
-              욕실 상태, 배수, 방수, 타일 상태를 보고 공사 범위를 나누는 사례로 정리 예정입니다.
+              욕실 상태, 배수, 방수, 타일 상태를 보고 공사 범위를 나누는 사례로 정리해 안내드립니다.
             </p>
-            <div class="case-more">사례 준비 중 →</div>
+            <div class="case-more">비슷한 현장 사진 보내기 →</div>
           </div>
         </a>
 
-        <a href="#" class="case-card" aria-label="준비 중인 집수리 사례">
+        <a href="/checklist/" class="case-card" aria-label="상담 가능한 집수리 사례">
           <div class="case-thumb">
             <span class="case-thumb-label">집수리</span>
             <div class="case-thumb-title">세면대 주변 실리콘·마감 보수 사례</div>
@@ -1295,16 +1336,16 @@ footer {
             </div>
             <div class="case-title">작은 불편을 사진 상담으로 먼저 확인한 현장</div>
             <p class="case-desc">
-              작은 집수리도 사진을 보고 가능한 범위부터 안내하는 사례로 정리 예정입니다.
+              작은 집수리도 사진을 보고 가능한 범위부터 안내하는 사례로 정리해 안내드립니다.
             </p>
-            <div class="case-more">사례 준비 중 →</div>
+            <div class="case-more">비슷한 현장 사진 보내기 →</div>
           </div>
         </a>
 
-        <a href="#" class="case-card" aria-label="준비 중인 부분공사 사례">
+        <a href="/checklist/" class="case-card" aria-label="상담 가능한 부분공사 사례">
           <div class="case-thumb">
             <span class="case-thumb-label">부분공사</span>
-            <div class="case-thumb-title">공간보수·부분 리모델링 사례</div>
+            <div class="case-thumb-title">공간보수·부분공사 사례</div>
           </div>
           <div class="case-body">
             <div class="case-meta">
@@ -1314,25 +1355,23 @@ footer {
             </div>
             <div class="case-title">전체 공사 전 필요한 범위부터 나눈 현장</div>
             <p class="case-desc">
-              전체 리모델링이 아니라 필요한 범위만 나눠 보는 사례로 정리 예정입니다.
+              전체 리모델링이 아니라 필요한 범위만 나눠 보는 사례로 정리해 안내드립니다.
             </p>
-            <div class="case-more">사례 준비 중 →</div>
+            <div class="case-more">비슷한 현장 사진 보내기 →</div>
           </div>
         </a>
 
         <div class="empty-card">
-          <div class="empty-title">실제 현장 사진을 준비 중입니다</div>
+          <div class="empty-title">실제 현장 사진은 순서대로 정리합니다</div>
           <p class="empty-desc">
-            시공 전, 작업 중, 시공 후 사진이 정리되는 대로
-            실제 사례 페이지를 하나씩 추가할 예정입니다.
+            시공 전, 작업 중, 시공 후 사진이 준비되는 현장부터 상세 사례로 연결합니다. 사진이 없는 경우에도 비슷한 상태인지 먼저 안내드립니다.
           </p>
         </div>
 
         <div class="empty-card">
-          <div class="empty-title">사례 링크는 상담에도 활용됩니다</div>
+          <div class="empty-title">사례는 상담 판단 자료로 사용됩니다</div>
           <p class="empty-desc">
-            비슷한 현장을 문의하신 고객에게 관련 사례 링크를 보내
-            작업 범위 이해를 돕는 용도로 사용합니다.
+            비슷한 현장을 문의하신 고객에게 관련 사례와 사진 체크리스트를 안내해 작업 범위 이해를 돕습니다.
           </p>
         </div>
       </div>
@@ -1386,6 +1425,35 @@ footer {
     </div>
   </section>
 
+  <section class="section white">
+    <div class="section-wrap">
+      <div class="sec-header">
+        <div class="sec-label">작업별 문의</div>
+        <h2 class="sec-title">비슷한 사례가 있다면 <em>작업별로 문의</em>해주세요</h2>
+        <p class="sec-desc">
+          사례 페이지는 수한공간 전체 현장 기록입니다. 타일, 욕실, 집수리 중 어디에 가까운지 모르겠다면 카카오톡으로 사진을 먼저 보내주셔도 됩니다.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-item-title">타일 문의</div>
+          <div class="contact-item-desc">타일 들뜸, 깨짐, 한 장 교체, 욕실 타일보수, 줄눈 보수</div>
+          <a href="tel:010-4646-3145">010-4646-3145</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-title">욕실 문의</div>
+          <div class="contact-item-desc">욕실리모델링, 덧방, 전체 철거, 방수, 양변기·세면대 교체</div>
+          <a href="tel:010-8672-3145">010-8672-3145</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-title">집수리 문의</div>
+          <div class="contact-item-desc">실리콘, 줄눈, 수전, 환풍기, 세면대 주변 마감, 작은 철거</div>
+          <a href="tel:010-4643-3145">010-4643-3145</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="cta-band">
     <div class="cta-left">
       <div class="cta-eyebrow">무료 사진 상담</div>
@@ -1403,7 +1471,9 @@ footer {
 
 <footer>
   <div class="footer-info">
-    <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386<br>
+    <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386 · 010-4646-3145<br>
+    <strong>수한공간욕실</strong> · 욕실리모델링 · 방수 · 욕실공사 · 010-8672-3145<br>
+    <strong>수한공간집수리</strong> · 대표 공나은 · 사업자등록번호 310-12-26706 · 010-4643-3145<br>
     경기도 평택시 용죽6길 64 · © 2025-2026 수한공간. All rights reserved.
     <div class="footer-copy-notice">
       <strong>무단 복제 및 재사용 금지</strong><br>
@@ -1413,7 +1483,7 @@ footer {
 
   <div class="footer-links">
     <a href="/">수한공간 홈</a>
-    <a href="/tile/">타일 시공</a>
+    <a href="/tile/">타일</a>
     <a href="/bath/">욕실 리모델링</a>
     <a href="/repair/">집수리</a>
     <a href="/checklist/">사진 체크리스트</a>

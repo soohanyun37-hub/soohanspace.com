@@ -71,8 +71,8 @@
     .notice-bar strong{color:#fff;font-weight:800;}
     .notice-bar .dot{color:rgba(255,255,255,.4);margin:0 6px;}
     header{position:sticky;top:0;z-index:300;background:#fff;border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
-    .logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
-    .logo-mark{width:40px;height:40px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;border-radius:6px;font-weight:900;font-size:18px;}
+    .logo{display:flex;align-items:center;gap:8px;text-decoration:none;}
+    .logo-img{height:48px;width:auto;display:block;}
     .logo-text{display:flex;flex-direction:column;}
     .logo-name{font-size:17px;font-weight:900;color:var(--text);line-height:1.1;}
     .logo-sub{font-size:11px;color:var(--text-muted);font-weight:600;margin-top:3px;}
@@ -172,7 +172,7 @@
     .mobile-cta a.k{background:var(--kakao);color:#111;}
     .mobile-cta a.t{background:var(--brand);color:#fff;}
     @media(max-width:1100px){header{padding:0 24px;}nav{display:none;}.breadcrumb{padding:10px 24px;}.hero{grid-template-columns:1fr;padding:48px 40px 64px;gap:40px;}.section{padding:64px 40px;}.type-grid{grid-template-columns:repeat(2,1fr);}.type-card:nth-child(2n){border-right:0;}.type-card:nth-child(4n){border-right:1px solid var(--border);}.contact-box{grid-template-columns:1fr;}.contact-actions{justify-content:flex-start;}footer{padding:32px 40px;}}
-    @media(max-width:700px){header{height:60px;padding:0 16px;}.logo-mark{width:34px;height:34px;font-size:16px;}.logo-name{font-size:15px;}.logo-sub{font-size:10.5px;}.hbtn-kakao,.hbtn-tel{padding:8px 11px;font-size:12.5px;}.hbtn-kakao span,.hbtn-tel span{display:none;}body{padding-bottom:76px;}.mobile-cta{display:flex;}.breadcrumb{padding:10px 16px;font-size:11px;}.hero{padding:36px 20px 44px;}.section{padding:52px 20px;}.hero-title{font-size:32px;}.hero-btns,.contact-actions{flex-direction:column;}.btn-primary,.btn-secondary,.btn-outline{width:100%;}.grid-3,.grid-2,.type-grid,.phone-grid{grid-template-columns:1fr;}.grid-3 .card,.grid-2 .card,.type-card,.phone-card{border-right:1px solid var(--border)!important;}.step{grid-template-columns:1fr;}.step-num{justify-content:flex-start;padding:14px 22px;}.contact-box{padding:28px 22px;}.contact-box h2{font-size:24px;}footer{padding:28px 20px;flex-direction:column;}.warning-box{padding:28px 22px;}.warning-box h2{font-size:24px;}}
+    @media(max-width:700px){header{height:60px;padding:0 16px;}.logo-img{height:38px;}.logo-name{font-size:15px;}.logo-sub{font-size:10.5px;}.hbtn-kakao,.hbtn-tel{padding:8px 11px;font-size:12.5px;}.hbtn-kakao span,.hbtn-tel span{display:none;}body{padding-bottom:76px;}.mobile-cta{display:flex;}.breadcrumb{padding:10px 16px;font-size:11px;}.hero{padding:36px 20px 44px;}.section{padding:52px 20px;}.hero-title{font-size:32px;}.hero-btns,.contact-actions{flex-direction:column;}.btn-primary,.btn-secondary,.btn-outline{width:100%;}.grid-3,.grid-2,.type-grid,.phone-grid{grid-template-columns:1fr;}.grid-3 .card,.grid-2 .card,.type-card,.phone-card{border-right:1px solid var(--border)!important;}.step{grid-template-columns:1fr;}.step-num{justify-content:flex-start;padding:14px 22px;}.contact-box{padding:28px 22px;}.contact-box h2{font-size:24px;}footer{padding:28px 20px;flex-direction:column;}.warning-box{padding:28px 22px;}.warning-box h2{font-size:24px;}}
   </style>
 </head>
 
@@ -183,10 +183,10 @@
 
   <header>
     <a href="/" class="logo" aria-label="수한공간 홈으로 이동">
-      <span class="logo-mark">수</span>
+      <img src="https://raw.githubusercontent.com/soohanyun37-hub/soohanspace.com/main/images/soohan-logo.png" alt="수한공간 로고" class="logo-img">
       <div class="logo-text">
         <span class="logo-name">수한공간</span>
-        <span class="logo-sub">타일 · 욕실 · 집수리 사진 상담</span>
+        <span class="logo-sub">평택 타일·욕실·집수리</span>
       </div>
     </a>
     <nav aria-label="상단 메뉴">

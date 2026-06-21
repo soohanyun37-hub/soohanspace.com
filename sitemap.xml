@@ -25,6 +25,10 @@
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
+    <loc>https://soohanspace.com/monthly-check/</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <url>
     <loc>https://soohanspace.com/cases/</loc>
     <priority>0.80</priority>

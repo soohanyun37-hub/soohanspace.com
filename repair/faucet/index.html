@@ -478,18 +478,51 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "평택 수전 교체",
-  "serviceType": "수전 교체, 세면대 수전 교체, 샤워 수전 교체, 주방 수전 교체",
-  "provider": {
-    "@type": "HomeAndConstructionBusiness",
-    "name": "수한공간집수리",
-    "telephone": "010-4643-3145",
-    "url": "https://soohanspace.com/repair/"
-  },
-  "areaServed": ["평택", "안성", "오산", "화성", "동탄", "천안", "아산", "청주"],
-  "url": "https://soohanspace.com/repair/faucet/",
-  "description": "세면대·샤워·주방 수전 누수, 흔들림, 수압 문제를 사진으로 먼저 확인하고 교체 가능 여부와 필요한 범위를 안내합니다."
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://soohanspace.com/"},
+        {"@type": "ListItem", "position": 2, "name": "집수리 · 부분공사", "item": "https://soohanspace.com/repair/"},
+        {"@type": "ListItem", "position": 3, "name": "수전 교체", "item": "https://soohanspace.com/repair/faucet/"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "평택 수전 교체",
+      "serviceType": "수전 교체, 세면대 수전 교체, 샤워 수전 교체, 주방 수전 교체",
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "수한공간집수리",
+        "telephone": "010-4643-3145",
+        "url": "https://soohanspace.com/repair/"
+      },
+      "areaServed": ["평택", "안성", "오산", "화성", "동탄", "천안", "아산", "청주"],
+      "url": "https://soohanspace.com/repair/faucet/",
+      "description": "세면대·샤워·주방 수전 누수, 흔들림, 수압 문제를 사진으로 먼저 확인하고 교체 가능 여부와 필요한 범위를 안내합니다."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "수전은 제품을 사두면 설치만 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "제품을 준비해두신 경우에도 규격, 타공, 연결 호스, 앵글밸브 상태가 맞아야 설치가 가능합니다. 사진을 보내주시면 설치 가능 여부를 먼저 안내드립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "이사 전후 수전 교체를 같이 봐도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가능합니다. 이사 전후에는 수전, 실리콘, 환풍기, 세면대·양변기 주변 마감을 함께 확인하는 경우가 많습니다. 사진을 보내주시면 필요한 범위부터 안내드립니다."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -511,6 +544,8 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
     <a href="/tile/">타일 보수 및 시공</a>
     <a href="/bath/">욕실 리모델링</a>
     <a href="/repair/" class="active">집수리 · 부분공사</a>
+    <a href="/seasonal/autumn-moving-repair/">이사철 집수리</a>
+    <a href="/seasonal/rainy-season-waterproofing/">장마 전 방수</a>
   </nav>
   <div class="header-btns">
     <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
@@ -526,6 +561,8 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
   <a href="/repair/">집수리 · 부분공사</a>
   <a href="/checklist/">사진 상담 체크리스트</a>
   <a href="/cases/">시공 사례</a>
+  <a href="/seasonal/autumn-moving-repair/">이사철 집수리</a>
+  <a href="/seasonal/rainy-season-waterproofing/">장마 전 방수 확인</a>
   <a href="/faq/">FAQ</a>
   <div class="mobile-nav-cta">
     <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
@@ -552,6 +589,7 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
     <div class="hero-btns">
       <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
       <a href="tel:010-4643-3145" class="btn-secondary">📞 010-4643-3145</a>
+      <a href="/seasonal/autumn-moving-repair/" class="btn-secondary" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">🗓️ 이사철 집수리</a>
     </div>
     <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 작업 중에는 카카오톡 문의를 추천드립니다</p>
   </div>
@@ -578,7 +616,10 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
 <section class="quick-cta">
   <div class="quick-cta-wrap">
     <div class="quick-cta-text">수전 누수, 흔들림, 수압 문제가 걱정된다면 <span>사진을 먼저 보내주세요.</span><br>수전 교체만 가능한지, 배관이나 주변 마감 확인이 필요한지 안내드립니다.</div>
-    <a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 사진 보내고 확인받기</a>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 사진 보내고 확인받기</a>
+      <a href="/seasonal/autumn-moving-repair/" class="quick-cta-btn" style="background:#fff;border:1.5px solid var(--brand);color:var(--brand);">🗓️ 이사철 집수리 보기</a>
+    </div>
   </div>
 </section>
 
@@ -593,6 +634,18 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
       <div class="cp reveal"><div class="cp-num">01 · 보수 가능</div><div class="cp-title">수전 노후·누수가 국소적인 경우</div><div class="cp-desc">수전 본체나 연결 호스 노후로 물이 새는 경우에는 수전 교체 또는 부속 교체로 정리되는 경우가 있습니다.</div></div>
       <div class="cp reveal"><div class="cp-num">02 · 확인 필요</div><div class="cp-title">배관·밸브 누수가 의심되는 경우</div><div class="cp-desc">수전 문제가 아니라 벽 안쪽 배관, 앵글밸브, 하부 배수 주변에서 물이 번지는 경우에는 사진만으로 단정하지 않고 방문 확인이 필요할 수 있습니다.</div></div>
       <div class="cp reveal"><div class="cp-num">03 · 범위 안내</div><div class="cp-title">필요한 교체 범위를 나눠 안내합니다</div><div class="cp-desc">무조건 전체 욕실공사로 안내하지 않고, 수전 본체 교체인지 부속 교체인지, 주변 마감 보수가 필요한지 나눠 안내드립니다.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="core-section" style="background:var(--bg-gray);">
+  <div class="core-wrap reveal">
+    <div class="core-box" style="background:#fff;">
+      <div class="core-box-label">계절별 확인</div>
+      <div class="core-box-title">이사 전후 수전 교체는 <span class="hl">부속 호환과 주변 물 번짐</span>을 함께 봅니다</div>
+      <div class="core-box-desc">이사 전후에는 수전 교체, 실리콘 보수, 환풍기 교체, 세면대·양변기 주변 마감 문의가 함께 들어오는 경우가 많습니다. 수전만 교체하면 되는지, 앵글밸브·호스·하부장 물 번짐까지 확인이 필요한지 사진으로 먼저 구분합니다.</div>
+      <div class="core-box-desc" style="margin-top:14px;">이사 전후 작은 수리는 <a href="/seasonal/autumn-moving-repair/" style="color:var(--accent);font-weight:900;text-decoration:underline;">가을 이사철 집수리 안내</a>에서, 물 번짐·누수 의심이 있다면 <a href="/seasonal/rainy-season-waterproofing/" style="color:var(--accent);font-weight:900;text-decoration:underline;">장마 전 욕실·베란다 방수 확인</a>에서 함께 확인하실 수 있습니다.</div>
     </div>
   </div>
 </section>
@@ -617,11 +670,11 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
   </div>
   <div class="related-grid">
     <a href="/repair/silicone/" class="related-card reveal"><strong>욕실 실리콘 보수</strong><span>곰팡이, 벌어짐, 물 스며듦 의심 부위를 먼저 확인합니다.</span></a>
-    <a href="/repair/grout/" class="related-card reveal"><strong>욕실 줄눈 보수</strong><span>줄눈 깨짐, 탈락, 오염, 빈틈 상태에 따라 보수 범위를 안내합니다.</span></a>
-    <a href="/repair/faucet/" class="related-card reveal"><strong>수전 교체</strong><span>세면대·샤워·주방 수전 상태와 부속 호환 여부를 확인합니다.</span></a>
+    <a href="/questions/repair/faucet-installation/" class="related-card reveal"><strong>수전은 제품을 사두면 설치만 가능한가요?</strong><span>제품 준비 시 확인해야 할 규격, 부속, 방문 확인 기준을 질문형 페이지에서 확인합니다.</span></a>
+    <a href="/seasonal/autumn-moving-repair/" class="related-card reveal"><strong>가을 이사철 집수리</strong><span>이사 전후 수전, 실리콘, 환풍기, 세면대·양변기 주변 마감을 함께 확인합니다.</span></a>
     <a href="/repair/vent-fan/" class="related-card reveal"><strong>환풍기 교체</strong><span>소음, 작동 불량, 노후 환풍기 교체 가능 여부를 확인합니다.</span></a>
-    <a href="/repair/sink-finish/" class="related-card reveal"><strong>세면대 주변 마감</strong><span>세면대 주변 벌어짐, 실리콘, 틈새 마감 상태를 확인합니다.</span></a>
-    <a href="/repair/small-demolition/" class="related-card reveal"><strong>작은 철거 · 부분철거</strong><span>전체 공사 전 필요한 철거 범위와 보수 가능 여부를 봅니다.</span></a>
+    <a href="/repair/sink-repair/" class="related-card reveal"><strong>세면대 주변 수리</strong><span>세면대 주변 벌어짐, 실리콘, 배수, 틈새 마감 상태를 확인합니다.</span></a>
+    <a href="/seasonal/rainy-season-waterproofing/" class="related-card reveal"><strong>장마 전 욕실·베란다 방수 확인</strong><span>물 번짐, 젖음 흔적, 수전·배관 주변 누수 의심이 있다면 함께 확인합니다.</span></a>
   </div>
 </section>
 
@@ -636,6 +689,8 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
       <div>3. 옆에서 본 사진<br>배관 연결부와 물 번짐이 보이게 촬영</div>
     </div>
     <a href="/checklist/" class="photo-guide-link">사진 상담 체크리스트 보기</a>
+    <a href="/seasonal/autumn-moving-repair/" class="photo-guide-link" style="margin-left:12px;">이사철 집수리 안내 보기</a>
+    <a href="/seasonal/rainy-season-waterproofing/" class="photo-guide-link" style="margin-left:12px;">장마 전 방수 확인</a>
   </div>
 </section>
 
@@ -656,6 +711,8 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
     <div class="wi reveal"><div class="wi-title">세면대 수전만 따로 교체할 수 있나요?</div><div class="wi-desc">대부분은 세면대 수전만 교체가 가능하지만, 세면대 타공 규격, 하부 연결부, 앵글밸브 상태에 따라 가능 여부가 달라질 수 있습니다.</div></div>
     <div class="wi reveal"><div class="wi-title">샤워 수전 교체도 가능한가요?</div><div class="wi-desc">샤워 수전 누수, 냉온수 전환 문제, 수압 문제도 확인 가능합니다. 벽면 연결부나 배관 문제가 의심되면 방문 확인이 필요할 수 있습니다.</div></div>
     <div class="wi reveal"><div class="wi-title">사진만 보내도 안내가 가능한가요?</div><div class="wi-desc">사진으로 1차 안내는 가능합니다. 다만 벽 안쪽 배관, 밸브 파손, 하부장 물 번짐이 있으면 현장 확인이 필요할 수 있습니다.</div></div>
+
+    <div class="wi reveal"><div class="wi-title">이사 전후 수전 교체를 같이 봐도 되나요?</div><div class="wi-desc">가능합니다. 이사 전후에는 수전, 실리콘, 환풍기, 세면대·양변기 주변 마감을 함께 확인하는 경우가 많습니다. <a href="/seasonal/autumn-moving-repair/" style="color:var(--brand);font-weight:800;text-decoration:underline;">이사철 집수리 안내</a>도 함께 참고하실 수 있습니다.</div></div>
   </div>
 </section>
 
@@ -668,6 +725,7 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
   <div class="cta-btns">
     <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 문의</a>
     <a href="tel:010-4643-3145" class="btn-cta-tel">📞 010-4643-3145</a>
+    <a href="/seasonal/autumn-moving-repair/" class="btn-cta-tel">🗓️ 이사철 집수리</a>
   </div>
 </div>
 
@@ -675,7 +733,7 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
   <div>
     <div class="sec-label">문의</div>
     <h2 class="sec-title">수전 교체 상담</h2>
-    <p class="contact-desc">지역, 문제 내용, 사진 3장을 보내주시면<br>필요한 보수 범위를 먼저 안내드립니다.</p>
+    <p class="contact-desc">지역, 문제 내용, 사진 3장을 보내주시면<br>필요한 보수 범위를 먼저 안내드립니다. 이사 전후 수전·작은 수리는 <a href="/seasonal/autumn-moving-repair/" style="color:var(--accent);font-weight:900;text-decoration:underline;">이사철 집수리 안내</a>도 함께 확인하실 수 있습니다.</p>
     <div class="contact-notice"><strong>작업 중에는 전화 연결이 어려울 수 있습니다.</strong><br>문자 또는 카카오톡으로 사진을 보내주시면 확인 후 순서대로 안내드립니다.</div>
     <div class="contact-methods">
       <a href="https://open.kakao.com/me/soohanyun" class="cm kakao-cm"><div class="cm-info"><div class="cm-name">카카오톡 상담<span class="recommend">추천</span></div><div class="cm-desc">사진 전송 → 확인 후 안내</div></div><div class="cm-go">→</div></a>
@@ -697,7 +755,7 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
 <footer>
   <div class="footer-info">
     <strong>수한공간집수리</strong> · 생활수리 · 욕실 주변 보수 · 전화 010-4643-3145<br>
-    보유 국가기술자격: 타일기능사 · 방수기능사 · 온수온돌기능사<br>
+    수한공간 보유 국가기술자격: 타일기능사 · 방수기능사 · 온수온돌기능사<br>
     경기도 평택시 용죽6길 64 · © 2025-2026 수한공간. All rights reserved.
     <div class="footer-copy-notice">
       <strong>무단 복제 및 재사용 금지</strong><br>
@@ -710,6 +768,8 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
     <a href="/bath/">욕실 리모델링</a>
     <a href="/repair/">집수리 · 부분공사</a>
     <a href="/checklist/">사진 상담 체크리스트</a>
+    <a href="/seasonal/autumn-moving-repair/">이사철 집수리</a>
+    <a href="/seasonal/rainy-season-waterproofing/">장마 전 방수</a>
     <a href="/cases/">시공 사례</a>
     <a href="https://blog.naver.com/soohanrepair" target="_blank" rel="noopener">네이버 블로그</a>
     <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener">카카오톡 상담</a>
@@ -766,12 +826,16 @@ if (menuBtn && mobileNav) {
 </script>
   
 <!-- 네이버 애널리틱스 -->
-<script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
 <script type="text/javascript">
-if(!wcs_add) var wcs_add = {};
-wcs_add["wa"] = "a88bea980ad518";
-if(window.wcs) {
-  wcs_do();
+if (location.hostname === "soohanspace.com" || location.hostname === "www.soohanspace.com") {
+  var script = document.createElement("script");
+  script.src = "//wcs.pstatic.net/wcslog.js";
+  script.onload = function () {
+    if (!window.wcs_add) window.wcs_add = {};
+    window.wcs_add["wa"] = "a88bea980ad518";
+    if (window.wcs) { window.wcs_do(); }
+  };
+  document.head.appendChild(script);
 }
 </script>
 </body>

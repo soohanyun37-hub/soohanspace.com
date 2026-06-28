@@ -119,6 +119,8 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .btn-primary:hover { background: var(--kakao-dark); transform: translateY(-1px); }
 .btn-secondary { background: var(--brand); color: #fff; }
 .btn-secondary:hover { background: var(--brand-dark); transform: translateY(-1px); }
+.btn-outline { background:#fff; color:var(--brand); border:1.5px solid var(--brand); }
+.btn-outline:hover { background:var(--brand-light); transform:translateY(-1px); }
 .hero-note { font-size: 13px; color: var(--text-muted); font-weight: 500; }
 .hero-note strong { color: var(--text-mid); font-weight: 700; }
 .hero-stats { display: flex; gap: 0; border-top: 2px solid var(--brand); padding-top: 28px; margin-top: 36px; }
@@ -155,7 +157,20 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .hcard-btn-kakao:hover { background: var(--kakao-dark); }
 .hcard-btn-tel { background: var(--brand); color: #fff; }
 .hcard-btn-tel:hover { background: var(--brand-dark); }
+.hcard-btn-outline { background:#fff; color:var(--brand); border:1.5px solid var(--brand); }
+.hcard-btn-outline:hover { background:var(--brand-light); }
 .hcard-note { font-size: 11.5px; color: var(--text-muted); text-align: center; margin-top: 10px; line-height: 1.7; font-weight: 500; }
+
+/* QUICK CTA */
+.quick-cta { background:#fff; border-bottom:1px solid var(--border); padding:22px 80px; }
+.quick-cta-wrap { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 22px; border:1px solid var(--border); border-left:4px solid var(--accent); background:var(--bg-gray); }
+.quick-cta-text { font-size:15px; font-weight:700; color:var(--text); line-height:1.7; word-break:keep-all; }
+.quick-cta-text span { color:var(--accent); font-weight:800; }
+.quick-cta-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.quick-cta-btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 22px; background:var(--kakao); color:#111; text-decoration:none; font-size:14px; font-weight:800; border-radius:4px; white-space:nowrap; }
+.quick-cta-btn:hover { background:var(--kakao-dark); }
+.quick-cta-btn.outline { background:#fff; border:1.5px solid var(--brand); color:var(--brand); }
+.quick-cta-btn.outline:hover { background:var(--brand-light); }
 
 /* 고객 공감 */
 .anxiety-section { background: #fff; padding: 80px 80px; border-bottom: 1px solid var(--border); }
@@ -336,6 +351,8 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .btn-cta-kakao, .btn-cta-tel { flex: 1; justify-content: center; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .wi:nth-child(2) { border-right: none; }
+  .quick-cta { padding:20px 40px; }
+  .quick-cta-wrap { flex-direction:column; align-items:flex-start; }
   footer { padding: 32px 40px; }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .ps:nth-child(2) { border-right: none; }
@@ -356,9 +373,13 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .anxiety-section, .services-section, .cases-section, .contact-section { padding: 52px 20px; }
   .core-section, .why-section, .process-section { padding: 52px 20px; }
   .cta-band { padding: 44px 20px; }
+  .quick-cta { padding:18px 20px; }
+  .quick-cta-text { font-size:14px; }
+  .quick-cta-btn { width:100%; }
+  .quick-cta-actions { width:100%; }
   .hero-title { font-size: 32px; }
   .hero-btns { flex-direction: column; }
-  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .btn-primary, .btn-secondary, .btn-outline { width: 100%; justify-content: center; }
   .core-box { padding: 28px 22px; }
   .core-points { grid-template-columns: 1fr; }
   .cp:nth-child(3n) { border-right: 1px solid var(--border); }
@@ -579,6 +600,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 }
 .photo-guide-actions .kakao { background: var(--kakao); color: #111; }
 .photo-guide-actions .checklist { background: var(--brand); color: #fff; }
+.photo-guide-actions .outline { background:#fff; color:var(--brand); border:1.5px solid var(--brand); }
 
 @media (max-width: 700px) {
   .detail-link-section, .photo-guide-section {
@@ -727,10 +749,11 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <div class="hero-btns">
       <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
       <a href="/questions/tile/" class="btn-secondary">타일 질문 보기</a>
+      <a href="/checklist/" class="btn-outline">📋 사진 체크리스트 보기</a>
       <a href="tel:010-4646-3145" class="btn-secondary">📞 010-4646-3145</a>
-      <a href="/checklist/" class="btn-secondary" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">📋 사진 체크리스트</a>
+      <a href="/seasonal/winter-tile-repair/" class="btn-outline">🗓️ 겨울 타일 점검 보기</a>
     </div>
-    <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 📸 사진 보내주시면 가능한 방법과 필요한 범위를 먼저 안내드립니다</p>
+    <p class="hero-note">바로 공사를 결정하지 않으셔도 됩니다 · 사진 확인 후 가능한 방법과 필요한 범위를 먼저 안내드립니다</p>
     <div class="license-badges">
       <span class="license-badge">국가기술자격 타일기능사</span>
       <span class="license-badge">국가기술자격 방수기능사</span>
@@ -755,12 +778,28 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       </div>
       <div class="hcard-cta">
         <a href="https://open.kakao.com/me/soohanyun" class="hcard-btn-kakao">💬 카카오톡으로 사진 보내기</a>
+        <a href="/questions/tile/" class="hcard-btn-outline">타일 질문 먼저 보기</a>
+        <a href="/checklist/" class="hcard-btn-outline">사진 3장 찍는 방법 보기</a>
         <a href="tel:010-4646-3145" class="hcard-btn-tel">📞 010-4646-3145</a>
-        <a href="/process/" class="hcard-btn-tel">상담 후 진행 과정 보기</a>
       </div>
       <p class="hcard-note">연중무휴 08:00 – 21:00<br>작업 중에는 카카오톡·문자를 추천드립니다</p>
     </div>
   </aside>
+</section>
+
+<!-- QUICK CTA -->
+<section class="quick-cta">
+  <div class="quick-cta-wrap">
+    <div class="quick-cta-text">
+      타일이 들떴거나 깨졌다면 <span>사진을 먼저 보내주시면 됩니다.</span><br>
+      전체 철거가 필요한지, 부분 보수나 한 장 교체로 가능한지 부담 없이 먼저 확인합니다.
+    </div>
+    <div class="quick-cta-actions">
+      <a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 사진 보내고 확인받기</a>
+      <a href="/checklist/" class="quick-cta-btn outline">사진 체크리스트 보기</a>
+      <a href="/questions/tile/" class="quick-cta-btn outline">타일 질문 보기</a>
+    </div>
+  </div>
 </section>
 
 <!-- 고객 공감 -->
@@ -949,19 +988,19 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <a href="/seasonal/winter-tile-repair/" class="detail-card reveal">
       <div class="detail-kicker">WINTER TILE</div>
       <h3>겨울 타일 터짐·들뜸 보수</h3>
-      <p>한파 이후 베란다, 현관, 욕실 타일이 터지거나 들뜨는 경우가 있습니다. 전체 철거 전 손상 범위부터 확인합니다.</p>
+      <p>한파 이후 베란다, 현관, 욕실 타일이 터지거나 들뜬 경우 손상 범위부터 확인합니다.</p>
     </a>
 
-    <a href="/questions/tile/lifted-tile-demolition/" class="detail-card reveal">
-      <div class="detail-kicker">QUESTION</div>
-      <h3>타일이 들뜨면 무조건 철거해야 하나요?</h3>
-      <p>들뜬 범위, 주변 타일 상태, 바탕면 문제에 따라 부분 보수 가능 여부가 달라질 수 있습니다.</p>
+    <a href="/seasonal/rainy-season-waterproofing/" class="detail-card reveal">
+      <div class="detail-kicker">WATERPROOF CHECK</div>
+      <h3>장마 전 방수 확인</h3>
+      <p>욕실이나 베란다 타일 문제와 물 스며듦이 함께 걱정될 때 먼저 확인할 기준입니다.</p>
     </a>
 
-    <a href="/questions/tile/discontinued-tile/" class="detail-card reveal">
-      <div class="detail-kicker">QUESTION</div>
-      <h3>단종 타일이면 어떻게 보수하나요?</h3>
-      <p>같은 타일이 없을 때는 유사 색상, 구간 교체, 마감 방식까지 함께 확인해 안내드립니다.</p>
+    <a href="/seasonal/" class="detail-card reveal">
+      <div class="detail-kicker">SEASONAL GUIDE</div>
+      <h3>계절별 점검 안내</h3>
+      <p>겨울 타일, 장마 전 방수, 봄 욕실공사, 이사철 집수리 흐름을 함께 확인합니다.</p>
     </a>
   </div>
 </section>
@@ -1048,6 +1087,29 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   </div>
   <p class="cases-note reveal">관련 사례는 <a href="/cases/tile/">타일 보수 사례</a>와 <a href="/cases/">전체 시공 사례</a>에서 먼저 확인하실 수 있습니다. 블로그는 하단 보조 자료로 함께 운영합니다.</p>
 </section>
+<!-- [수한공간 추가] 타일 사진 상담 안내 -->
+<section class="photo-guide-section">
+  <div class="photo-guide-box reveal">
+    <h2>타일보수 사진은 3장만 보내주셔도 1차 확인이 가능합니다</h2>
+    <p>
+      바로 공사를 결정하지 않으셔도 됩니다. 사진을 먼저 보고 전체 철거가 필요한지,
+      부분 보수나 한 장 교체로 가능한지 필요한 범위부터 안내드립니다.
+    </p>
+    <ul class="photo-guide-list">
+      <li>1. 전체 공간 사진</li>
+      <li>2. 문제 부위 가까운 사진</li>
+      <li>3. 옆에서 본 상태 사진</li>
+    </ul>
+    <div class="photo-guide-actions">
+      <a href="https://open.kakao.com/me/soohanyun" class="kakao">💬 카카오톡으로 사진 보내기</a>
+      <a href="/questions/tile/" class="checklist">타일 질문 보기</a>
+      <a href="/checklist/" class="checklist">📋 사진 체크리스트 보기</a>
+      <a href="/seasonal/winter-tile-repair/" class="outline">🗓️ 겨울 타일 점검 보기</a>
+    </div>
+  </div>
+</section>
+
+
 <!-- [수한공간 수정 시작] 타일 페이지 평택 전 지역 검색 안내 -->
 <section class="tile-seo-section">
   <div class="tile-seo-wrap">
@@ -1102,31 +1164,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     </p>
   </div>
 </section>
-<!-- [수한공간 수정 끝] 타일 페이지 평택 전 지역 검색 안내 -->
-
-<!-- [수한공간 추가] 타일 사진 상담 안내 -->
-<section class="photo-guide-section">
-  <div class="photo-guide-box reveal">
-    <h2>타일보수 사진은 3장만 보내주셔도 1차 확인이 가능합니다</h2>
-    <p>
-      바로 공사를 결정하지 않으셔도 됩니다. 사진을 먼저 보고 전체 철거가 필요한지,
-      부분 보수나 한 장 교체로 가능한지 필요한 범위부터 안내드립니다.
-    </p>
-    <ul class="photo-guide-list">
-      <li>1. 전체 공간 사진</li>
-      <li>2. 문제 부위 가까운 사진</li>
-      <li>3. 옆에서 본 상태 사진</li>
-    </ul>
-    <div class="photo-guide-actions">
-      <a href="https://open.kakao.com/me/soohanyun" class="kakao">💬 카카오톡으로 사진 보내기</a>
-      <a href="/questions/tile/" class="checklist">타일 질문 보기</a>
-      <a href="/checklist/" class="checklist">📋 사진 체크리스트 보기</a>
-      <a href="/seasonal/winter-tile-repair/" class="checklist" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">🗓️ 겨울 타일 점검 보기</a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA 밴드 -->
+<!-- [수한공간 수정 끝] 타일 페이지 평택 전 지역 검색 안내 --><!-- CTA 밴드 -->
 <div class="cta-band">
   <div class="cta-left">
     <div class="cta-eyebrow">무료 상담 안내</div>
@@ -1134,8 +1172,8 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
   </div>
   <div class="cta-btns">
-    <a href="/questions/tile/" class="btn-cta-tel">타일 질문 보기</a>
-    <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 문의</a>
+    <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 사진 상담</a>
+    <a href="/checklist/" class="btn-cta-tel">사진 체크리스트 보기</a>
     <a href="tel:010-4646-3145" class="btn-cta-tel">📞 010-4646-3145</a>
   </div>
 </div>
@@ -1166,6 +1204,11 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <a href="/questions/tile/" class="cm sms-cm">
         <div class="cm-icon s"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#444" stroke-width="1.3"/><path d="M6 7h8M6 10h8M6 13h5" stroke="#444" stroke-width="1.1" stroke-linecap="round"/></svg></div>
         <div class="cm-info"><div class="cm-name">타일 질문 보기</div><div class="cm-desc">들뜸·깨짐·한 장 교체 기준</div></div>
+        <div class="cm-go">→</div>
+      </a>
+      <a href="/checklist/" class="cm sms-cm">
+        <div class="cm-icon s"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#444" stroke-width="1.3"/><path d="M6 7h8M6 10h8M6 13h5" stroke="#444" stroke-width="1.1" stroke-linecap="round"/></svg></div>
+        <div class="cm-info"><div class="cm-name">사진 체크리스트</div><div class="cm-desc">전체·근접·옆면 사진 안내</div></div>
         <div class="cm-go">→</div>
       </a>
       <a href="https://blog.naver.com/soohantile" target="_blank" rel="noopener" class="cm blog-cm">

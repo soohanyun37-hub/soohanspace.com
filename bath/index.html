@@ -158,6 +158,17 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 .hcard-btn-tel:hover { background: var(--brand-dark); }
 .hcard-note { font-size: 11.5px; color: var(--text-muted); text-align: center; margin-top: 10px; line-height: 1.7; font-weight: 500; }
 
+
+/* QUICK CTA */
+.quick-cta { background:#fff; border-bottom:1px solid var(--border); padding:22px 80px; }
+.quick-cta-wrap { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 22px; border:1px solid var(--border); border-left:4px solid var(--accent); background:var(--bg-gray); }
+.quick-cta-text { font-size:15px; font-weight:700; color:var(--text); line-height:1.7; word-break:keep-all; }
+.quick-cta-text span { color:var(--accent); font-weight:800; }
+.quick-cta-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.quick-cta-btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 22px; background:var(--kakao); color:#111; text-decoration:none; font-size:14px; font-weight:800; border-radius:4px; white-space:nowrap; }
+.quick-cta-btn:hover { background:var(--kakao-dark); }
+.quick-cta-btn.outline { background:#fff; border:1.5px solid var(--brand); color:var(--brand); }
+
 /* 고객 공감 */
 .anxiety-section { background: #fff; padding: 80px 80px; border-bottom: 1px solid var(--border); }
 .anxiety-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-bottom: none; margin-top: 40px; }
@@ -398,6 +409,12 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 .photo-guide-item strong { display:block; color:var(--brand); font-size:14px; margin-bottom:6px; }
 .photo-guide-item span { display:block; color:var(--text-muted); font-size:13px; line-height:1.6; }
 
+.photo-guide-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.photo-guide-actions a { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:0 18px; border-radius:4px; text-decoration:none; font-size:14px; font-weight:900; }
+.photo-guide-actions .kakao { background:var(--kakao); color:#111; }
+.photo-guide-actions .checklist { background:var(--brand); color:#fff; }
+.photo-guide-actions .outline { background:#fff; color:var(--brand); border:1.5px solid var(--brand); }
+
 @media (max-width:1100px) {
   .related-section,.photo-guide-section { padding:64px 40px; }
 }
@@ -406,6 +423,17 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   .related-grid,.photo-guide-list { grid-template-columns:1fr; }
   .related-card:nth-child(3n) { border-right:1px solid var(--border); }
   .photo-guide-wrap { padding:26px 20px; }
+}
+
+
+@media (max-width:1100px) {
+  .quick-cta { padding:20px 40px; }
+  .quick-cta-wrap { flex-direction:column; align-items:flex-start; }
+}
+@media (max-width:700px) {
+  .quick-cta { padding:18px 20px; }
+  .quick-cta-text { font-size:14px; }
+  .quick-cta-actions, .quick-cta-btn { width:100%; }
 }
 
   /* [수한공간 수정 시작] 욕실 페이지 검색 안내 */
@@ -650,6 +678,22 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   </aside>
 </section>
 
+
+<!-- QUICK CTA -->
+<section class="quick-cta">
+  <div class="quick-cta-wrap">
+    <div class="quick-cta-text">
+      욕실공사는 <span>바로 결정하지 않으셔도 됩니다.</span><br>
+      전체 철거가 필요한지, 덧방이나 부분공사로 가능한지 사진을 먼저 보고 필요한 범위부터 안내드립니다.
+    </div>
+    <div class="quick-cta-actions">
+      <a href="https://open.kakao.com/me/soohanyun" class="quick-cta-btn">💬 사진 보내고 확인받기</a>
+      <a href="/checklist/" class="quick-cta-btn outline">📋 사진 체크리스트</a>
+      <a href="/questions/bath/" class="quick-cta-btn outline">욕실 질문 보기</a>
+    </div>
+  </div>
+</section>
+
 <!-- 고객 공감 -->
 <section class="anxiety-section">
   <div class="sec-header reveal">
@@ -836,14 +880,14 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 <section class="related-section" style="background:var(--bg-gray);">
   <div class="sec-header reveal">
     <div class="sec-label">계절별 욕실 점검</div>
-    <h2 class="sec-title">봄 욕실공사와 장마 전 방수는 <em>상태 확인부터 시작합니다</em></h2>
+    <h2 class="sec-title">봄 욕실공사와 장마 전 방수는 <em>사진과 상태부터 먼저 확인합니다</em></h2>
   </div>
 
   <div class="related-grid">
     <a href="/seasonal/spring-bath-remodeling/" class="related-card reveal">
       <div class="related-kicker">SPRING BATH</div>
       <div class="related-title">봄 욕실리모델링</div>
-      <div class="related-desc">봄에는 이사 전후 욕실공사 문의가 많습니다. 전체 철거, 덧방, 부분공사 중 어떤 방식이 맞는지 먼저 확인합니다.</div>
+      <div class="related-desc">이사 전후 욕실공사는 전체 철거, 덧방, 부분공사 중 어떤 방식이 맞는지 먼저 확인합니다.</div>
     </a>
 
     <a href="/seasonal/rainy-season-waterproofing/" class="related-card reveal">
@@ -852,28 +896,28 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <div class="related-desc">젖음 흔적, 물고임, 배수 문제, 실리콘 벌어짐이 있다면 장마 전에 사진으로 먼저 확인합니다.</div>
     </a>
 
-    <a href="/questions/bath/waterproofing-needed/" class="related-card reveal">
-      <div class="related-kicker">QUESTION</div>
-      <div class="related-title">욕실 방수는 언제 다시 해야 하나요?</div>
-      <div class="related-desc">누수 의심, 바닥 타일 들뜸, 물고임이 있을 때 방수 확인이 필요한 기준을 정리했습니다.</div>
+    <a href="/checklist/" class="related-card reveal">
+      <div class="related-kicker">PHOTO CHECK</div>
+      <div class="related-title">사진 상담 체크리스트</div>
+      <div class="related-desc">전체 욕실 사진, 문제 부위 가까운 사진, 옆에서 본 상태 사진을 보내주시면 더 정확하게 볼 수 있습니다.</div>
     </a>
 
-    <a href="/questions/bath/overlay-possible/" class="related-card reveal">
-      <div class="related-kicker">QUESTION</div>
-      <div class="related-title">욕실 덧방은 언제 가능한가요?</div>
-      <div class="related-desc">기존 타일과 바탕면 상태, 문턱 높이, 배수 상태에 따라 덧방 가능 여부가 달라집니다.</div>
+    <a href="/cases/bath/" class="related-card reveal">
+      <div class="related-kicker">BATH CASES</div>
+      <div class="related-title">욕실 사례 보기</div>
+      <div class="related-desc">비슷한 욕실 상태와 작업 범위를 사례로 보며 내 현장과 비교할 수 있습니다.</div>
     </a>
 
-    <a href="/questions/bath/demolition-vs-overlay/" class="related-card reveal">
-      <div class="related-kicker">QUESTION</div>
-      <div class="related-title">욕실은 전체 철거와 덧방 중 무엇이 좋나요?</div>
-      <div class="related-desc">욕실 상태에 따라 전체 철거가 맞는 경우와 덧방으로 가능한 경우를 나눠 확인합니다.</div>
+    <a href="/cases/" class="related-card reveal">
+      <div class="related-kicker">ALL CASES</div>
+      <div class="related-title">전체 시공 사례 보기</div>
+      <div class="related-desc">타일, 욕실, 집수리 사례를 함께 보며 필요한 공사 범위를 비교할 수 있습니다.</div>
     </a>
 
-    <a href="/questions/bath/floor-only-repair/" class="related-card reveal">
-      <div class="related-kicker">QUESTION</div>
-      <div class="related-title">욕실 바닥만 공사할 수 있나요?</div>
-      <div class="related-desc">바닥 물고임, 배수, 단차, 방수 상태에 따라 바닥만 공사 가능한지 먼저 확인합니다.</div>
+    <a href="/contact/" class="related-card reveal">
+      <div class="related-kicker">CONTACT GUIDE</div>
+      <div class="related-title">문의 전 확인할 내용</div>
+      <div class="related-desc">지역, 욕실 상태, 원하는 공사 범위와 사진을 함께 보내주시면 순서대로 안내드립니다.</div>
     </a>
   </div>
 </section>
@@ -893,11 +937,12 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <div class="photo-guide-item"><strong>2. 문제 부위 가까운 사진</strong><span>타일 들뜸, 바닥 물고임, 실리콘 벌어짐, 누수 의심 부위를 가까이 찍어주세요.</span></div>
       <div class="photo-guide-item"><strong>3. 옆에서 본 상태 사진</strong><span>단차, 벌어짐, 들뜸 정도가 보이도록 옆 각도에서 찍어주세요.</span></div>
     </div>
-    <div style="margin-top:22px;">
-      <a href="/questions/bath/" class="btn-secondary" style="display:inline-flex;">욕실 질문 보기</a>
-      <a href="/checklist/" class="btn-secondary" style="display:inline-flex;">📋 사진 체크리스트 보기</a>
-      <a href="/seasonal/rainy-season-waterproofing/" class="btn-outline" style="display:inline-flex;margin-left:8px;">☔ 장마 전 방수 확인</a>
-      <a href="/seasonal/spring-bath-remodeling/" class="btn-outline" style="display:inline-flex;margin-left:8px;">🗓️ 봄 욕실공사 보기</a>
+    <div class="photo-guide-actions">
+      <a href="https://open.kakao.com/me/soohanyun" class="kakao">💬 카카오톡으로 사진 보내기</a>
+      <a href="/checklist/" class="checklist">📋 사진 체크리스트 보기</a>
+      <a href="/questions/bath/" class="outline">욕실 질문 보기</a>
+      <a href="/seasonal/rainy-season-waterproofing/" class="outline">☔ 장마 전 방수 확인</a>
+      <a href="/seasonal/spring-bath-remodeling/" class="outline">🗓️ 봄 욕실공사 보기</a>
     </div>
   </div>
 </section>
@@ -1000,8 +1045,8 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
     <div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
   </div>
   <div class="cta-btns">
-    <a href="/questions/bath/" class="btn-cta-tel">욕실 질문 보기</a>
-    <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 문의</a>
+    <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 사진 상담</a>
+    <a href="/checklist/" class="btn-cta-tel">📋 사진 체크리스트</a>
     <a href="tel:010-8672-3145" class="btn-cta-tel">📞 010-8672-3145</a>
   </div>
 </div>
@@ -1027,6 +1072,11 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
       <a href="sms:010-8672-3145" class="cm sms-cm">
         <div class="cm-icon s"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="11" rx="2" stroke="#444" stroke-width="1.3"/><path d="M6 9h8M6 12h5" stroke="#444" stroke-width="1.1" stroke-linecap="round"/></svg></div>
         <div class="cm-info"><div class="cm-name">문자 문의</div><div class="cm-desc">사진과 함께 보내주세요</div></div>
+        <div class="cm-go">→</div>
+      </a>
+      <a href="/checklist/" class="cm sms-cm">
+        <div class="cm-icon s"><svg width="22" height="22" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#444" stroke-width="1.3"/><path d="M6 7h8M6 10h8M6 13h5" stroke="#444" stroke-width="1.1" stroke-linecap="round"/></svg></div>
+        <div class="cm-info"><div class="cm-name">사진 체크리스트</div><div class="cm-desc">욕실 전체·문제 부위·옆면 사진 준비</div></div>
         <div class="cm-go">→</div>
       </a>
       <a href="/questions/bath/" class="cm sms-cm">

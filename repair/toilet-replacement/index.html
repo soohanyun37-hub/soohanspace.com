@@ -487,6 +487,124 @@ footer { background:#111; padding:36px 80px; display:flex; justify-content:space
   }
 }
 /* [수한공간 수정 끝] 집수리 페이지 평택 전 지역 검색 안내 */
+
+
+/* [수한공간 디자인·모바일 정규화 시작]
+   70개 페이지 공통 보정: 브랜드 색상·문구는 유지하고, 모바일 가독성·푸터 줄바꿈·이미지 반응형만 정리합니다. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sec-title {
+  font-weight: 800;
+}
+
+.footer-links {
+  flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-copy-notice,
+.contact-biz {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1100px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .sec-title {
+    font-size: clamp(24px, 7vw, 30px);
+    font-weight: 800;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  main p,
+  .core-box-desc,
+  .contact-desc,
+  .quick-cta-text,
+  .tile-seo-wrap p,
+  .bath-seo-wrap p,
+  .repair-seo-wrap p,
+  .photo-guide-box p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  main li,
+  .sv-points li,
+  .sv-list li,
+  .photo-guide-list li {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .anxiety-desc,
+  .cp-desc,
+  .sv-desc,
+  .wi-desc,
+  .related-card span,
+  .related-desc,
+  .detail-card p,
+  .detail-desc,
+  .photo-guide-item span,
+  .cm-desc,
+  .hcs-text,
+  .case-title,
+  .cs-title {
+    font-size: 14.5px;
+    line-height: 1.75;
+  }
+
+  .sec-label,
+  .hero-label,
+  .sv-num,
+  .case-tag,
+  .cs-tag,
+  .detail-kicker,
+  .related-kicker,
+  .hcard-head-label {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    gap: 12px 16px;
+  }
+
+  .footer-links a,
+  .footer-info,
+  .footer-copy-notice,
+  .contact-biz,
+  .hcard-note {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .hcard-btn-kakao,
+  .hcard-btn-tel,
+  .hcard-btn-outline,
+  .btn-cta-kakao,
+  .btn-cta-tel,
+  .quick-cta-btn,
+  .cc-btn-kakao,
+  .cc-btn-tel,
+  .mobile-cta a {
+    min-height: 48px;
+  }
+}
+/* [수한공간 디자인·모바일 정규화 끝] */
+
 </style>
 <script type="application/ld+json">
 {

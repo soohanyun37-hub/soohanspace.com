@@ -201,7 +201,199 @@
     .mobile-cta a.t{background:var(--brand);color:#fff;}
     @media(max-width:1100px){header{padding:0 24px;}nav{display:none;}.breadcrumb{padding:10px 24px;}.hero{grid-template-columns:1fr;padding:48px 40px 64px;gap:40px;}.section{padding:64px 40px;}.type-grid{grid-template-columns:repeat(2,1fr);}.type-card:nth-child(2n){border-right:0;}.type-card:nth-child(4n){border-right:1px solid var(--border);}.contact-box{grid-template-columns:1fr;}.contact-actions{justify-content:flex-start;}footer{padding:32px 40px;}}
     @media(max-width:700px){header{height:60px;padding:0 16px;}.logo-img{height:38px;}.logo-name{font-size:15px;}.logo-sub{font-size:10.5px;}.hbtn-kakao,.hbtn-tel{padding:8px 11px;font-size:12.5px;}.hbtn-kakao span,.hbtn-tel span{display:none;}body{padding-bottom:76px;}.mobile-cta{display:flex;}.breadcrumb{padding:10px 16px;font-size:11px;}.hero{padding:36px 20px 44px;}.section{padding:52px 20px;}.hero-title{font-size:32px;}.hero-btns,.contact-actions{flex-direction:column;}.btn-primary,.btn-secondary,.btn-outline{width:100%;}.grid-3,.grid-2,.type-grid,.phone-grid{grid-template-columns:1fr;}.grid-3 .card,.grid-2 .card,.type-card,.phone-card{border-right:1px solid var(--border)!important;}.step{grid-template-columns:1fr;}.step-num{justify-content:flex-start;padding:14px 22px;}.contact-box{padding:28px 22px;}.contact-box h2{font-size:24px;}footer{padding:28px 20px;flex-direction:column;}.warning-box{padding:28px 22px;}.warning-box h2{font-size:24px;}}
-  </style>
+  
+
+
+
+/* [수한공간 모바일 메뉴 보강 시작] */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 6px;
+}
+.mobile-menu-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.2s;
+}
+.mobile-menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.mobile-menu-btn.open span:nth-child(2) { opacity: 0; }
+.mobile-menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 2px solid var(--brand);
+  z-index: 290;
+  padding: 8px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.mobile-nav.open { display: block; }
+.mobile-nav a {
+  display: block;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+.mobile-nav a:hover,
+.mobile-nav a.active {
+  background: var(--brand-light);
+  color: var(--brand);
+}
+.mobile-nav-cta {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  background: var(--bg-gray);
+  border-top: 1px solid var(--border);
+}
+.mobile-nav-cta a {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 13.5px;
+  font-weight: 800;
+  border-radius: 4px;
+  text-decoration: none;
+  border-bottom: none !important;
+}
+.mobile-nav-cta a:first-child { background: var(--kakao); color: #111; }
+.mobile-nav-cta a:last-child { background: var(--brand); color: #fff; }
+@media (max-width: 700px) {
+  .mobile-nav { top: 60px; }
+}
+/* [수한공간 모바일 메뉴 보강 끝] */
+
+/* [수한공간 디자인·모바일 정규화 시작]
+   70개 페이지 공통 보정: 브랜드 색상·문구는 유지하고, 모바일 가독성·푸터 줄바꿈·이미지 반응형만 정리합니다. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sec-title {
+  font-weight: 800;
+}
+
+.footer-links {
+  flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-copy-notice,
+.contact-biz {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1100px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .sec-title {
+    font-size: clamp(24px, 7vw, 30px);
+    font-weight: 800;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  main p,
+  .core-box-desc,
+  .contact-desc,
+  .quick-cta-text,
+  .tile-seo-wrap p,
+  .bath-seo-wrap p,
+  .repair-seo-wrap p,
+  .photo-guide-box p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  main li,
+  .sv-points li,
+  .sv-list li,
+  .photo-guide-list li {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .anxiety-desc,
+  .cp-desc,
+  .sv-desc,
+  .wi-desc,
+  .related-card span,
+  .related-desc,
+  .detail-card p,
+  .detail-desc,
+  .photo-guide-item span,
+  .cm-desc,
+  .hcs-text,
+  .case-title,
+  .cs-title {
+    font-size: 14.5px;
+    line-height: 1.75;
+  }
+
+  .sec-label,
+  .hero-label,
+  .sv-num,
+  .case-tag,
+  .cs-tag,
+  .detail-kicker,
+  .related-kicker,
+  .hcard-head-label {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    gap: 12px 16px;
+  }
+
+  .footer-links a,
+  .footer-info,
+  .footer-copy-notice,
+  .contact-biz,
+  .hcard-note {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .hcard-btn-kakao,
+  .hcard-btn-tel,
+  .hcard-btn-outline,
+  .btn-cta-kakao,
+  .btn-cta-tel,
+  .quick-cta-btn,
+  .cc-btn-kakao,
+  .cc-btn-tel,
+  .mobile-cta a {
+    min-height: 48px;
+  }
+}
+/* [수한공간 디자인·모바일 정규화 끝] */
+
+</style>
 </head>
 
 <body>
@@ -230,8 +422,25 @@
     <div class="header-btns">
       <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao" target="_blank" rel="noopener">💬 <span>사진 보내기</span></a>
       <a href="/contact/" class="hbtn-tel">📞 <span>번호 보기</span></a>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
     </div>
   </header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="/">수한공간 홈</a>
+  <a href="/tile/">타일 보수 및 시공</a>
+  <a href="/bath/">욕실 리모델링</a>
+  <a href="/repair/">집수리 · 부분공사</a>
+  <a href="/cases/">시공 사례</a>
+  <a href="/questions/">작업별 질문</a>
+  <a href="/checklist/" class="active">사진 상담 체크리스트</a>
+  <a href="/faq/">FAQ</a>
+  <a href="/contact/">문의 안내</a>
+  <div class="mobile-nav-cta">
+    <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
+    <a href="/contact/">📞 번호 보기</a>
+  </div>
+</div>
 
   <div class="breadcrumb">
     <a href="/">수한공간 홈</a>
@@ -561,7 +770,34 @@
     <a href="/contact/" class="t">📞 번호 보기</a>
   </div>
 
-  <!-- 네이버 애널리틱스 -->
+  
+<script>
+(function () {
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  if (!menuBtn || !mobileNav) return;
+  menuBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const isOpen = mobileNav.classList.toggle('open');
+    menuBtn.classList.toggle('open', isOpen);
+    menuBtn.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+  });
+  mobileNav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      mobileNav.classList.remove('open');
+      menuBtn.classList.remove('open');
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!menuBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+      mobileNav.classList.remove('open');
+      menuBtn.classList.remove('open');
+    }
+  });
+})();
+</script>
+
+<!-- 네이버 애널리틱스 -->
 <script type="text/javascript">
 if (location.hostname === "soohanspace.com" || location.hostname === "www.soohanspace.com") {
   var script = document.createElement("script");

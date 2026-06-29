@@ -383,6 +383,55 @@ img {
 }
 /* [수한공간 디자인·모바일 정규화 끝] */
 
+
+
+/* [수한공간 CTA 정리 시작] 10년형 신뢰 사이트용 전환 동선 정규화 */
+/* 상시 떠 있는 데스크톱 카카오 버튼은 광고성 압박을 줄이기 위해 숨깁니다. 모바일은 하단 고정 CTA를 유지합니다. */
+.floating { display: none !important; }
+/* 문자까지 동시에 노출하면 선택지가 많아져 카카오/전화 2가지로 집중합니다. */
+.sms-cm { display: none !important; }
+
+.hero-btns,
+.hcard-cta,
+.quick-cta-actions,
+.photo-guide-actions,
+.cta-btns {
+  align-items: center;
+}
+
+.hero-btns a,
+.hcard-cta a,
+.quick-cta-actions a,
+.photo-guide-actions a,
+.cta-btns a {
+  min-height: 48px;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .hero-btns,
+  .hcard-cta,
+  .quick-cta-actions,
+  .photo-guide-actions,
+  .cta-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+  }
+
+  .hero-btns a,
+  .hcard-cta a,
+  .quick-cta-actions a,
+  .photo-guide-actions a,
+  .cta-btns a {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* [수한공간 CTA 정리 끝] 10년형 신뢰 사이트용 전환 동선 정규화 */
 </style>
 </head>
 
@@ -425,8 +474,8 @@ img {
   <a href="/monthly-check/" class="active">월별 점검 안내</a>
   <a href="/contact/">문의 안내</a>
   <div class="mobile-nav-cta">
-    <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
-    <a href="tel:010-4646-3145">📞 전화하기</a>
+    <a href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a>
+    <a href="tel:010-4646-3145">📞 전화 상담</a>
   </div>
 </div>
 
@@ -448,9 +497,10 @@ img {
           11월부터 1월 사이에는 욕실 벽타일 크랙·터짐·들뜸 문의가 늘어날 수 있습니다. 5월부터 8월 사이에는 실리콘, 방수 의심, 베란다 타일, 환풍기 관련 문의를 함께 확인하는 경우가 많습니다.
         </p>
         <div class="hero-btns">
-          <a href="https://open.kakao.com/me/soohanyun" class="btn-primary" target="_blank" rel="noopener">💬 카카오톡으로 사진 보내기</a>
-          <a href="/checklist/" class="btn-outline">📸 사진 3장 찍는 방법 보기</a>
-        </div>
+  <a class="btn-primary" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a>
+  <a class="btn-secondary" href="/contact/">📞 작업별 번호 보기</a>
+</div>
       </div>
 
       <div class="hero-card">
@@ -674,9 +724,9 @@ img {
   </footer>
 
   <div class="mobile-cta">
-    <a href="https://open.kakao.com/me/soohanyun" class="k" target="_blank" rel="noopener">💬 사진 상담</a>
-    <a href="tel:010-4646-3145" class="t">📞 전화 상담</a>
-  </div>
+  <a class="k" href="https://open.kakao.com/me/soohanyun">💬 사진 보내기</a>
+  <a class="t" href="/contact/">📞 번호 보기</a>
+</div>
 
 
 <script>

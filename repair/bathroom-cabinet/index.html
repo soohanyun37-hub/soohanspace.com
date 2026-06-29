@@ -605,6 +605,55 @@ img {
 }
 /* [수한공간 디자인·모바일 정규화 끝] */
 
+
+
+/* [수한공간 CTA 정리 시작] 10년형 신뢰 사이트용 전환 동선 정규화 */
+/* 상시 떠 있는 데스크톱 카카오 버튼은 광고성 압박을 줄이기 위해 숨깁니다. 모바일은 하단 고정 CTA를 유지합니다. */
+.floating { display: none !important; }
+/* 문자까지 동시에 노출하면 선택지가 많아져 카카오/전화 2가지로 집중합니다. */
+.sms-cm { display: none !important; }
+
+.hero-btns,
+.hcard-cta,
+.quick-cta-actions,
+.photo-guide-actions,
+.cta-btns {
+  align-items: center;
+}
+
+.hero-btns a,
+.hcard-cta a,
+.quick-cta-actions a,
+.photo-guide-actions a,
+.cta-btns a {
+  min-height: 48px;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .hero-btns,
+  .hcard-cta,
+  .quick-cta-actions,
+  .photo-guide-actions,
+  .cta-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+  }
+
+  .hero-btns a,
+  .hcard-cta a,
+  .quick-cta-actions a,
+  .photo-guide-actions a,
+  .cta-btns a {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* [수한공간 CTA 정리 끝] 10년형 신뢰 사이트용 전환 동선 정규화 */
 </style>
 <script type="application/ld+json">
 {
@@ -680,7 +729,7 @@ img {
     <a href="/checklist/">사진 상담</a>
   </nav>
   <div class="header-btns">
-    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
+    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>사진 상담</span></a>
     <a href="tel:010-4643-3145" class="hbtn-tel"><span class="telnum">010-4643-3145</span></a>
     <button class="mobile-menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
   </div>
@@ -697,8 +746,8 @@ img {
   <a href="/seasonal/rainy-season-waterproofing/">장마 전 방수 확인</a>
   <a href="/faq/">FAQ</a>
   <div class="mobile-nav-cta">
-    <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
-    <a href="tel:010-4643-3145">📞 전화하기</a>
+    <a href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a>
+    <a href="tel:010-4643-3145">📞 전화 상담</a>
   </div>
 </div>
 
@@ -719,11 +768,11 @@ img {
     <div class="hero-badge"><span class="hero-badge-text">벽면 고정 불량, 기존 욕실장 탈락, 타일 손상, 전기·조명 간섭이 의심되는 경우에는 <strong>방문 확인이 필요할 수 있습니다</strong></span></div>
     <p class="hero-note" style="margin-bottom:12px;">📸 전체 공간 사진 1장, 욕실장 가까운 사진 1장, 벽면·고정 부위 사진 1장을 보내주세요</p>
     <div class="hero-btns">
-      <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
-      <a href="tel:010-4643-3145" class="btn-secondary">📞 010-4643-3145</a>
-      <a href="/seasonal/autumn-moving-repair/" class="btn-secondary" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">🗓️ 이사철 집수리</a>
-    </div>
-    <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 작업 중에는 카카오톡 문의를 추천드립니다</p>
+  <a class="btn-primary" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a>
+  <a class="btn-secondary" href="tel:010-8672-3145">📞 욕실 문의</a>
+</div>
+    <p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 작업 중에는 사진 상담를 추천드립니다</p>
   </div>
   <aside class="hero-card">
     <div class="hcard-head">
@@ -737,9 +786,9 @@ img {
         <div class="hcard-step"><div class="hcs-num">3</div><div class="hcs-text"><strong>벽면 고정·주변 마감</strong>이 보이게 촬영</div></div>
       </div>
       <div class="hcard-cta">
-        <a href="https://open.kakao.com/me/soohanyun" class="hcard-btn-kakao">💬 카카오톡으로 사진 보내기</a>
-        <a href="/checklist/" class="hcard-btn-tel">사진 체크리스트 보기</a>
-      </div>
+  <a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="hcard-btn-tel" href="/checklist/">사진 체크리스트 보기</a>
+</div>
       <p class="hcard-note">사진만으로 확정 견적이 어려운 경우도 있습니다.<br>방문 확인이 필요한 상태인지 먼저 안내드립니다.</p>
     </div>
   </aside>
@@ -857,10 +906,9 @@ img {
     <div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
   </div>
   <div class="cta-btns">
-    <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 문의</a>
-    <a href="tel:010-4643-3145" class="btn-cta-tel">📞 010-4643-3145</a>
-    <a href="/seasonal/autumn-moving-repair/" class="btn-cta-tel">🗓️ 이사철 집수리</a>
-  </div>
+  <a class="btn-cta-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="btn-cta-tel" href="tel:010-8672-3145">📞 욕실 문의</a>
+</div>
 </div>
 
 <section class="contact-section" id="contact">
@@ -880,7 +928,7 @@ img {
       <div class="cc-label">집수리 문의</div>
       <div class="cc-num">010-4643-3145</div>
       <div class="cc-sub">욕실 실리콘·수전·양변기·세면대·욕실장 문의</div>
-      <div class="cc-btns"><a href="https://open.kakao.com/me/soohanyun" class="cc-btn-kakao">💬 카카오톡 문의</a><a href="tel:010-4643-3145" class="cc-btn-tel">📞 전화하기</a></div>
+      <div class="cc-btns"><a href="https://open.kakao.com/me/soohanyun" class="cc-btn-kakao">💬 사진 상담</a><a href="tel:010-4643-3145" class="cc-btn-tel">📞 전화 상담</a></div>
     </div>
     <div class="contact-biz"><strong>수한공간집수리</strong> · 대표 공나은 · 사업자등록번호 310-12-26706<br>경기도 평택시 용죽6길 64 지웰테라스 509동 8호 (1층)</div>
   </div>
@@ -908,20 +956,20 @@ img {
     <a href="/cases/">시공 사례</a>
     <a href="https://blog.naver.com/soohanrepair" target="_blank" rel="noopener">네이버 블로그</a>
     <a href="https://open.kakao.com/me/soohanyun" target="_blank" rel="noopener">카카오톡 상담</a>
-    <a href="tel:010-4643-3145">📞 전화하기</a>
+    <a href="tel:010-4643-3145">📞 전화 상담</a>
   </div>
 </footer>
 
 <div class="floating">
   <a href="https://open.kakao.com/me/soohanyun" class="fb k">
     <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C4.69 1.5 2 3.9 2 6.9c0 1.87 1.05 3.52 2.67 4.52L4 13.5l2.56-1.34C7.02 12.38 7.5 12.5 8 12.5c3.31 0 6-2.4 6-5.1s-2.69-5.4-6-5.4-6 2.4-6 5.4z" fill="#111"/></svg>
-    <span>카카오톡 문의</span>
+    <span>사진 상담</span>
   </a>
 </div>
 
 <div class="mobile-cta">
-  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 사진 보내기</a>
-  <a href="tel:010-4643-3145" class="t">📞 전화 상담</a>
+  <a class="k" href="https://open.kakao.com/me/soohanyun">💬 사진 보내기</a>
+  <a class="t" href="tel:010-8672-3145">📞 전화 상담</a>
 </div>
 
 <script>

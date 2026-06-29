@@ -268,6 +268,55 @@ img {
 }
 /* [수한공간 디자인·모바일 정규화 끝] */
 
+
+
+/* [수한공간 CTA 정리 시작] 10년형 신뢰 사이트용 전환 동선 정규화 */
+/* 상시 떠 있는 데스크톱 카카오 버튼은 광고성 압박을 줄이기 위해 숨깁니다. 모바일은 하단 고정 CTA를 유지합니다. */
+.floating { display: none !important; }
+/* 문자까지 동시에 노출하면 선택지가 많아져 카카오/전화 2가지로 집중합니다. */
+.sms-cm { display: none !important; }
+
+.hero-btns,
+.hcard-cta,
+.quick-cta-actions,
+.photo-guide-actions,
+.cta-btns {
+  align-items: center;
+}
+
+.hero-btns a,
+.hcard-cta a,
+.quick-cta-actions a,
+.photo-guide-actions a,
+.cta-btns a {
+  min-height: 48px;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .hero-btns,
+  .hcard-cta,
+  .quick-cta-actions,
+  .photo-guide-actions,
+  .cta-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+  }
+
+  .hero-btns a,
+  .hcard-cta a,
+  .quick-cta-actions a,
+  .photo-guide-actions a,
+  .cta-btns a {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* [수한공간 CTA 정리 끝] 10년형 신뢰 사이트용 전환 동선 정규화 */
 </style>
 
 </head>
@@ -299,7 +348,7 @@ img {
     <a href="/">홈</a><a href="/tile/">타일</a><a href="/bath/">욕실</a><a href="/repair/">집수리</a><a href="/checklist/">사진 상담</a><a href="/cases/">시공 사례</a><a href="/faq/">FAQ</a>
   </nav>
   <div class="header-btns">
-    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
+    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>사진 상담</span></a>
     <a href="/contact/" class="hbtn-tel">📞 <span>전화번호 보기</span></a>
     <button class="mobile-menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
   </div>
@@ -314,7 +363,7 @@ img {
   <a href="/cases/">시공 사례</a>
   <a href="/faq/">FAQ</a>
   <a href="/contact/">문의 안내</a>
-  <div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a><a href="/contact/">📞 번호 보기</a></div>
+  <div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a><a href="/contact/">📞 번호 보기</a></div>
 </div>
 
 <main>
@@ -326,10 +375,10 @@ img {
       <h1 class="hero-title">송탄 타일·욕실·집수리<br><span class="hl">오래 사용한 공간도 범위부터 확인합니다</span></h1>
       <p class="hero-desc">송탄은 구축 주거지, 상가, 빌라, 주택 문의가 함께 들어오는 지역입니다. 오래 사용한 욕실 타일보수, 현관 타일 깨짐, 실리콘 보수, 수전·환풍기 교체, 상가 바닥 타일보수처럼 필요한 범위가 현장마다 달라지는 작업을 사진으로 먼저 확인합니다.</p>
       <div class="hero-btns">
-        <a href="/checklist/" class="btn-outline">📋 사진 체크리스트 보기</a>
-        <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 문의하기</a>
-        <a href="#songtan-service" class="btn-secondary">송탄 작업 보기</a>
-      </div>
+  <a class="btn-primary" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a>
+  <a class="btn-secondary" href="/questions/">작업별 질문 보기</a>
+</div>
     </div>
     <aside class="hero-side">
       <div class="hero-side-label">송탄 상담 전 준비</div>
@@ -544,9 +593,9 @@ img {
     <div class="cta-desc">바로 공사를 결정하지 않으셔도 됩니다. 위치와 사진을 남겨주시면 작업 범위와 방문 필요 여부를 먼저 확인합니다.</div>
   </div>
   <div class="cta-btns">
-    <a href="/checklist/" class="btn-cta-tel">📋 사진 체크리스트</a>
-    <a href="https://open.kakao.com/me/soohanyun" class="btn-cta-kakao">💬 카카오톡 문의</a>
-  </div>
+  <a class="btn-cta-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="btn-cta-tel" href="/checklist/">📋 사진 체크리스트</a>
+</div>
 </div>
 </main>
 
@@ -564,8 +613,11 @@ img {
   </div>
 </footer>
 
-<div class="floating"><a href="https://open.kakao.com/me/soohanyun" class="fb k">💬 <span>카카오톡 문의</span></a></div>
-<div class="mobile-cta"><a href="https://open.kakao.com/me/soohanyun" class="k">💬 사진 보내기</a><a href="/contact/" class="t">📞 번호 보기</a></div>
+<div class="floating"><a href="https://open.kakao.com/me/soohanyun" class="fb k">💬 <span>사진 상담</span></a></div>
+<div class="mobile-cta">
+  <a class="k" href="https://open.kakao.com/me/soohanyun">💬 사진 보내기</a>
+  <a class="t" href="/contact/">📞 번호 보기</a>
+</div>
 
 <script>
 const menuBtn=document.getElementById('menuBtn');

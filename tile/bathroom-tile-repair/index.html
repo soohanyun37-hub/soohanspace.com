@@ -749,6 +749,55 @@ img {
 }
 /* [수한공간 디자인·모바일 정규화 끝] */
 
+
+
+/* [수한공간 CTA 정리 시작] 10년형 신뢰 사이트용 전환 동선 정규화 */
+/* 상시 떠 있는 데스크톱 카카오 버튼은 광고성 압박을 줄이기 위해 숨깁니다. 모바일은 하단 고정 CTA를 유지합니다. */
+.floating { display: none !important; }
+/* 문자까지 동시에 노출하면 선택지가 많아져 카카오/전화 2가지로 집중합니다. */
+.sms-cm { display: none !important; }
+
+.hero-btns,
+.hcard-cta,
+.quick-cta-actions,
+.photo-guide-actions,
+.cta-btns {
+  align-items: center;
+}
+
+.hero-btns a,
+.hcard-cta a,
+.quick-cta-actions a,
+.photo-guide-actions a,
+.cta-btns a {
+  min-height: 48px;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .hero-btns,
+  .hcard-cta,
+  .quick-cta-actions,
+  .photo-guide-actions,
+  .cta-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+  }
+
+  .hero-btns a,
+  .hcard-cta a,
+  .quick-cta-actions a,
+  .photo-guide-actions a,
+  .cta-btns a {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* [수한공간 CTA 정리 끝] 10년형 신뢰 사이트용 전환 동선 정규화 */
 </style>
 <script type="application/ld+json">
 {
@@ -794,7 +843,7 @@ img {
     <a href="/checklist/">사진 상담</a>
   </nav>
   <div class="header-btns">
-    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>문의하기</span></a>
+    <a href="https://open.kakao.com/me/soohanyun" class="hbtn-kakao">💬 <span>사진 상담</span></a>
     <a href="tel:010-4646-3145" class="hbtn-tel">
       <svg viewBox="0 0 24 24" aria-hidden="true" class="tel-icon"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg>
       <span class="telnum">010-4646-3145</span>
@@ -815,8 +864,8 @@ img {
   <a href="/faq/">자주 묻는 질문</a>
   <a href="/contact/">문의 안내</a>
   <div class="mobile-nav-cta">
-    <a href="https://open.kakao.com/me/soohanyun">💬 카카오톡 상담</a>
-    <a href="tel:010-4646-3145">📞 전화하기</a>
+    <a href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a>
+    <a href="tel:010-4646-3145">📞 전화 상담</a>
   </div>
 </div>
 
@@ -842,10 +891,10 @@ img {
       <span class="hero-badge-text">국가기술자격 <strong>타일기능사 · 방수기능사 · 온수온돌기능사</strong> 보유</span>
     </div>
     <div class="hero-btns">
-      <a href="https://open.kakao.com/me/soohanyun" class="btn-primary">💬 사진 보내고 안내받기</a>
-      <a href="tel:010-4646-3145" class="btn-secondary">📞 010-4646-3145</a>
-      <a href="/seasonal/rainy-season-waterproofing/" class="btn-secondary" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">☔ 장마 전 방수 확인</a>
-    </div>
+  <a class="btn-primary" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a>
+  <a class="btn-secondary" href="tel:010-4646-3145">📞 타일 문의</a>
+</div>
     <p class="hero-note">바로 공사를 결정하지 않으셔도 됩니다. 정면 사진 1장, 문제 부위 가까운 사진 1장, 전체 공간 사진 1장을 보내주시면 더 정확하게 볼 수 있습니다.</p>
   </div>
   <aside class="hero-card">
@@ -860,9 +909,9 @@ img {
         <div class="hcard-step"><div class="hcs-num">3</div><div class="hcs-text"><strong>옆에서 본 사진</strong>으로 단차·벌어짐·물 고임 확인</div></div>
       </div>
       <div class="hcard-cta">
-        <a href="https://open.kakao.com/me/soohanyun" class="hcard-btn-kakao">💬 카카오톡으로 사진 보내기</a>
-        <a href="/checklist/" class="hcard-btn-tel">사진 체크리스트 보기</a>
-      </div>
+  <a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
+  <a class="hcard-btn-tel" href="/checklist/">사진 체크리스트 보기</a>
+</div>
       <p class="hcard-note">작업 중에는 답장이 늦을 수 있지만<br>사진과 위치를 남겨주시면 순서대로 안내드립니다</p>
     </div>
   </aside>
@@ -957,11 +1006,9 @@ img {
       <li>3. 옆에서 본 들뜸·단차·물 고임 사진</li>
     </ul>
     <div class="photo-guide-actions">
-      <a href="https://open.kakao.com/me/soohanyun" class="kakao">💬 카카오톡으로 사진 보내기</a>
-      <a href="/checklist/" class="checklist">사진 체크리스트 보기</a>
-      <a href="/seasonal/winter-tile-repair/" class="checklist" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">겨울 타일 점검 보기</a>
-      <a href="/seasonal/rainy-season-waterproofing/" class="checklist" style="background:#fff;color:var(--brand);border:1.5px solid var(--brand);">장마 전 방수 확인</a>
-    </div>
+  <a class="kakao" href="https://open.kakao.com/me/soohanyun">💬 카카오톡으로 사진 보내기</a>
+  <a class="checklist" href="/checklist/">사진 체크리스트 보기</a>
+</div>
   </div>
 </section>
 
@@ -1015,8 +1062,8 @@ img {
       <div class="cc-allday"><span class="cc-allday-label">연중무휴 운영</span><span class="cc-allday-val">365일</span></div>
     </div>
     <div class="cc-btns">
-      <a href="https://open.kakao.com/me/soohanyun" class="cc-btn-kakao">💬 카카오톡 문의</a>
-      <a href="tel:010-4646-3145" class="cc-btn-tel">📞 전화하기</a>
+      <a href="https://open.kakao.com/me/soohanyun" class="cc-btn-kakao">💬 사진 상담</a>
+      <a href="tel:010-4646-3145" class="cc-btn-tel">📞 전화 상담</a>
     </div>
   </div>
 </section>
@@ -1045,12 +1092,12 @@ img {
 </footer>
 
 <div class="floating">
-  <a href="https://open.kakao.com/me/soohanyun" class="fb k"><span>💬</span><span>카카오톡 문의</span></a>
+  <a href="https://open.kakao.com/me/soohanyun" class="fb k"><span>💬</span><span>사진 상담</span></a>
 </div>
 
 <div class="mobile-cta">
-  <a href="https://open.kakao.com/me/soohanyun" class="k">💬 사진 보내기</a>
-  <a href="tel:010-4646-3145" class="t">📞 전화 상담</a>
+  <a class="k" href="https://open.kakao.com/me/soohanyun">💬 사진 보내기</a>
+  <a class="t" href="tel:010-4646-3145">📞 전화 상담</a>
 </div>
 
 <script>

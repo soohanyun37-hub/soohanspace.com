@@ -607,6 +607,39 @@ img {
 
 
 
+
+/* [수한공간 버튼 박스 보정 시작] 상세페이지 사진 체크리스트 outline 버튼 */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  background: #fff;
+  color: var(--brand);
+  border: 1.5px solid var(--brand);
+}
+.btn-outline:hover {
+  background: var(--brand-light);
+  transform: translateY(-1px);
+}
+@media (max-width: 700px) {
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* [수한공간 버튼 박스 보정 끝] 상세페이지 사진 체크리스트 outline 버튼 */
+
+
 /* [수한공간 CTA 정리 시작] 10년형 신뢰 사이트용 전환 동선 정규화 */
 /* 상시 떠 있는 데스크톱 카카오 버튼은 광고성 압박을 줄이기 위해 숨깁니다. 모바일은 하단 고정 CTA를 유지합니다. */
 .floating { display: none !important; }

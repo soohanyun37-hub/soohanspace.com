@@ -1,422 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://soohanspace.com/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/checklist/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/monthly-check/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/cases/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.85</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/faq/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/contact/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/lifted-tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/broken-tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/one-tile-replacement/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/bathroom-tile-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/entrance-tile-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/tile/balcony-tile-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/remodeling/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/overlay/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/full-demolition/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/waterproofing/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/floor-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/bath/partial-work/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/silicone/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/faucet/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/vent-fan/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/toilet-replacement/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/sink-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/repair/bathroom-cabinet/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.85</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/bath/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/tile/lifted-tile-demolition/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/tile/one-tile-replacement/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/tile/bathroom-tile-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/tile/discontinued-tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/bath/overlay-possible/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/bath/demolition-vs-overlay/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/bath/waterproofing-needed/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/bath/floor-only-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/repair/small-repair-visit/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/repair/silicone-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/repair/faucet-installation/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/questions/repair/vent-fan-replacement/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.85</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/bath/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/pyeongtaek/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/yongidong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/sosadong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/jukbaekdong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/bijeondong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/sosabeol/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/dongsakdong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/segyeodong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/godeok/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/anjung/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/paengseong/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/area/songtan/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/cases/tile/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/cases/bath/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/cases/repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/estimate-guide/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/seasonal/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.85</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/seasonal/winter-tile-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/seasonal/rainy-season-waterproofing/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/seasonal/autumn-moving-repair/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/seasonal/spring-bath-remodeling/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.70</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/sitemap/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.85</priority>
-</url>
-<url>
-<loc>https://soohanspace.com/process/</loc>
-<lastmod>2026-06-27</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.85</priority>
-</url>
+  <url>
+    <loc>https://soohanspace.com/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/checklist/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/monthly-check/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/cases/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/faq/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/contact/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/lifted-tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/broken-tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/one-tile-replacement/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/bathroom-tile-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/entrance-tile-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/balcony-tile-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/remodeling/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/overlay/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/full-demolition/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/waterproofing/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/floor-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/partial-work/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/silicone/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/faucet/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/vent-fan/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/toilet-replacement/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/sink-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/bathroom-cabinet/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/lifted-tile-demolition/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/one-tile-replacement/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/bathroom-tile-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/discontinued-tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/overlay-possible/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/demolition-vs-overlay/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/waterproofing-needed/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/floor-only-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/small-repair-visit/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/silicone-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/faucet-installation/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/vent-fan-replacement/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/bath/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/pyeongtaek/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/yongidong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/sosadong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/jukbaekdong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/bijeondong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/sosabeol/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/dongsakdong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/segyeodong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/godeok/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/anjung/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/paengseong/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/area/songtan/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/cases/tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/cases/bath/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/cases/repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/estimate-guide/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/seasonal/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/seasonal/winter-tile-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/seasonal/rainy-season-waterproofing/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/seasonal/autumn-moving-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/seasonal/spring-bath-remodeling/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/sitemap/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/process/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/kitchen-tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/commercial-tile/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/tile-crack-hollow-sound/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/tile/floor-tile-level-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/wall-tile-replacement/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/silicone-grout-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/bathroom-door/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/bathroom-ceiling/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/bath/bathtub-shower-partition/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/kitchen-faucet/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/shower-faucet/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/kitchen-sink-bowl/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/drain-parts/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/bathroom-accessories/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/led-light/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/screen-repair/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/repair/door-handle-hinge/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/hollow-sound/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/tile-crack-risk/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/tile-level-repair/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/tile/kitchen-tile-overlay/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/bathtub-removal-waterproofing/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/one-wall-tile-replacement/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/bathroom-door-replacement/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/bath/ceiling-sagging-repair/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/kitchen-faucet-leak/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/shower-faucet-pipe/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/kitchen-sink-bowl-replacement/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/drain-odor-parts/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soohanspace.com/questions/repair/led-light-replacement/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

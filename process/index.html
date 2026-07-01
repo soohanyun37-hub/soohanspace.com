@@ -819,14 +819,25 @@ nav a.active {
   white-space: nowrap;
 }
 
-.cta-btns .kakao {
-  background: var(--kakao);
-  color: #111;
-}
-
-.cta-btns .white {
+.cta-btns .white,
+.cta-btns .btn-cta-tel {
   background: #fff;
   color: var(--brand);
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 8px 22px rgba(0,0,0,.12);
+}
+
+.cta-btns .kakao,
+.cta-btns .btn-cta-kakao {
+  background: var(--kakao);
+  color: #111;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,.12);
+}
+
+.cta-btns .btn-cta-kakao:hover,
+.cta-btns .btn-cta-tel:hover {
+  transform: translateY(-1px);
 }
 
 footer {

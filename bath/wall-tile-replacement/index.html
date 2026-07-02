@@ -830,6 +830,63 @@ img {
   }
 }
 /* [수한공간 CTA 정리 끝] 10년형 신뢰 사이트용 전환 동선 정규화 */
+
+
+/* [수한공간 사진 안내 박스 레이아웃 보정 시작] */
+.photo-guide-list {
+  list-style: none;
+  padding: 0;
+}
+.photo-guide-list li {
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text-mid);
+  line-height: 1.6;
+  word-break: keep-all;
+}
+.photo-guide-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.photo-guide-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  line-height: 1.3;
+}
+.photo-guide-actions .kakao {
+  background: var(--kakao);
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+.photo-guide-actions .checklist {
+  background: #fff;
+  color: var(--brand);
+  border: 1px solid var(--brand);
+}
+@media (max-width: 700px) {
+  .photo-guide-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .photo-guide-actions a {
+    width: 100%;
+  }
+}
+/* [수한공간 사진 안내 박스 레이아웃 보정 끝] */
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",

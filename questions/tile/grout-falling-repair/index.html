@@ -26,6 +26,7 @@
 <meta content="타일 줄눈이 떨어졌을 때 줄눈만 보수 가능한 경우와 타일 들뜸을 함께 확인해야 하는 경우를 구분해 안내합니다." name="twitter:description"/>
 <meta content="https://soohanspace.com/images/soohan-og.jpg" name="twitter:image"/>
 <link href="https://soohanspace.com/questions/tile/grout-falling-repair/" rel="canonical"/>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-33VZG90NW9"></script>
 <script>
@@ -34,7 +35,9 @@
   gtag('js', new Date());
   gtag('config', 'G-33VZG90NW9');
 </script>
-<link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"></noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--brand:#1f2b3a;--brand-dark:#141e29;--brand-light:#edf0f3;--brand-lighter:#f5f7fa;--accent:#b8472e;--accent-light:#fdf2ef;--bg:#fff;--bg-gray:#f5f6f7;--text:#111;--text-mid:#444;--text-muted:#7a7a7a;--border:#e0e0e0;--kakao:#FEE500;--kakao-dark:#e6ce00;--font:'Pretendard','Noto Sans KR',sans-serif}
@@ -385,7 +388,7 @@ img {
 <div class="notice-bar">🧱 타일 줄눈 떨어짐 질문 안내<span class="dot">·</span><strong>사진으로 먼저 상태를 확인합니다</strong></div>
 <header>
 <a class="logo" href="/">
-<img alt="수한공간 로고" class="logo-img" src="/images/soohan-logo.png"/>
+<img alt="수한공간 로고" class="logo-img" src="/images/soohan-logo.png" width="264" height="308" decoding="async" fetchpriority="high"/>
 <div class="logo-text"><span class="logo-name">수한공간</span><span class="logo-sub">타일 · 욕실 · 집수리</span></div>
 </a>
 <nav><a href="/">홈</a><a href="/tile/">타일</a><a href="/bath/">욕실</a><a href="/repair/">집수리</a><a href="/cases/">시공 사례</a><a class="active" href="/questions/">질문</a><a href="/checklist/">사진 상담</a><a href="/contact/">문의</a></nav>
@@ -520,7 +523,9 @@ if(menuBtn&&mobileNav){menuBtn.addEventListener('click',(e)=>{e.stopPropagation(
 <script type="text/javascript">
 if (location.hostname === "soohanspace.com" || location.hostname === "www.soohanspace.com") {
   var script = document.createElement("script");
-  script.src = "//wcs.pstatic.net/wcslog.js";
+  script.async = true;
+  script.defer = true;
+  script.src = "https://wcs.pstatic.net/wcslog.js";
   script.onload = function () {
     if (!window.wcs_add) window.wcs_add = {};
     window.wcs_add["wa"] = "a88bea980ad518";

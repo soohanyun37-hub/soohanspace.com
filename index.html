@@ -31,6 +31,7 @@
 <link href="https://soohanspace.com/" rel="canonical"/>
 <!-- 네이버 서치어드바이저 소유확인 -->
 <meta content="e6486f7a21855900d61374eeac1958e588529e1a" name="naver-site-verification">
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-33VZG90NW9"></script>
 <script>
@@ -40,7 +41,9 @@
 
   gtag('config', 'G-33VZG90NW9');
 </script>
-<link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"></noscript>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1347,7 +1350,7 @@ img {
 </div>
 <header>
 <a class="logo" href="/">
-<img alt="수한공간 로고" class="logo-img" src="/images/soohan-logo.png"/>
+<img alt="수한공간 로고" class="logo-img" src="/images/soohan-logo.png" width="264" height="308" decoding="async" fetchpriority="high"/>
 <div class="logo-text">
 <span class="logo-name">수한공간</span>
 <span class="logo-sub">평택 타일·욕실·집수리</span>
@@ -1366,6 +1369,7 @@ img {
 </div>
 </header>
 <div class="mobile-nav" id="mobileNav"><a class="active" href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a><a href="/contact/#numbers">📞 작업별 번호</a></div></div>
+<main id="main-content">
 <section class="hero">
 <div class="hero-copy">
 <h1 class="hero-title">무조건 철거가<br/><span class="hl">답은 아닙니다</span></h1>
@@ -1692,7 +1696,7 @@ img {
 </div>
 <!-- [수한공간 수정 시작] 시공지역 박스 → 지도 이미지 교체 -->
 <div class="area-right area-map-box">
-<img alt="직접 찾아가는 수한공간 시공 지역 안내" class="area-map-image" src="/images/service-area-map-mobile.jpg"/>
+<img alt="직접 찾아가는 수한공간 시공 지역 안내" class="area-map-image" src="/images/service-area-map-mobile.jpg" width="900" height="1061" decoding="async" loading="lazy"/>
 </div>
 <!-- [수한공간 수정 끝] 시공지역 박스 → 지도 이미지 교체 -->
 </div>
@@ -1826,6 +1830,7 @@ img {
     </div>
 </div>
 </section>
+</main>
 <footer>
 <div class="footer-info">
 <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386 · 010-4646-3145<br/>
@@ -1909,7 +1914,9 @@ if (menuBtn && mobileNav) {
 <script type="text/javascript">
 if (location.hostname === "soohanspace.com" || location.hostname === "www.soohanspace.com") {
   var script = document.createElement("script");
-  script.src = "//wcs.pstatic.net/wcslog.js";
+  script.async = true;
+  script.defer = true;
+  script.src = "https://wcs.pstatic.net/wcslog.js";
   script.onload = function () {
     if (!window.wcs_add) window.wcs_add = {};
     window.wcs_add["wa"] = "a88bea980ad518";

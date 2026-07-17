@@ -7,6 +7,7 @@
 <title>수한공간 전체 페이지 보기 | 타일·욕실·집수리 안내</title>
 <meta content="수한공간의 타일, 욕실, 집수리, 질문형 페이지, 지역 페이지, 계절 안내, 시공 사례, 사진 상담 페이지를 한 번에 확인할 수 있는 전체 페이지 안내입니다." name="description"/>
 <link href="https://soohanspace.com/sitemap/" rel="canonical"/>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-33VZG90NW9"></script>
 <script>
@@ -26,7 +27,9 @@
 <meta content="ko_KR" property="og:locale"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://soohanspace.com/images/soohan-og.jpg" name="twitter:image"/>
-<link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1062,7 +1065,7 @@ img {
 </div>
 <header>
 <a aria-label="수한공간 홈" class="logo" href="/">
-<img alt="수한공간" class="logo-img" src="/images/soohan-logo.png"/>
+<img alt="수한공간" class="logo-img" src="/images/soohan-logo.png" width="264" height="308" decoding="async" fetchpriority="high"/>
 <span class="logo-text">
 <span class="logo-name">수한공간</span>
 <span class="logo-sub">타일 · 욕실 · 집수리</span>
@@ -1365,7 +1368,9 @@ if (menuBtn && mobileNav) {
 <script type="text/javascript">
 if (location.hostname === "soohanspace.com" || location.hostname === "www.soohanspace.com") {
   var script = document.createElement("script");
-  script.src = "//wcs.pstatic.net/wcslog.js";
+  script.async = true;
+  script.defer = true;
+  script.src = "https://wcs.pstatic.net/wcslog.js";
   script.onload = function () {
     if (!window.wcs_add) window.wcs_add = {};
     window.wcs_add["wa"] = "a88bea980ad518";

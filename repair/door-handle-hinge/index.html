@@ -50,6 +50,23 @@ html { scroll-behavior:smooth; }
 body { background:var(--bg); color:var(--text); font-family:var(--font); -webkit-font-smoothing:antialiased; overflow-x:hidden; line-height:1.6; }
 
 /* NOTICE BAR */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 12px;
+  z-index: 1000;
+  background: var(--brand);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 12px;
+}
+
 .notice-bar { background:var(--brand); color:rgba(255,255,255,0.92); font-size:13px; font-weight:500; text-align:center; padding:10px 16px; letter-spacing:0.01em; }
 .notice-bar strong { color:#fff; font-weight:700; }
 .notice-bar .dot { color:rgba(255,255,255,0.4); margin:0 6px; }
@@ -916,23 +933,24 @@ img {
   ]
 }</script></head>
 <body>
+<a class="skip-link" href="#main-content">본문 바로가기</a>
 <div class="notice-bar">
   📍 평택·안성·오산 문 손잡이·가구문 경첩 교체 상담<span class="dot">·</span>사진 보내주시면 순서대로 1차 안내드립니다
-</div><header>
-<a class="logo" href="/">
+</div><header role="banner">
+<a class="logo" href="/" aria-label="수한공간 홈으로 이동">
 <img alt="수한공간 로고" class="logo-img" src="/images/soohan-logo.png" width="264" height="308" decoding="async" fetchpriority="high"/>
 <div class="logo-text">
 <span class="logo-name">수한공간</span>
 <span class="logo-sub">평택 타일·욕실·집수리</span>
 </div>
 </a>
-<nav><a href="/">홈</a><a href="/tile/">타일</a><a href="/bath/">욕실</a><a class="active" href="/repair/">집수리</a><a href="/cases/">시공 사례</a><a href="/questions/">질문</a><a href="/checklist/">사진 상담</a><a href="/contact/">문의</a></nav>
+<nav aria-label="주요 메뉴"><a href="/">홈</a><a href="/tile/">타일</a><a href="/bath/">욕실</a><a class="active" aria-current="page" href="/repair/">집수리</a><a href="/cases/">시공 사례</a><a href="/questions/">질문</a><a href="/checklist/">사진 상담</a><a href="/contact/">문의</a></nav>
 <div class="header-btns">
-<a class="hbtn-kakao" href="https://open.kakao.com/me/soohanyun">💬 <span>사진 상담</span></a>
-<a class="hbtn-tel" href="tel:010-4643-3145"><span class="telnum">010-4643-3145</span></a>
-<button aria-label="메뉴 열기" class="mobile-menu-btn" id="menuBtn"><span></span><span></span><span></span></button>
+<a class="hbtn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 <span>사진 상담</span></a>
+<a class="hbtn-tel" href="tel:010-4643-3145" aria-label="수한공간집수리 전화 상담 010-4643-3145"><span class="telnum">010-4643-3145</span></a>
+<button aria-label="메뉴 열기" aria-controls="mobileNav" aria-expanded="false" class="mobile-menu-btn" id="menuBtn" type="button"><span></span><span></span><span></span></button>
 </div>
-</header><div class="mobile-nav" id="mobileNav"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a href="/bath/">욕실 리모델링</a><a class="active" href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a><a href="/contact/#numbers">📞 작업별 번호</a></div></div><div class="breadcrumb"><a href="/">홈</a><span>/</span><a href="/repair/">집수리</a><span>/</span><strong>문 손잡이·가구문 경첩 교체</strong></div>
+</header><nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a href="/bath/">욕실 리모델링</a><a class="active" aria-current="page" href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a href="/contact/#numbers">📞 작업별 번호</a></div></nav><div class="breadcrumb"><a href="/">홈</a><span>/</span><a href="/repair/">집수리</a><span>/</span><strong>문 손잡이·가구문 경첩 교체</strong></div>
 <main id="main-content">
 <section class="hero">
 <div class="hero-copy">
@@ -942,7 +960,7 @@ img {
 <div class="hero-badge"><span class="hero-badge-text">사진 확인 후 <strong>가능한 방법과 필요한 범위</strong>를 먼저 안내드립니다</span></div>
 <div class="hero-badge"><span class="hero-badge-text">현장 상태에 따라 <strong>방문 확인이 필요한 경우</strong>도 있습니다</span></div>
 <p class="hero-note" style="margin-bottom:12px;">📸 전체 공간 사진 1장, 문제 부위 가까운 사진 1장, 옆에서 본 사진 1장을 보내주세요</p>
-<div class="hero-btns"><a class="btn-primary" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a><a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a><a class="btn-secondary" href="tel:010-4643-3145">📞 집수리 문의</a></div>
+<div class="hero-btns"><a class="btn-primary" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a><a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a><a class="btn-secondary" href="tel:010-4643-3145" aria-label="수한공간집수리 전화 상담 010-4643-3145">📞 집수리 문의</a></div>
 <p class="hero-note">바로 공사를 결정하지 않으셔도 됩니다. 사진을 먼저 보고 가능한 범위부터 안내드립니다.</p>
 </div>
 <aside class="hero-card">
@@ -951,7 +969,7 @@ img {
 <div class="hcard-step"><div class="hcs-num">1</div><div class="hcs-text"><strong>전체 공간 사진</strong>으로 위치와 범위 확인</div></div>
 <div class="hcard-step"><div class="hcs-num">2</div><div class="hcs-text"><strong>문제 부위 가까운 사진</strong>으로 상태 확인</div></div>
 <div class="hcard-step"><div class="hcs-num">3</div><div class="hcs-text"><strong>옆에서 본 사진</strong>으로 단차·깊이·간섭 확인</div></div>
-</div><div class="hcard-cta"><a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a><a class="hcard-btn-tel" href="/checklist/">사진 체크리스트 보기</a></div><p class="hcard-note">작업 중에는 답장이 늦을 수 있지만<br/>사진과 위치를 남겨주시면 순서대로 안내드립니다</p></div>
+</div><div class="hcard-cta"><a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a><a class="hcard-btn-tel" href="/checklist/">사진 체크리스트 보기</a></div><p class="hcard-note">작업 중에는 답장이 늦을 수 있지만<br/>사진과 위치를 남겨주시면 순서대로 안내드립니다</p></div>
 </aside>
 </section>
 <section class="detail-intro-section"><div class="detail-intro-wrap reveal"><div class="sec-label">첫 판단</div><h2 class="sec-title">손잡이와 경첩은 기존 문 상태 확인이 먼저입니다</h2><div class="detail-intro-box" style="margin-top:30px"><p>문 손잡이 교체는 타공 위치와 문 두께가 맞아야 하며, 가구문 경첩은 문 처짐과 고정판 상태를 함께 확인해야 합니다.</p><p>싱크대 전체 제작이나 맞춤 가구 제작이 아니라 기존 문짝, 경첩, 손잡이처럼 부분 교체가 가능한 범위를 안내합니다.</p></div></div></section>
@@ -959,12 +977,12 @@ img {
 <section class="core-section"><div class="core-wrap"><div class="core-box reveal"><div class="core-box-label">판단 기준</div><div class="core-box-title">전체 공사부터 정하지 않고<br/><span class="hl">가능한 범위와 확인이 필요한 경우</span>를 나눕니다</div><div class="core-box-desc">수한공간은 사진 확인 후 작업 가능성, 방문 확인 필요 여부, 준비해야 할 범위를 먼저 안내드립니다. 현장 상태에 따라 가능 여부가 달라질 수 있습니다.</div></div><div class="core-points"><div class="cp reveal"><div class="cp-num">01 · 가능성 확인</div><div class="cp-title">기존 타공 위치와 새 손잡이 규격이 맞는 경우</div><div class="cp-desc">사진과 현장 상태를 기준으로 필요한 범위부터 안내드립니다.</div></div><div class="cp reveal"><div class="cp-num">02 · 가능성 확인</div><div class="cp-title">경첩 고정 부위가 크게 손상되지 않은 경우</div><div class="cp-desc">사진과 현장 상태를 기준으로 필요한 범위부터 안내드립니다.</div></div><div class="cp reveal"><div class="cp-num">03 · 가능성 확인</div><div class="cp-title">문짝 자체 변형이 크지 않은 경우</div><div class="cp-desc">사진과 현장 상태를 기준으로 필요한 범위부터 안내드립니다.</div></div></div></div></section>
 <section class="detail-intro-section" style="background:var(--bg-gray);"><div class="detail-intro-wrap reveal"><div class="sec-label">방문 확인이 필요한 경우</div><h2 class="sec-title">사진만으로 단정하기 어려운 상태도 <em>미리 안내드립니다</em></h2><div class="detail-intro-box" style="margin-top:30px;background:#fff;"><ul><li>문짝이 심하게 뒤틀리거나 파손된 경우</li><li>가구 전체 제작이나 전체 교체가 필요한 경우</li><li>문틀 또는 수납장 본체 손상이 큰 경우</li></ul></div></div></section>
 <section class="services-section"><div class="sec-header reveal"><div class="sec-label">작업 범위</div><h2 class="sec-title">사진 확인 후 <em>필요한 작업 범위</em>를 안내드립니다</h2></div><div class="services-grid"><div class="sv reveal"><div class="sv-num">01</div><div class="sv-icon">🚪</div><div class="sv-name">문 손잡이 교체</div><div class="sv-desc">방문·욕실문 손잡이 규격과 잠김 방식을 확인합니다.</div><div class="sv-tags"><span class="sv-tag">상태 확인</span><span class="sv-tag">범위 안내</span></div></div><div class="sv reveal"><div class="sv-num">02</div><div class="sv-icon">🔩</div><div class="sv-name">가구문 경첩 교체</div><div class="sv-desc">싱크대·수납장 경첩 처짐과 고정 상태를 봅니다.</div><div class="sv-tags"><span class="sv-tag">상태 확인</span><span class="sv-tag">범위 안내</span></div></div><div class="sv reveal"><div class="sv-num">03</div><div class="sv-icon">📐</div><div class="sv-name">닫힘 불량 조정</div><div class="sv-desc">문 처짐, 간섭, 고정판 상태를 확인합니다.</div><div class="sv-tags"><span class="sv-tag">상태 확인</span><span class="sv-tag">범위 안내</span></div></div><div class="sv reveal"><div class="sv-num">04</div><div class="sv-icon">⚠️</div><div class="sv-name">제작 범위 구분</div><div class="sv-desc">싱크대 전체 제작, 맞춤 가구 제작은 작업 범위에서 제외합니다.</div><div class="sv-tags"><span class="sv-tag">상태 확인</span><span class="sv-tag">범위 안내</span></div></div></div></section>
-<section class="photo-guide-section"><div class="photo-guide-box reveal"><h2>사진 3장을 보내주시면 1차 확인이 더 정확해집니다</h2><p>사진만으로 견적이 확정되는 것은 아니지만, 가능한 방법과 방문 확인 필요 여부를 나누는 데 도움이 됩니다.</p><ul class="photo-guide-list"><li>1. 전체 공간 사진</li><li>2. 문제 부위 가까운 사진</li><li>3. 옆에서 본 단차·깊이·간섭 사진</li></ul><div class="photo-guide-actions"><a class="kakao" href="https://open.kakao.com/me/soohanyun">💬 카카오톡으로 사진 보내기</a><a class="checklist" href="/checklist/">사진 체크리스트 보기</a></div></div></section>
+<section class="photo-guide-section"><div class="photo-guide-box reveal"><h2>사진 3장을 보내주시면 1차 확인이 더 정확해집니다</h2><p>사진만으로 견적이 확정되는 것은 아니지만, 가능한 방법과 방문 확인 필요 여부를 나누는 데 도움이 됩니다.</p><ul class="photo-guide-list"><li>1. 전체 공간 사진</li><li>2. 문제 부위 가까운 사진</li><li>3. 옆에서 본 단차·깊이·간섭 사진</li></ul><div class="photo-guide-actions"><a class="kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 카카오톡으로 사진 보내기</a><a class="checklist" href="/checklist/">사진 체크리스트 보기</a></div></div></section>
 <section class="detail-link-section"><div class="sec-header reveal"><div class="sec-label">관련 집수리 페이지</div><h2 class="sec-title">비슷한 작업도 <em>함께 확인</em>해보세요</h2></div><div class="detail-link-grid"><a class="detail-card reveal" href="/repair/screen-repair/"><div class="detail-kicker">관련 01</div><h3>방충망 교체</h3><p>창 주변 생활 보수 범위를 확인합니다.</p></a><a class="detail-card reveal" href="/repair/led-light/"><div class="detail-kicker">관련 02</div><h3>LED전등 교체</h3><p>기존 위치의 제품 교체 가능 여부를 확인합니다.</p></a><a class="detail-card reveal" href="/bath/bathroom-door/"><div class="detail-kicker">관련 03</div><h3>욕실문 교체·보수</h3><p>문짝과 문틀 상태를 함께 확인합니다.</p></a><a class="detail-card reveal" href="/repair/bathroom-cabinet/"><div class="detail-kicker">관련 04</div><h3>욕실장·거울 교체</h3><p>욕실장 문과 경첩 상태를 확인합니다.</p></a><a class="detail-card reveal" href="/repair/bathroom-accessories/"><div class="detail-kicker">관련 05</div><h3>욕실 악세사리 교체</h3><p>벽면 고정 부속 교체 범위를 확인합니다.</p></a><a class="detail-card reveal" href="/repair/"><div class="detail-kicker">관련 06</div><h3>집수리 20품목 안내</h3><p>생활 중 불편한 보수 품목을 함께 확인합니다.</p></a></div></section>
 <section class="faq-section"><div class="faq-wrap"><div class="sec-header reveal"><div class="sec-label">자주 묻는 질문</div><h2 class="sec-title">문 손잡이·가구문 경첩 교체 문의 전 <em>많이 묻는 질문</em></h2></div><div class="faq-list reveal"><details open=""><summary>문 손잡이 제품을 제가 준비해도 되나요?</summary><p>가능한 경우가 있습니다. 기존 손잡이와 새 제품 사진, 문 두께와 타공 위치를 확인해야 합니다.</p></details><details><summary>싱크대 경첩만 바꿀 수 있나요?</summary><p>가능한 경우가 있습니다. 다만 본체 고정판이나 문짝 손상이 심하면 조정이 어려울 수 있습니다.</p></details><details><summary>가구문 제작도 하나요?</summary><p>싱크대 전체 제작, 맞춤 가구 제작은 작업 범위에서 제외합니다. 기존 문짝과 부품 교체 가능 범위를 안내합니다.</p></details><details><summary>사진은 무엇이 필요한가요?</summary><p>문 전체 사진, 손잡이·경첩 가까운 사진, 닫히지 않는 상태가 보이는 사진을 보내주세요.</p></details></div></div></section>
-<section class="contact-section"><div class="contact-copy reveal"><div class="sec-label">집수리 문의</div><h2 class="sec-title">사진 보내주시면<br/><em>가능한 방법과 필요한 범위</em>를 먼저 안내드립니다</h2><p class="contact-desc">문 손잡이·가구문 경첩 교체 문의는 사진을 먼저 보내주시면 가능한 작업인지, 방문 확인이 필요한 상태인지, 준비해야 할 범위가 무엇인지 순서대로 안내드립니다. 집수리는 제품 규격과 기존 마감 상태에 따라 작업 가능 여부가 달라질 수 있습니다.</p><div class="contact-notice"><strong>보내주실 내용:</strong> 지역, 문제 부위, 원하는 작업, 전체 공간 사진 1장, 문제 부위 가까운 사진 1장, 옆에서 본 사진 1장</div></div><div class="contact-card reveal"><div class="cc-label">수한공간집수리</div><div class="cc-num">010-4643-3145</div><div class="cc-sub">문 손잡이·가구문 경첩 교체 상담</div><div class="cc-hours"><div class="cc-row"><span class="cc-day">평일</span><span class="cc-time">08:00 – 21:00</span></div><div class="cc-row"><span class="cc-day">토요일</span><span class="cc-time">08:00 – 21:00</span></div><div class="cc-row"><span class="cc-day">일요일 · 공휴일</span><span class="cc-time">08:00 – 21:00</span></div><div class="cc-allday"><span class="cc-allday-label">연중무휴 운영</span><span class="cc-allday-val">365일</span></div></div><div class="cc-btns"><a class="cc-btn-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 상담</a><a class="cc-btn-tel" href="tel:010-4643-3145">📞 전화 상담</a></div></div></section>
+<section class="contact-section"><div class="contact-copy reveal"><div class="sec-label">집수리 문의</div><h2 class="sec-title">사진 보내주시면<br/><em>가능한 방법과 필요한 범위</em>를 먼저 안내드립니다</h2><p class="contact-desc">문 손잡이·가구문 경첩 교체 문의는 사진을 먼저 보내주시면 가능한 작업인지, 방문 확인이 필요한 상태인지, 준비해야 할 범위가 무엇인지 순서대로 안내드립니다. 집수리는 제품 규격과 기존 마감 상태에 따라 작업 가능 여부가 달라질 수 있습니다.</p><div class="contact-notice"><strong>보내주실 내용:</strong> 지역, 문제 부위, 원하는 작업, 전체 공간 사진 1장, 문제 부위 가까운 사진 1장, 옆에서 본 사진 1장</div></div><div class="contact-card reveal"><div class="cc-label">수한공간집수리</div><div class="cc-num">010-4643-3145</div><div class="cc-sub">문 손잡이·가구문 경첩 교체 상담</div><div class="cc-hours"><div class="cc-row"><span class="cc-day">평일</span><span class="cc-time">08:00 – 21:00</span></div><div class="cc-row"><span class="cc-day">토요일</span><span class="cc-time">08:00 – 21:00</span></div><div class="cc-row"><span class="cc-day">일요일 · 공휴일</span><span class="cc-time">08:00 – 21:00</span></div><div class="cc-allday"><span class="cc-allday-label">연중무휴 운영</span><span class="cc-allday-val">365일</span></div></div><div class="cc-btns"><a class="cc-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a class="cc-btn-tel" href="tel:010-4643-3145" aria-label="수한공간집수리 전화 상담 010-4643-3145">📞 전화 상담</a></div></div></section>
 </main>
-<footer>
+<footer role="contentinfo">
 <div class="footer-info">
 <strong>수한공간집수리</strong> · 생활수리 · 욕실 주변 보수 · 전화 010-4643-3145<br>
     수한공간 보유 국가기술자격: 타일기능사 · 방수기능사 · 온수온돌기능사<br>
@@ -974,7 +992,7 @@ img {
       본 홈페이지의 문구, 구성, 이미지, 디자인, 시공 사례 콘텐츠의 무단 복제·수정·재배포를 금지합니다.
     <br/></div>
 <br/><br/></div>
-<div class="footer-links">
+<nav class="footer-links" aria-label="하단 메뉴">
 <a href="/">수한공간 홈</a>
 <a href="/tile/">타일 보수 및 시공</a>
 <a href="/bath/">욕실 리모델링</a>
@@ -984,17 +1002,17 @@ img {
 <a href="/seasonal/rainy-season-waterproofing/">장마 전 방수</a>
 <a href="/cases/">시공 사례</a>
 <a href="https://blog.naver.com/soohanrepair" rel="noopener" target="_blank">네이버 블로그</a>
-<a href="https://open.kakao.com/me/soohanyun" rel="noopener" target="_blank">카카오톡 상담</a>
-<a href="tel:010-4643-3145">📞 전화 상담</a>
-</div>
+<a href="https://open.kakao.com/me/soohanyun" rel="noopener" target="_blank" aria-label="카카오톡으로 사진 상담하기">카카오톡 상담</a>
+<a href="tel:010-4643-3145" aria-label="수한공간집수리 전화 상담 010-4643-3145">📞 전화 상담</a>
+</nav>
 </footer><div class="floating">
-<a class="fb k" href="https://open.kakao.com/me/soohanyun">
+<a class="fb k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">
 <svg fill="none" height="18" viewbox="0 0 16 16" width="18"><path d="M8 1.5C4.69 1.5 2 3.9 2 6.9c0 1.87 1.05 3.52 2.67 4.52L4 13.5l2.56-1.34C7.02 12.38 7.5 12.5 8 12.5c3.31 0 6-2.4 6-5.1s-2.69-5.4-6-5.4-6 2.4-6 5.4z" fill="#111"></path></svg>
 <span>사진 상담</span>
 </a>
 </div><div class="mobile-cta">
-<a class="k" href="https://open.kakao.com/me/soohanyun">💬 사진 보내기</a>
-<a class="t" href="tel:010-4643-3145">📞 전화 상담</a>
+<a class="k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내기</a>
+<a class="t" href="tel:010-4643-3145" aria-label="수한공간집수리 전화 상담 010-4643-3145">📞 전화 상담</a>
 </div><script>
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
@@ -1019,6 +1037,7 @@ if (menuBtn && mobileNav) {
     const isOpen = mobileNav.classList.toggle('open');
     menuBtn.classList.toggle('open', isOpen);
     menuBtn.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
   mobileNav.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => { mobileNav.classList.remove('open'); menuBtn.classList.remove('open'); });

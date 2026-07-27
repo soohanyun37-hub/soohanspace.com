@@ -810,6 +810,100 @@ img {
   }
 }
 /* [수한공간 CTA 정리 끝] 10년형 신뢰 사이트용 전환 동선 정규화 */
+
+
+/* SOOHAN GUIDE BLOCK STANDARDIZATION - 2026-07
+   같은 역할의 사진 상담 안내 블록을 유형별로 튀지 않게 맞추는 보강값입니다. */
+.cta-band,
+.photo-guide-box {
+  padding: 64px 80px !important;
+}
+.cta-title,
+.photo-guide-box h2 {
+  font-size: clamp(22px, 2.2vw, 30px) !important;
+  font-weight: 900 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.03em !important;
+  word-break: keep-all !important;
+}
+.cta-desc,
+.cta-band p,
+.photo-guide-box p,
+.contact-desc,
+.contact-notice {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+@media (max-width: 720px) {
+  .cta-band,
+  .photo-guide-box {
+    padding: 34px 22px !important;
+  }
+  .cta-title,
+  .photo-guide-box h2 {
+    font-size: 24px !important;
+  }
+}
+
+
+/* SOOHAN BOX LAYOUT CLEANUP - 2026-07
+   같은 역할의 안내 박스가 유형 안에서 튀지 않도록 폭·정렬·버튼 배치를 보정합니다.
+   색상/본문/SEO/사용자 추가 섹션은 변경하지 않습니다. */
+.photo-guide-box,
+.photo-guide-wrap {
+  width: 100% !important;
+  max-width: 960px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.cta-band {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 40px !important;
+  flex-wrap: wrap !important;
+}
+.cta-band > .cta-wrap {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 40px !important;
+  flex-wrap: wrap !important;
+}
+.cta-left {
+  flex: 1 1 420px !important;
+  max-width: 720px !important;
+}
+.cta-btns {
+  margin-left: auto !important;
+}
+@media (max-width: 1100px) {
+  .cta-band,
+  .cta-band > .cta-wrap {
+    align-items: flex-start !important;
+  }
+  .cta-left {
+    max-width: none !important;
+  }
+  .cta-btns {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 720px) {
+  .photo-guide-box,
+  .photo-guide-wrap {
+    max-width: 100% !important;
+  }
+  .cta-band,
+  .cta-band > .cta-wrap {
+    gap: 20px !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -865,7 +959,7 @@ img {
 <body>
 <a class="skip-link" href="#main-content">본문 바로가기</a>
 <div class="notice-bar">
-  📍 평택·안성·오산 타일 상담<span class="dot">·</span>사진 보내주시면 순서대로 1차 안내<span class="dot">·</span><strong>010-4646-3145</strong>
+  📍 평택·안성·오산 타일 상담<span class="dot">·</span>사진 보내주시면 순서대로 1차 안내<span class="dot">·</span><strong>타일 문의 010-4646-3145</strong>
 </div>
 <header role="banner">
 <a class="logo" href="/" aria-label="수한공간 홈으로 이동">

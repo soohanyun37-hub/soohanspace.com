@@ -278,7 +278,7 @@ img {
 <nav aria-label="주요 메뉴"><a href="/">홈</a><a href="/tile/">타일</a><a href="/bath/">욕실</a><a href="/repair/">집수리</a><a href="/cases/">시공 사례</a><a href="/questions/">질문</a><a href="/checklist/">사진 상담</a><a href="/contact/">문의</a></nav>
 <div class="header-btns"><a class="hbtn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 <span>사진 상담</span></a><a class="hbtn-tel" href="/contact/">📞 <span>번호 보기</span></a><button aria-label="메뉴 열기" aria-controls="mobileNav" aria-expanded="false" class="mobile-menu-btn" id="menuBtn" type="button"><span></span><span></span><span></span></button></div>
 </header>
-<nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a href="/contact/#numbers">📞 작업별 번호</a></div></nav>
+<nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a href="/contact/#numbers" aria-label="작업별 문의 번호 보기">작업별 번호</a></div></nav>
 <main>
 <section class="hero"><div class="hero-wrap"><div><div class="breadcrumb"><a href="/">수한공간 홈</a><span>›</span><span>자주 묻는 질문</span></div><div class="hero-label">수한공간 FAQ</div><h1 class="hero-title">타일·욕실·집수리<br/><span class="hl">자주 묻는 질문</span></h1><p class="hero-desc">문의 전 가장 많이 궁금해하시는 내용을 정리했습니다. 무조건 전체 철거가 필요한지, 부분 보수로 가능한지, 사진 상담은 어떻게 진행되는지 먼저 확인해보세요.</p><div class="hero-btns">
 <a class="btn-primary" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a>
@@ -337,7 +337,7 @@ img {
 </footer>
 <div class="floating"><a class="fb k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 <span>사진 상담</span></a></div><div class="mobile-cta">
 <a class="k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내기</a>
-<a class="t" href="/contact/">📞 번호 보기</a>
+<a class="t" href="/contact/">번호 보기</a>
 </div>
 <script>
 const menuBtn=document.getElementById('menuBtn');const mobileNav=document.getElementById('mobileNav');if(menuBtn&&mobileNav){menuBtn.addEventListener('click',(e)=>{e.stopPropagation();const isOpen=mobileNav.classList.toggle('open');menuBtn.classList.toggle('open',isOpen);menuBtn.setAttribute('aria-label',isOpen?'메뉴 닫기':'메뉴 열기');menuBtn.setAttribute('aria-expanded',isOpen?'true':'false')});mobileNav.querySelectorAll('a').forEach(a=>{a.addEventListener('click',()=>{mobileNav.classList.remove('open');menuBtn.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')})});document.addEventListener('click',(e)=>{if(!menuBtn.contains(e.target)&&!mobileNav.contains(e.target)){mobileNav.classList.remove('open');menuBtn.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}})}

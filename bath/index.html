@@ -278,8 +278,8 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 /* CTA 밴드 */
 .cta-band { background: var(--brand); padding: 60px 80px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; border-top: 4px solid var(--accent); position: relative; overflow: hidden; }
 .cta-band::before { content: ''; position: absolute; top: -50%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(184,71,46,0.08) 0%, transparent 60%); pointer-events: none; }
-.cta-eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 0.06em; color: #ffb199; margin-bottom: 12px; }
-.cta-title { font-size: clamp(22px, 2.4vw, 34px); font-weight: 800; color: #fff; line-height: 1.35; word-break: keep-all; letter-spacing: -0.025em; }
+.cta-eyebrow { font-size: 12px; font-weight: 800; letter-spacing: .06em; color: #ffb199; margin-bottom: 12px; }
+.cta-title { font-size: clamp(22px, 2.4vw, 34px); font-weight: 900; color: #fff; line-height: 1.35; word-break: keep-all; letter-spacing: -0.025em; }
 .cta-desc { font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 12px; font-weight: 500; word-break: keep-all; line-height: 1.7; }
 .cta-btns { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; position: relative; z-index: 2; }
 .btn-cta-kakao, .btn-cta-tel { display: inline-flex; align-items: center; gap: 8px; font-size: 15.5px; font-weight: 800; padding: 17px 30px; border-radius: 4px; text-decoration: none; transition: all 0.15s; white-space: nowrap; }
@@ -290,8 +290,8 @@ nav a.active { background: var(--brand-light); color: var(--brand); font-weight:
 
 /* CONTACT */
 .contact-section { background: #fff; padding: 80px 80px; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: start; }
-.contact-desc { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-top: 20px; margin-bottom: 28px; font-weight: 500; word-break: keep-all; max-width: 500px; }
-.contact-notice { background: var(--bg-gray); border-left: 3px solid var(--brand); padding: 16px 20px; font-size: 13px; color: var(--text-mid); line-height: 1.75; font-weight: 500; max-width: 500px; word-break: keep-all; }
+.contact-desc { font-size: 15px; color: var(--text-mid); line-height: 1.8; margin-top: 20px; margin-bottom: 28px; font-weight: 500; word-break: keep-all; max-width: 500px; }
+.contact-notice { background: var(--bg-gray); border-left: 3px solid var(--brand); padding: 16px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; font-weight: 500; max-width: 500px; word-break: keep-all; }
 .contact-notice strong { color: var(--brand); font-weight: 800; }
 .contact-methods { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-bottom: none; margin-top: 28px; }
 .cm { display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-bottom: 1px solid var(--border); background: #fff; text-decoration: none; transition: background 0.12s; }
@@ -785,7 +785,7 @@ img {
 <button aria-label="메뉴 열기" aria-controls="mobileNav" aria-expanded="false" class="mobile-menu-btn" id="menuBtn" type="button"><span></span><span></span><span></span></button>
 </div>
 </header>
-<nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a class="active" aria-current="page" href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a href="/contact/#numbers">📞 작업별 번호</a></div></nav>
+<nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a class="active" aria-current="page" href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a href="/contact/#numbers" aria-label="작업별 문의 번호 보기">작업별 번호</a></div></nav>
 <div class="breadcrumb">
 <a href="/">수한공간 홈</a>
 <span class="sep">›</span>
@@ -1119,7 +1119,7 @@ img {
 <!-- CTA 밴드 -->
 <div class="cta-band">
 <div class="cta-left">
-<div class="cta-eyebrow">무료 상담 안내</div>
+<div class="cta-eyebrow">사진 상담 안내</div>
 <div class="cta-title">사진 보내주시면<br/>전체·부분 여부와 범위를 먼저 안내드립니다</div>
 <div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
 </div>

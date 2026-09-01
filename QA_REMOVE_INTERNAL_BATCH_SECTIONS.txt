@@ -1,0 +1,21 @@
+수한공간 330페이지 고객노출 내부작업 섹션 제거 패치
+
+수정 목적:
+- /tile/, /bath/, /repair/, /questions/, /sitemap/ 등에 노출되던 "신규 상세페이지 1차/5차/6차" 등 내부 작업용 문구 제거
+- 고객 화면에서 작업 차수, 확장 프로젝트, 내부 QA용 링크 묶음이 보이지 않도록 정리
+- 신규 페이지 HTML, sitemap.xml, canonical, 실제 URL은 건드리지 않음
+
+수정 파일:
+- tile/index.html
+- bath/index.html
+- repair/index.html
+- questions/index.html
+- questions/tile/index.html
+- questions/bath/index.html
+- questions/repair/index.html
+- sitemap/index.html
+
+검사 결과:
+- 위 8개 파일에서 "305페이지 확장", "신규 상세페이지 1차", "신규 질문형 상세페이지 5차", "추가했습니다" 등 내부 작업 노출 문구 제거
+- 전체 페이지 수와 sitemap.xml은 변경하지 않음
+- 신규 225페이지 자체는 유지

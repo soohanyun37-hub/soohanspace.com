@@ -1,0 +1,61 @@
+수한공간 305페이지 확장 8차 25페이지 QA 보고서
+
+검사 기준일: 2026-09-01
+제작 기준: 기존 105페이지 + 1~7차 신규 175페이지 누적 사이트에 8차 신규 25페이지 추가
+
+이번 8차 제작 방향:
+- 비용·작업시간·사진상담·방문확인·재시공 판단형 페이지로 타일 검색망 마무리
+- 욕실은 기간·견적 전 사진·부분공사 비용 변수처럼 상담 전환에 필요한 판단형 페이지 보강
+- 집수리는 기존 넓은 페이지와 중복되지 않도록 물샘·규격·고정 방식 등 세부 검색의도로 조정
+- 기존 105페이지 및 1~7차 신규 페이지 레이아웃 계열과 동일한 상세페이지 템플릿 적용
+
+전체 HTML 페이지 수: 305개
+sitemap.xml URL 수: 305개
+신규 페이지 수: 25개
+
+신규 페이지 목록:
+- /tile/tile-repair-cost-factors/ : 타일 보수 비용 변수
+- /tile/partial-tile-replacement-cost-factors/ : 타일 부분교체 비용 변수
+- /tile/lifted-tile-repair-cost-factors/ : 타일 들뜸 보수 비용 변수
+- /tile/bathroom-tile-repair-cost-factors/ : 욕실 타일 보수 비용 변수
+- /tile/kitchen-tile-overlay-cost-factors/ : 주방 타일 덧방 비용 변수
+- /tile/entrance-tile-repair-cost-factors/ : 현관 타일 보수 비용 변수
+- /tile/balcony-tile-repair-cost-factors/ : 베란다 타일 보수 비용 변수
+- /tile/tile-repair-work-time/ : 타일 보수 작업시간
+- /tile/one-tile-replacement-work-time/ : 타일 한 장 교체 작업시간
+- /tile/tile-repair-preparation/ : 타일 보수 전 준비사항
+- /tile/tile-repair-photo-consultation/ : 타일 보수 사진상담 방법
+- /tile/tile-repair-visit-check-needed/ : 타일 보수 방문확인이 필요한 경우
+- /tile/tile-repair-vs-reinstallation/ : 타일 보수와 재시공 차이
+- /tile/difficult-partial-tile-repair/ : 타일 부분보수 어려운 경우
+- /tile/tile-adhesive-problem-check/ : 타일 접착제 문제 보수
+- /tile/tile-grout-falling-repair/ : 타일 줄눈 탈락 보수
+- /bath/bathroom-work-period-factors/ : 욕실공사 기간 변수
+- /bath/bathroom-remodeling-estimate-photos/ : 욕실리모델링 견적 전 사진
+- /bath/bathroom-partial-work-cost-factors/ : 욕실 부분공사 비용 변수
+- /repair/kitchen-faucet-leak-replacement/ : 주방수전 물샘 교체
+- /repair/bathroom-towel-rack-replacement/ : 욕실 수건걸이 교체
+- /repair/bathroom-mirror-replacement/ : 욕실 거울 교체
+- /repair/bathroom-cabinet-hinge-loose-repair/ : 욕실장 경첩 보수
+- /repair/interior-door-handle-replacement/ : 문 손잡이 교체
+- /repair/pyeongtaek-screen-replacement/ : 평택 방충망 교체
+
+검수 항목:
+- 신규 URL 중복 검사
+- 기존 URL과 충돌 검사
+- sitemap 포함 검사
+- title/H1/meta description/canonical 존재 검사
+- 내부 링크 깨짐 검사
+- Git 충돌 표시 검사
+- 잘못된 </link> 검사
+- 카테고리별 사업자 footer/전화 CTA 검사
+- 이전 청주 주소 잔여 검사
+- 신규 페이지 title 중복 검사
+- 주요 오타 잔여 검사
+
+문제 목록:
+없음
+
+참고: 8차 신규 페이지에서 생긴 문제는 아니지만, 기존 누적 페이지에 title 중복이 남아 있는 항목:
+- 욕실 방수는 언제 다시 해야 하나요? | 수한공간욕실: questions/bath/waterproofing-rework-timing/index.html, questions/bath/waterproofing-needed/index.html
+- 베란다 타일 들뜸은 방수 문제인가요? | 수한공간타일: questions/tile/balcony-tile-waterproofing/index.html, questions/tile/balcony-lifted-tile-waterproof-check/index.html

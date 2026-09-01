@@ -1,0 +1,44 @@
+수한공간 305페이지 확장 3차 25페이지 QA 보고서
+
+검사 기준일: 2026-09-01
+전체 HTML 페이지 수: 180개
+sitemap.xml URL 수: 180개
+신규 페이지 수: 25개
+
+신규 페이지 목록:
+- /tile/pyeongtaek-partial-tile-repair/ : 평택 타일 부분보수
+- /tile/yongidong-tile-repair/ : 용이동 타일 보수
+- /tile/bijeondong-tile-repair/ : 비전동 타일 보수
+- /tile/sosabeol-tile-repair/ : 소사벌 타일 보수
+- /tile/dongsakdong-tile-repair/ : 동삭동 타일 보수
+- /tile/segyeodong-tile-repair/ : 세교동 타일 보수
+- /tile/godeok-tile-repair/ : 고덕 타일 보수
+- /tile/paengseong-tile-repair/ : 팽성 타일 보수
+- /tile/anjung-tile-repair/ : 안중 타일 보수
+- /tile/songtan-tile-repair/ : 송탄 타일 보수
+- /tile/pyeongtaek-bathroom-partial-tile-replacement/ : 평택 욕실 타일 부분교체
+- /tile/pyeongtaek-bathroom-one-tile-replacement/ : 평택 욕실 타일 한 장 교체
+- /tile/pyeongtaek-balcony-tile-repair/ : 평택 베란다 타일 보수
+- /tile/pyeongtaek-kitchen-tile-repair/ : 평택 주방 타일 보수
+- /tile/pyeongtaek-entrance-tile-repair/ : 평택 현관 타일 보수
+- /tile/pyeongtaek-commercial-tile-repair/ : 평택 상가 타일 보수
+- /bath/pyeongtaek-bathroom-remodeling-cost-factors/ : 평택 욕실리모델링 비용 변수
+- /bath/pyeongtaek-bathroom-overlay/ : 평택 욕실 덧방
+- /bath/pyeongtaek-bathroom-partial-remodeling/ : 평택 욕실 부분리모델링
+- /bath/pyeongtaek-bathroom-floor-work/ : 평택 욕실 바닥공사
+- /repair/pyeongtaek-bathroom-door-repair/ : 평택 욕실문 보수
+- /repair/pyeongtaek-bathroom-vent-fan-replacement/ : 평택 욕실 환풍기 교체
+- /repair/pyeongtaek-bathroom-sink-replacement/ : 평택 세면대 교체
+- /repair/pyeongtaek-toilet-replacement/ : 평택 양변기 교체
+- /repair/pyeongtaek-bathroom-faucet-replacement/ : 평택 욕실 수전 교체
+
+검수 결과: 이상 없음
+- Git 충돌 표시 없음
+- 잘못된 </link> 없음
+- title/H1/meta/canonical 존재
+- sitemap 180개 정상
+- 신규 25개 URL sitemap 포함
+- 내부 링크 깨짐 없음
+- 청주 등 이전 주소 잔여 없음
+- 카테고리별 사업자 footer 및 전화 CTA 적용
+- 기존 105페이지 및 1·2차 레이아웃 계열과 동일한 상세페이지 템플릿 적용

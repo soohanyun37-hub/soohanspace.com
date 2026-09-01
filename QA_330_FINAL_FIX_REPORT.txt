@@ -1,0 +1,73 @@
+수한공간 330페이지 최종 QA 보정 패치 보고서
+
+수정 목적:
+1. 2차 신규 페이지 25개 로고 경로 오류 수정
+2. 기존 타일 상세 10개 footer 전화번호 추가
+3. 기존 욕실 상세 11개 footer 전화번호 추가
+4. title 중복 2쌍 정리
+
+수정 파일 수: 48개 HTML + QA 보고서
+
+로고 경로 수정 대상: 25개
+bath/bathroom-overlay-condition-check/index.html
+bath/bathroom-partial-waterproofing/index.html
+bath/bathroom-waterproofing-reinforcement/index.html
+bath/full-demolition-condition-check/index.html
+repair/bathroom-sink-under-leak-repair/index.html
+repair/kitchen-sink-bowl-replacement/index.html
+repair/shower-faucet-replacement/index.html
+repair/sink-bowl-cutting/index.html
+tile/bathroom-floor-tile-one-piece-replacement/index.html
+tile/bathroom-tile-hollow-sound-repair/index.html
+tile/bathroom-wall-tile-one-piece-replacement/index.html
+tile/discontinued-tile-replacement/index.html
+tile/floor-tile-hollow-sound-repair/index.html
+tile/partial-tile-demolition-repair/index.html
+tile/pyeongtaek-bathroom-broken-tile-repair/index.html
+tile/pyeongtaek-bathroom-floor-lifted-tile-repair/index.html
+tile/pyeongtaek-bathroom-wall-lifted-tile-repair/index.html
+tile/pyeongtaek-discontinued-tile-replacement/index.html
+tile/pyeongtaek-entrance-broken-tile-repair/index.html
+tile/pyeongtaek-entrance-floor-tile-repair/index.html
+tile/pyeongtaek-kitchen-wall-tile-repair/index.html
+tile/pyeongtaek-one-tile-repair/index.html
+tile/tile-adhesion-failure-repair/index.html
+tile/tile-color-difference-repair/index.html
+tile/tile-hollow-sound-repair/index.html
+
+타일 footer 전화번호 수정 대상: 10개
+tile/balcony-tile-repair/index.html
+tile/bathroom-tile-repair/index.html
+tile/broken-tile/index.html
+tile/commercial-tile/index.html
+tile/entrance-tile-repair/index.html
+tile/floor-tile-level-repair/index.html
+tile/kitchen-tile/index.html
+tile/lifted-tile/index.html
+tile/one-tile-replacement/index.html
+tile/tile-crack-hollow-sound/index.html
+
+욕실 footer 전화번호 수정 대상: 11개
+bath/bathroom-ceiling/index.html
+bath/bathroom-door/index.html
+bath/bathtub-shower-partition/index.html
+bath/floor-repair/index.html
+bath/full-demolition/index.html
+bath/overlay/index.html
+bath/partial-work/index.html
+bath/remodeling/index.html
+bath/silicone-grout-repair/index.html
+bath/wall-tile-replacement/index.html
+bath/waterproofing/index.html
+
+중복 title 수정 대상:
+questions/bath/waterproofing-rework-timing/index.html
+questions/tile/balcony-lifted-tile-waterproof-check/index.html
+
+적용 후 확인 기준:
+- /images/logo.png 잔여 0개
+- 타일 기존 상세 10개 footer 전화번호 010-4646-3145 포함
+- 욕실 기존 상세 11개 footer 전화번호 010-8672-3145 포함
+- title 중복 2쌍 해소
+- 신규 URL 추가 없음
+- sitemap.xml 변경 없음

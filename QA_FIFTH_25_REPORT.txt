@@ -1,0 +1,44 @@
+수한공간 305페이지 확장 5차 25페이지 QA 보고서
+
+검사 기준일: 2026-09-01
+전체 HTML 페이지 수: 230개
+sitemap.xml URL 수: 230개
+신규 페이지 수: 25개
+
+신규 페이지 목록:
+- /questions/tile/lifted-tile-partial-repair-possible/ : 타일 들뜸 부분보수 가능 여부
+- /questions/tile/broken-tile-replacement-count/ : 깨진 타일 부분교체 범위
+- /questions/tile/discontinued-tile-color-match/ : 단종 타일 색상 차이
+- /questions/tile/hollow-sound-repair-timing/ : 타일 빈소리 보수 시점
+- /questions/tile/bathroom-tile-crack-waterproof-check/ : 욕실 타일 금 방수 확인
+- /questions/tile/wall-tile-lifted-fall-risk/ : 벽타일 들뜸 위험
+- /questions/tile/floor-tile-lifted-cause/ : 바닥타일 들뜸 원인
+- /questions/tile/partial-repair-color-difference/ : 타일 부분교체 색상 차이
+- /questions/tile/photo-check-before-repair/ : 타일 보수 사진 찍는 방법
+- /questions/tile/one-tile-replacement-cost-difference/ : 타일 한 장 교체 비용 차이
+- /questions/tile/bathroom-broken-tile-partial-repair/ : 욕실 타일 깨짐 부분보수 가능 여부
+- /questions/tile/balcony-lifted-tile-waterproof-check/ : 베란다 타일 들뜸 방수 확인
+- /questions/tile/entrance-broken-tile-one-piece/ : 현관 타일 한 장 교체 가능 여부
+- /questions/tile/kitchen-tile-overlay-condition/ : 주방 타일 덧방 가능 조건
+- /questions/tile/existing-tile-overlay-condition/ : 기존 타일 위 덧방 가능 여부
+- /questions/tile/adjacent-tile-damage-risk/ : 타일 철거 주변 파손 위험
+- /questions/bath/overlay-vs-demolition-condition/ : 욕실 덧방 전체철거 차이
+- /questions/bath/waterproofing-rework-timing/ : 욕실 방수 재시공 시점
+- /questions/bath/bathtub-removal-floor-waterproofing-order/ : 욕조 철거 후 방수 순서
+- /questions/bath/floor-water-pooling-work-needed/ : 욕실 바닥 물고임 공사 여부
+- /questions/repair/bathroom-silicone-mold-resealing/ : 욕실 실리콘 곰팡이 재시공
+- /questions/repair/sink-silicone-gap-leak/ : 세면대 실리콘 벌어짐
+- /questions/repair/faucet-leak-repair-replacement/ : 수전 물샘 수리 교체
+- /questions/repair/toilet-base-water-leak/ : 양변기 주변 물샘
+- /questions/repair/vent-fan-noise-replacement/ : 환풍기 소음 교체
+
+검수 결과: 이상 없음
+- Git 충돌 표시 없음
+- 잘못된 </link> 없음
+- title/H1/meta/canonical 존재
+- sitemap 230개 정상
+- 신규 25개 URL sitemap 포함
+- 내부 링크 깨짐 없음
+- 청주 등 이전 주소 잔여 없음
+- 질문형 페이지별 단일 사업자 footer 및 전화 CTA 적용
+- 기존 상세페이지 레이아웃 계열과 동일한 템플릿 적용

@@ -1,0 +1,50 @@
+수한공간 305페이지 확장 2차 25페이지 QA 보고서
+
+생성일: 2026-09-01
+작업 범위: 신규 검색형 상세페이지 25개 추가 + 관련 허브/사이트맵/sitemap.xml 연결
+
+신규 페이지 구성
+- 타일: 17개
+- 욕실: 4개
+- 집수리: 4개
+- 합계: 25개
+
+전체 상태
+- 전체 HTML index 페이지 수: 155개
+- sitemap.xml URL 수: 155개
+- 기존 105페이지 + 1차 25페이지 + 2차 25페이지 = 155페이지 기준 확인
+
+검수 결과
+- Git 충돌 표시: 0건
+- 잘못된 </link>: 0건
+- title/H1/meta/canonical 누락: 0건
+- 내부 깨진 링크: 0건
+- 신규 페이지 사업자 정보 누락: 0건
+
+2차 신규 URL
+26. /tile/pyeongtaek-bathroom-broken-tile-repair/ - 평택 욕실 타일 깨짐 보수
+27. /tile/pyeongtaek-bathroom-wall-lifted-tile-repair/ - 평택 욕실 벽타일 들뜸
+28. /tile/pyeongtaek-bathroom-floor-lifted-tile-repair/ - 평택 욕실 바닥타일 들뜸
+29. /tile/pyeongtaek-entrance-broken-tile-repair/ - 평택 현관 타일 깨짐
+30. /tile/pyeongtaek-entrance-floor-tile-repair/ - 평택 현관 바닥타일 보수
+31. /tile/pyeongtaek-kitchen-wall-tile-repair/ - 평택 주방 벽타일 보수
+32. /tile/pyeongtaek-one-tile-repair/ - 평택 타일 한 장 보수
+33. /tile/discontinued-tile-replacement/ - 단종 타일 부분교체
+34. /tile/pyeongtaek-discontinued-tile-replacement/ - 평택 단종 타일 부분교체
+35. /tile/tile-color-difference-repair/ - 타일 색상 차이 보수
+36. /tile/tile-hollow-sound-repair/ - 타일 빈소리 보수
+37. /tile/bathroom-tile-hollow-sound-repair/ - 욕실 타일 빈소리
+38. /tile/floor-tile-hollow-sound-repair/ - 바닥 타일 빈소리
+39. /tile/tile-adhesion-failure-repair/ - 타일 접착불량 보수
+40. /tile/partial-tile-demolition-repair/ - 타일 부분철거 보수
+41. /tile/bathroom-wall-tile-one-piece-replacement/ - 욕실 벽타일 한 장 교체
+42. /tile/bathroom-floor-tile-one-piece-replacement/ - 욕실 바닥타일 한 장 교체
+43. /bath/bathroom-partial-waterproofing/ - 욕실 부분방수
+44. /bath/bathroom-waterproofing-reinforcement/ - 욕실 방수 보강
+45. /bath/bathroom-overlay-condition-check/ - 욕실 덧방 가능 여부
+46. /bath/full-demolition-condition-check/ - 욕실 전체철거 판단
+47. /repair/bathroom-sink-under-leak-repair/ - 세면대 아래 물샘
+48. /repair/shower-faucet-replacement/ - 샤워수전 교체
+49. /repair/kitchen-sink-bowl-replacement/ - 주방 싱크볼 교체
+50. /repair/sink-bowl-cutting/ - 싱크볼 타공
+

@@ -1,0 +1,15 @@
+루트 폴더에 아래 QA 보고서 TXT 파일이 남아 있으면 삭제하세요.
+검색엔진용 sitemap.xml과 robots.txt는 삭제하면 안 됩니다.
+
+삭제 대상 예시:
+QA_FIRST_25_REPORT.txt
+QA_SECOND_25_REPORT.txt
+QA_THIRD_25_REPORT.txt
+QA_FOURTH_25_REPORT.txt
+QA_FIFTH_25_REPORT.txt
+QA_SIXTH_25_REPORT.txt
+QA_SEVENTH_25_REPORT.txt
+QA_EIGHTH_25_REPORT.txt
+QA_NINTH_25_REPORT.txt
+QA_REMOVE_INTERNAL_BATCH_SECTIONS.txt
+QA_330_FINAL_FIX_REPORT.txt

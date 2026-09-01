@@ -28,6 +28,104 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} :root{--brand:#1f2b3a;--brand-dark:#141e29;--brand-light:#edf0f3;--brand-lighter:#f5f7fa;--accent:#b8472e;--accent-light:#fdf2ef;--bg:#fff;--bg-gray:#f5f6f7;--text:#111;--text-mid:#444;--text-muted:#777;--border:#e0e0e0;--kakao:#FEE500;--font:'Pretendard','Noto Sans KR',sans-serif}html{scroll-behavior:smooth}body{background:#fff;color:var(--text);font-family:var(--font);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;word-break:keep-all}.skip-link{position:absolute;left:-9999px;top:12px;z-index:1000;background:var(--brand);color:#fff;padding:10px 14px;border-radius:4px;font-weight:800;text-decoration:none}.skip-link:focus{left:12px}.notice-bar{background:var(--brand);color:rgba(255,255,255,.92);font-size:13px;font-weight:500;text-align:center;padding:10px 16px}.notice-bar strong{color:#fff;font-weight:800}.notice-bar .dot{color:rgba(255,255,255,.4);margin:0 6px}header{position:sticky;top:0;z-index:300;background:#fff;border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 48px}.logo{display:flex;align-items:center;gap:8px;text-decoration:none}.logo-img{height:48px;width:auto}.logo-name{font-size:17px;font-weight:900;color:var(--text);letter-spacing:-.02em;line-height:1.1}.logo-sub{font-size:11px;color:var(--text-muted);font-weight:500;margin-top:2px}nav{display:flex;align-items:center;gap:2px}nav a{font-size:14px;font-weight:700;color:var(--text-mid);text-decoration:none;padding:8px 14px;border-radius:4px;transition:.15s;white-space:nowrap}nav a:hover,nav a.active{background:var(--brand-light);color:var(--brand);font-weight:800}.header-btns{display:flex;gap:8px;align-items:center}.hbtn-kakao,.hbtn-tel{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:800;padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap}.hbtn-kakao{background:var(--kakao);color:#111}.hbtn-tel{background:var(--brand);color:#fff}.mobile-menu-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}.mobile-menu-btn span{display:block;width:22px;height:2px;background:var(--text)}.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;border-bottom:2px solid var(--brand);z-index:290;padding:8px 0;box-shadow:0 4px 16px rgba(0,0,0,.1)}.mobile-nav.open{display:block}.mobile-nav a{display:block;padding:14px 24px;font-size:15px;font-weight:800;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border)}.mobile-nav a.active{background:var(--brand-light);color:var(--brand)}.mobile-nav-cta{padding:12px 16px;display:flex;gap:8px;background:var(--bg-gray);border-top:1px solid var(--border)}.mobile-nav-cta a{flex:1;text-align:center;padding:12px 0;border-radius:4px;border-bottom:none!important}.mobile-nav-cta a:first-child{background:var(--kakao);color:#111}.mobile-nav-cta a:last-child{background:var(--brand);color:#fff}.breadcrumb{background:var(--brand-light);border-bottom:1px solid var(--border);padding:10px 80px;display:flex;gap:8px;font-size:12px;font-weight:700}.breadcrumb a{color:var(--text-muted);text-decoration:none}.breadcrumb .current{color:var(--brand);font-weight:800}.hero{background:var(--bg-gray);padding:68px 80px 76px;display:grid;grid-template-columns:1fr 410px;gap:56px;align-items:center;border-bottom:1px solid var(--border)}.hero-label{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;color:var(--brand);letter-spacing:.04em;margin-bottom:26px;padding:7px 14px 7px 12px;background:#fff;border-left:3px solid var(--accent);border-radius:0 3px 3px 0}.pulse{width:7px;height:7px;background:var(--accent);border-radius:50%;display:inline-block}.hero-title{font-size:clamp(34px,3.8vw,52px);font-weight:900;line-height:1.16;letter-spacing:-.035em;margin-bottom:22px}.hero-title .hl{color:var(--brand)}.hero-sub{font-size:17px;color:var(--text-mid);line-height:1.75;margin-bottom:20px;max-width:660px}.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 14px}.btn-primary,.btn-secondary{display:inline-flex;align-items:center;gap:9px;font-size:16px;font-weight:800;padding:17px 28px;border-radius:4px;text-decoration:none}.btn-primary{background:var(--kakao);color:#111}.btn-secondary{background:var(--brand);color:#fff}.hero-note{font-size:13px;color:var(--text-muted)}.hero-card{background:#fff;border:2px solid var(--brand);border-radius:8px;overflow:hidden;box-shadow:0 4px 24px rgba(31,43,58,.08)}.hcard-head{background:var(--brand);padding:20px 26px;color:#fff;border-bottom:3px solid var(--accent)}.hcard-head-label{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.05em;background:rgba(255,255,255,.14);padding:3px 9px;border-radius:2px;margin-bottom:8px}.hcard-head-title{font-size:18px;font-weight:900;line-height:1.45}.hcard-body{padding:24px 26px 26px}.hcard-steps{border:1px solid var(--border);margin-bottom:18px}.hcard-step{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;background:var(--bg-gray);border-bottom:1px solid var(--border)}.hcard-step:last-child{border-bottom:none}.hcs-num{width:24px;height:24px;background:var(--brand);color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:2px}.hcs-text{font-size:13px;color:var(--text-mid);font-weight:600;line-height:1.55}.section{padding:78px 80px;border-bottom:1px solid var(--border)}.section.alt{background:var(--bg-gray)}.section-inner{max-width:1180px;margin:0 auto}.sec-label{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:900;color:var(--accent);margin-bottom:12px;letter-spacing:.02em}.sec-label::before{content:'';width:24px;height:2px;background:var(--accent)}.sec-title{font-size:clamp(25px,2.5vw,36px);font-weight:900;line-height:1.3;letter-spacing:-.03em;margin-bottom:14px}.sec-desc{font-size:15.5px;color:var(--text-mid);line-height:1.85;max-width:820px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);border-bottom:none;margin-top:34px;background:#fff}.card{padding:28px 24px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:#fff}.card:nth-child(3n){border-right:none}.card:hover{background:var(--brand-lighter)}.card-kicker{font-size:11px;font-weight:900;color:var(--accent);letter-spacing:.06em;margin-bottom:12px}.card-title{font-size:17px;font-weight:900;line-height:1.42;margin-bottom:10px}.card-desc{font-size:13.5px;color:var(--text-muted);line-height:1.78;font-weight:500}.judge{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px}.judge-box{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);padding:30px 32px}.judge-box.warn{border-left-color:var(--accent)}.judge-box h3{font-size:20px;font-weight:900;margin-bottom:16px}.judge-box ul{padding-left:18px}.judge-box li{font-size:14.5px;color:var(--text-mid);line-height:1.9;margin-bottom:6px}.scope-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-bottom:none;margin-top:34px}.scope{padding:26px 22px;background:#fff;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.scope:nth-child(4n){border-right:none}.scope-num{font-size:12px;font-weight:900;color:var(--accent);margin-bottom:12px}.scope h3{font-size:16px;font-weight:900;margin-bottom:9px}.scope p{font-size:13px;color:var(--text-muted);line-height:1.75}.photo-guide-box{max-width:960px;margin:0 auto;background:#fff;border-left:4px solid var(--accent);padding:64px 80px}.photo-guide-box h2{font-size:clamp(22px,2.2vw,30px);font-weight:900;line-height:1.35;letter-spacing:-.03em;margin-bottom:16px}.photo-guide-box p{font-size:15px;line-height:1.8;color:var(--text-mid);margin-bottom:22px}.photo-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.photo-item{border:1px solid var(--border);background:var(--bg-gray);padding:16px;font-size:13.5px;font-weight:800}.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.related-card{display:block;text-decoration:none;background:#fff;border:1px solid var(--border);padding:24px}.related-card:hover{border-color:var(--brand);background:var(--brand-lighter)}.related-card strong{display:block;font-size:16px;font-weight:900;color:var(--text);margin-bottom:8px}.related-card span{display:block;font-size:13px;color:var(--text-muted);line-height:1.75}.faq-list{margin-top:34px;border-top:1px solid var(--border)}.faq-item{padding:24px 0;border-bottom:1px solid var(--border)}.faq-item h3{font-size:17px;font-weight:900;margin-bottom:8px}.faq-item p{font-size:14.5px;color:var(--text-mid);line-height:1.85}.cta-band{background:var(--brand);color:#fff;padding:64px 80px;display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap}.cta-title{font-size:clamp(22px,2.2vw,30px);font-weight:900;line-height:1.35;letter-spacing:-.03em;margin-bottom:10px}.cta-desc{font-size:15px;line-height:1.8;color:rgba(255,255,255,.8)}.cta-actions{display:flex;gap:10px;flex-wrap:wrap}.cta-actions a{display:inline-flex;align-items:center;justify-content:center;padding:16px 24px;border-radius:4px;font-weight:900;text-decoration:none}.cta-actions .kakao{background:var(--kakao);color:#111}.cta-actions .tel{background:#fff;color:var(--brand)}footer{background:#111;padding:36px 80px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;border-top:3px solid var(--brand)}.footer-info{font-size:12px;color:rgba(255,255,255,.42);line-height:1.85;font-weight:500}.footer-info strong{color:rgba(255,255,255,.75);font-weight:800}.footer-copy-notice{margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.55);font-size:11.5px;line-height:1.8}.footer-copy-notice strong{color:rgba(255,255,255,.82);font-weight:900}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{font-size:12px;font-weight:800;color:rgba(255,255,255,.5);text-decoration:none}.floating{position:fixed;right:22px;bottom:26px;z-index:250}.fb{display:flex;align-items:center;gap:8px;padding:14px 18px;border-radius:999px;background:var(--kakao);color:#111;text-decoration:none;font-weight:900;box-shadow:0 4px 18px rgba(0,0,0,.18)}.mobile-cta{display:none} .reveal{opacity:1}.box-layout-cleanup{display:none}@media(max-width:980px){header{padding:0 20px}.desktop-nav,.header-btns{display:none}.mobile-menu-btn{display:flex}.hero{grid-template-columns:1fr;padding:52px 26px}.breadcrumb{padding:10px 24px}.section{padding:56px 24px}.grid,.related-grid{grid-template-columns:1fr}.card:nth-child(n){border-right:none}.judge{grid-template-columns:1fr}.scope-grid{grid-template-columns:1fr 1fr}.scope:nth-child(n){border-right:1px solid var(--border)}.scope:nth-child(2n){border-right:none}.photo-guide-box{padding:34px 22px}.cta-band{padding:40px 24px}footer{padding:30px 24px;flex-direction:column;align-items:flex-start}.floating{display:none}.mobile-cta{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;z-index:400}.mobile-cta a{padding:15px 8px;text-align:center;text-decoration:none;font-size:14px;font-weight:900}.mobile-cta .k{background:var(--kakao);color:#111}.mobile-cta .t{background:var(--brand);color:#fff}body{padding-bottom:54px}}@media(max-width:640px){.hero-title{font-size:32px}.btn-primary,.btn-secondary{width:100%;justify-content:center}.scope-grid{grid-template-columns:1fr}.scope:nth-child(n){border-right:none}.photo-list{grid-template-columns:1fr}.notice-bar .dot{display:none}.notice-bar{line-height:1.65}.footer-links{flex-direction:column;gap:10px}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://soohanspace.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "욕실",
+          "item": "https://soohanspace.com/bath/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "욕실 배수 문제",
+          "item": "https://soohanspace.com/bath/bathroom-drainage-problem-check/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "욕실 배수 문제, 바닥공사 전 원인부터 봅니다",
+      "serviceType": "욕실 배수 문제, 평택 욕실 배수 문제, 사진 상담, 욕실 리모델링 및 부분공사",
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "수한공간욕실",
+        "url": "https://soohanspace.com/bath/",
+        "telephone": "010-8672-3145"
+      },
+      "areaServed": [
+        "평택",
+        "안성",
+        "오산",
+        "화성",
+        "동탄",
+        "천안",
+        "아산"
+      ],
+      "url": "https://soohanspace.com/bath/bathroom-drainage-problem-check/",
+      "description": "욕실 배수 문제, 타일 구배와 배수구 상태를 함께 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안내드립니다."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "욕실 배수 문제는 사진만으로 판단이 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "정면 사진, 문제 부위 가까운 사진, 전체 공간 사진을 보면 1차 안내는 가능합니다. 다만 들뜸 범위, 방수 의심, 바탕면 문제는 방문 확인이 필요한 경우도 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "부분 보수로 가능한 경우도 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "문제 범위가 좁고 주변 상태가 안정적이면 부분 보수를 먼저 검토합니다. 전체 철거가 필요한 상태인지도 함께 안내드립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "바로 공사를 결정해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "먼저 상태를 보고 가능한 방법과 필요한 범위를 안내드린 뒤 결정하셔도 됩니다. 무리하게 공사를 권하지 않습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "비용은 무엇에 따라 달라지나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "작업 수량, 기존 상태, 자재 수급, 주변 부속 탈부착 여부에 따라 달라집니다. 사진을 먼저 보면 대략적인 범위부터 안내드릴 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 사진을 보내면 좋나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "전체 공간, 문제 부위 가까운 사진, 옆에서 본 상태를 보내주시면 좋습니다. 지역과 원하는 작업도 함께 남겨주시면 더 정확하게 볼 수 있습니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">본문 바로가기</a>

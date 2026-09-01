@@ -1,0 +1,99 @@
+SOOHANSPACE DUPLICATE FIX 1 - TILE LOCAL PAGE UNIQUENESS REPORT
+
+수정 HTML 파일 수: 70개
+대상: /tile/ 하위 지역 접두어 페이지
+범위: 용이동, 비전동, 소사벌, 죽백동, 동삭동, 세교동, 고덕, 안중, 팽성, 송탄, 안성, 오산, 동탄, 평택
+
+수정 원칙:
+- title, meta description, canonical, sitemap.xml 수정 없음
+- footer 사업자 정보와 전화 CTA 수정 없음
+- 기존 URL 추가/삭제 없음
+- 본문 안내 문장, 지역별 확인 포인트, 판단 기준, 작업 범위 설명만 차별화
+
+주요 보강 내용:
+- 지역별 생활권·이동거리·주차/출입 조건 반영
+- 욕실 벽타일, 욕실 바닥타일, 주방 타일, 베란다, 현관, 상가, 들뜸, 한 장 교체 등 작업별 확인 포인트 반영
+- 사진 상담에 필요한 촬영 부위와 방문 확인 기준을 페이지별로 다르게 작성
+
+금지/오류 문구 검사:
+- 주요 금지 문구 및 조사 오류 잔여 없음
+
+
+간이 유사도 점검:
+- 대상 70개 페이지 기준, 지역명을 공통 토큰으로 치환한 뒤 12글자 shingle Jaccard 방식으로 재확인
+- 97% 이상 유사 pair: 0건
+- 95% 이상 유사 pair: 0건
+- 92% 이상 유사 pair: 2건
+- 가장 높은 유사 pair는 평택 현관 바닥 타일 계열 2페이지로, 같은 공간 계열이라 2차 타일 주제 패치에서 추가 보강 권장
+
+수정 URL 목록:
+/tile/anjung-bathroom-tile-repair/
+/tile/anjung-tile-repair/
+/tile/pyeongtaek-kitchen-tile-overlay/
+/tile/pyeongtaek-one-tile-repair/
+/tile/segyeodong-bathroom-tile-repair/
+/tile/songtan-tile-repair/
+/tile/godeok-bathroom-tile-repair/
+/tile/dongsakdong-lifted-tile-repair/
+/tile/paengseong-bathroom-tile-repair/
+/tile/anseong-balcony-tile-repair/
+/tile/pyeongtaek-kitchen-wall-tile-repair/
+/tile/anjung-lifted-tile-repair/
+/tile/pyeongtaek-bathroom-floor-lifted-tile-repair/
+/tile/sosabeol-bathroom-wall-tile-repair/
+/tile/anseong-tile-repair/
+/tile/bijeondong-bathroom-tile-repair/
+/tile/dongsakdong-bathroom-tile-repair/
+/tile/osan-tile-repair/
+/tile/bijeondong-tile-repair/
+/tile/pyeongtaek-balcony-tile-repair/
+/tile/pyeongtaek-balcony-lifted-tile-repair/
+/tile/anseong-kitchen-tile-overlay/
+/tile/osan-bathroom-tile-repair/
+/tile/godeok-tile-repair/
+/tile/sosabeol-tile-repair/
+/tile/pyeongtaek-bathroom-tile-repair/
+/tile/osan-balcony-tile-repair/
+/tile/yongidong-bathroom-wall-tile-repair/
+/tile/bijeondong-kitchen-tile-repair/
+/tile/yongidong-kitchen-tile-repair/
+/tile/pyeongtaek-bathroom-wall-lifted-tile-repair/
+/tile/anseong-lifted-tile-repair/
+/tile/pyeongtaek-partial-tile-repair/
+/tile/dongtan-lifted-tile-repair/
+/tile/osan-lifted-tile-repair/
+/tile/anseong-bathroom-tile-repair/
+/tile/segyeodong-tile-repair/
+/tile/sosabeol-bathroom-floor-tile-repair/
+/tile/paengseong-tile-repair/
+/tile/pyeongtaek-entrance-floor-tile-repair/
+/tile/songtan-lifted-tile-repair/
+/tile/pyeongtaek-one-tile-replacement/
+/tile/jukbaekdong-bathroom-tile-repair/
+/tile/pyeongtaek-bathroom-partial-tile-replacement/
+/tile/godeok-lifted-tile-repair/
+/tile/pyeongtaek-bathroom-one-tile-replacement/
+/tile/osan-one-tile-replacement/
+/tile/bijeondong-lifted-tile-repair/
+/tile/bijeondong-bathroom-floor-tile-repair/
+/tile/jukbaekdong-tile-repair/
+/tile/dongtan-tile-repair/
+/tile/yongidong-tile-repair/
+/tile/yongidong-bathroom-tile-repair/
+/tile/pyeongtaek-bathroom-broken-tile-repair/
+/tile/pyeongtaek-commercial-tile-repair/
+/tile/dongsakdong-tile-repair/
+/tile/dongtan-one-tile-replacement/
+/tile/anseong-one-tile-replacement/
+/tile/dongtan-bathroom-tile-repair/
+/tile/pyeongtaek-discontinued-tile-replacement/
+/tile/yongidong-bathroom-floor-tile-repair/
+/tile/songtan-bathroom-tile-repair/
+/tile/pyeongtaek-entrance-broken-tile-repair/
+/tile/pyeongtaek-entrance-tile-repair/
+/tile/yongidong-lifted-tile-repair/
+/tile/sosabeol-bathroom-tile-repair/
+/tile/sosabeol-lifted-tile-repair/
+/tile/pyeongtaek-kitchen-tile-repair/
+/tile/bijeondong-bathroom-wall-tile-repair/
+/tile/osan-kitchen-tile-overlay/

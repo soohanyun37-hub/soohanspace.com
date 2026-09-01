@@ -1,0 +1,67 @@
+SOOHANSPACE DUPLICATE FIX 5 QA REPORT
+
+Scope: questions 25 pages + area 6 pages
+Changed HTML files: 31
+Sitemap changed: no
+URL added/deleted: no
+Title/meta/canonical/footer changed intentionally: no
+
+Changed files:
+- questions/tile/balcony-lifted-tile-waterproof-check/index.html
+- questions/tile/bathroom-broken-tile-partial-repair/index.html
+- questions/tile/bathroom-tile-crack-waterproof-check/index.html
+- questions/tile/broken-tile-replacement-count/index.html
+- questions/tile/discontinued-tile-color-match/index.html
+- questions/tile/entrance-broken-tile-one-piece/index.html
+- questions/tile/lifted-tile-partial-repair-possible/index.html
+- questions/tile/one-tile-replacement-cost-difference/index.html
+- questions/tile/partial-repair-color-difference/index.html
+- questions/tile/wall-tile-lifted-fall-risk/index.html
+- questions/bath/bathtub-removal-floor-waterproofing-order/index.html
+- questions/bath/floor-water-pooling-work-needed/index.html
+- questions/bath/overlay-vs-demolition-condition/index.html
+- questions/bath/waterproofing-rework-timing/index.html
+- questions/repair/bathroom-silicone-mold-resealing/index.html
+- questions/repair/faucet-leak-repair-replacement/index.html
+- questions/repair/sink-silicone-gap-leak/index.html
+- questions/repair/toilet-base-water-leak/index.html
+- questions/repair/vent-fan-noise-replacement/index.html
+- questions/tile/adjacent-tile-damage-risk/index.html
+- questions/tile/existing-tile-overlay-condition/index.html
+- questions/tile/floor-tile-lifted-cause/index.html
+- questions/tile/hollow-sound-repair-timing/index.html
+- questions/tile/kitchen-tile-overlay-condition/index.html
+- questions/tile/photo-check-before-repair/index.html
+- area/dongsakdong/index.html
+- area/godeok/index.html
+- area/anjung/index.html
+- area/paengseong/index.html
+- area/segyeodong/index.html
+- area/sosabeol/index.html
+
+Forbidden/public-error term scan:
+- 검색의도: 0
+- 타겟 키워드: 0
+- 신규 상세페이지: 0
+- 추가했습니다: 0
+- 페이지를 추가했습니다: 0
+- 고객라면: 0
+- 보수은: 0
+- 교체은: 0
+- 변수은: 0
+- 사진를: 0
+- 가능성를: 0
+- 내용를: 0
+- 문의 문의: 0
+- 안내 안내: 0
+
+Similarity scan on patch targets after modification:
+- questions target pages >=97% pairs: 0
+- questions target pages >=95% pairs: 0
+- questions target pages >=92% pairs: 0
+- area target pages >=97% pairs: 0
+- area target pages >=95% pairs: 0
+- area target pages >=92% pairs: 0
+
+
+Note: Patch intentionally contains only changed files. Apply after duplicate fixes 1-4.

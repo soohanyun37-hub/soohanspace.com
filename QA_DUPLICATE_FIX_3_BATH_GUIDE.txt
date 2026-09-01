@@ -1,0 +1,62 @@
+SOOHANSPACE DUPLICATE FIX 3 - BATH + GUIDE QA REPORT
+
+수정 HTML 파일 수: 36
+범위: 욕실 신규/유사도 대상 페이지 30개 + guide 안내 페이지 6개
+sitemap.xml: 수정하지 않음
+URL 추가/삭제: 없음
+title/meta/canonical/footer/전화번호: 구조 변경 없음
+
+수정 URL:
+/bath/anseong-bathroom-partial-remodeling/
+/bath/bathroom-ceiling-replacement/
+/bath/bathroom-ceiling-sagging-repair/
+/bath/bathroom-drainage-problem-check/
+/bath/bathroom-floor-level-check/
+/bath/bathroom-overlay-condition-check/
+/bath/bathroom-partial-waterproofing/
+/bath/bathroom-partial-work-cost-factors/
+/bath/bathroom-waterproofing-reinforcement/
+/bath/bathroom-work-period-factors/
+/bath/bijeondong-bathroom-partial-remodeling/
+/bath/dongtan-bathroom-partial-remodeling/
+/bath/full-demolition-condition-check/
+/bath/jukbaekdong-bathroom-partial-remodeling/
+/bath/osan-bathroom-partial-remodeling/
+/bath/pyeongtaek-bathroom-floor-work/
+/bath/pyeongtaek-bathroom-overlay/
+/bath/pyeongtaek-common-bathroom-remodeling/
+/bath/pyeongtaek-master-bathroom-remodeling/
+/bath/pyeongtaek-old-apartment-bathroom-remodeling/
+/bath/pyeongtaek-small-bathroom-remodeling/
+/bath/sosabeol-bathroom-partial-remodeling/
+/bath/yongidong-bathroom-partial-remodeling/
+/bath/bathroom-remodeling-estimate-photos/
+/bath/bathtub-removal/
+/bath/bathtub-removal-tile-finish/
+/bath/bathtub-removal-waterproofing/
+/bath/pyeongtaek-bathroom-partial-remodeling/
+/bath/pyeongtaek-bathroom-remodeling-cost-factors/
+/bath/bathroom-floor-water-pooling/
+/guide/before-contact-checklist/
+/guide/business-contact-numbers/
+/guide/partial-or-full-renovation/
+/guide/photo-consultation/
+/guide/repair-or-replacement/
+/guide/work-area-pyeongtaek/
+
+금지/오타 패턴 검사:
+ - 주요 금지 문구 및 조사 오류 0건
+
+패치 대상 내 간이 유사도 검사(같은 상위 폴더 내 main 텍스트 기준):
+ - 97% 이상 pair: 0
+ - 95% 이상 pair: 0
+ - 92% 이상 pair: 6
+상위 유사 pair 참고:
+ - 0.947: bath/pyeongtaek-small-bathroom-remodeling/index.html <> bath/pyeongtaek-common-bathroom-remodeling/index.html
+ - 0.946: bath/pyeongtaek-small-bathroom-remodeling/index.html <> bath/pyeongtaek-master-bathroom-remodeling/index.html
+ - 0.946: bath/pyeongtaek-common-bathroom-remodeling/index.html <> bath/pyeongtaek-master-bathroom-remodeling/index.html
+ - 0.932: guide/repair-or-replacement/index.html <> guide/partial-or-full-renovation/index.html
+ - 0.928: bath/pyeongtaek-bathroom-overlay/index.html <> bath/pyeongtaek-bathroom-floor-work/index.html
+ - 0.921: guide/business-contact-numbers/index.html <> guide/work-area-pyeongtaek/index.html
+
+작업 내용: 욕실/guide 페이지별 hero-sub, 안내 문단, CHECK/CAUSE 카드, scope, 세부 판단 기준, 지역별 상담 메모를 주제별로 차별화.

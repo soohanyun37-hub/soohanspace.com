@@ -1,0 +1,44 @@
+QA_NINTH_25_REPORT
+
+작업 기준: 기존 305페이지 누적본 기준 9차 25페이지 추가
+신규 페이지: 공통 6개, 타일 10개, 욕실 4개, 집수리 5개
+목표 총합: 330페이지
+
+검수 결과
+- 전체 HTML index 페이지 수: 330개
+- sitemap.xml URL 수: 330개
+- 신규 25개 URL sitemap 포함 완료
+- Git 충돌 표시 검사: 정상
+- 잘못된 </link> 검사: 정상
+- title/H1/canonical 기본 검사: 정상
+- 내부 링크 검사: 정상
+- 카테고리별 footer/CTA: 신규 페이지 기준 적용 완료
+
+신규 URL 목록
+- /guide/photo-consultation/ : 사진 보내주시면 가능한 방법과 필요한 범위부터 안내드립니다
+- /guide/repair-or-replacement/ : 보수로 가능한지, 교체가 필요한지 먼저 확인합니다
+- /guide/partial-or-full-renovation/ : 부분 공사로 가능한지, 전체 공사가 필요한지 먼저 확인합니다
+- /guide/work-area-pyeongtaek/ : 평택 타일·욕실·집수리 작업 가능 지역 안내
+- /guide/before-contact-checklist/ : 문의 전 사진과 위치를 함께 보내주시면 더 정확히 안내드립니다
+- /guide/business-contact-numbers/ : 타일·욕실·집수리 문의번호를 작업별로 안내드립니다
+- /tile/yongidong-bathroom-wall-tile-repair/ : 용이동 욕실 벽타일 보수, 들뜸과 깨짐 범위부터 확인합니다
+- /tile/yongidong-bathroom-floor-tile-repair/ : 용이동 욕실 바닥타일 보수, 물고임과 들뜸 여부를 함께 봅니다
+- /tile/bijeondong-bathroom-wall-tile-repair/ : 비전동 욕실 벽타일 보수, 부분교체 가능 여부부터 확인합니다
+- /tile/bijeondong-bathroom-floor-tile-repair/ : 비전동 욕실 바닥타일 보수, 전체 공사 전 상태부터 확인합니다
+- /tile/sosabeol-bathroom-wall-tile-repair/ : 소사벌 욕실 벽타일 보수, 들뜬 타일과 크랙 범위를 먼저 봅니다
+- /tile/sosabeol-bathroom-floor-tile-repair/ : 소사벌 욕실 바닥타일 보수, 방수 문제 가능성까지 확인합니다
+- /tile/jukbaekdong-tile-repair/ : 죽백동 타일 보수, 깨짐·들뜸·빈소리 범위부터 확인합니다
+- /tile/jukbaekdong-bathroom-tile-repair/ : 죽백동 욕실 타일 보수, 부분교체 가능 여부부터 확인합니다
+- /tile/yongidong-kitchen-tile-repair/ : 용이동 주방 타일 보수, 깨짐과 덧방 가능 여부를 확인합니다
+- /tile/bijeondong-kitchen-tile-repair/ : 비전동 주방 타일 보수, 기존 타일 상태부터 확인합니다
+- /bath/yongidong-bathroom-partial-remodeling/ : 용이동 욕실 부분리모델링, 필요한 범위부터 확인합니다
+- /bath/bijeondong-bathroom-partial-remodeling/ : 비전동 욕실 부분리모델링, 전체 철거 전 가능한 범위를 봅니다
+- /bath/sosabeol-bathroom-partial-remodeling/ : 소사벌 욕실 부분리모델링, 사진으로 1차 범위를 안내드립니다
+- /bath/jukbaekdong-bathroom-partial-remodeling/ : 죽백동 욕실 부분리모델링, 타일·도기·방수 상태를 함께 확인합니다
+- /repair/yongidong-bathroom-silicone-repair/ : 용이동 욕실 실리콘 보수, 곰팡이와 벌어짐 상태부터 확인합니다
+- /repair/bijeondong-bathroom-silicone-repair/ : 비전동 욕실 실리콘 보수, 물 닿는 부위부터 확인합니다
+- /repair/sosabeol-bathroom-vent-fan-replacement/ : 소사벌 욕실 환풍기 교체, 소음과 작동 상태를 먼저 확인합니다
+- /repair/yongidong-bathroom-door-repair/ : 용이동 욕실문 보수, 문짝 처짐과 부식 상태를 확인합니다
+- /repair/jukbaekdong-bathroom-sink-replacement/ : 죽백동 세면대 교체, 배수와 실리콘 마감까지 확인합니다
+
+오류 없음

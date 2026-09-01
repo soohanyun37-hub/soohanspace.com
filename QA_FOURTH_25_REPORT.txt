@@ -1,0 +1,45 @@
+수한공간 305페이지 확장 4차 25페이지 QA 보고서
+
+검사 기준일: 2026-09-01
+전체 HTML 페이지 수: 205개
+sitemap.xml URL 수: 205개
+신규 페이지 수: 25개
+
+신규 페이지 목록:
+- /tile/bathroom-wall-broken-tile-repair/ : 욕실 벽타일 깨짐
+- /tile/bathroom-floor-broken-tile-repair/ : 욕실 바닥타일 깨짐
+- /tile/bathroom-wall-tile-edge-crack-repair/ : 욕실 벽타일 모서리 크랙
+- /tile/bathroom-floor-tile-crack-repair/ : 욕실 바닥타일 크랙
+- /tile/kitchen-wall-broken-tile-repair/ : 주방 벽타일 깨짐
+- /tile/kitchen-one-tile-replacement/ : 주방 타일 한 장 교체
+- /tile/entrance-floor-lifted-tile-repair/ : 현관 바닥타일 들뜸
+- /tile/entrance-floor-tile-hollow-sound-repair/ : 현관 바닥타일 빈소리
+- /tile/balcony-floor-broken-tile-repair/ : 베란다 바닥타일 깨짐
+- /tile/balcony-floor-tile-hollow-sound-repair/ : 베란다 바닥타일 빈소리
+- /tile/living-room-floor-lifted-tile-repair/ : 거실 바닥타일 들뜸
+- /tile/living-room-floor-broken-tile-repair/ : 거실 바닥타일 깨짐
+- /tile/commercial-floor-lifted-tile-repair/ : 상가 바닥타일 들뜸
+- /tile/commercial-floor-broken-tile-repair/ : 상가 바닥타일 깨짐
+- /tile/corridor-lifted-tile-repair/ : 복도 타일 들뜸
+- /tile/stair-tile-repair/ : 계단 타일 보수
+- /bath/bathroom-ceiling-replacement/ : 욕실 천장 교체
+- /bath/bathroom-ceiling-sagging-repair/ : 욕실 천장 처짐
+- /bath/bathroom-floor-level-check/ : 욕실 바닥 단차
+- /bath/bathroom-drainage-problem-check/ : 욕실 배수 문제
+- /repair/bathroom-cabinet-door-hinge-repair/ : 욕실장 문짝 경첩 보수
+- /repair/sliding-mirror-cabinet-replacement/ : 슬라이드장 교체
+- /repair/bathroom-towel-rack-accessory-replacement/ : 욕실 수건걸이 악세사리 교체
+- /repair/bathroom-floor-drain-replacement/ : 욕실 배수구 유가 교체
+- /repair/shower-booth-silicone-resealing/ : 샤워부스 실리콘 재시공
+
+검수 결과: 이상 없음
+- Git 충돌 표시 없음
+- 잘못된 </link> 없음
+- title/H1/meta/canonical 존재
+- sitemap 205개 정상
+- 신규 25개 URL sitemap 포함
+- 내부 링크 깨짐 없음
+- 청주 등 이전 주소 잔여 없음
+- 카테고리별 사업자 footer 및 전화 CTA 적용
+- 기존 105페이지 및 1·2·3차 레이아웃 계열과 동일한 상세페이지 템플릿 적용
+- 신규 페이지 오타·어색한 조사 주요 패턴 점검 완료

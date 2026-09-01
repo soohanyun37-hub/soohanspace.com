@@ -1,0 +1,78 @@
+SOOHANSPACE DUPLICATE FIX 4 - REPAIR PAGE UNIQUENESS QA
+
+수정 HTML 파일 수: 41
+대상: 집수리 41페이지
+sitemap.xml: 수정 안 함
+URL 추가/삭제: 없음
+title/meta/canonical/footer/전화 CTA: 수정 안 함
+
+[수정한 페이지]
+- /repair/anseong-bathroom-door-repair/
+- /repair/anseong-bathroom-vent-fan-replacement/
+- /repair/bathroom-cabinet-door-hinge-repair/
+- /repair/bathroom-cabinet-hinge-loose-repair/
+- /repair/bathroom-mirror-replacement/
+- /repair/bathroom-towel-rack-replacement/
+- /repair/bijeondong-bathroom-silicone-repair/
+- /repair/interior-door-handle-replacement/
+- /repair/kitchen-faucet-leak-replacement/
+- /repair/kitchen-sink-bowl-replacement/
+- /repair/osan-bathroom-door-repair/
+- /repair/osan-bathroom-vent-fan-replacement/
+- /repair/pyeongtaek-bathroom-faucet-replacement/
+- /repair/pyeongtaek-bathroom-vent-fan-replacement/
+- /repair/pyeongtaek-toilet-replacement/
+- /repair/sink-bowl-cutting/
+- /repair/sliding-mirror-cabinet-replacement/
+- /repair/yongidong-bathroom-door-repair/
+- /repair/yongidong-bathroom-silicone-repair/
+- /repair/anseong-bathroom-sink-replacement/
+- /repair/bathroom-floor-drain-replacement/
+- /repair/bathroom-silicone-repair/
+- /repair/bathroom-sink-under-leak-repair/
+- /repair/bathroom-towel-rack-accessory-replacement/
+- /repair/bathtub-silicone-crack-repair/
+- /repair/bijeondong-bathroom-door-repair/
+- /repair/dongsakdong-faucet-replacement/
+- /repair/godeok-bathroom-silicone-repair/
+- /repair/jukbaekdong-bathroom-sink-replacement/
+- /repair/osan-faucet-replacement/
+- /repair/pyeongtaek-bathroom-door-repair/
+- /repair/pyeongtaek-bathroom-sink-replacement/
+- /repair/shower-booth-silicone-resealing/
+- /repair/shower-faucet-replacement/
+- /repair/sosabeol-bathroom-sink-replacement/
+- /repair/sosabeol-bathroom-vent-fan-replacement/
+- /repair/yongidong-bathroom-vent-fan-replacement/
+- /repair/bathroom-door-repair-replacement/
+- /repair/bathroom-sink-leak-repair/
+- /repair/bathroom-vent-fan-replacement/
+- /repair/pyeongtaek-screen-replacement/
+
+[금지/오류 문구 검사]
+- 검색의도: 0회
+- 타겟 키워드: 0회
+- 신규 상세페이지: 0회
+- 추가했습니다: 0회
+- 페이지를 추가했습니다: 0회
+- 고객라면: 0회
+- 보수은: 0회
+- 교체은: 0회
+- 변수은: 0회
+- 사진를: 0회
+- 가능성를: 0회
+- 내용를: 0회
+
+[패치 대상 간이 유사도 검사]
+- 97% 이상 pair: 0건
+- 95% 이상 pair: 3건
+- 92% 이상 pair: 6건
+상위 유사 pair:
+- 0.960: /repair/anseong-bathroom-vent-fan-replacement/ ↔ /repair/osan-bathroom-vent-fan-replacement/
+- 0.955: /repair/anseong-bathroom-door-repair/ ↔ /repair/osan-bathroom-door-repair/
+- 0.953: /repair/bijeondong-bathroom-silicone-repair/ ↔ /repair/yongidong-bathroom-silicone-repair/
+- 0.945: /repair/kitchen-sink-bowl-replacement/ ↔ /repair/sink-bowl-cutting/
+- 0.939: /repair/bathroom-cabinet-hinge-loose-repair/ ↔ /repair/bathroom-mirror-replacement/
+- 0.935: /repair/bathroom-cabinet-door-hinge-repair/ ↔ /repair/sliding-mirror-cabinet-replacement/
+
+작업 메모: 환풍기, 욕실문, 세면대, 수전, 싱크볼, 실리콘, 욕실장, 거울, 수건걸이, 양변기, 배수구, 방충망 등 품목별 판단 기준과 사진 상담 포인트를 본문에 분리해 반영했습니다.

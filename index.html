@@ -30,7 +30,7 @@
 <!-- [수한공간 OG 끝] -->
 <link href="https://soohanspace.com/" rel="canonical"/>
 <!-- 네이버 서치어드바이저 소유확인 -->
-<meta content="e6486f7a21855900d61374eeac1958e588529e1a" name="naver-site-verification">
+<meta content="e6486f7a21855900d61374eeac1958e588529e1a" name="naver-site-verification"/>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-33VZG90NW9"></script>
@@ -60,7 +60,7 @@
   --bg-gray: #f5f6f7;
   --text: #111111;
   --text-mid: #444444;
-  --text-muted: #7a7a7a;
+  --text-muted: #616161;
   --border: #e0e0e0;
   --border-strong: #cccccc;
   --kakao: #FEE500;
@@ -123,6 +123,7 @@ nav a {
   transition: background 0.15s, color 0.15s; white-space: nowrap;
 }
 nav a:hover { background: var(--brand-light); color: var(--brand); }
+header nav a.active { background: var(--brand-light); color: var(--brand); font-weight: 800; }
 
 .header-btns { display: flex; gap: 8px; align-items: center; }
 .hbtn-kakao, .hbtn-tel {
@@ -749,6 +750,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
 .mobile-nav a { display: block; padding: 14px 24px; font-size: 15px; font-weight: 700; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: background 0.1s; }
 .mobile-nav a:last-child { border-bottom: none; }
 .mobile-nav a:hover { background: var(--brand-light); color: var(--brand); }
+.mobile-nav a.active { background: var(--brand-light); color: var(--brand); font-weight: 800; }
 .mobile-nav-cta { padding: 12px 16px; display: flex; gap: 8px; background: var(--bg-gray); border-top: 1px solid var(--border); }
 .mobile-nav-cta a { flex: 1; text-align: center; padding: 12px 0; font-size: 13.5px; font-weight: 800; border-radius: 4px; text-decoration: none; border-bottom: none !important; }
 .mobile-nav-cta a:first-child { background: var(--kakao); color: #111; }
@@ -761,6 +763,7 @@ footer { background: #111; padding: 36px 80px; display: flex; justify-content: s
   header { padding: 0 24px; }
   nav { display: none; }
   .mobile-menu-btn { display: flex; }
+  .mobile-nav { top: 72px; }
   .hero { grid-template-columns: 1fr; padding: 48px 40px 64px; gap: 40px; }
   .core-section, .services-section, .process-section, .why-section, .area-section, .contact-section { padding: 64px 40px; }
   .contact-section { grid-template-columns: 1fr; gap: 40px; }
@@ -1338,7 +1341,7 @@ img {
 }
 
 </style>
-</meta></head>
+</head>
 <body>
 <a class="skip-link" href="#main-content">본문 바로가기</a>
 <!-- ✅ 작업2: Schema.org JSON-LD 추가 -->

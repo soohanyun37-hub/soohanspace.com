@@ -383,8 +383,17 @@ img {
 .internal-link-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 20px rgba(31,43,58,.08)}
 .internal-link-card strong{display:block;margin-bottom:6px;color:var(--brand);font-size:15px;line-height:1.45}
 .internal-link-card span{display:block;color:var(--text-muted);font-size:13px;line-height:1.55}
+.internal-link-primary-note{margin:2px 0 14px;font-size:13px;font-weight:700;color:var(--brand)}
+.internal-link-more{margin-top:16px;border:1px solid #dfe3e8;border-radius:14px;background:#fff;overflow:hidden}
+.internal-link-more summary{cursor:pointer;list-style:none;padding:15px 17px;font-size:14px;font-weight:800;color:var(--brand);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.internal-link-more summary::-webkit-details-marker{display:none}
+.internal-link-more summary::after{content:"＋";font-size:20px;line-height:1;color:var(--accent);font-weight:500}
+.internal-link-more[open] summary::after{content:"−"}
+.internal-link-more[open] summary{border-bottom:1px solid #e8eaed}
+.internal-link-more .internal-link-grid{padding:14px;background:#fafbfc}
+.internal-link-more .internal-link-card{background:#fff}
 @media(max-width:860px){.internal-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}.internal-link-more .internal-link-grid{padding:12px}}
 
 </style>
 </head>
@@ -632,27 +641,12 @@ img {
 </div>
 </div>
 </main>
-
-<section class="internal-link-section" aria-labelledby="internal-links-heading">
+<section aria-labelledby="internal-links-heading" class="internal-link-section">
 <div class="internal-link-wrap">
 <div class="internal-link-label">관련 상세 안내</div>
 <h2 class="internal-link-heading" id="internal-links-heading">이 지역에서 함께 확인할 작업</h2>
 <p class="internal-link-intro">지역만 보지 않고 실제 문제와 공간에 맞는 상세 판단 기준을 함께 연결했습니다.</p>
-<div class="internal-link-grid">
-<a class="internal-link-card" href="/bath/pyeongtaek-common-bathroom-remodeling/"><strong>평택 공용욕실 리모델링</strong><span>평택 공용욕실 리모델링, 가족 사용 동선과 공사 범위를 함께 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a>
-<a class="internal-link-card" href="/bath/pyeongtaek-master-bathroom-remodeling/"><strong>평택 안방욕실 리모델링</strong><span>평택 안방욕실 리모델링, 사용 목적과 공사 범위를 먼저 정리합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/bath/pyeongtaek-old-apartment-bathroom-remodeling/"><strong>평택 구축아파트 욕실리모델링</strong><span>평택 구축아파트 욕실리모델링, 덧방과 전체철거 조건부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/bath/pyeongtaek-small-bathroom-remodeling/"><strong>평택 작은 욕실 리모델링</strong><span>평택 작은 욕실 리모델링, 좁은 공간의 마감과 배치부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/repair/pyeongtaek-bathroom-door-repair/"><strong>평택 욕실문 보수</strong><span>평택 욕실문 보수, 문짝 상태와 습기 손상부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안내...</span></a>
-<a class="internal-link-card" href="/repair/pyeongtaek-bathroom-faucet-replacement/"><strong>평택 욕실 수전 교체</strong><span>평택 욕실 수전 교체, 기존 배관 간격과 누수 여부를 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/repair/pyeongtaek-bathroom-vent-fan-replacement/"><strong>평택 욕실 환풍기 교체</strong><span>평택 욕실 환풍기 교체, 기존 규격과 전원 상태를 먼저 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/repair/pyeongtaek-screen-replacement/"><strong>평택 방충망 교체</strong><span>평택 방충망 교체, 창틀 규격과 망 손상 범위를 먼저 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a>
-<a class="internal-link-card" href="/tile/pyeongtaek-bathroom-floor-lifted-tile-repair/"><strong>평택 욕실 바닥타일 들뜸</strong><span>평택 욕실 바닥타일 들뜸, 물길과 방수 의심을 함께 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a>
-<a class="internal-link-card" href="/tile/pyeongtaek-bathroom-one-tile-replacement/"><strong>평택 욕실 타일 한 장 교체</strong><span>평택 욕실 타일 한 장 교체, 주변 손상 위험부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a>
-<a class="internal-link-card" href="/tile/pyeongtaek-bathroom-tile-repair/"><strong>평택 욕실 타일 보수</strong><span>평택 욕실 타일 보수, 들뜸·깨짐·빈소리 범위부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a>
-<a class="internal-link-card" href="/tile/pyeongtaek-discontinued-tile-replacement/"><strong>평택 단종 타일 부분교체</strong><span>평택 단종 타일 부분교체, 대체 타일과 보수 범위를 먼저 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a>
-<a class="internal-link-card" href="/tile/pyeongtaek-kitchen-tile-repair/"><strong>평택 주방 타일 보수</strong><span>평택 주방 타일 보수, 싱크대 주변 마감부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안내드...</span></a>
-</div>
+<p class="internal-link-primary-note">먼저 많이 찾는 관련 기준 6개를 확인하고, 더 필요한 경우 아래 목록을 펼쳐보세요.</p><div class="internal-link-grid internal-link-grid-primary"><a class="internal-link-card" href="/bath/pyeongtaek-common-bathroom-remodeling/"><strong>평택 공용욕실 리모델링</strong><span>평택 공용욕실 리모델링, 가족 사용 동선과 공사 범위를 함께 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a><a class="internal-link-card" href="/bath/pyeongtaek-master-bathroom-remodeling/"><strong>평택 안방욕실 리모델링</strong><span>평택 안방욕실 리모델링, 사용 목적과 공사 범위를 먼저 정리합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/bath/pyeongtaek-old-apartment-bathroom-remodeling/"><strong>평택 구축아파트 욕실리모델링</strong><span>평택 구축아파트 욕실리모델링, 덧방과 전체철거 조건부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/bath/pyeongtaek-small-bathroom-remodeling/"><strong>평택 작은 욕실 리모델링</strong><span>평택 작은 욕실 리모델링, 좁은 공간의 마감과 배치부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/repair/pyeongtaek-bathroom-door-repair/"><strong>평택 욕실문 보수</strong><span>평택 욕실문 보수, 문짝 상태와 습기 손상부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안내...</span></a><a class="internal-link-card" href="/repair/pyeongtaek-bathroom-faucet-replacement/"><strong>평택 욕실 수전 교체</strong><span>평택 욕실 수전 교체, 기존 배관 간격과 누수 여부를 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a></div><details class="internal-link-more"><summary>관련 상세페이지 더 보기 (7개)</summary><div class="internal-link-grid internal-link-grid-extra"><a class="internal-link-card" href="/repair/pyeongtaek-bathroom-vent-fan-replacement/"><strong>평택 욕실 환풍기 교체</strong><span>평택 욕실 환풍기 교체, 기존 규격과 전원 상태를 먼저 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/repair/pyeongtaek-screen-replacement/"><strong>평택 방충망 교체</strong><span>평택 방충망 교체, 창틀 규격과 망 손상 범위를 먼저 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a><a class="internal-link-card" href="/tile/pyeongtaek-bathroom-floor-lifted-tile-repair/"><strong>평택 욕실 바닥타일 들뜸</strong><span>평택 욕실 바닥타일 들뜸, 물길과 방수 의심을 함께 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a><a class="internal-link-card" href="/tile/pyeongtaek-bathroom-one-tile-replacement/"><strong>평택 욕실 타일 한 장 교체</strong><span>평택 욕실 타일 한 장 교체, 주변 손상 위험부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a><a class="internal-link-card" href="/tile/pyeongtaek-bathroom-tile-repair/"><strong>평택 욕실 타일 보수</strong><span>평택 욕실 타일 보수, 들뜸·깨짐·빈소리 범위부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a><a class="internal-link-card" href="/tile/pyeongtaek-discontinued-tile-replacement/"><strong>평택 단종 타일 부분교체</strong><span>평택 단종 타일 부분교체, 대체 타일과 보수 범위를 먼저 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a><a class="internal-link-card" href="/tile/pyeongtaek-kitchen-tile-repair/"><strong>평택 주방 타일 보수</strong><span>평택 주방 타일 보수, 싱크대 주변 마감부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안내드...</span></a></div></details>
 </div>
 </section>
 <footer role="contentinfo">

@@ -297,8 +297,17 @@ img {
 .internal-link-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 20px rgba(31,43,58,.08)}
 .internal-link-card strong{display:block;margin-bottom:6px;color:var(--brand);font-size:15px;line-height:1.45}
 .internal-link-card span{display:block;color:var(--text-muted);font-size:13px;line-height:1.55}
+.internal-link-primary-note{margin:2px 0 14px;font-size:13px;font-weight:700;color:var(--brand)}
+.internal-link-more{margin-top:16px;border:1px solid #dfe3e8;border-radius:14px;background:#fff;overflow:hidden}
+.internal-link-more summary{cursor:pointer;list-style:none;padding:15px 17px;font-size:14px;font-weight:800;color:var(--brand);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.internal-link-more summary::-webkit-details-marker{display:none}
+.internal-link-more summary::after{content:"＋";font-size:20px;line-height:1;color:var(--accent);font-weight:500}
+.internal-link-more[open] summary::after{content:"−"}
+.internal-link-more[open] summary{border-bottom:1px solid #e8eaed}
+.internal-link-more .internal-link-grid{padding:14px;background:#fafbfc}
+.internal-link-more .internal-link-card{background:#fff}
 @media(max-width:860px){.internal-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}.internal-link-more .internal-link-grid{padding:12px}}
 
 </style>
 </head>
@@ -341,30 +350,12 @@ img {
 <a class="btn-cta-tel" href="/checklist/">📋 사진 체크리스트</a>
 </div></div>
 </main>
-
-<section class="internal-link-section" aria-labelledby="internal-links-heading">
+<section aria-labelledby="internal-links-heading" class="internal-link-section">
 <div class="internal-link-wrap">
 <div class="internal-link-label">관련 상세 안내</div>
 <h2 class="internal-link-heading" id="internal-links-heading">이 지역에서 함께 확인할 작업</h2>
 <p class="internal-link-intro">지역만 보지 않고 실제 문제와 공간에 맞는 상세 판단 기준을 함께 연결했습니다.</p>
-<div class="internal-link-grid">
-<a class="internal-link-card" href="/tile/anseong-balcony-tile-repair/"><strong>안성 베란다 타일 보수</strong><span>안성 베란다 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/tile/anseong-bathroom-tile-repair/"><strong>안성 욕실 타일 보수</strong><span>안성 욕실 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/anseong-kitchen-tile-overlay/"><strong>안성 주방 타일 덧방</strong><span>안성 주방 타일 덧방, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/anseong-lifted-tile-repair/"><strong>안성 타일 들뜸 보수</strong><span>안성 타일 들뜸 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/anseong-one-tile-replacement/"><strong>안성 타일 한 장 교체</strong><span>안성 타일 한 장 교체, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/tile/anseong-tile-repair/"><strong>안성 타일 보수</strong><span>안성 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안...</span></a>
-<a class="internal-link-card" href="/tile/dongtan-bathroom-tile-repair/"><strong>동탄 욕실 타일 보수</strong><span>동탄 욕실 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/dongtan-lifted-tile-repair/"><strong>동탄 타일 들뜸 보수</strong><span>동탄 타일 들뜸 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/dongtan-one-tile-replacement/"><strong>동탄 타일 한 장 교체</strong><span>동탄 타일 한 장 교체, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/tile/dongtan-tile-repair/"><strong>동탄 타일 보수</strong><span>동탄 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안...</span></a>
-<a class="internal-link-card" href="/tile/osan-balcony-tile-repair/"><strong>오산 베란다 타일 보수</strong><span>오산 베란다 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/tile/osan-bathroom-tile-repair/"><strong>오산 욕실 타일 보수</strong><span>오산 욕실 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/osan-kitchen-tile-overlay/"><strong>오산 주방 타일 덧방</strong><span>오산 주방 타일 덧방, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/osan-lifted-tile-repair/"><strong>오산 타일 들뜸 보수</strong><span>오산 타일 들뜸 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
-<a class="internal-link-card" href="/tile/osan-one-tile-replacement/"><strong>오산 타일 한 장 교체</strong><span>오산 타일 한 장 교체, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
-<a class="internal-link-card" href="/tile/osan-tile-repair/"><strong>오산 타일 보수</strong><span>오산 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안...</span></a>
-</div>
+<p class="internal-link-primary-note">먼저 많이 찾는 관련 기준 6개를 확인하고, 더 필요한 경우 아래 목록을 펼쳐보세요.</p><div class="internal-link-grid internal-link-grid-primary"><a class="internal-link-card" href="/tile/anseong-balcony-tile-repair/"><strong>안성 베란다 타일 보수</strong><span>안성 베란다 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/tile/anseong-bathroom-tile-repair/"><strong>안성 욕실 타일 보수</strong><span>안성 욕실 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/anseong-kitchen-tile-overlay/"><strong>안성 주방 타일 덧방</strong><span>안성 주방 타일 덧방, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/anseong-lifted-tile-repair/"><strong>안성 타일 들뜸 보수</strong><span>안성 타일 들뜸 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/anseong-one-tile-replacement/"><strong>안성 타일 한 장 교체</strong><span>안성 타일 한 장 교체, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/tile/anseong-tile-repair/"><strong>안성 타일 보수</strong><span>안성 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안...</span></a></div><details class="internal-link-more"><summary>관련 상세페이지 더 보기 (10개)</summary><div class="internal-link-grid internal-link-grid-extra"><a class="internal-link-card" href="/tile/dongtan-bathroom-tile-repair/"><strong>동탄 욕실 타일 보수</strong><span>동탄 욕실 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/dongtan-lifted-tile-repair/"><strong>동탄 타일 들뜸 보수</strong><span>동탄 타일 들뜸 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/dongtan-one-tile-replacement/"><strong>동탄 타일 한 장 교체</strong><span>동탄 타일 한 장 교체, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/tile/dongtan-tile-repair/"><strong>동탄 타일 보수</strong><span>동탄 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안...</span></a><a class="internal-link-card" href="/tile/osan-balcony-tile-repair/"><strong>오산 베란다 타일 보수</strong><span>오산 베란다 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/tile/osan-bathroom-tile-repair/"><strong>오산 욕실 타일 보수</strong><span>오산 욕실 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/osan-kitchen-tile-overlay/"><strong>오산 주방 타일 덧방</strong><span>오산 주방 타일 덧방, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/osan-lifted-tile-repair/"><strong>오산 타일 들뜸 보수</strong><span>오산 타일 들뜸 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a><a class="internal-link-card" href="/tile/osan-one-tile-replacement/"><strong>오산 타일 한 장 교체</strong><span>오산 타일 한 장 교체, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a><a class="internal-link-card" href="/tile/osan-tile-repair/"><strong>오산 타일 보수</strong><span>오산 타일 보수, 사진으로 범위와 가능 여부부터 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히 안...</span></a></div></details>
 </div>
 </section>
 <footer role="contentinfo"><div class="footer-info"><strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386 · 010-4646-3145<br/>경기도 평택시 용죽6길 64, 평택비전지웰테라스 509동 · 이메일 soohanyun38@naver.com<br/>보유 국가기술자격: 국가기술자격 타일기능사 · 국가기술자격 방수기능사 · 국가기술자격 온수온돌기능사<br/>© 2025-2026 수한공간. All rights reserved.<div class="footer-copy-notice"><strong>무단 복제 및 재사용 금지</strong><br/>본 홈페이지의 문구, 구성, 이미지, 디자인, 시공 사례 콘텐츠의 무단 복제·수정·재배포를 금지합니다.</div></div><nav aria-label="하단 메뉴" class="footer-links"><a href="/">홈</a><a href="/tile/">타일</a><a href="/area/">지역별 안내</a><a href="/questions/">자주 묻는 질문</a><a href="/checklist/">사진 상담</a><a href="/cases/">시공 사례</a><a href="/faq/">FAQ</a><a aria-label="카카오톡으로 사진 상담하기" href="https://open.kakao.com/me/soohanyun">카카오톡</a></nav>

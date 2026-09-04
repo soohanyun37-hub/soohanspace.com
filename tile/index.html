@@ -904,6 +904,21 @@ img {
   }
 }
 
+
+
+.internal-link-section{padding:38px 20px;background:#f7f8fa;border-top:1px solid #e5e7eb}
+.internal-link-wrap{max-width:1120px;margin:0 auto}
+.internal-link-label{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--accent);margin-bottom:8px}
+.internal-link-heading{margin:0 0 8px;font-size:clamp(22px,3vw,30px);line-height:1.35;color:var(--brand)}
+.internal-link-intro{margin:0 0 20px;color:var(--text-muted);font-size:15px;line-height:1.75}
+.internal-link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.internal-link-card{display:block;padding:16px 17px;border:1px solid #e1e4e8;border-radius:14px;background:#fff;text-decoration:none;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.internal-link-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 20px rgba(31,43,58,.08)}
+.internal-link-card strong{display:block;margin-bottom:6px;color:var(--brand);font-size:15px;line-height:1.45}
+.internal-link-card span{display:block;color:var(--text-muted);font-size:13px;line-height:1.55}
+@media(max-width:860px){.internal-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -1414,6 +1429,23 @@ img {
 </div>
 </section>
 </main>
+
+<section class="internal-link-section" aria-labelledby="internal-links-heading">
+<div class="internal-link-wrap">
+<div class="internal-link-label">관련 상세 안내</div>
+<h2 class="internal-link-heading" id="internal-links-heading">타일 관련 상세 기준 더 보기</h2>
+<p class="internal-link-intro">깨짐·들뜸·부분교체처럼 비슷해 보이는 문제도 상태별 판단 기준이 다릅니다.</p>
+<div class="internal-link-grid">
+<a class="internal-link-card" href="/guide/partial-or-full-renovation/"><strong>부분 공사로 가능한지</strong><span>무조건 철거가 답은 아닙니다.</span></a>
+<a class="internal-link-card" href="/questions/tile/adjacent-tile-damage-risk/"><strong>타일 철거 시 주변 파손 위험</strong><span>타일 철거 시 옆 타일이 깨질 수 있나요?</span></a>
+<a class="internal-link-card" href="/tile/difficult-partial-tile-repair/"><strong>타일 부분보수 어려운 경우</strong><span>타일 부분보수 어려운 경우, 무조건 가능하다고 안내하지 않습니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
+<a class="internal-link-card" href="/tile/one-tile-replacement-work-time/"><strong>타일 한 장 교체 작업시간</strong><span>타일 한 장 교체 작업시간, 자재와 주변 타일 상태를 먼저 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a>
+<a class="internal-link-card" href="/tile/pyeongtaek-discontinued-tile-replacement/"><strong>평택 단종 타일 부분교체</strong><span>평택 단종 타일 부분교체, 대체 타일과 보수 범위를 먼저 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a>
+<a class="internal-link-card" href="/tile/tile-grout-falling-repair/"><strong>타일 줄눈 탈락 보수</strong><span>타일 줄눈 탈락 보수, 줄눈만의 문제인지 타일 상태까지 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a>
+<a class="internal-link-card" href="/tile/tile-repair-work-time/"><strong>타일 보수 작업시간</strong><span>타일 보수 작업시간, 철거 범위와 양생 조건에 따라 달라집니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분히...</span></a>
+</div>
+</div>
+</section>
 <footer role="contentinfo">
 <div class="footer-info">
 <strong>수한공간타일</strong> · 타일보수 · 타일 부분교체 · 전화 010-4646-3145 · 대표 윤수한 · 사업자등록번호 141-13-01386<br/>

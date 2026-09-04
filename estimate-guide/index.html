@@ -286,6 +286,21 @@ img {
   }
 }
 
+
+
+.internal-link-section{padding:38px 20px;background:#f7f8fa;border-top:1px solid #e5e7eb}
+.internal-link-wrap{max-width:1120px;margin:0 auto}
+.internal-link-label{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--accent);margin-bottom:8px}
+.internal-link-heading{margin:0 0 8px;font-size:clamp(22px,3vw,30px);line-height:1.35;color:var(--brand)}
+.internal-link-intro{margin:0 0 20px;color:var(--text-muted);font-size:15px;line-height:1.75}
+.internal-link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.internal-link-card{display:block;padding:16px 17px;border:1px solid #e1e4e8;border-radius:14px;background:#fff;text-decoration:none;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.internal-link-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 20px rgba(31,43,58,.08)}
+.internal-link-card strong{display:block;margin-bottom:6px;color:var(--brand);font-size:15px;line-height:1.45}
+.internal-link-card span{display:block;color:var(--text-muted);font-size:13px;line-height:1.55}
+@media(max-width:860px){.internal-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -329,6 +344,23 @@ img {
 <a class="btn-cta-tel" href="/checklist/">📋 사진 체크리스트</a>
 </div></div>
 </main>
+
+<section class="internal-link-section" aria-labelledby="internal-links-heading">
+<div class="internal-link-wrap">
+<div class="internal-link-label">관련 상세 안내</div>
+<h2 class="internal-link-heading" id="internal-links-heading">관련 상세 안내 더 보기</h2>
+<p class="internal-link-intro">현재 페이지와 함께 보면 판단에 도움이 되는 상세 안내입니다.</p>
+<div class="internal-link-grid">
+<a class="internal-link-card" href="/bath/bathroom-partial-work-cost-factors/"><strong>욕실 부분공사 비용 변수</strong><span>욕실 부분공사 비용 변수, 필요한 항목과 제외할 항목을 나눕니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
+<a class="internal-link-card" href="/bath/bathroom-remodeling-estimate-photos/"><strong>욕실리모델링 견적 전 사진</strong><span>욕실리모델링 견적 전 사진, 전체 공간과 문제 부위를 같이 보내주세요 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를...</span></a>
+<a class="internal-link-card" href="/tile/balcony-tile-repair-cost-factors/"><strong>베란다 타일 보수 비용 변수</strong><span>베란다 타일 보수 비용 변수, 들뜸·방수 의심 여부를 함께 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
+<a class="internal-link-card" href="/tile/bathroom-tile-repair-cost-factors/"><strong>욕실 타일 보수 비용 변수</strong><span>욕실 타일 보수 비용 변수, 방수 의심 여부까지 함께 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
+<a class="internal-link-card" href="/tile/entrance-tile-repair-cost-factors/"><strong>현관 타일 보수 비용 변수</strong><span>현관 타일 보수 비용 변수, 파손 위치와 단차를 함께 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차분...</span></a>
+<a class="internal-link-card" href="/tile/kitchen-tile-overlay-cost-factors/"><strong>주방 타일 덧방 비용 변수</strong><span>주방 타일 덧방 비용 변수, 기존 타일 상태와 마감 범위를 봅니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경우를 차...</span></a>
+<a class="internal-link-card" href="/tile/partial-tile-replacement-cost-factors/"><strong>타일 부분교체 비용 변수</strong><span>타일 부분교체 비용 변수, 한 장 교체와 여러 장 교체 기준을 확인합니다 사진 3장으로 상태를 먼저 확인하고, 부분 보수 가능 여부와 방문 확인이 필요한 경...</span></a>
+</div>
+</div>
+</section>
 <footer role="contentinfo"><div class="footer-info">
 <strong>수한공간타일</strong> · 대표 윤수한 · 사업자등록번호 141-13-01386 · 전화 010-4646-3145<br/>
     주소: 경기도 평택시 용죽6길 64, 평택비전지웰테라스 509동<br/>

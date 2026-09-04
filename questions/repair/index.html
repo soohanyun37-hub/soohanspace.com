@@ -285,6 +285,21 @@ img {
   }
 }
 
+
+
+.internal-link-section{padding:38px 20px;background:#f7f8fa;border-top:1px solid #e5e7eb}
+.internal-link-wrap{max-width:1120px;margin:0 auto}
+.internal-link-label{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--accent);margin-bottom:8px}
+.internal-link-heading{margin:0 0 8px;font-size:clamp(22px,3vw,30px);line-height:1.35;color:var(--brand)}
+.internal-link-intro{margin:0 0 20px;color:var(--text-muted);font-size:15px;line-height:1.75}
+.internal-link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.internal-link-card{display:block;padding:16px 17px;border:1px solid #e1e4e8;border-radius:14px;background:#fff;text-decoration:none;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.internal-link-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 20px rgba(31,43,58,.08)}
+.internal-link-card strong{display:block;margin-bottom:6px;color:var(--brand);font-size:15px;line-height:1.45}
+.internal-link-card span{display:block;color:var(--text-muted);font-size:13px;line-height:1.55}
+@media(max-width:860px){.internal-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -354,6 +369,21 @@ img {
 <a class="btn-cta-tel" href="/checklist/">📋 사진 체크리스트</a>
 </div></div>
 </main>
+
+<section class="internal-link-section" aria-labelledby="internal-links-heading">
+<div class="internal-link-wrap">
+<div class="internal-link-label">관련 상세 안내</div>
+<h2 class="internal-link-heading" id="internal-links-heading">질문별 판단 기준 더 보기</h2>
+<p class="internal-link-intro">비슷한 증상이라도 작업 범위가 달라질 수 있습니다. 현재 상태와 가까운 질문을 함께 확인해 보세요.</p>
+<div class="internal-link-grid">
+<a class="internal-link-card" href="/questions/repair/bathroom-silicone-mold-resealing/"><strong>욕실 실리콘 곰팡이</strong><span>욕실 실리콘 곰팡이는 재시공해야 하나요?</span></a>
+<a class="internal-link-card" href="/questions/repair/faucet-leak-repair-replacement/"><strong>수전 물샘, 부속 문제인지 교체가 필요한지 먼저 봅니다</strong><span>수전 물샘은 수리와 교체 중 무엇이 맞나요?</span></a>
+<a class="internal-link-card" href="/questions/repair/sink-silicone-gap-leak/"><strong>세면대 실리콘 벌어짐</strong><span>세면대 실리콘이 벌어지면 물이 새나요?</span></a>
+<a class="internal-link-card" href="/questions/repair/toilet-base-water-leak/"><strong>양변기 주변 물샘</strong><span>양변기 주변 물샘은 어디를 먼저 봐야 하나요?</span></a>
+<a class="internal-link-card" href="/questions/repair/vent-fan-noise-replacement/"><strong>환풍기 소음, 먼지·노후·모터 상태를 먼저 확인합니다</strong><span>환풍기 소음은 교체해야 하나요?</span></a>
+</div>
+</div>
+</section>
 <footer role="contentinfo"><div class="footer-info"><strong>수한공간집수리</strong> · 대표 공나은 · 사업자등록번호 310-12-26706 · 010-4643-3145<br/>경기도 평택시 용죽6길 64, 평택비전지웰테라스 509동 · 이메일 soohanyun38@naver.com<br/>수한공간 보유 국가기술자격: 국가기술자격 타일기능사 · 국가기술자격 방수기능사 · 국가기술자격 온수온돌기능사<br/>© 2025-2026 수한공간. All rights reserved.<div class="footer-copy-notice"><strong>무단 복제 및 재사용 금지</strong><br/>본 홈페이지의 문구, 구성, 이미지, 디자인, 시공 사례 콘텐츠의 무단 복제·수정·재배포를 금지합니다.</div></div><nav aria-label="하단 메뉴" class="footer-links"><a href="/">홈</a><a href="/repair/">집수리</a><a href="/questions/">자주 묻는 질문</a><a href="/checklist/">사진 상담</a><a href="/cases/">시공 사례</a><a href="/faq/">FAQ</a><a aria-label="카카오톡으로 사진 상담하기" href="https://open.kakao.com/me/soohanyun">카카오톡</a></nav>
 </footer>
 <div class="floating"><a aria-label="카카오톡으로 사진 상담하기" class="fb k" href="https://open.kakao.com/me/soohanyun">💬 <span>사진 상담</span></a></div><div class="mobile-cta">

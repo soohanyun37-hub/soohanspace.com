@@ -1,0 +1,100 @@
+# 수한공간 IndexNow 자동 제출 V1.0
+# GitHub Pages 저장소에 HTML 변경사항이 push되면 변경된 HTML URL만 IndexNow에 제출합니다.
+
+name: IndexNow Submit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find changed HTML files
+        shell: bash
+        run: |
+          git diff --name-only HEAD^ HEAD \
+            | grep -E '\.html$' \
+            | grep -v '^404\.html$' \
+            > changed-html.txt || true
+
+          echo "Changed HTML files:"
+          cat changed-html.txt || true
+
+      - name: Submit changed URLs to IndexNow
+        shell: bash
+        run: |
+          KEY="3a02d71d8753468796d1a57ba0ce9f74"
+          HOST="soohanspace.com"
+          BASE_URL="https://soohanspace.com"
+          KEY_LOCATION="${BASE_URL}/${KEY}.txt"
+
+          URLS=()
+
+          while IFS= read -r FILE; do
+            [ -z "$FILE" ] && continue
+
+            if [[ "$FILE" == "index.html" ]]; then
+              URL="${BASE_URL}/"
+            elif [[ "$FILE" == */index.html ]]; then
+              DIR="${FILE%index.html}"
+              URL="${BASE_URL}/${DIR}"
+            else
+              URL="${BASE_URL}/${FILE}"
+            fi
+
+            URLS+=("\"$URL\"")
+          done < changed-html.txt
+
+          if [ ${#URLS[@]} -eq 0 ]; then
+            echo "No changed HTML files. IndexNow submission skipped."
+            exit 0
+          fi
+
+          URL_LIST=$(IFS=,; echo "${URLS[*]}")
+
+          JSON=$(cat <<EOF
+          {
+            "host": "${HOST}",
+            "key": "${KEY}",
+            "keyLocation": "${KEY_LOCATION}",
+            "urlList": [
+              ${URL_LIST}
+            ]
+          }
+          EOF
+          )
+
+          echo "Submitting URLs:"
+          printf '%s\n' "${URLS[@]}"
+
+          HTTP_STATUS=$(curl \
+            --silent \
+            --show-error \
+            --output indexnow-response.txt \
+            --write-out "%{http_code}" \
+            --request POST \
+            --header "Content-Type: application/json; charset=utf-8" \
+            --data "${JSON}" \
+            "https://api.indexnow.org/IndexNow")
+
+          echo "IndexNow HTTP status: ${HTTP_STATUS}"
+          cat indexnow-response.txt || true
+
+          if [[ "${HTTP_STATUS}" != "200" && "${HTTP_STATUS}" != "202" ]]; then
+            echo "IndexNow submission failed."
+            exit 1
+          fi
+
+          echo "IndexNow submission completed."

@@ -36,6 +36,10 @@
 <meta content="평택 욕실 전체 철거, 덧방 전 철거 필요 여부부터 확인합니다 | 수한공간욕실" name="twitter:title"/>
 <meta content="https://soohanspace.com/images/soohan-og.jpg" name="twitter:image"/>
 <meta content="#1f2b3a" name="theme-color"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/favicon-32x32.png" rel="icon" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/site.webmanifest" rel="manifest"/>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"></noscript>
@@ -924,20 +928,79 @@ img {
 </style>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
-    {"@type":"BreadcrumbList","itemListElement":[
-      {"@type":"ListItem","position":1,"name":"홈","item":"https://soohanspace.com/"},
-      {"@type":"ListItem","position":2,"name":"욕실","item":"https://soohanspace.com/bath/"},
-      {"@type":"ListItem","position":3,"name":"욕실 전체 철거","item":"https://soohanspace.com/bath/full-demolition/"}
-    ]},
-    {"@type":"Service","name":"욕실 전체 철거","serviceType":"욕실 전체 철거, 화장실 전체 철거, 욕실 철거 공사, 욕실리모델링","provider":{"@type":"LocalBusiness","name":"수한공간욕실","telephone":"010-8672-3145","areaServed":["평택","안성","오산","화성","천안","아산"]},"areaServed":["평택","안성","오산","화성","천안","아산"],"description":"욕실 전체 철거는 기존 타일 들뜸, 누수·방수 의심, 배관 상태, 바탕면 손상 여부를 먼저 확인하고 필요한 철거 범위를 안내합니다."},
-    {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"욕실 전체 철거는 언제 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"기존 타일 들뜸이 넓거나 누수·방수 문제가 의심되고, 배관이나 바탕면 확인이 필요한 경우 전체 철거를 검토할 수 있습니다."}},
-      {"@type":"Question","name":"욕실 전체 철거와 덧방은 어떻게 판단하나요?","acceptedAnswer":{"@type":"Answer","text":"기존 타일 접착 상태, 방수 의심, 배수·문턱 높이, 배관 상태를 보고 덧방이 가능한지 전체 철거가 더 적합한지 판단합니다."}},
-      {"@type":"Question","name":"사진만 보내도 전체 철거 필요 여부를 알 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"사진으로 전체 철거 가능성, 방문 확인 필요 여부, 추가 확인이 필요한 부분은 1차 안내할 수 있습니다. 최종 범위는 현장 상태에 따라 달라질 수 있습니다."}},
-      {"@type":"Question","name":"장마 전후 누수 의심이 있으면 전체 철거가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"누수 의심이 있다고 바로 전체 철거로 확정하지는 않습니다. 다만 물 스며듦, 줄눈 벌어짐, 바닥 들뜸, 아래층 누수 의심이 함께 있으면 방수 상태 확인이 필요할 수 있습니다."}}
-    ]}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://soohanspace.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "욕실",
+          "item": "https://soohanspace.com/bath/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "욕실 전체 철거",
+          "item": "https://soohanspace.com/bath/full-demolition/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "욕실 전체 철거",
+      "serviceType": "욕실 전체 철거, 화장실 전체 철거, 욕실 철거 공사, 욕실리모델링",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "수한공간욕실",
+        "telephone": "010-8672-3145",
+        "areaServed": [
+          "평택",
+          "안성",
+          "오산",
+          "화성",
+          "천안",
+          "아산"
+        ]
+      },
+      "areaServed": [
+        "평택",
+        "안성",
+        "오산",
+        "화성",
+        "천안",
+        "아산"
+      ],
+      "description": "욕실 전체 철거는 기존 타일 들뜸, 누수·방수 의심, 배관 상태, 바탕면 손상 여부를 먼저 확인하고 필요한 철거 범위를 안내합니다."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "욕실 전체 철거는 언제 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "기존 타일 들뜸이 넓거나 누수·방수 문제가 의심되고, 배관이나 바탕면 확인이 필요한 경우 전체 철거를 검토할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "장마 전후 누수 의심이 있으면 전체 철거가 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "누수 의심이 있다고 바로 전체 철거로 확정하지는 않습니다. 다만 물 스며듦, 줄눈 벌어짐, 바닥 들뜸, 아래층 누수 의심이 함께 있으면 방수 상태 확인이 필요할 수 있습니다."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -1003,7 +1066,16 @@ a .ui-icon{margin-right:3px}
 <button aria-label="메뉴 열기" aria-controls="mobileNav" aria-expanded="false" class="mobile-menu-btn" id="menuBtn" type="button"><span></span><span></span><span></span></button>
 </div>
 </header>
-<nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a class="active" aria-current="page" href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 상담</a><a href="/contact/#numbers" aria-label="작업별 문의 번호 보기"><svg class="ui-icon ui-icon-phone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg> 작업별 번호</a></div></nav>
+<nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴">
+<a href="/">홈</a>
+<a href="/tile/">타일</a>
+<a class="active" aria-current="page" href="/bath/">욕실</a>
+<a href="/repair/">집수리</a>
+<a href="/cases/">시공 사례</a>
+<a href="/questions/">질문</a>
+<a href="/checklist/">사진 상담</a>
+<a href="/contact/">문의</a>
+<div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 상담</a><a href="/contact/#numbers" aria-label="작업별 문의 번호 보기"><svg class="ui-icon ui-icon-phone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg> 작업별 번호</a></div></nav>
 <div class="breadcrumb">
 <a href="/">수한공간 홈</a>
 <span class="sep">›</span>

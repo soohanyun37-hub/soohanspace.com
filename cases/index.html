@@ -1437,6 +1437,23 @@ img {
 .mobile-cta .ui-icon{width:18px;height:18px}
 .mobile-nav-cta .ui-icon{width:16px;height:16px;margin-right:4px}
 </style>
+<style id="soohan-footer-common-ui-patch-06">
+/* 6차: footer/common UI — 사업자 정보와 링크 대상은 유지하고 표현만 통일 */
+footer[role="contentinfo"]{align-items:flex-start}
+footer[role="contentinfo"] .footer-info{flex:1 1 420px;max-width:760px}
+footer[role="contentinfo"] .footer-links{flex:0 1 560px;justify-content:flex-end;align-items:center;gap:4px 16px}
+footer[role="contentinfo"] .footer-links a{display:inline-flex;align-items:center;gap:5px;min-height:36px;white-space:nowrap;text-underline-offset:4px}
+footer[role="contentinfo"] .footer-links a:hover{text-decoration:underline}
+footer[role="contentinfo"] .footer-links a:focus-visible{outline:2px solid rgba(255,255,255,.85);outline-offset:3px;border-radius:3px}
+footer[role="contentinfo"] .footer-links .ui-icon{width:14px;height:14px}
+.footer-copy-notice{max-width:720px}
+a .ui-icon{margin-right:3px}
+@media (max-width:700px){
+  footer[role="contentinfo"] .footer-info{flex-basis:auto;max-width:none}
+  footer[role="contentinfo"] .footer-links{width:100%;flex-basis:auto;justify-content:flex-start;gap:2px 12px}
+  footer[role="contentinfo"] .footer-links a{min-height:44px}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">본문 바로가기</a>
@@ -1493,8 +1510,8 @@ img {
           실제 사례는 현장 사진과 작업 내용이 정리되는 순서대로 추가하고, 지금은 고객이 자기 현장과 비교할 수 있는 확인 기준을 함께 안내합니다.
         </p>
 <div class="hero-btns">
-<a aria-label="카카오톡으로 사진 상담하기" class="btn-primary" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
-<a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a>
+<a aria-label="카카오톡으로 사진 상담하기" class="btn-primary" href="https://open.kakao.com/me/soohanyun"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내고 안내받기</a>
+<a class="btn-outline" href="/checklist/"><svg class="ui-icon ui-icon-clipboard" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5h6m-7 1H6v15h12V6h-2M9 3h6v4H9V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11h6M9 15h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 체크리스트 보기</a>
 <a class="btn-secondary" href="/cases/">시공 사례 보기</a>
 </div>
 </div>
@@ -1751,8 +1768,8 @@ img {
       </div>
 </div>
 <div class="cta-btns">
-<a aria-label="카카오톡으로 사진 상담하기" class="btn-cta-kakao" href="https://open.kakao.com/me/soohanyun">💬 사진 보내고 안내받기</a>
-<a class="btn-cta-tel" href="/checklist/">📋 사진 체크리스트</a>
+<a aria-label="카카오톡으로 사진 상담하기" class="btn-cta-kakao" href="https://open.kakao.com/me/soohanyun"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내고 안내받기</a>
+<a class="btn-cta-tel" href="/checklist/"><svg class="ui-icon ui-icon-clipboard" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5h6m-7 1H6v15h12V6h-2M9 3h6v4H9V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11h6M9 15h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 체크리스트</a>
 </div>
 </div>
 </main>
@@ -1769,7 +1786,7 @@ img {
     </div>
 </div>
 <nav aria-label="하단 메뉴" class="footer-links">
-<a href="/">수한공간 홈</a>
+<a href="/">홈</a>
 <a href="/tile/">타일</a>
 <a href="/bath/">욕실</a>
 <a href="/repair/">집수리</a>
@@ -1779,7 +1796,7 @@ img {
 <a href="/faq/">FAQ</a>
 <a href="/contact/">문의</a>
 <a href="https://blog.naver.com/soohantile" rel="noopener" target="_blank">네이버 블로그</a>
-<a aria-label="카카오톡으로 사진 상담하기" href="https://open.kakao.com/me/soohanyun" rel="noopener" target="_blank">카카오톡</a>
+<a aria-label="카카오톡으로 사진 상담하기" href="https://open.kakao.com/me/soohanyun" rel="noopener" target="_blank"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 카카오톡</a>
 </nav>
 </footer>
 <div class="floating">

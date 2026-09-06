@@ -1065,6 +1065,23 @@ img {
 .mobile-cta .ui-icon{width:18px;height:18px}
 .mobile-nav-cta .ui-icon{width:16px;height:16px;margin-right:4px}
 </style>
+<style id="soohan-footer-common-ui-patch-06">
+/* 6차: footer/common UI — 사업자 정보와 링크 대상은 유지하고 표현만 통일 */
+footer[role="contentinfo"]{align-items:flex-start}
+footer[role="contentinfo"] .footer-info{flex:1 1 420px;max-width:760px}
+footer[role="contentinfo"] .footer-links{flex:0 1 560px;justify-content:flex-end;align-items:center;gap:4px 16px}
+footer[role="contentinfo"] .footer-links a{display:inline-flex;align-items:center;gap:5px;min-height:36px;white-space:nowrap;text-underline-offset:4px}
+footer[role="contentinfo"] .footer-links a:hover{text-decoration:underline}
+footer[role="contentinfo"] .footer-links a:focus-visible{outline:2px solid rgba(255,255,255,.85);outline-offset:3px;border-radius:3px}
+footer[role="contentinfo"] .footer-links .ui-icon{width:14px;height:14px}
+.footer-copy-notice{max-width:720px}
+a .ui-icon{margin-right:3px}
+@media (max-width:700px){
+  footer[role="contentinfo"] .footer-info{flex-basis:auto;max-width:none}
+  footer[role="contentinfo"] .footer-links{width:100%;flex-basis:auto;justify-content:flex-start;gap:2px 12px}
+  footer[role="contentinfo"] .footer-links a{min-height:44px}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">본문 바로가기</a>
@@ -1103,7 +1120,7 @@ img {
 <span class="vhero-emph">작은 작업도 문의 가능합니다.</span>
 <p class="vhero-lead">실리콘 하나, 수전 하나, 환풍기 하나도 괜찮습니다. 욕실 전체공사까지는 아니지만 <strong>생활 속 불편한 부분</strong>을 사진으로 먼저 확인해, 수리로 될지 교체가 나을지 안내드립니다.</p>
 <div class="vhero-btns">
-<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기">💬 사진 보내고 문의하기</a>
+<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내고 문의하기</a>
 <a class="vbtn vbtn-outline vbtn-lg" href="#items">품목 고르기</a>
 </div>
 <p class="vhero-note">작은 작업은 자재·부품 준비와 일정·동선에 따라 가능 여부를 먼저 안내드립니다</p>
@@ -1231,8 +1248,8 @@ img {
 </div>
 <div class="photo-msg reveal">작은 작업이라 망설이지 않으셔도 됩니다. <strong>사진으로 먼저 가능 여부와 방법을 안내</strong>드립니다. 제품 모델명이나 규격 표시가 보이면 함께 보내주세요.</div>
 <div class="photo-cta">
-<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기">💬 사진 보내고 문의하기</a>
-<a class="vbtn vbtn-outline vbtn-lg" href="tel:010-4643-3145">☎ 집수리 문의 010-4643-3145</a>
+<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내고 문의하기</a>
+<a class="vbtn vbtn-outline vbtn-lg" href="tel:010-4643-3145"><svg class="ui-icon ui-icon-phone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg> 집수리 문의 010-4643-3145</a>
 </div>
 </div>
 </section>
@@ -1266,7 +1283,7 @@ img {
     </div>
 </div>
 <nav aria-label="하단 메뉴" class="footer-links">
-<a href="/">수한공간 홈</a>
+<a href="/">홈</a>
 <a href="/tile/">타일</a>
 <a href="/bath/">욕실</a>
 <a href="/repair/">집수리</a>
@@ -1277,8 +1294,8 @@ img {
 <a href="/cases/">시공 사례</a>
 <a href="/faq/">FAQ</a>
 <a href="/contact/">문의</a>
-<a aria-label="카카오톡으로 사진 상담하기" href="https://open.kakao.com/me/soohanyun" rel="noopener" target="_blank">카카오톡 상담</a>
-<a aria-label="수한공간집수리 전화 상담 010-4643-3145" href="tel:010-4643-3145">집수리 문의</a>
+<a aria-label="카카오톡으로 사진 상담하기" href="https://open.kakao.com/me/soohanyun" rel="noopener" target="_blank"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 카카오톡</a>
+<a aria-label="수한공간집수리 전화 상담 010-4643-3145" href="tel:010-4643-3145"><svg class="ui-icon ui-icon-phone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg> 전화 상담</a>
 </nav>
 </footer>
 <div class="floating">

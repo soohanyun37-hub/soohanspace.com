@@ -1048,6 +1048,23 @@ img {
 .mobile-cta .ui-icon{width:18px;height:18px}
 .mobile-nav-cta .ui-icon{width:16px;height:16px;margin-right:4px}
 </style>
+<style id="soohan-footer-common-ui-patch-06">
+/* 6차: footer/common UI — 사업자 정보와 링크 대상은 유지하고 표현만 통일 */
+footer[role="contentinfo"]{align-items:flex-start}
+footer[role="contentinfo"] .footer-info{flex:1 1 420px;max-width:760px}
+footer[role="contentinfo"] .footer-links{flex:0 1 560px;justify-content:flex-end;align-items:center;gap:4px 16px}
+footer[role="contentinfo"] .footer-links a{display:inline-flex;align-items:center;gap:5px;min-height:36px;white-space:nowrap;text-underline-offset:4px}
+footer[role="contentinfo"] .footer-links a:hover{text-decoration:underline}
+footer[role="contentinfo"] .footer-links a:focus-visible{outline:2px solid rgba(255,255,255,.85);outline-offset:3px;border-radius:3px}
+footer[role="contentinfo"] .footer-links .ui-icon{width:14px;height:14px}
+.footer-copy-notice{max-width:720px}
+a .ui-icon{margin-right:3px}
+@media (max-width:700px){
+  footer[role="contentinfo"] .footer-info{flex-basis:auto;max-width:none}
+  footer[role="contentinfo"] .footer-links{width:100%;flex-basis:auto;justify-content:flex-start;gap:2px 12px}
+  footer[role="contentinfo"] .footer-links a{min-height:44px}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">본문 바로가기</a>
@@ -1086,9 +1103,9 @@ img {
 <p class="hero-sub">현관 바닥 타일이 깨졌거나 들뜨고, 문턱 주변에 단차가 생겼다고 해서 무조건 전체 철거부터 정할 필요는 없습니다. 타일 파손 범위, 주변 타일 상태, 바탕면 상태, 동일 타일 가능 여부를 먼저 확인합니다.</p>
 <div class="hero-badge"><span>📷</span><span class="hero-badge-text"><strong>사진 3장</strong>을 보내주시면 현관 타일 부분 보수 가능 여부부터 안내드립니다.</span></div>
 <div class="hero-btns">
-<a class="btn-primary" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a>
-<a class="btn-outline" href="/checklist/">📋 사진 체크리스트 보기</a>
-<a class="btn-secondary" href="tel:010-4646-3145" aria-label="수한공간타일 전화 상담 010-4646-3145">📞 타일 문의</a>
+<a class="btn-primary" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내고 안내받기</a>
+<a class="btn-outline" href="/checklist/"><svg class="ui-icon ui-icon-clipboard" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5h6m-7 1H6v15h12V6h-2M9 3h6v4H9V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11h6M9 15h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 체크리스트 보기</a>
+<a class="btn-secondary" href="tel:010-4646-3145" aria-label="수한공간타일 전화 상담 010-4646-3145"><svg class="ui-icon ui-icon-phone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg> 타일 문의</a>
 </div>
 <p class="hero-note"><strong>바로 공사를 결정하지 않으셔도 됩니다.</strong> 먼저 현관 타일 상태를 보고 가능한 범위부터 안내드립니다.</p>
 <div class="hero-stats">
@@ -1110,7 +1127,7 @@ img {
 <div class="hcard-step"><div class="hcs-num">3</div><div class="hcs-text"><strong>옆에서 본 사진</strong>으로 단차·벌어짐·문턱 주변 확인</div></div>
 </div>
 <div class="hcard-cta">
-<a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a>
+<a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내고 안내받기</a>
 <a class="hcard-btn-tel" href="/checklist/">사진 체크리스트 보기</a>
 </div>
 <p class="hcard-note">작업 중에는 답장이 늦을 수 있지만<br/>사진과 위치를 남겨주시면 순서대로 안내드립니다</p>
@@ -1201,7 +1218,7 @@ img {
 <li>3. 옆에서 본 깨짐·들뜸·단차 사진</li>
 </ul>
 <div class="photo-guide-actions">
-<a class="kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 카카오톡으로 사진 보내기</a>
+<a class="kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 카카오톡으로 사진 보내기</a>
 <a class="checklist" href="/checklist/">사진 체크리스트 보기</a>
 </div>
 </div>
@@ -1242,8 +1259,8 @@ img {
 <div class="cc-allday"><span class="cc-allday-label">연중무휴 운영</span><span class="cc-allday-val">365일</span></div>
 </div>
 <div class="cc-btns">
-<a class="cc-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a>
-<a class="cc-btn-tel" href="tel:010-4646-3145" aria-label="수한공간타일 전화 상담 010-4646-3145">📞 전화 상담</a>
+<a class="cc-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 상담</a>
+<a class="cc-btn-tel" href="tel:010-4646-3145" aria-label="수한공간타일 전화 상담 010-4646-3145"><svg class="ui-icon ui-icon-phone" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2Z" fill="currentColor"/></svg> 전화 상담</a>
 </div>
 </div>
 </section>
@@ -1271,20 +1288,20 @@ img {
     </div>
 </div>
 <nav class="footer-links" aria-label="하단 메뉴">
-<a href="/">수한공간 홈</a>
-<a href="/tile/">타일 허브</a>
-<a href="/bath/">욕실 리모델링</a>
-<a href="/repair/">집수리 · 부분공사</a>
-<a href="/checklist/">사진 상담 체크리스트</a>
+<a href="/">홈</a>
+<a href="/tile/">타일</a>
+<a href="/bath/">욕실</a>
+<a href="/repair/">집수리</a>
+<a href="/checklist/">사진 상담</a>
 <a href="/questions/tile/one-tile-replacement/">한 장 교체 기준</a>
 <a href="/seasonal/winter-tile-repair/">겨울 타일 점검</a>
 <a href="/cases/">시공 사례</a>
-<a href="/faq/">자주 묻는 질문</a>
-<a href="/contact/">문의 안내</a>
+<a href="/faq/">FAQ</a>
+<a href="/contact/">문의</a>
 </nav>
 </footer>
 <div class="floating">
-<a class="fb k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> <span>💬</span><span>사진 상담</span></a>
+<a class="fb k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> <span>사진 상담</span></a>
 </div>
 <div class="mobile-cta">
 <a class="k" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기"><svg class="ui-icon ui-icon-chat" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v11H8l-4 4V4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 사진 보내기</a>

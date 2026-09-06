@@ -1355,6 +1355,249 @@ img {
 @media(max-width:860px){.internal-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.internal-link-section{padding:30px 16px}.internal-link-grid{grid-template-columns:1fr}}
 
+
+/* ===== v2 main CSS ===== */
+/* ===== 수한공간 v2 — main 전용 컴포넌트 CSS (원본 header/footer/chrome 보존, 클래스 격리) ===== */
+:root{
+  --ink:#1a1d21; --ink-mid:#45505c; --muted2:#616161;
+  --line2:#e5e8ec; --line-soft:#eef1f4; --bg-soft:#f6f7f9;
+  --brand-tint:#eef1f5; --brand-tint2:#f6f8fa; --brand-dk:#16202b; --brand-sf:#2c3b4f;
+  --accent-sf:#fbf1ee; --kakao-dk:#efd500;
+  --rad:14px; --rad-sm:10px;
+  --sh-sm:0 1px 3px rgba(24,32,43,.06),0 1px 2px rgba(24,32,43,.04);
+  --sh:0 8px 28px rgba(24,32,43,.08); --sh-lg:0 18px 44px rgba(24,32,43,.12);
+  --mw:1120px;
+}
+#main-content .wrap{max-width:var(--mw);margin:0 auto;padding:0 24px}
+#main-content .section{padding:72px 0}
+#main-content .section-sm{padding:52px 0}
+#main-content .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.05em;margin-bottom:14px}
+#main-content .eyebrow::before{content:'';width:22px;height:2px;background:var(--accent)}
+#main-content .h-sec{font-size:clamp(23px,3.2vw,33px);font-weight:800;color:var(--ink);letter-spacing:-.025em;line-height:1.3;word-break:keep-all}
+#main-content .h-sec em{font-style:normal;color:var(--brand)}
+#main-content .sub-sec{font-size:15px;color:var(--ink-mid);margin-top:13px;max-width:640px;font-weight:500;word-break:keep-all}
+
+/* buttons */
+#main-content .vbtn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-size:15.5px;font-weight:800;border:none;padding:15px 24px;border-radius:11px;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
+#main-content .vbtn-kakao{background:var(--kakao);color:#191600}
+#main-content .vbtn-kakao:hover{background:var(--kakao-dk);transform:translateY(-1px)}
+#main-content .vbtn-brand{background:var(--brand);color:#fff}
+#main-content .vbtn-brand:hover{background:var(--brand-dk);transform:translateY(-1px)}
+#main-content .vbtn-outline{background:#fff;color:var(--brand);border:1.5px solid var(--line2)}
+#main-content .vbtn-outline:hover{border-color:var(--brand);background:var(--brand-tint2)}
+#main-content .vbtn-lg{padding:17px 28px;font-size:16px}
+
+/* hero */
+#main-content .vhero{background:linear-gradient(180deg,var(--bg-soft) 0%,#fff 100%);border-bottom:1px solid var(--line2)}
+#main-content .vhero-inner{max-width:var(--mw);margin:0 auto;padding:56px 24px 60px}
+#main-content .vhero-tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--brand);background:#fff;border:1px solid var(--line2);border-radius:999px;padding:7px 15px;margin-bottom:20px}
+#main-content .vhero-tag .pin{color:var(--accent)}
+#main-content .vhero h1{font-size:clamp(29px,5vw,48px);font-weight:900;color:var(--ink);letter-spacing:-.04em;line-height:1.16;word-break:keep-all;margin:0}
+#main-content .vhero h1 .hl{color:var(--brand);position:relative;white-space:nowrap}
+#main-content .vhero h1 .accent{color:var(--accent);position:relative;white-space:nowrap}
+#main-content .vhero h1 .accent::after{content:'';position:absolute;left:-2px;right:-2px;bottom:2px;height:11px;background:var(--accent);opacity:.14;z-index:-1;border-radius:2px}
+#main-content .vhero-lead{font-size:clamp(15.5px,2.2vw,18px);color:var(--ink-mid);margin-top:20px;max-width:620px;font-weight:500;word-break:keep-all}
+#main-content .vhero-lead strong{color:var(--ink);font-weight:800}
+#main-content .vhero-emph{display:inline-block;margin-top:18px;font-size:15px;font-weight:800;color:var(--accent);background:var(--accent-sf);border-radius:9px;padding:11px 18px}
+#main-content .vhero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+#main-content .vhero-note{font-size:13.5px;color:var(--muted2);margin-top:16px;font-weight:500;word-break:keep-all}
+#main-content .vhero-note strong{color:var(--ink-mid);font-weight:700}
+#main-content .license-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+#main-content .license-chip{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--brand);background:#fff;border:1px solid var(--line2);border-radius:999px;padding:8px 15px}
+#main-content .license-chip::before{content:'✓';color:var(--accent);font-weight:900}
+#main-content .license-caption{font-size:12.5px;color:var(--muted2);margin-top:10px;font-weight:500}
+
+/* featured services (main) */
+#main-content .svc-featured{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:16px;margin-top:40px}
+#main-content .svc-hero-card{position:relative;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,#1f2b3a 0%,#2c3b4f 100%);color:#fff;border:1px solid var(--brand);border-radius:16px;padding:30px 30px 28px;text-decoration:none;overflow:hidden;transition:transform .18s,box-shadow .18s}
+#main-content .svc-hero-card::after{content:'';position:absolute;right:-40px;top:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(184,71,46,.35) 0%,transparent 70%);pointer-events:none}
+#main-content .svc-hero-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
+#main-content .svc-hero-badge{align-self:flex-start;font-size:12px;font-weight:800;color:#fff;background:var(--accent);border-radius:999px;padding:5px 13px;margin-bottom:18px;position:relative;z-index:1}
+#main-content .sh-name{font-size:26px;font-weight:900;letter-spacing:-.02em;margin-bottom:6px;position:relative;z-index:1}
+#main-content .sh-phone{font-size:14px;font-weight:800;color:#ffb59f;margin-bottom:14px;position:relative;z-index:1}
+#main-content .sh-desc{font-size:15px;color:rgba(255,255,255,.85);line-height:1.72;margin-bottom:18px;font-weight:500;position:relative;z-index:1;max-width:36ch}
+#main-content .sh-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px;position:relative;z-index:1}
+#main-content .sh-tags span{font-size:12.5px;font-weight:700;color:#fff;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);border-radius:7px;padding:5px 11px}
+#main-content .sh-go{font-size:15px;font-weight:800;color:#fff;display:inline-flex;align-items:center;gap:7px;position:relative;z-index:1}
+#main-content .svc-sm{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line2);border-radius:16px;padding:26px 24px 24px;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s}
+#main-content .svc-sm:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:transparent}
+#main-content .svc-icon{width:48px;height:48px;border-radius:12px;background:var(--brand-tint);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+#main-content .ss-name{font-size:19px;font-weight:800;color:var(--ink);margin-bottom:4px}
+#main-content .ss-phone{font-size:12.5px;font-weight:700;color:var(--accent);margin-bottom:12px}
+#main-content .ss-desc{font-size:13.5px;color:var(--ink-mid);line-height:1.66;font-weight:500;margin-bottom:16px;flex:1;word-break:keep-all}
+#main-content .ss-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+#main-content .ss-tags span{font-size:11.5px;font-weight:700;color:var(--brand);background:var(--brand-tint);border-radius:6px;padding:4px 9px}
+#main-content .ss-go{font-size:13.5px;font-weight:800;color:var(--brand)}
+#main-content .svc-sm:hover .ss-go{color:var(--accent)}
+
+/* principle band */
+#main-content .principle{background:var(--brand);color:#fff}
+#main-content .principle .wrap{padding:66px 24px}
+#main-content .principle .eyebrow{color:#ffb59f}
+#main-content .principle .eyebrow::before{background:var(--accent)}
+#main-content .principle h2{font-size:clamp(23px,3.4vw,34px);font-weight:800;color:#fff;letter-spacing:-.025em;line-height:1.3;word-break:keep-all}
+#main-content .principle h2 .hl{color:#ffb59f}
+#main-content .principle-lead{font-size:15.5px;color:rgba(255,255,255,.82);margin-top:16px;max-width:720px;font-weight:500;line-height:1.8;word-break:keep-all}
+#main-content .principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+#main-content .pr-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--rad);padding:24px 22px}
+#main-content .pr-num{font-size:12px;font-weight:800;color:#ffb59f;letter-spacing:.04em;margin-bottom:11px}
+#main-content .pr-title{font-size:17px;font-weight:800;color:#fff;margin-bottom:9px;word-break:keep-all}
+#main-content .pr-desc{font-size:13.5px;color:rgba(255,255,255,.72);line-height:1.72;font-weight:500;word-break:keep-all}
+
+/* problems */
+#main-content .prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+#main-content .prob-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:26px 24px;text-decoration:none;transition:transform .16s,box-shadow .16s,border-color .16s}
+#main-content .prob-card:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:transparent}
+#main-content .prob-icon{width:46px;height:46px;border-radius:11px;background:var(--accent-sf);display:flex;align-items:center;justify-content:center;margin-bottom:15px;font-size:22px}
+#main-content .prob-title{font-size:17px;font-weight:800;color:var(--ink);margin-bottom:8px;word-break:keep-all}
+#main-content .prob-desc{font-size:13.5px;color:var(--ink-mid);line-height:1.7;font-weight:500;flex:1;word-break:keep-all}
+#main-content .prob-go{font-size:13px;font-weight:800;color:var(--brand);margin-top:15px}
+#main-content .prob-card:hover .prob-go{color:var(--accent)}
+
+/* judge */
+#main-content .judge-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+#main-content .judge-card{border-radius:var(--rad);padding:28px 26px;border:1px solid var(--line2);background:#fff}
+#main-content .judge-card.yes{border-top:4px solid #2f7d55;background:#f4faf6}
+#main-content .judge-card.check{border-top:4px solid var(--accent);background:var(--accent-sf)}
+#main-content .judge-label{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:800;margin-bottom:15px}
+#main-content .judge-card.yes .judge-label{color:#2f7d55}
+#main-content .judge-card.check .judge-label{color:var(--accent)}
+#main-content .judge-list{list-style:none;display:flex;flex-direction:column;gap:11px;margin:0;padding:0}
+#main-content .judge-list li{font-size:14.5px;color:var(--ink-mid);font-weight:600;padding-left:24px;position:relative;line-height:1.55;word-break:keep-all}
+#main-content .judge-list li::before{position:absolute;left:0;top:0;font-weight:900}
+#main-content .judge-card.yes .judge-list li::before{content:'○';color:#2f7d55}
+#main-content .judge-card.check .judge-list li::before{content:'△';color:var(--accent)}
+#main-content .judge-foot{font-size:13px;color:var(--muted2);margin-top:18px;padding-top:15px;border-top:1px dashed var(--line2);font-weight:500;word-break:keep-all}
+
+/* status selector */
+#main-content .status-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+#main-content .status-card{display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:22px 22px;text-decoration:none;transition:transform .16s,box-shadow .16s,border-color .16s}
+#main-content .status-card:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:transparent}
+#main-content .status-step{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:var(--brand);color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center}
+#main-content .status-body h3{font-size:16px;font-weight:800;color:var(--ink);margin:0 0 5px;word-break:keep-all}
+#main-content .status-body p{font-size:13.5px;color:var(--ink-mid);line-height:1.6;font-weight:500;margin:0;word-break:keep-all}
+#main-content .status-go{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:800;color:var(--brand);margin-top:9px}
+#main-content .status-card:hover .status-go{color:var(--accent)}
+
+/* scope hero (bath centerpiece) */
+#main-content .scope-hero{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+#main-content .sh-decide{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line2);border-top:4px solid var(--brand);border-radius:16px;padding:30px 26px 26px;text-decoration:none;transition:transform .18s,box-shadow .18s}
+#main-content .sh-decide:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+#main-content .d-step{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.04em;margin-bottom:12px}
+#main-content .d-name{font-size:24px;font-weight:900;color:var(--brand);letter-spacing:-.02em;margin-bottom:12px}
+#main-content .d-when{font-size:14px;color:var(--ink-mid);line-height:1.7;font-weight:500;flex:1;word-break:keep-all}
+#main-content .d-go{font-size:13.5px;font-weight:800;color:var(--brand);margin-top:18px}
+#main-content .sh-decide:hover .d-go{color:var(--accent)}
+
+/* waterproof block (bath) */
+#main-content .wblock{margin-top:16px;background:#fff;border:1px solid var(--line2);border-left:4px solid var(--accent);border-radius:var(--rad);padding:24px 26px;box-shadow:var(--sh-sm)}
+#main-content .wblock .wb-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+#main-content .wblock .wb-ic{font-size:22px}
+#main-content .wblock .wb-title{font-size:17px;font-weight:800;color:var(--ink)}
+#main-content .wblock .wb-desc{font-size:13.5px;color:var(--ink-mid);font-weight:500;line-height:1.7;margin-bottom:14px}
+#main-content .wb-list{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:9px}
+#main-content .wb-list li{font-size:14px;color:var(--ink-mid);font-weight:600;padding-left:22px;position:relative;line-height:1.55;word-break:keep-all}
+#main-content .wb-list li::before{content:'·';position:absolute;left:6px;top:-2px;color:var(--accent);font-weight:900;font-size:18px}
+#main-content .wblock .wb-note{font-size:13px;color:var(--muted2);font-weight:500;margin-bottom:14px}
+#main-content .wblock .wb-go{font-size:14px;font-weight:800;color:var(--brand);text-decoration:none}
+#main-content .wblock .wb-go:hover{color:var(--accent)}
+
+/* item grid (repair) */
+#main-content .item-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+#main-content .item-card{display:flex;flex-direction:column;align-items:flex-start;gap:3px;background:#fff;border:1px solid var(--line2);border-radius:var(--rad-sm);padding:22px 20px;text-decoration:none;transition:transform .16s,box-shadow .16s,border-color .16s}
+#main-content .item-card:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:transparent}
+#main-content .item-ic{width:40px;height:40px;border-radius:10px;background:var(--brand-tint);display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-size:20px}
+#main-content .item-name{font-size:15.5px;font-weight:800;color:var(--ink)}
+#main-content .item-sub{font-size:12.5px;color:var(--muted2);font-weight:500;line-height:1.5}
+#main-content .more-line{text-align:center;margin-top:24px}
+
+/* chip rail */
+#main-content .rail-head{font-size:13px;font-weight:800;color:var(--muted2);margin:26px 0 12px;letter-spacing:.01em}
+#main-content .chip-links{display:flex;flex-wrap:wrap;gap:9px}
+#main-content .chip-links a{font-size:13.5px;font-weight:700;color:var(--ink-mid);background:#fff;border:1px solid var(--line2);border-radius:999px;padding:10px 18px;text-decoration:none;transition:all .15s}
+#main-content .chip-links a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-tint2)}
+
+/* photo */
+#main-content .photo{background:var(--bg-soft);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2)}
+#main-content .photo .wrap{padding:66px 24px}
+#main-content .photo-head{text-align:center;max-width:640px;margin:0 auto}
+#main-content .photo-head .eyebrow{justify-content:center}
+#main-content .photo-head .sub-sec{margin-left:auto;margin-right:auto}
+#main-content .photo-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0 8px}
+#main-content .photo-step{background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:28px 24px;text-align:center}
+#main-content .picon{width:56px;height:56px;border-radius:14px;background:var(--brand-tint);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 14px}
+#main-content .pk{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:.03em;margin-bottom:6px}
+#main-content .photo-step h3{font-size:16px;font-weight:800;color:var(--ink);margin-bottom:6px}
+#main-content .photo-step p{font-size:13.5px;color:var(--ink-mid);font-weight:500;line-height:1.6}
+#main-content .photo-msg{background:#fff;border:1px solid var(--line2);border-left:4px solid var(--accent);border-radius:var(--rad);padding:20px 24px;margin-top:22px;font-size:14.5px;color:var(--ink-mid);font-weight:600;line-height:1.8;word-break:keep-all}
+#main-content .photo-msg strong{color:var(--accent);font-weight:800}
+#main-content .photo-cta{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:26px}
+
+/* text case cards */
+#main-content .vcase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:36px}
+#main-content .vcase-card{background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:22px 24px;text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:14px;transition:transform .16s,box-shadow .16s,border-color .16s}
+#main-content .vcase-card:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:transparent}
+#main-content .vcase-card .cc-l h3{font-size:16px;font-weight:800;color:var(--ink);margin:0 0 4px;word-break:keep-all}
+#main-content .vcase-card .cc-l p{font-size:13px;color:var(--muted2);font-weight:500;margin:0;word-break:keep-all}
+#main-content .vcase-card .cc-arrow{font-size:18px;font-weight:800;color:var(--brand);flex-shrink:0}
+#main-content .vcase-card:hover .cc-arrow{color:var(--accent)}
+#main-content .note-line{font-size:13px;color:var(--muted2);margin-top:22px;text-align:center;font-weight:500;word-break:keep-all}
+#main-content .note-line.left{text-align:left}
+
+/* cta band */
+#main-content .vcta-band{background:var(--brand);border-top:4px solid var(--accent)}
+#main-content .vcta-band .wrap{padding:60px 24px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+#main-content .vcta-eyebrow{font-size:12.5px;font-weight:800;color:#ffb59f;letter-spacing:.04em;margin-bottom:11px}
+#main-content .vcta-title{font-size:clamp(21px,3vw,31px);font-weight:800;color:#fff;letter-spacing:-.02em;line-height:1.3;word-break:keep-all}
+#main-content .vcta-desc{font-size:14px;color:rgba(255,255,255,.72);margin-top:11px;font-weight:500}
+#main-content .vcta-btns{display:flex;gap:10px;flex-wrap:wrap}
+#main-content .vcta-band .vbtn-tel{background:#fff;color:var(--brand)}
+#main-content .vcta-band .vbtn-tel:hover{background:var(--bg-soft)}
+
+/* tel list (main) */
+#main-content .tel-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+#main-content .tel-card{display:block;background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:24px 22px;text-decoration:none;transition:transform .16s,box-shadow .16s,border-color .16s}
+#main-content .tel-card:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:transparent}
+#main-content .tel-card .tname{font-size:15px;font-weight:800;color:var(--brand);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#main-content .tel-card .tnum{font-size:21px;font-weight:900;color:var(--ink);letter-spacing:-.02em;margin-bottom:10px}
+#main-content .tel-card .tscope{font-size:13px;color:var(--ink-mid);line-height:1.6;font-weight:500;word-break:keep-all}
+
+/* responsive */
+@media (max-width:1000px){
+  #main-content .svc-featured{grid-template-columns:1fr}
+  #main-content .prob-grid,#main-content .principle-grid,#main-content .photo-steps{grid-template-columns:1fr}
+  #main-content .scope-hero{grid-template-columns:1fr}
+  #main-content .item-grid,#main-content .vcase-grid{grid-template-columns:repeat(2,1fr)}
+  #main-content .tel-list{grid-template-columns:1fr}
+  #main-content .judge-grid,#main-content .status-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  #main-content .vhero h1 .accent,#main-content .vhero h1 .hl{white-space:normal}
+  #main-content .vhero h1 .accent::after{display:none}
+  #main-content .wrap,#main-content .vhero-inner,#main-content .principle .wrap,#main-content .photo .wrap,#main-content .vcta-band .wrap{padding-left:18px;padding-right:18px}
+  #main-content .section{padding:48px 0}
+  #main-content .vhero-inner{padding-top:36px;padding-bottom:44px}
+  #main-content .principle .wrap,#main-content .photo .wrap{padding-top:48px;padding-bottom:48px}
+  #main-content .vhero-btns .vbtn,#main-content .photo-cta .vbtn{flex:1}
+  #main-content .svc-featured{grid-template-columns:1fr 1fr;gap:10px}
+  #main-content .svc-hero-card{grid-column:1/-1;padding:24px 22px 22px}
+  #main-content .svc-sm{padding:18px 14px 17px;border-radius:13px}
+  #main-content .svc-sm .svc-icon{width:40px;height:40px;margin-bottom:12px}
+  #main-content .ss-name{font-size:16px}
+  #main-content .ss-phone{font-size:11.5px;margin-bottom:9px}
+  #main-content .ss-desc{font-size:12.5px;line-height:1.55;margin-bottom:11px}
+  #main-content .ss-tags{display:none}
+  #main-content .ss-go{font-size:12.5px}
+  #main-content .item-grid,#main-content .vcase-grid{grid-template-columns:1fr 1fr}
+  #main-content .vcta-band .wrap{flex-direction:column;align-items:flex-start}
+  #main-content .vcta-btns{width:100%}
+  #main-content .vcta-btns .vbtn{flex:1}
+}
+@media (max-width:350px){
+  #main-content .svc-featured{grid-template-columns:1fr}
+  #main-content .svc-hero-card{grid-column:auto}
+}
+
 </style>
 </head>
 <body>
@@ -1466,466 +1709,165 @@ img {
 </header>
 <nav class="mobile-nav" id="mobileNav" aria-label="모바일 주요 메뉴"><a class="active" aria-current="page" href="/">수한공간 홈</a><a href="/tile/">타일 보수 및 시공</a><a href="/bath/">욕실 리모델링</a><a href="/repair/">집수리 · 부분공사</a><a href="/cases/">시공 사례</a><a href="/questions/">작업별 질문</a><a href="/checklist/">사진 상담 체크리스트</a><a href="/contact/">문의 안내</a><div class="mobile-nav-cta"><a href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 상담</a><a href="/contact/#numbers" aria-label="작업별 문의 번호 보기">작업별 번호</a></div></nav>
 <main id="main-content">
-<section class="hero">
-<div class="hero-copy">
-<h1 class="hero-title">무조건 철거가<br/><span class="hl">답은 아닙니다</span></h1>
-<p class="hero-sub">
-타일보수부터 욕실 리모델링, 집수리까지 현장 상태에 맞춰 필요한 범위를 먼저 확인하고 안내드립니다.<br/>
-👉 지금 상태가 보이게 사진 보내주시면, 가능한 방법과 필요한 범위를 먼저 안내드립니다.
-</p>
-<div class="hero-badge">
-<svg aria-hidden="true" fill="none" height="16" viewbox="0 0 16 16" width="16">
-<path d="M8 1.5l2 4 4.5.6-3.3 3.2.8 4.4L8 11.6l-4 2.1.8-4.4L1.5 6.1 6 5.5 8 1.5z" fill="#fdf2ef" stroke="#b8472e" stroke-linejoin="round" stroke-width="1.3"></path>
-</svg>
-<span class="hero-badge-text"><strong>타일보수 · 욕실 리모델링 · 집수리</strong> 현장 확인 후 시공 · 관리</span>
+
+<section class="vhero">
+<div class="vhero-inner">
+<div class="vhero-tag"><span class="pin">📍</span> 평택 타일보수 · 욕실공사 · 생활 집수리</div>
+<h1>타일·욕실·집수리 문제,<br/><span class="accent">필요한 범위부터 확인합니다</span></h1>
+<span class="vhero-emph">무조건 철거가 답은 아닙니다.</span>
+<p class="vhero-lead">사진과 현장 상태를 먼저 보고 <strong>부분 보수로 될지 전체 공사가 필요한지</strong>를 차분히 안내드립니다. 대표가 직접 시공하고 직접 설명하는 현장 기술자 브랜드입니다.</p>
+<div class="vhero-btns">
+<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기">💬 카카오톡으로 사진 보내기</a>
+<a class="vbtn vbtn-outline vbtn-lg" href="/checklist/">📷 사진 3장 찍는 방법</a>
 </div>
-<div class="hero-badge">
-<svg aria-hidden="true" fill="none" height="16" viewbox="0 0 16 16" width="16">
-<path d="M3 8l3 3 7-7" fill="none" stroke="#b8472e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
-</svg>
-<span class="hero-badge-text">평택·안성·오산 <strong>사진 확인 후 필요한 범위 안내</strong> </span>
+<p class="vhero-note">연중무휴 <strong>08:00 – 21:00</strong> · 바로 공사를 결정하지 않으셔도 됩니다. 먼저 상태부터 봐 드립니다.</p>
+<div class="license-row">
+<span class="license-chip">국가기술자격 타일기능사</span>
+<span class="license-chip">국가기술자격 방수기능사</span>
+<span class="license-chip">국가기술자격 온수온돌기능사</span>
 </div>
-<p class="hero-note" style="margin-bottom:12px;">📸 <strong>사진 보내주시면 됩니다</strong> · 여러 장 보내주실수록 더 정확하게 안내드릴 수 있습니다</p>
-<div class="hero-btns">
-<a class="btn-primary" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a>
-<a class="btn-outline" href="/checklist/">📋 사진 3장 찍는 방법 보기</a>
-<a class="btn-secondary" href="/contact/">작업별 번호 보기</a>
-</div>
-<!-- [수한공간 수정 시작] 상담 전 고객 고민 -->
-<div aria-label="상담 전 고객 고민" class="hero-reviews">
-<div class="hero-reviews-label">실제 상담에서 자주 나오는 걱정</div>
-<div class="hero-reviews-items">
-<div class="hero-review-item">
-<p class="hero-review-text">
-            “타일이 들떴는데 전체를 다 철거해야 하나 걱정했어요.”<br/>
-<span class="review-source">→ 사진을 보고 부분 보수 가능 여부부터 먼저 확인합니다.</span>
-</p>
-</div>
-<div class="hero-review-item">
-<p class="hero-review-text">
-            “작은 집수리도 문의해도 괜찮을까요?”<br/>
-<span class="review-source">→ 욕실 주변 보수, 실리콘·줄눈, 수전·도기, 환풍기, 전등, 방충망, 양변기·세면대 교체도 사진으로 먼저 확인합니다.</span>
-</p>
-</div>
-</div>
-</div>
-<!-- [수한공간 수정 끝] 상담 전 고객 고민 -->
-<p class="hero-note">연중무휴 <strong>08:00 – 21:00</strong> · 작업 중에는 사진 상담을 추천드립니다</p>
-<div class="license-badges">
-<span class="license-badge">국가기술자격 타일기능사</span>
-<span class="license-badge">국가기술자격 방수기능사</span>
-<span class="license-badge">국가기술자격 온수온돌기능사</span>
-</div>
-<div class="hero-stats">
-<div class="hstat"><div class="hstat-num">10<span class="unit">년+</span></div><div class="hstat-label">시공 경력</div></div>
-<div class="hstat"><div class="hstat-num">상태별</div><div class="hstat-label">작업 범위 안내</div></div>
-<div class="hstat"><div class="hstat-num">순서대로</div><div class="hstat-label">1차 안내</div></div>
-</div>
-<div class="pain-points">
-<div class="pain-title">이런 고민 있으신 경우</div>
-<div class="pain-item">
-<span class="pain-icon">✔</span>
-<span class="pain-text">전체 철거까지 해야 하나 걱정될 때</span>
-</div>
-<div class="pain-item">
-<span class="pain-icon">✔</span>
-<span class="pain-text">비용과 공사 범위가 어디까지 커질지 불안할 때</span>
-</div>
-<div class="pain-item">
-<span class="pain-icon">✔</span>
-<span class="pain-text">기존 타일과 색감 차이가 날까 고민될 때</span>
-</div>
-</div>
-</div>
-<aside class="hero-card">
-<div class="hcard-head">
-<div class="cta-eyebrow">사진 상담 안내</div>
-<div class="cta-title">현장 상태를 보고 가능한 방법과 범위를 먼저 안내드립니다</div>
-</div>
-<div class="hcard-body">
-<div class="hcard-steps">
-<div class="hcard-step"><div class="hcs-num">1</div><div class="hcs-text"><strong>카카오톡으로 현장 사진</strong> 전송</div></div>
-<div class="hcard-step"><div class="hcs-num">2</div><div class="hcs-text">사진 확인 후 <strong>가능한 방법과 필요한 범위 안내</strong></div></div>
-<div class="hcard-step"><div class="hcs-num">3</div><div class="hcs-text">필요 시 <strong>현장 방문 일정 조율</strong></div></div>
-</div>
-<div class="hcard-cta">
-<a class="hcard-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a>
-<a class="hcard-btn-tel" href="/checklist/">사진 3장 찍는 방법 보기</a>
-</div>
-<p class="hcard-note">연중무휴 08:00 – 21:00<br/>작업 중에는 카카오톡·문자를 추천드립니다</p>
-</div>
-</aside>
-</section>
-<section class="quick-cta">
-<div class="quick-cta-wrap">
-<div class="quick-cta-text">
-      타일·욕실·집수리 문의 전, <span>사진을 어떻게 보내야 할지 모르겠다면</span><br/>
-      무료 사진 상담 체크리스트를 먼저 확인해보세요.
-    </div>
-<div style="display:flex;gap:8px;flex-wrap:wrap;">
-<a class="quick-cta-btn" href="/checklist/">📋 체크리스트 보기</a>
-<a class="quick-cta-btn" href="/process/" style="background:#fff;border:1.5px solid var(--brand);color:var(--brand);">상담 후 진행 과정 보기</a>
-<a class="quick-cta-btn" href="/seasonal/" style="background:#fff;border:1.5px solid var(--brand);color:var(--brand);">🗓️ 계절별 점검 보기</a>
-</div>
+<p class="license-caption">대표 윤수한 · 한국산업인력공단 국가기술자격 보유 · 대표가 직접 설명·시공</p>
 </div>
 </section>
-<section class="core-section">
-<div class="core-wrap">
-<div class="core-box reveal">
-<div class="core-box-label">수한공간의 원칙</div>
-<div class="core-box-title">무조건 철거가 아니라<br/><span class="hl">상태에 따라 부분 보수로 해결할 수 있습니다</span></div>
-<div class="core-box-desc">
-타일보수, 욕실, 집수리 작업은 원인부터 먼저 확인해야 합니다. 
-들뜸인지, 방수 하자인지, 바탕 문제인지에 따라 처리 방법이 완전히 달라집니다. 
-현장 상태와 원인을 확인한 뒤, 전체 철거가 맞는지 부분 보수로 가능한지 판단하는 것이 수한공간의 기준입니다.
+
+<section class="section">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow">시공 분야</span>
+<h2 class="h-sec">어떤 문제가 있으신가요? <em>3가지 중에서 선택하세요</em></h2>
+<p class="sub-sec">작업 성격에 따라 사업자와 문의 번호가 나뉘어 있습니다. 가장 가까운 문제를 고르면 그에 맞는 상세 안내로 이어집니다.</p>
 </div>
-</div>
-<div class="core-points">
-<div class="cp reveal"><div class="cp-num">01 · 진단</div><div class="cp-title">원인부터 먼저 확인합니다</div><div class="cp-desc">들뜸·깨짐·줄눈 파손의 원인은 각각 다릅니다. 현장 상태를 확인해 문제 원인을 먼저 파악하는 것이 중요합니다.<br/><br/>→ 불필요한 철거 없이 필요한 범위를 먼저 판단합니다</div></div>
-<div class="cp reveal"><div class="cp-num">02 · 부분 보수</div><div class="cp-title">전체 철거 없이 해결되는 경우가 많습니다</div><div class="cp-desc">현장 상태에 따라 문제 부분만 선별해 시공합니다. 철거가 꼭 필요한 경우인지 직접 판단해드립니다.<br/><br/>→ 가능한 범위는 부분 보수로 먼저 잡아드립니다</div></div>
-<div class="cp reveal"><div class="cp-num">03 · 낭비 없음</div><div class="cp-title">필요 없는 공사는 권하지 않습니다</div><div class="cp-desc">안 해도 되는 공사는 권하지 않습니다. 꼭 필요한 범위만 정확하게 처리합니다.<br/><br/>→ 고객님이 이해하기 쉬운 범위로 정리해 안내드립니다</div></div>
-</div>
-</div>
-</section>
-<section class="services-section" id="services">
-<div class="sec-header">
-<div class="sec-label">시공 분야</div>
-<h2 class="sec-title">타일·욕실·집수리, <em>어떤 문제가 있으신가요?</em></h2>
-</div>
-<div class="services-grid">
-<a class="sv reveal" href="/tile/">
-<div class="sv-num">01 · 타일</div>
-<div class="sv-icon"><svg fill="none" height="24" viewbox="0 0 22 22" width="24"><rect height="8" stroke="#1f2b3a" stroke-width="1.4" width="8" x="2" y="2"></rect><rect height="8" stroke="#1f2b3a" stroke-width="1.4" width="8" x="12" y="2"></rect><rect height="8" stroke="#1f2b3a" stroke-width="1.4" width="8" x="2" y="12"></rect><rect height="8" stroke="#1f2b3a" stroke-dasharray="2 1.5" stroke-width="1.4" width="8" x="12" y="12"></rect></svg></div>
-<div class="sv-name">수한공간타일</div>
-<div class="sv-desc">타일 들뜸, 깨짐, 한 장 교체, 욕실·현관·베란다 타일보수는 전체 철거 전 부분 보수 가능 여부부터 확인합니다.</div>
-<div class="sv-tags"><span class="sv-tag">타일 들뜸 보수</span><span class="sv-tag">깨진 타일 보수</span><span class="sv-tag">타일 한 장 교체</span><span class="sv-tag">욕실 타일보수</span><span class="sv-tag">현관·베란다 타일보수</span></div>
-<div class="sv-arrow">타일 허브 보기 →</div>
-</a>
-<a class="sv reveal" href="/bath/">
-<div class="sv-num">02 · 욕실</div>
-<div class="sv-icon"><svg fill="none" height="24" viewbox="0 0 22 22" width="24"><path d="M3 10h16v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6z" stroke="#1f2b3a" stroke-width="1.4"></path><path d="M3 10V7a3 3 0 013-3v0a3 3 0 013 3v3" stroke="#1f2b3a" stroke-width="1.4"></path></svg></div>
-<div class="sv-name">수한공간욕실</div>
-<div class="sv-desc">평택을 중심으로 욕실리모델링, 덧방, 전체 철거, 방수 확인, 바닥공사, 욕실 부분공사 범위를 안내합니다.</div>
-<div class="sv-tags"><span class="sv-tag">욕실리모델링</span><span class="sv-tag">욕실 덧방</span><span class="sv-tag">전체 철거</span><span class="sv-tag">방수 확인</span><span class="sv-tag">욕실 부분공사</span></div>
-<div class="sv-arrow">욕실 허브 보기 →</div>
-</a>
-<a class="sv reveal" href="/repair/">
-<div class="sv-num">03 · 집수리</div>
-<div class="sv-icon"><svg fill="none" height="24" viewbox="0 0 22 22" width="24"><path d="M4 18L10 12" stroke="#1f2b3a" stroke-linecap="round" stroke-width="1.4"></path><path d="M13 3l6 6-9 9-6-6L13 3z" stroke="#1f2b3a" stroke-width="1.4"></path></svg></div>
-<div class="sv-name">수한공간집수리</div>
-<div class="sv-desc">욕실 전체공사까지는 아니지만 타일 보수, 실리콘·줄눈, 수전·도기, 환풍기, 싱크볼, 전등, 방충망, 욕실문·천장처럼 생활 중 불편한 부분을 확인합니다.</div>
-<div class="sv-tags"><span class="sv-tag">욕실 실리콘</span><span class="sv-tag">수전 교체</span><span class="sv-tag">환풍기 교체</span><span class="sv-tag">양변기 교체</span><span class="sv-tag">세면대·욕실장</span></div>
-<div class="sv-arrow">집수리 허브 보기 →</div>
-</a>
-</div>
-</section>
-<!-- [수한공간 수정 시작] 300개 상세페이지 확장 입구 -->
-<section class="detail-links-section">
-<div class="sec-header">
-<div class="sec-label">상세페이지 안내</div>
-<h2 class="sec-title">문제별로 <em>필요한 작업 범위</em>부터 확인합니다</h2>
-</div>
-<div class="detail-link-grid">
-<div class="detail-link-group">
-<h3>타일 문제</h3>
-<a href="/tile/lifted-tile/">타일 들뜸 보수</a>
-<a href="/tile/broken-tile/">깨진 타일 보수</a>
-<a href="/tile/one-tile-replacement/">타일 한 장 교체</a>
-<a href="/tile/bathroom-tile-repair/">욕실 타일보수</a>
-<a href="/tile/entrance-tile-repair/">현관 타일보수</a>
-<a href="/tile/balcony-tile-repair/">베란다 타일보수</a>
-</div>
-<div class="detail-link-group">
-<h3>욕실 문제</h3>
-<a href="/bath/remodeling/">욕실리모델링</a>
-<a href="/bath/overlay/">욕실 덧방</a>
-<a href="/bath/full-demolition/">욕실 전체 철거</a>
-<a href="/bath/waterproofing/">욕실 방수 확인</a>
-<a href="/bath/floor-repair/">욕실 바닥공사</a>
-<a href="/bath/partial-work/">욕실 부분공사</a>
-</div>
-<div class="detail-link-group">
-<h3>집수리 문제</h3>
-<a href="/repair/silicone/">실리콘·줄눈 보수</a>
-<a href="/repair/faucet/">수전 교체</a>
-<a href="/repair/vent-fan/">환풍기 교체</a>
-<a href="/repair/toilet-replacement/">양변기 교체</a>
-<a href="/repair/sink-repair/">세면대 교체·수리</a>
-<a href="/repair/bathroom-cabinet/">욕실장 교체</a>
-</div>
-</div>
-</section>
-<!-- [수한공간 수정 끝] 300개 상세페이지 확장 입구 -->
-<!-- [수한공간 수정 시작] 계절별 점검 안내 연결 -->
-<section class="detail-links-section">
-<div class="sec-header">
-<div class="sec-label">계절별 점검 안내</div>
-<h2 class="sec-title">계절마다 많이 생기는 <em>타일·욕실·집수리 문제</em>를 먼저 확인합니다</h2>
-</div>
-<div class="detail-link-grid">
-<div class="detail-link-group">
-<h3>계절별 전체 안내</h3>
-<a href="/seasonal/">계절별 타일·욕실·집수리 점검 안내</a>
-<a href="/checklist/">사진 상담 체크리스트</a>
-<a href="/questions/">자주 묻는 질문</a>
-</div>
-<div class="detail-link-group">
-<h3>겨울·장마 문제</h3>
-<a href="/seasonal/winter-tile-repair/">겨울 타일 터짐·들뜸 보수</a>
-<a href="/seasonal/rainy-season-waterproofing/">장마 전 욕실·베란다 방수 확인</a>
-<a href="/bath/waterproofing/">욕실 방수 확인</a>
-</div>
-<div class="detail-link-group">
-<h3>봄·가을 수요</h3>
-<a href="/seasonal/spring-bath-remodeling/">봄 욕실리모델링</a>
-<a href="/seasonal/autumn-moving-repair/">가을 이사철 집수리</a>
-<a href="/repair/">집수리 · 부분공사</a>
-</div>
-</div>
-</section>
-<!-- [수한공간 수정 끝] 계절별 점검 안내 연결 -->
-<!-- ✅ 작업3: 시공 사례 섹션 추가 (services-section 아래, process-section 위) -->
-<section class="case-section">
-<div class="sec-header">
-<div class="sec-label">시공 사례</div>
-<h2 class="sec-title">진행한 <em>현장 사례</em></h2>
-</div>
-<div class="case-grid">
-<a class="case-item" href="/cases/">전체 시공 사례 보기</a>
-<a class="case-item" href="/cases/tile/">타일 보수 사례 보기</a>
-<a class="case-item" href="/cases/bath/">욕실 사례 보기</a>
-<a class="case-item" href="/cases/repair/">집수리 사례 보기</a>
-</div>
-</section>
-<section class="process-section">
-<div class="sec-header">
-<div class="sec-label">진행 절차</div>
-<h2 class="sec-title">상담부터 완공까지 <em>4단계</em></h2>
-</div>
-<div class="process-grid">
-<div class="ps reveal"><div class="ps-num">1</div><div class="ps-title">사진 상담</div><div class="ps-desc">카카오톡으로 현장 사진을 보내주시면 확인 후 순서대로 1차 안내드립니다.</div></div>
-<div class="ps reveal"><div class="ps-num">2</div><div class="ps-title">현장 방문</div><div class="ps-desc">현장 확인 후 문제 원인과 상태를 정확히 파악합니다.</div></div>
-<div class="ps reveal"><div class="ps-num">3</div><div class="ps-title">시공 범위 확정</div><div class="ps-desc">필요한 범위만 정리하고 시공 방법과 일정을 확정합니다.</div></div>
-<div class="ps reveal"><div class="ps-num">4</div><div class="ps-title">시공 완료</div><div class="ps-desc">작업 후 상태를 함께 확인하고, 문제가 있으면 다시 확인해드립니다.</div></div>
-</div>
-</section>
-<section class="why-section">
-<div class="sec-header">
-<div class="sec-label">선택 이유</div>
-<h2 class="sec-title">수한공간이 <em>다른 이유</em></h2>
-</div>
-<!-- [수한공간 수정 시작] why-section 전환형 구조 -->
-<div class="why-grid">
-<div class="wi reveal">
-<div class="wi-icon">
-<svg fill="none" height="20" viewbox="0 0 18 18" width="20">
-<path d="M9 1.5C5.13 1.5 2 4.63 2 8.5c0 2.3 1.1 4.34 2.8 5.6V16h8.4v-1.9C14.9 12.84 16 10.8 16 8.5c0-3.87-3.13-7-7-7z" stroke="#1f2b3a" stroke-width="1.3"></path>
-</svg>
-</div>
-<div class="wi-title">상담부터 다릅니다</div>
-<div class="wi-desc">
-      사진만 보내주셔도 바로 공사를 권하지 않습니다.<br/>
-      가능한 방법과 범위를 먼저 안내드립니다.
-    </div>
-</div>
-<div class="wi reveal">
-<div class="wi-icon">
-<svg fill="none" height="20" viewbox="0 0 18 18" width="20">
-<circle cx="9" cy="9" r="6.5" stroke="#1f2b3a" stroke-width="1.3"></circle>
-<path d="M9 5.5v3.5l2.5 1.5" stroke="#1f2b3a" stroke-linecap="round" stroke-width="1.3"></path>
-</svg>
-</div>
-<div class="wi-title">공사를 키우지 않습니다</div>
-<div class="wi-desc">
-      전체 철거가 필요 없는 경우에는<br/>
-      부분 보수로 해결할 수 있는 방법부터 확인합니다.
-    </div>
-</div>
-<div class="wi reveal">
-<div class="wi-icon">
-<svg fill="none" height="20" viewbox="0 0 18 18" width="20">
-<path d="M3 9l4 4 8-8" stroke="#1f2b3a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-</svg>
-</div>
-<div class="wi-title">현장을 직접 보고 판단합니다</div>
-<div class="wi-desc">
-      상담부터 현장 확인까지 직접 진행하며,<br/>
-      작업은 상황에 맞게 책임지고 진행합니다.
-    </div>
-</div>
-<div class="wi reveal">
-<div class="wi-icon">
-<svg fill="none" height="20" viewbox="0 0 18 18" width="20">
-<rect height="11" rx="1.5" stroke="#1f2b3a" stroke-width="1.3" width="14" x="2" y="3"></rect>
-<path d="M6 9h6M6 12h4" stroke="#1f2b3a" stroke-linecap="round" stroke-width="1.2"></path>
-</svg>
-</div>
-<div class="wi-title">작업 후까지 확인합니다</div>
-<div class="wi-desc">
-      작업 후 상태를 함께 확인하고<br/>
-      문제가 있으면 다시 확인해드립니다.
-    </div>
-</div>
-</div>
-<!-- [수한공간 수정 끝] -->
-</section>
-<section class="area-section">
-<div class="area-wrap">
-<div class="area-left">
-<div class="sec-header">
-<div class="sec-label">시공 가능 지역</div>
-<h2 class="sec-title" style="font-size: clamp(22px, 2.2vw, 30px);">
-          평택 중심 <em>인근 지역</em> 현장 상담
-        </h2>
-</div>
-<p class="area-desc">
-        평택을 중심으로 안성·오산·화성·용인·천안·당진 일대까지<br/>
-        현장 상황과 작업 범위에 따라 방문 상담을 진행합니다.
-      </p>
-<p class="area-desc" style="font-size:13.5px; color:var(--text-muted); margin-bottom:16px;">
-        평택 지역은 작업 범위와 일정에 따라 욕실공사 상담 가능 여부를 안내드립니다.
-      </p>
-<div class="area-tip">
-<strong>💡</strong>
-<span>정확한 안내를 위해 전체 공간 사진과 문제 부위 사진을 먼저 보내주세요. 계절별로 자주 생기는 문제는 <a href="/seasonal/" style="color:var(--accent);font-weight:800;text-decoration:underline;">계절별 점검 안내</a>에서 확인할 수 있습니다.</span>
-</div>
-</div>
-<!-- [수한공간 수정 시작] 시공지역 박스 → 지도 이미지 교체 -->
-<div class="area-right area-map-box">
-<img alt="직접 찾아가는 수한공간 시공 지역 안내" class="area-map-image" src="/images/service-area-map-mobile.jpg" width="900" height="1061" decoding="async" loading="lazy"/>
-</div>
-<!-- [수한공간 수정 끝] 시공지역 박스 → 지도 이미지 교체 -->
-</div>
-</section>
-<!-- [수한공간 수정 시작] 평택 전 지역 검색 안내 -->
-<section class="seo-area-section">
-<div class="seo-area-wrap">
-<div class="sec-label">지역 검색 안내</div>
-<h2 class="seo-area-title">평택 전 지역 타일보수, 욕실리모델링, 집수리 상담</h2>
-<p>
-      수한공간은 평택을 중심으로 타일 들뜸 보수, 깨진 타일 보수, 타일 한 장 교체,
-      욕실리모델링, 욕실 덧방, 욕실 전체 철거, 욕실 방수 확인, 욕실 바닥공사,
-      실리콘·줄눈 보수, 수전 교체, 환풍기 교체, 양변기 교체, 세면대 교체·수리,
-      욕실장 교체 상담을 진행합니다.
-    </p>
-<p>
-      무조건 전체 철거를 권하기보다 사진과 현장 상태를 먼저 확인하고, 전체 철거가 필요한지,
-      부분 보수나 부분교체로 가능한지 필요한 범위부터 안내드립니다. 욕실 상담도 평택을 중심으로 진행하며,
-      인근 지역은 사진과 작업 범위를 확인한 뒤 방문 가능 여부를 안내드립니다.
-    </p>
-<p>
-      먼저 확인하는 핵심 생활권은 평택 용이동, 비전동, 비전1동, 비전2동, 소사벌, 죽백동, 소사동,
-      동삭동, 세교동과 안성 공도읍, 진사리 인근입니다.
-    </p>
-<div class="seo-keyword-box">
-<div class="seo-keyword-title">평택 생활권별 상담 가능 지역</div>
-<div class="seo-keyword-list">
-        용이동, 비전동, 비전1동, 비전2동, 소사벌, 죽백동, 소사동, 동삭동, 세교동,
-        평택동, 합정동, 통복동, 군문동, 신대동, 유천동, 지제동, 칠원동, 칠괴동,
-        청룡동, 월곡동, 고덕동, 고덕신도시, 장당동, 이충동, 서정동, 중앙동,
-        송탄동, 지산동, 송북동, 신장동, 팽성읍, 안중읍, 포승읍, 청북읍,
-        진위면, 서탄면, 고덕면, 오성면, 현덕면 인근 현장은 사진 상담 후 방문 가능 여부를 안내드립니다.
-      </div>
-</div>
-<p class="seo-area-small">
-      오산, 안성, 화성, 동탄, 천안, 아산, 당진 등 인근 지역도 작업 범위와 일정에 따라 상담 가능합니다.<br/>
-      평택 지역은 욕실리모델링과 욕실공사 상담을 중심으로 작업 범위와 일정에 따라 확인합니다.<br/>
-      바로 공사를 결정하지 않으셔도 됩니다. 사진을 보내주시면 가능한 방법과 필요한 범위부터 안내드립니다.
-    </p>
-</div>
-</section>
-<!-- [수한공간 수정 끝] 평택 전 지역 검색 안내 -->
-<div class="cta-band">
-<div class="cta-left">
-<div class="cta-eyebrow">사진 상담 안내</div>
-<div class="cta-title">현장 상태를 보고 가능한 방법과 범위를 먼저 안내드립니다</div>
-<div class="cta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자 문의를 추천드립니다</div>
-</div>
-<div class="cta-btns">
-<a class="btn-cta-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 사진 보내고 안내받기</a>
-<a class="btn-cta-tel" href="/checklist/">📋 사진 체크리스트</a>
-</div>
-</div>
-<section class="contact-section">
+<div class="svc-featured">
+<a class="svc-hero-card reveal" href="/tile/">
 <div>
-<div class="sec-label">문의</div>
-<h2 class="sec-title">상담 · 문의</h2>
-<p class="contact-desc">작업 원하시는 부분과 전체 상태가 보이게 사진 보내주시면<br/>가능한 방법과 필요한 작업 범위를 먼저 안내드립니다.</p>
-<div class="contact-photo-guide">
-  정면 사진 1장 + 문제 부위 사진 + 전체가 보이는 사진 1~2장 보내주시면 가장 빠르게 확인 가능합니다.<br/>
-  사진 찍는 방법이 헷갈리시면 <a href="/checklist/" style="color:var(--accent); font-weight:800; text-decoration:underline;">사진 상담 체크리스트</a>를 먼저 확인해보세요.
+<span class="svc-hero-badge">주력 · 가장 많이 찾는 서비스</span>
+<div class="sh-name">수한공간타일</div>
+<div class="sh-phone">☎ 010-4646-3145</div>
+<div class="sh-desc"><b>타일 문제는 전체 철거 전, 부분 보수 가능 여부부터 먼저 확인합니다.</b> 들뜸·깨짐·빈소리, 한 장 교체, 줄눈, 단종 타일까지.</div>
+<div class="sh-tags"><span>타일 들뜸</span><span>깨짐·한 장 교체</span><span>빈소리</span><span>줄눈·단종 타일</span><span>욕실·현관·베란다</span></div>
 </div>
-<div class="contact-notice"><strong>작업 중에는 전화 연결이 어려울 수 있습니다.</strong><br/>문자 또는 카카오톡으로 사진을 보내주시면 확인 후 순서대로 안내드립니다.</div>
-<div class="contact-methods">
-<a class="cm kakao-cm" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">
-<div class="cm-icon k"><svg fill="none" height="22" viewbox="0 0 20 20" width="22"><path d="M10 2.5C5.86 2.5 2.5 5.2 2.5 8.5c0 2.1 1.3 3.95 3.3 5.05L4.75 17l3.2-1.65C8.6 15.45 9.3 15.5 10 15.5c4.14 0 7.5-2.7 7.5-7s-3.36-6-7.5-6z" fill="#111"></path></svg></div>
-<div class="cm-info"><div class="cm-name">카카오톡 상담<span class="recommend">추천</span></div><div class="cm-desc">사진 전송 → 확인 후 안내</div></div>
-<div class="cm-go">→</div>
+<span class="sh-go">타일 문제 진단하기 →</span>
 </a>
-<a class="cm tel-cm" href="tel:010-4646-3145" aria-label="전화 문의 010-4646-3145">☎ 
-<div class="cm-icon t"><svg fill="none" height="22" viewbox="0 0 20 20" width="22"><path d="M6 3h3l1.3 3.5-1.8 1.1A8.5 8.5 0 0014 13l1.4-1.8L19 12.5V16a1.5 1.5 0 01-1.5 1.5 15 15 0 01-13-13A1.5 1.5 0 016 3z" stroke="#1f2b3a" stroke-width="1.3"></path></svg></div>
-<div class="cm-info"><div class="cm-name">전화 문의</div><div class="cm-desc">010-4646-3145</div></div>
-<div class="cm-go">→</div>
+<a class="svc-sm reveal" href="/bath/">
+<div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h18v4a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-4Z" stroke="#1f2b3a" stroke-width="1.5"/><path d="M5 12V7a3 3 0 0 1 3-3 3 3 0 0 1 3 3" stroke="#1f2b3a" stroke-width="1.5"/></svg></div>
+<div class="ss-name">수한공간욕실</div>
+<div class="ss-phone">☎ 010-8672-3145</div>
+<div class="ss-desc"><b>전체 리모델링부터 정하지 않습니다.</b> 부분공사·덧방·전체 철거·방수 중 상태에 맞는 범위를 나눕니다.</div>
+<div class="ss-tags"><span>부분공사</span><span>덧방</span><span>전체 철거</span><span>방수</span></div>
+<span class="ss-go">욕실 범위 보기 →</span>
 </a>
-<a class="cm sms-cm" href="sms:010-4646-3145" aria-label="문자로 사진 상담 보내기">
-<div class="cm-icon s"><svg fill="none" height="22" viewbox="0 0 20 20" width="22"><rect height="11" rx="2" stroke="#444" stroke-width="1.3" width="16" x="2" y="4"></rect><path d="M6 9h8M6 12h5" stroke="#444" stroke-linecap="round" stroke-width="1.1"></path></svg></div>
-<div class="cm-info"><div class="cm-name">문자 문의</div><div class="cm-desc">사진과 함께 보내주세요</div></div>
-<div class="cm-go">→</div>
-</a>
-<a class="cm blog-cm" href="https://blog.naver.com/soohantile" aria-label="네이버 블로그에서 시공 사례와 후기 보기">
-<div class="cm-icon b"><svg fill="none" height="22" viewbox="0 0 20 20" width="22"><rect height="14" rx="2" stroke="#03c75a" stroke-width="1.3" width="14" x="3" y="3"></rect><path d="M6 10h8M6 7h5M6 13h6" stroke="#03c75a" stroke-linecap="round" stroke-width="1.1"></path></svg></div>
-<div class="cm-info"><div class="cm-name">네이버 블로그</div><div class="cm-desc">시공 사례 · 후기 확인</div></div>
-<div class="cm-go">→</div>
-</a>
-<a class="cm place-cm" href="https://map.naver.com/p/entry/place/1115746921" rel="noopener" target="_blank" aria-label="네이버 지도에서 수한공간 확인하기">
-<div class="cm-icon p">
-<svg aria-hidden="true" fill="none" height="22" viewbox="0 0 20 20" width="22">
-<path d="M10 17s5-4.7 5-9a5 5 0 10-10 0c0 4.3 5 9 5 9z" stroke="#03c75a" stroke-width="1.3"></path>
-<circle cx="10" cy="8" r="1.9" stroke="#03c75a" stroke-width="1.2"></circle>
-</svg>
-</div>
-<div class="cm-info">
-<div class="cm-name">네이버 스마트플레이스</div>
-<div class="cm-desc">리뷰 · 위치 · 업체 정보 확인</div>
-</div>
-<div class="cm-go">→</div>
+<a class="svc-sm reveal" href="/repair/">
+<div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.5 5.5a3.5 3.5 0 0 0-4.9 4.4l-6 6a1.5 1.5 0 0 0 2.1 2.1l6-6a3.5 3.5 0 0 0 4.4-4.9l-2 2-1.6-1.6 2-2Z" stroke="#1f2b3a" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+<div class="ss-name">수한공간집수리</div>
+<div class="ss-phone">☎ 010-4643-3145</div>
+<div class="ss-desc"><b>작은 작업도 문의 가능합니다.</b> 실리콘·줄눈, 수전, 환풍기, 세면대·양변기 주변까지.</div>
+<div class="ss-tags"><span>실리콘·줄눈</span><span>수전</span><span>환풍기</span><span>세면대·양변기</span></div>
+<span class="ss-go">집수리 품목 보기 →</span>
 </a>
 </div>
-</div>
-<div class="contact-right">
-<div class="contact-card">
-<div class="cc-label">작업별 전화 상담</div>
-<div class="cc-sub">작업 유형에 맞는 번호로 문의하시면 더 빠르게 구분해 안내드립니다.</div>
-<div class="biz-phone-list">
-<a class="biz-phone-item" href="tel:010-4646-3145" aria-label="수한공간타일 전화 상담 010-4646-3145">☎ 
-<strong>타일 문의</strong>
-<span>010-4646-3145 · 들뜸 · 깨짐 · 한 장 교체 · 욕실·현관·베란다 타일보수</span>
-</a>
-<a class="biz-phone-item" href="tel:010-8672-3145" aria-label="수한공간욕실 전화 상담 010-8672-3145">☎ 
-<strong>욕실 문의</strong>
-<span>010-8672-3145 · 욕실리모델링 · 덧방 · 전체 철거 · 방수 · 바닥공사</span>
-</a>
-<a class="biz-phone-item" href="tel:010-4643-3145" aria-label="수한공간집수리 전화 상담 010-4643-3145">☎ 
-<strong>집수리 문의</strong>
-<span>010-4643-3145 · 실리콘 · 수전 · 환풍기 · 양변기 · 세면대 · 욕실장</span>
-</a>
-</div>
-<div class="cc-hours">
-<div class="cc-row"><span class="cc-day">상담 시간</span><span class="cc-time">08:00 – 21:00</span></div>
-<div class="cc-allday"><span class="cc-allday-label">사진 상담 추천</span><span class="cc-allday-val">카카오톡</span></div>
-</div>
-<div class="cc-btns">
-<a class="cc-btn-kakao" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 상담하기">💬 카카오톡으로 사진 보내기</a>
-</div>
-</div>
-<div class="contact-biz">
-<strong>문의 안내</strong><br/>
-      타일 문의 010-4646-3145 · 욕실 문의 010-8672-3145 · 집수리 문의 010-4643-3145<br/>
-      사진 상담 후 작업 가능 여부와 필요한 범위를 먼저 안내드립니다.<br/>
-      사업자별 상세 정보는 아래 푸터에서 확인하실 수 있습니다.
-    </div>
 </div>
 </section>
+
+<section class="principle">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow">수한공간의 원칙</span>
+<h2>큰 공사를 권하기 전에,<br/><span class="hl">필요한 범위부터 확인합니다</span></h2>
+<p class="principle-lead">들뜸인지, 방수 하자인지, 바탕 문제인지에 따라 처리 방법이 완전히 달라집니다. 원인을 먼저 확인한 뒤 전체 철거가 맞는지, 부분 보수로 가능한지 판단하는 것이 수한공간의 기준입니다.</p>
+</div>
+<div class="principle-grid">
+<div class="pr-item reveal"><div class="pr-num">01 · 직접 시공</div><div class="pr-title">대표가 직접 보고 설명합니다</div><div class="pr-desc">상담부터 현장 확인, 작업까지 대표가 직접 진행합니다. 사진을 보내주시면 대표가 직접 상태를 보고 안내드립니다.</div></div>
+<div class="pr-item reveal"><div class="pr-num">02 · 국가기술자격</div><div class="pr-title">타일·방수·온수온돌 기능사</div><div class="pr-desc">타일기능사, 방수기능사, 온수온돌기능사 국가기술자격을 보유하고 있습니다. 판단 기준을 근거로 설명드립니다.</div></div>
+<div class="pr-item reveal"><div class="pr-num">03 · 과장 없음</div><div class="pr-title">필요 없는 공사는 권하지 않습니다</div><div class="pr-desc">안 해도 되는 공사는 권하지 않습니다. 부분 보수로 될 일은 부분 보수로, 꼭 필요한 범위만 정리해 안내드립니다.</div></div>
+</div>
+</div>
+</section>
+
+<section class="section" style="background:var(--bg-soft)">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow">대표 문제</span>
+<h2 class="h-sec">이런 문제라면 <em>여기서 시작하세요</em></h2>
+<p class="sub-sec">가장 문의가 많은 문제들입니다. 해당하는 문제를 고르면 상태별 판단 기준과 예시로 이어집니다.</p>
+</div>
+<div class="prob-grid">
+<a class="prob-card reveal" href="/tile/lifted-tile/"><div class="prob-icon">🧱</div><div class="prob-title">타일이 들떴어요</div><div class="prob-desc">밟으면 움직이거나 빈소리가 나는 타일. 전체 철거 전에 부분 보수 가능 여부부터 확인합니다.</div><span class="prob-go">타일 들뜸 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/broken-tile/"><div class="prob-icon">💥</div><div class="prob-title">타일이 깨졌어요</div><div class="prob-desc">금이 가거나 모서리가 깨진 타일. 몇 장을 어떻게 교체할지 상태를 보고 안내합니다.</div><span class="prob-go">깨진 타일 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/one-tile-replacement/"><div class="prob-icon">🔲</div><div class="prob-title">타일 한 장만 교체하고 싶어요</div><div class="prob-desc">한두 장 교체 가능한지, 색·크기 차이는 어떤지 사진으로 먼저 확인합니다.</div><span class="prob-go">한 장 교체 보기 →</span></a>
+<a class="prob-card reveal" href="/bath/partial-work/"><div class="prob-icon">🛁</div><div class="prob-title">욕실, 전체까지는 아닌 것 같아요</div><div class="prob-desc">부분공사로 될지 덧방·전체 철거가 필요한지, 상태에 맞는 범위를 나눠 안내합니다.</div><span class="prob-go">욕실 부분공사 보기 →</span></a>
+<a class="prob-card reveal" href="/repair/silicone/"><div class="prob-icon">🧴</div><div class="prob-title">실리콘·줄눈이 지저분해요</div><div class="prob-desc">곰팡이·들뜬 실리콘, 떨어진 줄눈. 보수로 될지 상태를 보고 안내합니다.</div><span class="prob-go">실리콘·줄눈 보기 →</span></a>
+<a class="prob-card reveal" href="/repair/faucet/"><div class="prob-icon">🚰</div><div class="prob-title">수전·양변기·세면대가 불편해요</div><div class="prob-desc">누수·흔들림·노후 기구 교체. 작은 작업도 사진으로 먼저 확인합니다.</div><span class="prob-go">집수리 품목 보기 →</span></a>
+</div>
+</div>
+</section>
+
+<section class="photo" id="photo">
+<div class="wrap">
+<div class="photo-head reveal">
+<span class="eyebrow">사진 상담</span>
+<h2 class="h-sec">사진 3장이면 <em>먼저 확인해 드립니다</em></h2>
+<p class="sub-sec">방문 전에 카카오톡으로 사진을 보내주시면, 가능한 방법과 필요한 범위를 먼저 안내드립니다.</p>
+</div>
+<div class="photo-steps">
+<div class="photo-step reveal"><div class="picon">🏠</div><div class="pk">사진 1</div><h3>전체가 보이게</h3><p>문제 부위가 있는 공간 전체를 한 장</p></div>
+<div class="photo-step reveal"><div class="picon">🔎</div><div class="pk">사진 2</div><h3>가까이서 한 장</h3><p>깨짐·들뜸·누수 등 문제 부위를 가깝게</p></div>
+<div class="photo-step reveal"><div class="picon">📐</div><div class="pk">사진 3</div><h3>옆에서 한 장</h3><p>단차·기울기가 보이도록 옆에서</p></div>
+</div>
+<div class="photo-msg reveal">사진 보내주시면 <strong>가능한 방법과 필요한 범위를 먼저 안내</strong>드립니다. 바로 공사를 결정하지 않으셔도 됩니다.</div>
+<div class="photo-cta">
+<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기">💬 카카오톡으로 사진 보내기</a>
+<a class="vbtn vbtn-outline vbtn-lg" href="/checklist/">📷 사진 상담 체크리스트</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow">사례 · 판단 자료</span>
+<h2 class="h-sec">공사를 정하기 전에 <em>함께 보면 좋은 자료</em></h2>
+<p class="sub-sec">시공 사례와 판단 기준을 먼저 살펴보면, 내 문제에 어떤 범위가 필요한지 감을 잡는 데 도움이 됩니다.</p>
+</div>
+<div class="vcase-grid">
+<a class="vcase-card reveal" href="/cases/"><div class="cc-l"><h3>전체 시공 사례 보기</h3><p>타일·욕실·집수리 현장 상태와 작업 범위 확인</p></div><span class="cc-arrow">→</span></a>
+<a class="vcase-card reveal" href="/guide/partial-or-full-renovation/"><div class="cc-l"><h3>부분 공사 vs 전체 판단</h3><p>어디까지 필요한지 기준 보기</p></div><span class="cc-arrow">→</span></a>
+<a class="vcase-card reveal" href="/guide/repair-or-replacement/"><div class="cc-l"><h3>수리 vs 교체 판단</h3><p>고칠지 바꿀지 기준 보기</p></div><span class="cc-arrow">→</span></a>
+<a class="vcase-card reveal" href="/questions/"><div class="cc-l"><h3>작업별 자주 묻는 질문</h3><p>궁금한 점 먼저 확인</p></div><span class="cc-arrow">→</span></a>
+</div>
+<p class="note-line">비슷한 현장의 상태와 작업 범위를 사례에서 확인해 보세요. 사진을 보내주시면 대표가 직접 현재 상태도 확인해 드립니다.</p>
+</div>
+</section>
+
+<section class="vcta-band">
+<div class="wrap">
+<div>
+<div class="vcta-eyebrow">사진 상담 안내</div>
+<div class="vcta-title">현장 상태를 보고<br/>가능한 방법과 범위를 먼저 안내드립니다</div>
+<div class="vcta-desc">연중무휴 08:00 – 21:00 · 작업 중에는 카카오톡·문자를 추천드립니다</div>
+</div>
+<div class="vcta-btns">
+<a class="vbtn vbtn-kakao vbtn-lg" href="https://open.kakao.com/me/soohanyun" aria-label="카카오톡으로 사진 보내기">💬 사진 보내기</a>
+<a class="vbtn vbtn-tel vbtn-lg" href="/contact/">작업별 번호 보기</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="numbers">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow">작업별 문의 번호</span>
+<h2 class="h-sec">작업에 맞는 번호로 <em>더 빠르게 안내받으세요</em></h2>
+<p class="sub-sec">작업 중에는 전화 연결이 어려울 수 있습니다. 사진은 카카오톡·문자로 보내주시면 확인 후 순서대로 안내드립니다.</p>
+</div>
+<div class="tel-list">
+<a class="tel-card reveal" href="tel:010-4646-3145" aria-label="수한공간타일 전화 010-4646-3145"><div class="tname">🧱 수한공간타일</div><div class="tnum">010-4646-3145</div><div class="tscope">타일 들뜸 · 깨짐 · 한 장 교체 · 욕실·현관·베란다 타일보수</div></a>
+<a class="tel-card reveal" href="tel:010-8672-3145" aria-label="수한공간욕실 전화 010-8672-3145"><div class="tname">🛁 수한공간욕실</div><div class="tnum">010-8672-3145</div><div class="tscope">욕실 부분공사 · 덧방 · 전체 철거 · 방수 · 바닥공사</div></a>
+<a class="tel-card reveal" href="tel:010-4643-3145" aria-label="수한공간집수리 전화 010-4643-3145"><div class="tname">🔧 수한공간집수리</div><div class="tnum">010-4643-3145</div><div class="tscope">실리콘·줄눈 · 수전 · 환풍기 · 양변기 · 세면대 · 욕실장</div></a>
+</div>
+<p class="note-line left">📍 <b>팽성을 포함한 평택 전역을 중심으로 작업</b>하며, 안성·오산 등 인접 지역은 일정과 작업 범위를 확인해 안내드립니다. · 주요 지역: 용이동 · 비전동 · 소사벌 · 동삭동 · 세교동 · 고덕 · 송탄 · 안중 · <a href="/area/" style="color:var(--accent);font-weight:700;text-decoration:none">지역별 안내 보기 →</a></p>
+</div>
+</section>
+
 </main>
 
 <section class="internal-link-section" aria-labelledby="internal-links-heading">

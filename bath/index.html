@@ -963,6 +963,19 @@ img {
 #main-content .photo-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0 8px}
 #main-content .photo-step{background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:28px 24px;text-align:center}
 #main-content .picon{width:56px;height:56px;border-radius:14px;background:var(--brand-tint);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 14px}
+/* Top-4 hub line icon system */
+#main-content .prob-icon,#main-content .wblock .wb-ic{color:var(--accent)}
+#main-content .item-ic,#main-content .picon{color:var(--brand)}
+#main-content .prob-icon .ui-icon{width:23px;height:23px;margin-right:0}
+#main-content .item-ic .ui-icon{width:21px;height:21px;margin-right:0}
+#main-content .picon .ui-icon{width:27px;height:27px;margin-right:0}
+#main-content .wblock .wb-ic .ui-icon{width:22px;height:22px;margin-right:0}
+#main-content .tel-card .tname .ui-icon{width:17px;height:17px;margin-right:0}
+#main-content .vhero-tag .pin .ui-icon{width:15px;height:15px;margin-right:0}
+#main-content .sh-phone .ui-icon{width:15px;height:15px;margin-right:4px}
+#main-content .ss-phone .ui-icon{width:14px;height:14px;margin-right:4px}
+#main-content .note-line>.ui-icon-pin{width:16px;height:16px;color:var(--accent);margin-right:3px}
+
 #main-content .pk{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:.03em;margin-bottom:6px}
 #main-content .photo-step h3{font-size:16px;font-weight:800;color:var(--ink);margin-bottom:6px}
 #main-content .photo-step p{font-size:13.5px;color:var(--ink-mid);font-weight:500;line-height:1.6}
@@ -1155,7 +1168,7 @@ a .ui-icon{margin-right:3px}
 
 <section class="vhero">
 <div class="vhero-inner">
-<div class="vhero-tag"><span class="pin">🛁</span> 수한공간욕실 · 010-8672-3145</div>
+<div class="vhero-tag"><span class="pin"><svg class="ui-icon ui-icon-bath" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M5 12V7a2 2 0 0 1 4 0"/><path d="M7 19l-1 2M18 19l1 2"/></svg></span> 수한공간욕실 · 010-8672-3145</div>
 <h1>욕실공사,<br/><span class="accent">전체 리모델링부터 정하지 않습니다</span></h1>
 <span class="vhero-emph">무조건 철거가 답은 아닙니다.</span>
 <p class="vhero-lead">가장 먼저 정할 것은 <strong>공사 범위</strong>입니다. 부분공사로 될지, 덧방이 맞는지, 전체 철거가 필요한지 — 지금 상태를 보고 필요한 범위부터 안내드립니다.</p>
@@ -1180,7 +1193,7 @@ a .ui-icon{margin-right:3px}
 <a class="sh-decide reveal" href="/bath/full-demolition/"><div class="d-step">범위 3 · 철거</div><div class="d-name">전체 철거</div><div class="d-when">바탕·방수까지 다시 잡아야 할 때. 철거가 꼭 필요한 상태인지 먼저 확인합니다.</div><span class="d-go">전체 철거 보기 →</span></a>
 </div>
 <div class="wblock reveal">
-<div class="wb-head"><span class="wb-ic">💧</span><span class="wb-title">방수는 공사 범위가 아니라, 별도 확인 조건입니다</span></div>
+<div class="wb-head"><span class="wb-ic"><svg class="ui-icon ui-icon-drop" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5s6 6.3 6 10.5a6 6 0 0 1-12 0c0-4.2 6-10.5 6-10.5z"/></svg></span><span class="wb-title">방수는 공사 범위가 아니라, 별도 확인 조건입니다</span></div>
 <div class="wb-desc">부분공사·덧방·전체 철거 어떤 범위든, 아래에 해당하면 방수 상태부터 확인해야 합니다.</div>
 <ul class="wb-list">
 <li>누수 흔적이 있거나 아래층 누수가 의심되는 경우</li>
@@ -1259,9 +1272,9 @@ a .ui-icon{margin-right:3px}
 <p class="sub-sec">카카오톡으로 사진을 보내주시면 부분공사·덧방·전체 중 어떤 범위가 필요한지 먼저 안내드립니다.</p>
 </div>
 <div class="photo-steps">
-<div class="photo-step reveal"><div class="picon">🚿</div><div class="pk">사진 1</div><h3>욕실 전체</h3><p>욕실 전체가 담기도록 한 장</p></div>
-<div class="photo-step reveal"><div class="picon">🔎</div><div class="pk">사진 2</div><h3>문제 부위 가까이</h3><p>누수·깨짐·노후 부위를 가깝게</p></div>
-<div class="photo-step reveal"><div class="picon">📐</div><div class="pk">사진 3</div><h3>옆에서 본 상태</h3><p>단차·바닥·벽 상태가 함께 보이도록</p></div>
+<div class="photo-step reveal"><div class="picon"><svg class="ui-icon ui-icon-shower" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8V5a2 2 0 0 1 2-2h1"/><path d="M3.5 8h7l-1.5 2.5h-4z"/><path d="M6 14v.5M8.5 14v.5M4 16v.5M8 17v.5M6 18v.5"/></svg></div><div class="pk">사진 1</div><h3>욕실 전체</h3><p>욕실 전체가 담기도록 한 장</p></div>
+<div class="photo-step reveal"><div class="picon"><svg class="ui-icon ui-icon-search" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg></div><div class="pk">사진 2</div><h3>문제 부위 가까이</h3><p>누수·깨짐·노후 부위를 가깝게</p></div>
+<div class="photo-step reveal"><div class="picon"><svg class="ui-icon ui-icon-ruler" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4l16 16H4z"/><path d="M8 16l2-2M11 13l1.5-1.5"/></svg></div><div class="pk">사진 3</div><h3>옆에서 본 상태</h3><p>단차·바닥·벽 상태가 함께 보이도록</p></div>
 </div>
 <div class="photo-msg reveal">바로 공사를 결정하지 않으셔도 됩니다. <strong>먼저 상태를 보고 가능한 범위부터 안내</strong>드립니다.</div>
 <div class="photo-cta">

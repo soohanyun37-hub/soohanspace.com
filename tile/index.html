@@ -1097,6 +1097,19 @@ img {
 #main-content .photo-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0 8px}
 #main-content .photo-step{background:#fff;border:1px solid var(--line2);border-radius:var(--rad);padding:28px 24px;text-align:center}
 #main-content .picon{width:56px;height:56px;border-radius:14px;background:var(--brand-tint);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 14px}
+/* Top-4 hub line icon system */
+#main-content .prob-icon,#main-content .wblock .wb-ic{color:var(--accent)}
+#main-content .item-ic,#main-content .picon{color:var(--brand)}
+#main-content .prob-icon .ui-icon{width:23px;height:23px;margin-right:0}
+#main-content .item-ic .ui-icon{width:21px;height:21px;margin-right:0}
+#main-content .picon .ui-icon{width:27px;height:27px;margin-right:0}
+#main-content .wblock .wb-ic .ui-icon{width:22px;height:22px;margin-right:0}
+#main-content .tel-card .tname .ui-icon{width:17px;height:17px;margin-right:0}
+#main-content .vhero-tag .pin .ui-icon{width:15px;height:15px;margin-right:0}
+#main-content .sh-phone .ui-icon{width:15px;height:15px;margin-right:4px}
+#main-content .ss-phone .ui-icon{width:14px;height:14px;margin-right:4px}
+#main-content .note-line>.ui-icon-pin{width:16px;height:16px;color:var(--accent);margin-right:3px}
+
 #main-content .pk{font-size:11.5px;font-weight:800;color:var(--accent);letter-spacing:.03em;margin-bottom:6px}
 #main-content .photo-step h3{font-size:16px;font-weight:800;color:var(--ink);margin-bottom:6px}
 #main-content .photo-step p{font-size:13.5px;color:var(--ink-mid);font-weight:500;line-height:1.6}
@@ -1289,7 +1302,7 @@ a .ui-icon{margin-right:3px}
 
 <section class="vhero">
 <div class="vhero-inner">
-<div class="vhero-tag"><span class="pin">🧱</span> 수한공간타일 · 010-4646-3145</div>
+<div class="vhero-tag"><span class="pin"><svg class="ui-icon ui-icon-tile" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg></span> 수한공간타일 · 010-4646-3145</div>
 <h1>타일 문제,<br/><span class="accent">전체 철거 전 부분 보수부터</span> 확인합니다</h1>
 <span class="vhero-emph">무조건 철거가 답은 아닙니다.</span>
 <p class="vhero-lead">들뜸·깨짐·빈소리·한 장 교체·줄눈·단종 타일까지. 어떤 문제인지 고르면 <strong>부분 보수가 될지, 방문 확인이 필요한지</strong> 상태별 판단 기준으로 안내드립니다.</p>
@@ -1309,12 +1322,12 @@ a .ui-icon{margin-right:3px}
 <p class="sub-sec">가장 비슷한 문제를 고르면, 그 문제만의 판단 기준과 예시가 정리된 상세 페이지로 이어집니다.</p>
 </div>
 <div class="prob-grid">
-<a class="prob-card reveal" href="/tile/lifted-tile/"><div class="prob-icon">🧱</div><div class="prob-title">타일 들뜸</div><div class="prob-desc">밟으면 움직이거나 떠 있는 느낌. 원인에 따라 부분 보수 가능 여부가 달라집니다.</div><span class="prob-go">들뜸 보수 보기 →</span></a>
-<a class="prob-card reveal" href="/tile/broken-tile/"><div class="prob-icon">💥</div><div class="prob-title">타일 깨짐</div><div class="prob-desc">금·모서리 파손·조각 떨어짐. 몇 장을 어떻게 교체할지 상태를 보고 안내합니다.</div><span class="prob-go">깨짐 보수 보기 →</span></a>
-<a class="prob-card reveal" href="/tile/one-tile-replacement/"><div class="prob-icon">🔲</div><div class="prob-title">타일 한 장 교체</div><div class="prob-desc">한두 장만 교체 가능한지, 색·크기 차이는 어떤지 먼저 확인합니다.</div><span class="prob-go">한 장 교체 보기 →</span></a>
-<a class="prob-card reveal" href="/tile/bathroom-tile-repair/"><div class="prob-icon">🛁</div><div class="prob-title">욕실 타일보수</div><div class="prob-desc">벽·바닥 타일 들뜸·깨짐. 방수와 연결되는지까지 함께 확인합니다.</div><span class="prob-go">욕실 타일보수 보기 →</span></a>
-<a class="prob-card reveal" href="/tile/entrance-tile-repair/"><div class="prob-icon">🚪</div><div class="prob-title">현관 타일보수</div><div class="prob-desc">현관 바닥 깨짐·단차·들뜸. 부분 보수로 될지 확인합니다.</div><span class="prob-go">현관 타일보수 보기 →</span></a>
-<a class="prob-card reveal" href="/tile/balcony-tile-repair/"><div class="prob-icon">🌤️</div><div class="prob-title">베란다 타일보수</div><div class="prob-desc">베란다 타일 들뜸·깨짐. 방수 상태와 함께 봐야 하는 경우가 많습니다.</div><span class="prob-go">베란다 타일보수 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/lifted-tile/"><div class="prob-icon"><svg class="ui-icon ui-icon-tile" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg></div><div class="prob-title">타일 들뜸</div><div class="prob-desc">밟으면 움직이거나 떠 있는 느낌. 원인에 따라 부분 보수 가능 여부가 달라집니다.</div><span class="prob-go">들뜸 보수 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/broken-tile/"><div class="prob-icon"><svg class="ui-icon ui-icon-tile-crack" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M12 4l-2 6 3 2-2.5 8"/></svg></div><div class="prob-title">타일 깨짐</div><div class="prob-desc">금·모서리 파손·조각 떨어짐. 몇 장을 어떻게 교체할지 상태를 보고 안내합니다.</div><span class="prob-go">깨짐 보수 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/one-tile-replacement/"><div class="prob-icon"><svg class="ui-icon ui-icon-one-tile" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.5"/><rect x="9" y="9" width="6" height="6" rx="1" stroke-dasharray="2 1.6"/></svg></div><div class="prob-title">타일 한 장 교체</div><div class="prob-desc">한두 장만 교체 가능한지, 색·크기 차이는 어떤지 먼저 확인합니다.</div><span class="prob-go">한 장 교체 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/bathroom-tile-repair/"><div class="prob-icon"><svg class="ui-icon ui-icon-bath" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M5 12V7a2 2 0 0 1 4 0"/><path d="M7 19l-1 2M18 19l1 2"/></svg></div><div class="prob-title">욕실 타일보수</div><div class="prob-desc">벽·바닥 타일 들뜸·깨짐. 방수와 연결되는지까지 함께 확인합니다.</div><span class="prob-go">욕실 타일보수 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/entrance-tile-repair/"><div class="prob-icon"><svg class="ui-icon ui-icon-door" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r=".8" fill="currentColor"/></svg></div><div class="prob-title">현관 타일보수</div><div class="prob-desc">현관 바닥 깨짐·단차·들뜸. 부분 보수로 될지 확인합니다.</div><span class="prob-go">현관 타일보수 보기 →</span></a>
+<a class="prob-card reveal" href="/tile/balcony-tile-repair/"><div class="prob-icon"><svg class="ui-icon ui-icon-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.5 5.5l1.5 1.5M17 17l1.5 1.5M18.5 5.5L17 7M7 17l-1.5 1.5"/></svg></div><div class="prob-title">베란다 타일보수</div><div class="prob-desc">베란다 타일 들뜸·깨짐. 방수 상태와 함께 봐야 하는 경우가 많습니다.</div><span class="prob-go">베란다 타일보수 보기 →</span></a>
 </div>
 </div>
 </section>
@@ -1403,9 +1416,9 @@ a .ui-icon{margin-right:3px}
 <p class="sub-sec">카카오톡으로 사진을 보내주시면 부분 보수 가능 여부와 필요한 범위를 먼저 안내드립니다.</p>
 </div>
 <div class="photo-steps">
-<div class="photo-step reveal"><div class="picon">🏠</div><div class="pk">사진 1</div><h3>전체가 보이게</h3><p>타일이 있는 공간 전체를 한 장</p></div>
-<div class="photo-step reveal"><div class="picon">🔎</div><div class="pk">사진 2</div><h3>가까이서 한 장</h3><p>깨짐·들뜸 부위를 가깝게</p></div>
-<div class="photo-step reveal"><div class="picon">📐</div><div class="pk">사진 3</div><h3>옆에서 한 장</h3><p>단차·들뜬 정도가 보이도록</p></div>
+<div class="photo-step reveal"><div class="picon"><svg class="ui-icon ui-icon-home" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/><path d="M10 20v-5h4v5"/></svg></div><div class="pk">사진 1</div><h3>전체가 보이게</h3><p>타일이 있는 공간 전체를 한 장</p></div>
+<div class="photo-step reveal"><div class="picon"><svg class="ui-icon ui-icon-search" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg></div><div class="pk">사진 2</div><h3>가까이서 한 장</h3><p>깨짐·들뜸 부위를 가깝게</p></div>
+<div class="photo-step reveal"><div class="picon"><svg class="ui-icon ui-icon-ruler" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4l16 16H4z"/><path d="M8 16l2-2M11 13l1.5-1.5"/></svg></div><div class="pk">사진 3</div><h3>옆에서 한 장</h3><p>단차·들뜬 정도가 보이도록</p></div>
 </div>
 <div class="photo-msg reveal">바로 공사를 결정하지 않으셔도 됩니다. <strong>먼저 상태를 보고 가능한 범위부터 안내</strong>드립니다.</div>
 <div class="photo-cta">

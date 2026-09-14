@@ -89,8 +89,20 @@ a .ui-icon{margin-right:3px}
   footer[role="contentinfo"] .footer-links a{min-height:44px}
 }
 </style>
+<!-- 수한공간 공통 기능 패치 v7 -->
+<script id="soohan-feature-gate">(function(){try{var k='soohan_intro_seen_at',t=parseInt(localStorage.getItem(k)||'0',10),n=Date.now();document.documentElement.classList.add(t&&n-t<86400000?'soohan-intro-skip':'soohan-intro-play')}catch(e){document.documentElement.classList.add('soohan-intro-play')}})();</script>
+<link rel="stylesheet" href="/soohan-features.css">
+<script defer src="/soohan-features.js"></script>
 </head>
 <body>
+<div id="soohan-intro" aria-hidden="true">
+  <div class="soohan-intro-inner">
+    <div class="soohan-intro-brand">수한공간</div>
+    <div class="soohan-intro-head">무조건 철거가<br>답은 아닙니다</div>
+    <div class="soohan-intro-services">타일<span class="soohan-intro-sep">·</span>욕실<span class="soohan-intro-sep">·</span>집수리</div>
+  </div>
+</div>
+
 <a class="skip-link" href="#main">본문 바로가기</a>
 <div class="notice-bar">📍 평택·안성·오산 욕실 상담<span class="dot">·</span>사진 보내주시면 순서대로 1차 안내<span class="dot">·</span><strong>욕실 문의 010-8672-3145</strong></div>
 <header role="banner">

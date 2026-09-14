@@ -1,0 +1,108 @@
+/* 수한공간 공통 기능 패치 v7: intro / photo quick sheet / recent pages */
+:root{
+  --soohan-paper:#f3f0e9;
+  --soohan-brand:#13273b;
+  --soohan-ink:#2f3031;
+  --soohan-muted:#77726d;
+  --soohan-accent:#a85f48;
+  --soohan-rule:rgba(168,95,72,.22);
+  --soohan-line:#e5e1d8;
+  --soohan-kakao:#FEE500;
+}
+
+/* ── 24시간 1회 인트로 ── */
+#soohan-intro{display:none}
+html.soohan-intro-play #soohan-intro{
+  position:fixed;inset:0;z-index:2147483000;display:flex;
+  flex-direction:column;align-items:flex-start;justify-content:center;
+  padding:0 clamp(28px,8vw,100px) clamp(76px,16vh,184px) clamp(44px,11vw,140px);
+  text-align:left;overflow:hidden;cursor:default;
+  background:
+    radial-gradient(86% 66% at 30% 42%,rgba(255,255,255,.58) 0%,rgba(255,255,255,0) 60%),
+    radial-gradient(120% 100% at 88% 100%,rgba(150,110,74,.06) 0%,rgba(150,110,74,0) 56%),
+    var(--soohan-paper);
+  opacity:1;transition:opacity .28s ease;
+  font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+html.soohan-intro-skip #soohan-intro{display:none!important}
+#soohan-intro::before{
+  content:"";position:absolute;inset:-15%;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.028;mix-blend-mode:multiply;
+}
+#soohan-intro .soohan-intro-inner{
+  position:relative;z-index:1;width:min(80vw,470px);padding-left:26px;
+  opacity:0;transform:translateY(5px);
+  transition:opacity .20s ease,transform .20s cubic-bezier(.2,.7,.2,1);
+}
+#soohan-intro.is-visible .soohan-intro-inner{opacity:1;transform:none}
+#soohan-intro.is-hiding{opacity:0}
+#soohan-intro.is-fast{transition-duration:.12s}
+#soohan-intro .soohan-intro-inner::before{
+  content:"";position:absolute;left:0;top:2px;bottom:45px;width:1px;background:var(--soohan-rule)
+}
+#soohan-intro .soohan-intro-inner::after{
+  content:"";position:absolute;left:0;top:2px;width:3px;height:52px;background:var(--soohan-accent);border-radius:3px
+}
+#soohan-intro .soohan-intro-brand{
+  font-size:clamp(38px,11vw,44px);font-weight:800;letter-spacing:-.045em;line-height:1;
+  color:var(--soohan-brand);margin:0 0 21px
+}
+#soohan-intro .soohan-intro-head{
+  font-size:clamp(29px,7.8vw,32px);font-weight:600;letter-spacing:-.035em;line-height:1.27;
+  color:var(--soohan-ink);margin:0 0 26px
+}
+#soohan-intro .soohan-intro-services{
+  font-size:clamp(14px,3.9vw,15.5px);font-weight:600;letter-spacing:.05em;line-height:1.4;color:var(--soohan-muted)
+}
+#soohan-intro .soohan-intro-sep{color:var(--soohan-accent);opacity:.9;margin:0 .34em;font-weight:600}
+
+/* ── 사진상담 퀵패널 ── */
+.soohan-sheet-backdrop{
+  position:fixed;inset:0;z-index:2147482000;background:rgba(19,39,59,.38);
+  opacity:0;visibility:hidden;transition:opacity .18s ease,visibility .18s ease;
+  backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px)
+}
+.soohan-sheet-backdrop.is-open{opacity:1;visibility:visible}
+.soohan-photo-sheet{
+  position:absolute;left:50%;bottom:0;width:min(100%,520px);transform:translate(-50%,18px);
+  background:#fff;border-radius:18px 18px 0 0;padding:18px 20px calc(20px + env(safe-area-inset-bottom));
+  box-shadow:0 -14px 40px rgba(19,39,59,.18);opacity:0;transition:transform .22s cubic-bezier(.2,.7,.2,1),opacity .18s ease;
+  font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif
+}
+.soohan-sheet-backdrop.is-open .soohan-photo-sheet{transform:translate(-50%,0);opacity:1}
+.soohan-sheet-handle{width:34px;height:4px;border-radius:999px;background:#d9d9d6;margin:0 auto 16px}
+.soohan-sheet-close{position:absolute;right:16px;top:16px;width:36px;height:36px;border:0;background:#f4f5f6;border-radius:50%;font-size:20px;line-height:1;color:#4b5055;cursor:pointer}
+.soohan-sheet-eyebrow{font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--soohan-accent);margin:0 44px 5px 0}
+.soohan-sheet-title{font-size:21px;line-height:1.35;letter-spacing:-.025em;color:var(--soohan-brand);font-weight:850;margin:0 44px 14px 0;word-break:keep-all}
+.soohan-photo-list{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 13px;list-style:none;padding:0}
+.soohan-photo-list li{border:1px solid #e4e6e8;background:#fafafa;border-radius:11px;padding:12px 10px;min-height:82px;color:#454a50;font-size:12.5px;line-height:1.45;font-weight:700;word-break:keep-all}
+.soohan-photo-list b{display:block;color:var(--soohan-accent);font-size:11px;margin-bottom:4px;letter-spacing:.03em}
+.soohan-sheet-note{font-size:12.5px;line-height:1.55;color:#73777a;margin:0 0 14px;word-break:keep-all}
+.soohan-sheet-actions{display:grid;gap:8px}
+.soohan-sheet-primary,.soohan-sheet-secondary{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:10px;text-decoration:none;font-size:14.5px;font-weight:850}
+.soohan-sheet-primary{background:var(--soohan-kakao);color:#171400}
+.soohan-sheet-secondary{background:#f4f6f8;color:var(--soohan-brand);border:1px solid #e1e5e8}
+body.soohan-sheet-open{overflow:hidden}
+
+/* ── 최근 본 페이지 ── */
+.soohan-recent{background:#f7f8f9;border-top:1px solid #e6e8ea;border-bottom:1px solid #e6e8ea;padding:30px 20px}
+.soohan-recent-inner{max-width:1120px;margin:0 auto}
+.soohan-recent-label{font-size:11.5px;font-weight:850;letter-spacing:.05em;color:var(--soohan-accent);margin:0 0 5px}
+.soohan-recent-title{font-size:19px;line-height:1.35;letter-spacing:-.02em;color:var(--soohan-brand);font-weight:850;margin:0 0 14px}
+.soohan-recent-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.soohan-recent-link{display:block;background:#fff;border:1px solid #e1e4e7;border-radius:10px;padding:13px 14px;color:#31363b;text-decoration:none;font-size:13px;font-weight:750;line-height:1.45;word-break:keep-all;transition:border-color .15s ease,transform .15s ease}
+.soohan-recent-link:hover{border-color:#b7bec5;transform:translateY(-1px)}
+.soohan-recent-link span{display:block;color:#85888b;font-size:10.5px;font-weight:650;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+@media(max-width:560px){
+  .soohan-photo-list{grid-template-columns:1fr;gap:6px}
+  .soohan-photo-list li{min-height:0;padding:10px 12px}
+  .soohan-photo-list b{display:inline;margin-right:5px}
+  .soohan-recent{padding:26px 16px}
+  .soohan-recent-list{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  #soohan-intro,#soohan-intro .soohan-intro-inner,.soohan-sheet-backdrop,.soohan-photo-sheet,.soohan-recent-link{transition:none!important;transform:none!important}
+}

@@ -137,11 +137,14 @@
     function restoreBackground(){backgroundState.forEach(function(state){if(!state.inert)state.el.removeAttribute('inert')});backgroundState=[];}
     function close(){
       if(!sheet)return;sheet.classList.remove('is-open');sheet.setAttribute('aria-hidden','true');document.body.classList.remove('soohan-sheet-open');restoreBackground();
-      if(lastFocus&&lastFocus.focus)try{lastFocus.focus()}catch(e){}
+      var target=lastFocus;
+      if(!target||!target.getClientRects().length||target.closest('[inert]'))target=document.getElementById('menuBtn');
+      if(target&&target.focus)try{target.focus()}catch(e){}
     }
     function open(source){
       if(!sheet)sheet=createPhotoSheet();
       lastFocus=document.activeElement;
+      if(lastFocus&&lastFocus.closest('#mobileNav'))lastFocus=document.getElementById('menuBtn');
       safeSet(sessionStorage,PHOTO_SEEN,'1');
       sheet.classList.add('is-open');sheet.setAttribute('aria-hidden','false');document.body.classList.add('soohan-sheet-open');setBackgroundInert();
       track('photo_quick_panel_open',{page_path:pagePath(),brand:brandInfo().key,source:source||'kakao'});
@@ -219,7 +222,32 @@
     document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-soohan-recent="1"]');if(a)track('recent_page_click',{page_path:path,destination:a.getAttribute('href')||''})});
   }
 
+
+  function initMobileMenu(){
+    var nav=document.getElementById('mobileNav'),button=document.getElementById('menuBtn');
+    if(!nav||!button)return;
+    function layout(){
+      var header=document.querySelector('header'),bar=document.querySelector('.mobile-cta');
+      var top=header?Math.max(0,header.getBoundingClientRect().bottom):60;
+      var bottom=bar&&getComputedStyle(bar).position==='fixed'&&bar.getClientRects().length?Math.max(0,innerHeight-bar.getBoundingClientRect().top):0;
+      nav.style.setProperty('--soohan-menu-top',top+'px');
+      nav.style.setProperty('--soohan-menu-bottom',bottom+'px');
+    }
+    function sync(){var open=nav.classList.contains('open');button.classList.toggle('open',open);button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');if(open)layout();}
+    function close(){nav.classList.remove('open');sync();}
+    new MutationObserver(sync).observe(nav,{attributes:true,attributeFilter:['class']});
+    document.addEventListener('click',function(e){
+      if(nav.contains(e.target)&&e.target.closest('a[href]'))close();
+      else if(!nav.contains(e.target)&&!button.contains(e.target))close();
+    },true);
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')&&!document.querySelector('#soohanPhotoSheet.is-open')){close();button.focus();}});
+    window.addEventListener('resize',layout,{passive:true});
+    window.addEventListener('scroll',layout,{passive:true});
+    sync();layout();
+  }
+
   function init(){
+    initMobileMenu();
     initIntro();
     updateMobileCTA();
     initPhotoSheet();

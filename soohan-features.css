@@ -111,3 +111,11 @@ body.soohan-sheet-open{overflow:hidden}
   #soohan-intro,#soohan-intro .soohan-intro-inner,.soohan-sheet-backdrop,.soohan-recent-link{transition:none!important;transform:none!important}
   .soohan-photo-sheet{transition:none!important}
 }
+
+/* v4.1 audit: footer readability and accessible photo dialog */
+footer[role="contentinfo"] .footer-info,
+footer[role="contentinfo"] .footer-copy-notice{color:#b8bec5}
+footer[role="contentinfo"] .footer-info strong{color:#eef2f6}
+footer[role="contentinfo"] .footer-info a{color:#dce5ef;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+footer[role="contentinfo"] .soohan-footer-business{margin-bottom:16px;overflow-wrap:anywhere}
+.soohan-photo-sheet{max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow-y:auto}
